@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2014
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 300-150 #um
+cal_to_name: Sakai et al., 2011  
+cal_to_composition: NaCl-B2 #they are going through other studys to have it be Pt, but no Pt was in the cell   
+cal_to_eos: Birch-Murnaghan
+cal_to_order: 3 
+cal_to_max_pressure:
+cal_to_is_K0_fixed: no
+cal_to_cal: Fei et al., 2007
+eos: Birch-Murnaghan
+order: 3
+V0: 22.16      #A^3
+V0_unc: 0.19
+K0: 184.2  #GPa
+is_K0_fixed: noS
+K0_unc: 2.2
+K0_prime: 4.78 
+K0_prime_unc: 0.12
+
+max_pressure: 279
+PTM: NaCl
+gasket: W
+synchrotron: SPring-8 BL10XU (high-pressure XRD)
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)  # per Fig. 3
+reference_temperature: 300
+sample_heating: in situ double-sided laser annealing to relax stresses
+data_quality_notes: |
+  ymmetric DAC combined with laser annealing, which minimizes deviatoric stress and allows accurate determination of lattice parameters from multiple diffraction peaks. However, uncertainties arise from the indirect nature of the pressure calibration: NaCl-B2 is tied to external Pt-based scales (Fei et al., 2007), introducing systematic dependence on those reference EoSs. The zero-pressure volume V₀ is not directly measured but derived from g–G analysis, contributing additional uncertainty. Differences between pressure scales can lead to deviations of several GPa (up to ~10% near 300 GPa), and residual nonhydrostatic stress (on the order of a few GPa) can affect volume by ~0.4–0.6% at high pressure. Despite these limitations, agreement with independent quasi-hydrostatic studies indicates that the calibration is robust within typical uncertainties for high-pressure DAC experiments
+
+doi: 10.1002/2014JB011019
+notes: |
+      In Sakai et al. (2014), the NaCl-B2 phase is used as an internal pressure scale for DAC experiments, calibrated indirectly to Pt-based standards through previous work (Sakai et al., 2011), specifically adopting the Fei et al. (2007) calibration. The pressure is determined using a third-order Birch–Murnaghan equation of state without fixing K₀, allowing full parameter fitting. For the Fei-based calibration, the NaCl-B2 EoS parameters are approximately V₀ ≈ 37.73 Å³ (from g–G analysis), K₀ ≈ 47.80 GPa, and K₀′ ≈ 4.06. This calibration provides a pressure scale consistent with internally self-consistent Pt standards and is applied to determine the compression behavior of Fe at high pressures.

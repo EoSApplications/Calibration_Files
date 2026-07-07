@@ -1,0 +1,22 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Carter et al., 1971
+category: 3
+composition: Cu
+method: XRD
+technique: Shock
+cal_to_name: Absolute
+cal_to_composition: Cu
+
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 7.116 #fixed
+K0: 132.15   # GPa
+is_K0_fixed: no
+K0_unc: 0.317
+K0_prime: 5.1863
+K0_prime_unc: 0.0148
+max_pressure: 160  # GPa
+PTM: 
+reference_temperature: 293 K
+notes: |
+  Simplified EOS from this study were fit for EoS Align. Fits were made from the data reported in table 3.

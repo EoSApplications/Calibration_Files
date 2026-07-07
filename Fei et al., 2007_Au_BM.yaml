@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Dewaele et al., 2004; Fei et al., 2004; Dewaele et al., 2004
+cal_to_composition: Al2O3; Au; Au
+eos: Birch-Murnaghan
+order: 3
+V0: 67.850  # A^3
+V0_unc: 0.004
+K0: 167  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.77
+K0_prime_unc: 0.02
+
+max_pressure: 89  # GPa
+PTM: Ne
+gasket: Re
+synchrotron: GSECARS 13-ID-D at APS 
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 300 K
+sample_heating: laser-annealed to 1600 K; high-T data used for thermal parameters
+data_quality_notes: |
+  BM3 EOS fit to the same Au compression data set as the Vinet form, with
+  K0 fixed at 167 GPa. K0' differs between Vinet and BM3 fits, as emphasized in the paper.
+doi: 10.1073/pnas.0609013104
+notes: |
+  BM3 parameters for Au (v0, K0T, K0T') are given in Table 1.
+  The authors note that K0 and K0' are not directly interchangeable between
+  Vinet and Birch–Murnaghan formulations.
+

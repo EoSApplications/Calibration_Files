@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Oganov and Ono 2005
+category: 1
+composition: Al2O3
+method: XRD
+technique: DAC
+DAC_type: 
+culet:  #um
+cal_to_name: Jamieson et al., 1982  #separate by a ; if multiple references are used 
+cal_to_composition: Au  #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0_per_formula_unit: 42.428
+V0_unc:
+K0: 252.6  #GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 4.237
+K0_prime_unc:
+
+max_pressure: 80 #GPa, PT follows
+PTM: None
+gasket: Re
+synchrotron: Spring-* BL10XU
+peaks_used_to_fit_sample:
+reference_temperature: 300 K
+sample_heating: 
+data_quality_notes: |
+    Pressures were determined using gold as an internal calibrant, with an acknowledged uncertainty of ~10% due to variations among Au equations of state, while ruby fluorescence was avoided at ultrahigh pressures.
+doi: [www.pnas.org/cgi/doi/10.1073/pnas.0501800102]
+notes: |
+    A CaIrO₃-type (postperovskite) phase of Al₂O₃ was observed only after high-temperature annealing at ~200 GPa, indicating strong kinetic barriers under cold compression, and was retained metastably upon quenching. The experimentally observed phase transition agrees closely with first-principles predictions, confirming that perovskite Al₂O₃ is not stable and establishing the CaIrO₃-type structure as the relevant high-pressure phase.

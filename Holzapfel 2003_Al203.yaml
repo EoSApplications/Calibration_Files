@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holzapfel 2003
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence #(R1 fluorescence)
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: McSkimin and Andreatcg 1972; Lowrie and Gonas 1964; Simmons and Wang 1971; Sarrao et al. 1994; Zha et al., 2000  
+cal_to_composition: Diamond; W; W; Ta; MgO
+eos: HP02Ruby
+equation_full: |
+  #Modified HP02 functional form (Eq. 3 in the paper), given both ways:
+#  λ(p) form:
+#    λ = λ0 * [ 1 - (C / (B + C)) * ln( 1 + ((B + C)/A) * p ) ]^(-1/C)
+#  p(λ) form:
+ #   p = (A / (B + C)) * { exp[ ((B + C)/C) * ( 1 - (λ/λ0)^(-C) ) ] - 1 }
+A: 1820        # GPa (best estimate)
+A_unc: 30
+B: 14          # initial curvature parameter (best estimate)
+B_unc: 2
+C: 7.3         # additional curvature parameter (best fit; see C_range)
+lambda_0: 694.24 # not specified, assumed value based on ambient R1 wavelength symbolized as λ0 in the paper
+max_pressure: 150  # GPa (range over which comparisons/constraints are discussed)
+PTM: Not Applicable # (this paper is an analysis); source datasets used He (diamond), Ne (W), Ar in earlier MX86 work
+synchrotron: not specified
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  The study refines the ruby pressure scale by comparing "nearly hydrostatic"
+  DAC XRD data on diamond (He PTM) and Ta with ultrasonic and shock-wave EOS results,
+  and by honoring the absolute MgO-based calibration to 55 GPa.
+  The revised scale lowers A relative to earlier values and significantly increases curvature (B),
+  while introducing an additional parameter C to capture high-pressure behavior.
+  Best estimates - A = 1820(30) GPa, B = 14(2), C = 7.3 (reasonable range C = 5–10).
+doi: 10.1063/1.1525856
+notes: Propose 3 sets of parameters. Another based on Ta and dimaond A=1790, B=17 C=9.5. Thee other for diamond with Kp of 3.4 --> A=1850, B=12, C=6. This Yaml file assume the diamond data with Kp of 3.7. The authers viewed this as the best fit to the data 
+

@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Mao and Bell 1979
+category: 1
+composition: MgO  # B1 (NaCl-type)
+method: XRD
+technique: DAC
+DAC_type: diamond-window DAC
+culet: 500  # um
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3  # ruby
+
+
+eos: Murnaghan
+order: 1
+V0_cc_mole: 11.25  # cm^3/mol
+V0_unc: 0.02
+P0: 0
+K0: 156  # GPa (1.56 Mbar)
+is_K0_fixed: no
+K0_unc: 9
+K0_prime: 4.7
+K0_prime_unc: 0.2
+
+max_pressure: 100  # GPa (~1.0 Mbar)
+PTM: none
+synchrotron: rotating-anode Mo Kα source
+peaks_used_to_fit_sample: 200; 220; 311
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Static X-ray diffraction measurements of MgO were conducted
+  in a diamond-window cell to pressures approaching 1 Mbar.
+  Volumes were determined with an accuracy of ±0.3%.
+  No phase transitions were observed over the investigated
+  pressure range.
+doi: 10.1029/JB084iB09p04533
+notes: |
+  MgO data were fit using a first-order Murnaghan EOS.
+  The fitted parameters are B0 = 1.56(9) Mbar and
+  B0' = 4.7(2). The authors note that using ultrasonic
+  constraints on B0 yields B0' ≈ 4.56, consistent with
+  Anderson & Andreatch (1966).
+
+  This EOS represents one of the earliest static calibrations
+  of MgO to megabar pressures and is not hydrostatic by
+  modern standards.

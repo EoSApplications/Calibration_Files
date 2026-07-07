@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Romanenko et al., 2018
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type: 
+culet: 300 #um
+cal_to_name: Trots et al., 2013 #assumed from citation to Rashchenko et al., 2015 and the same values reported.
+cal_to_composition: YAG-Y1
+eos: Power
+A: 2836  # GPa
+A_unc: 21
+B: -14.3
+B_unc: 0.9
+lambda_0: 685.505 # nm
+max_pressure: 60  # GPa
+PTM: He
+gasket: W
+synchrotron:
+peaks_used_to_fit_sample: λ1
+reference_temperature: 296-853 #K (25–580 °C)
+sample_heating: resistive heating (for T-calibration series)
+data_quality_notes: >
+  Pressure calibration for λ1 is reported for 0–60 GPa using helium as PTM.
+  The study also reports temperature effects separately; λ1 is weakly temperature dependent.
+doi: 10.1063/1.5046144
+notes: |
+  Pressure equation form given in Table III:
+  P = A/B * [(1 + Δλ/λ0)^B − 1], where Δλ = λ − λ0.

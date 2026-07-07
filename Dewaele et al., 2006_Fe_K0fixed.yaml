@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2006
+category: 1
+composition: Fe-hcp  # ε-Fe (hcp)
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: various see table 1 of manuscript
+cal_to_name: Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3; W
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 11.234  # A^3
+V0_unc: 0.012
+K0: 165  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.97
+K0_prime_unc: 0.04
+max_pressure: 197  # GPa
+PTM: He
+synchrotron: ESRF ID27
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: BM3 fit with K0 fixed = 165 GPa; He PTM ensured quasihydrostatic compression. 
+doi: [https://doi.org/10.1103/PhysRevLett.97.215504]
+notes: |
+  Table III BM fit. V0 determined = 11.234(12) Å^3; K0 fixed at 165 GPa; K0′=4.97(4). Pressure range 17–197 GPa. 

@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Campbell et al., 2023b
+category: 1
+composition: Bi  # bcc phase (Bi-V)
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC; beveled anvils
+culet: 200; 100/300; 50/300  # um (Runs A, B, C)
+cal_to_name: Dewaele et al., 2004; Dewaele et al., 2008
+cal_to_composition: Cu; Ne
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 32.23  # Å^3 (preferred experimental fit)
+V0_unc: #fixed
+K0: 34  # GPa
+is_K0_fixed: no
+K0_unc: 0.2
+K0_prime: 6.0
+K0_prime_unc: 0.02
+
+max_pressure: 259  # GPa
+PTM: Ne
+synchrotron: APS (HPCAT Sector 16 16-BMD; 16-IDB)
+peaks_used_to_fit_sample: 110; 200; 211
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Three independent DAC experiments (Runs A–C) using neon as a soft
+  pressure medium reduce deviatoric stress relative to earlier work.
+  Only bcc Bi-V data above 10 GPa are used for EOS fitting. Lineshift
+  analysis indicates very small uniaxial stress (αt ≪ 1% of total
+  pressure), supporting near-hydrostatic conditions.
+doi: 10.1103/PhysRevB.107.224104
+notes: |
+  The bcc phase of Bi is not stable at ambient pressure; therefore V0 is
+  not directly known. The authors report two experimental fits:
+  (1) free V0: V0 = 31.67 ± 0.19 Å^3, K0 = 38.2 ± 1.5 GPa, K0' = 5.8 ± 0.06
+      (preferred and used here);
+  (2) fixed V0 = 32.23 Å^3 (from DFT), giving K0 = 34.0 ± 0.2 GPa and
+      K0' = 6.0 ± 0.02.---called b
+  Both fits yield nearly identical P–V curves above 10 GPa.
+
+  Pressure determination uses Cu (Runs A, B) and Ne (Run C), with Ne
+  calibrated internally to Cu to minimize pressure-scale chaining.
+  This study supersedes Akahama et al. (2002) by extending the pressure
+  range to ~260 GPa under softer, better-controlled stress conditions.

@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Mo
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 31.14
+V0_unc: #fixed
+K0: 260.6   # GPa
+is_K0_fixed: no
+K0_unc: 0.5
+K0_prime: 4.06
+K0_prime_unc: 0.02
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (110), (200), (211), (220) (310) 
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+   The molybdenum (Mo) dataset demonstrates high precision and strong internal consistency across the full pressure range investigated. Diffraction peaks remain sharp and well-defined up to ~140 GPa, enabling accurate determination of lattice parameters with typical relative volume uncertainties of ~0.05–0.1% . Multiple bcc reflections were used to calculate unit-cell volumes, reducing sensitivity to peak overlap and improving robustness. Measurements from both DAC-1 and DAC-2 runs show excellent agreement, with relative differences generally <0.1%, indicating minimal influence from spatial pressure gradients or sample positioning. Deviatoric stress effects are small under helium quasihydrostatic conditions, contributing only minor systematic uncertainty. Overall, the Mo dataset is dense, low-scatter, and reproducible, making it one of the more reliable datasets in the study.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+    Molybdenum (Mo) exhibits stable and well-characterized compressional behavior, confirming its suitability as a high-pressure calibrant. The experimentally derived volume–volume (V–V) relations relative to Cu are smooth and consistent, reflecting reliable relative compressibility across the studied pressure range . The fitted equation of state (EOS) parameters (K₀ ≈ 260.6 GPa, K′₀ ≈ 4.06) are in close agreement with previous experimental and theoretical results, reinforcing confidence in the dataset. Comparisons with literature show good agreement at lower pressures, though small discrepancies (up to ~1% in volume) emerge at higher compression when compared to some neon-medium studies, suggesting minor medium- or methodology-dependent differences. Mo’s bulk modulus scaling behavior is consistent with other bcc metals, showing moderate stiffening with compression. For fitting, DAC-1 and DAC-2 combined. 
+    

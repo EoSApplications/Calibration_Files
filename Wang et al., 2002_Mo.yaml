@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wang et al., 2002
+category: 2
+composition: Mo
+method: XRD #Shock-wave data reduction
+technique: Dynamic shock compression + mean-field potential (MFP) reduction
+cal_to_name: Absolute
+cal_to_composition: Mo
+
+eos: Vinet-Extended
+order:
+V0_cc_mole: 9.4013 #not reported  assumed from Carter et al. 1971 
+V0_unc:
+K0: 264.87        # GPa (300 K isotherm, Table II; B0)
+is_K0_fixed: no
+K0_unc:
+eta: 4.7127       
+eta_unc:
+beta: -8.1795     
+beta_unc:
+psi: 83.532       
+psi_unc:
+gamma: -189.67      
+
+max_pressure: 1020   # GPa (upper limit of shock data used)
+PTM: none            # dynamic shock loading
+synchrotron: none
+peaks_used_to_fit_sample: N/A
+sample_heating: >
+  Shock heating removed using a first-principles
+  mean-field potential (MFP) approach; reduced to 300 K isotherm.
+
+data_quality_notes: >
+  EOS represents a shock-reduced 300 K isotherm derived by subtracting
+  the calculated thermal volume expansion from experimental Hugoniot data.
+  Reduction uses ab initio 0 K energies and a mean-field potential model.
+  No empirical Grüneisen parameter or heat-capacity assumptions were used.
+  EOS is intended for interpolation within the shock pressure range.
+
+doi: 10.1063/1.1518781
+notes: |
+  Eq. (8) in Wang et al. (2002):
+  P300_rd(X) = 3*B0 * [(1 - X^(1/3))/X^(2/3)] *
+               exp[h(1 - X^(1/3)) + b(1 - X^(1/3))^2
+                   + j(1 - X^(1/3))^3 + d(1 - X^(1/3))^4],
+  where X = V/V0. Parameters for Ta from Table II.

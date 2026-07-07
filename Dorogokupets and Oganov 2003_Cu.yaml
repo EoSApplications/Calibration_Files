@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Oganov 2003
+category: 1
+composition: Cu
+method: XRD
+technique: Calculation+Shock Data
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Carter et al., 1971
+cal_to_composition: Cu
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 7.113
+K0: 133.9   # GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 5.24
+K0_prime_unc:
+max_pressure: 300  # GPa
+PTM: 
+reference_temperature: 293 K
+sample_heating: none
+data_quality_notes: |
+  For Cu the standard deviation of 0.6 GPa was reported.
+doi: Equations of State of Cu and Ag and Revised Ruby Pressure Scale
+notes: |
+  The authors report two equations of state for Cu the one reported here is the birch  Murnaghan.
+  They also report KK2002 model. See table on page 856 of their manuscript for the parameters. 
+    "the equations of stateof Cu and Ag, reported in this study, agree with the shock wave, ultrasonic,
+  X-ray, and thermochemical data in a temperature
+  range from 10–20 K to the melting temperature and to
+  compression x = 0.6."

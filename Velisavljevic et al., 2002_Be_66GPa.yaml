@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Velisavljevic et al., 2002
+category: 1
+composition: Be
+method: XRD
+technique: DAC
+DAC_type:  
+culet:  
+cal_to_name: Mao et al., 1986; Velisavljevic et al., 2002
+cal_to_composition: Al2O3; Cu
+eos: AP2
+V0_per_atom: 8.04      # Å^3 per atom (hcp; from a = 2.286 Å, c = 3.580 Å, V_cell = 16.09 Å³, Z = 2)
+V0_unc:
+K0: 106.5      # GPa (static AP2 fit)
+K0_unc:
+is_K0_fixed: no
+K0_prime: 3.541
+K0_prime_unc:
+C0: 0.8123     # AP2 constant from static fit
+C0_unc:
+atomic_number: 4
+
+PTM: Cu
+synchrotron: NSLS X17C
+peaks_used_to_fit_sample: hcp Be peaks (100, 101, 110, 112, 201)
+reference_temperature: 300 K
+sample_heating: none
+max_pressure: 66   # GPa (maximum DAC pressure in the study)
+
+data_quality_notes: |
+  The AP2 EOS parameters B0 = 106.5 GPa, B0' = 3.541, and C0 = 0.8123 are the 
+  least-squares fit to static XRD data between 0.1 MPa and 66 GPa. The hcp 
+  structure remained stable throughout, with no phase transition observed.
+  The copper AP2-EOS (B0 = 133 GPa, B0' = 5.4) was used for pressure calibration.
+  The measured volume compression at 66 GPa is V/V0 = 0.708.
+  Authors note divergence between static and shock EOS above ~20 GPa.
+
+doi: 10.1103/PhysRevB.65.172107
+notes: >
+  This YAML records the static AP2 EOS fit for Be from Velisavljevic et al. (2002).
+  These parameters should be used for static compression studies below ~70 GPa.
+

@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Takemura 2007
+category: 2
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: not specified  # um
+cal_to_name: Zha et al., 2000
+cal_to_composition: Al2O3
+cal_to_eos: 
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+
+eos: Rydberg-Vinet
+order: 3
+V0: 67.84742 #not reported, assumed to a=4.0786 Å at ambient conditions from Takemura 2001
+V0_unc:
+P0: 0
+K0: 167  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.46
+K0_prime_unc: 0.03
+max_pressure: 122  # GPa
+PTM: He
+synchrotron: Photon Factory (BL-18C)
+peaks_used_to_fit_sample: 111; 200; 220; 311; 222
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Data were collected under quasi-hydrostatic conditions using He as a pressure
+  medium. Detectable uniaxial stress develops above ~30 GPa. EOS parameters are
+  derived by explicitly accounting for differential stress using gamma-plot
+  analysis. Gold is shown to be extremely sensitive to non-hydrostatic stress.
+doi: 10.1080/08957950701659767
+notes: |
+  This paper does not present an independent full EOS fit with freely varying
+  parameters. Instead, it re-analyzes existing Au XRD datasets (Takemura 2001;
+  Dewaele et al. 2004) to demonstrate that discrepancies in reported EOS parameters
+  arise from differing uniaxial stress states in solid He.
+
+  The reported K0 = 167 GPa and K0' = 5.46(3) correspond to a *derived hypothetical
+  hydrostatic EOS*, obtained by averaging datasets with opposite-sign differential
+  stress. K0 is treated as fixed in the final analysis.

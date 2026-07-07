@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fratanduono et al., 2020
+category: 2
+composition: Cu
+method: XRD #dynamic ramp compression
+technique: Laser-driven ramp compression with VISAR + Lagrangian analysis + in situ XRD
+cal_to_name: Absolute #does have input from Kraus et al., 2016 also
+cal_to_composition: Cu
+
+eos: Vinet-Extended
+order:
+V0_per_atom: 11.8045   # Å^3/atom (rho0 = 8.939 g/cm^3, same reference state as Kraus et al. 2016)
+V0_unc:
+K0: 133.6        # GPa (298 K isotherm, Table I)
+is_K0_fixed: no
+K0_unc: 0.8
+# Extended Vinet parameters (Table I, third-order Vinet, Eq. form consistent with Kraus et al.)
+eta: 6.29
+eta_unc: 0.8
+beta: 2.06
+beta_unc: 0.4
+psi: 1.65
+psi_unc: 0.6
+
+max_pressure: 2300   # GPa (2.30 TPa)
+PTM: none #(dynamic loading)
+synchrotron: NIF (laser-driven); OMEGA (XRD experiments)
+peaks_used_to_fit_sample: fcc Cu (111), (200), (220)
+reference_temperature: 298   # K
+sample_heating: >
+  Quasi-isentropic ramp compression. Corrections applied for deviatoric stress,
+  plastic work heating, and initial shock state using a Mie–Grüneisen framework,
+  following Kraus et al. (2016).
+data_quality_notes: >
+  Absolute pressure–density isentrope measured to 2.30 TPa.
+  fcc structure confirmed by in situ XRD to 1.15 TPa.
+  No discontinuities observed in sound velocity; EOS fit intended for interpolation
+  within the measured range.
+doi: 10.1103/PhysRevLett.124.015701
+notes: |
+  EOS parameters reported in Table I of Fratanduono et al. (2020).
+  Third-order extended Vinet form consistent with Kraus et al. (2016),
+  using X = ρ0 / ρ with ρ0 = 8.939 g/cm^3.

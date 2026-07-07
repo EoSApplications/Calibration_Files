@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jamieson et al., 1982
+category: 3
+composition: Au
+method: XRD
+technique: 
+DAC_type: 
+culet: 
+cal_to_name: Walsh et al., 1957; McQueen and Marsh, 1960; Altshuler et al., 1958; Jones et al., 1966
+cal_to_composition: Au; Au; Au; Au
+
+eos: Birch-Murnaghan  #fit in EoSAlign Paper, not published in Jamieson et al., 1982; Category 3
+order: 3
+V0_cc_mole: 10.2124  #Fixed using the same value as Anderson et al., 1989      
+V0_unc:
+K0: 177.28                
+is_K0_fixed: no
+K0_unc: 0.566
+K0_prime: 4.7672 
+K0_prime_unc: 0.0312
+
+max_pressure: 83
+PTM: not applicable 
+synchrotron: not applicable
+peaks_used_to_fit_sample: not applicable
+reference_temperature: 300
+sample_heating: 
+data_quality_notes: >
+  EOS parameters derived by fitting BM3 to 300 K slices of
+  Hugoniot-derived isochores (Table 3). Not a direct static compression EOS.
+doi:
+notes: |
+  Jamieson et al. (1982) construct P–T–η isochores using shock Hugoniot
+  data and a Mie–Grüneisen framework. This EOS is a secondary derivation
+  performed by fitting a third-order Birch–Murnaghan equation to
+  the 300 K isotherm extracted from the isochore tables.

@@ -1,0 +1,51 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Chidester et al., 2021
+category: 1
+composition: KCl-B2  # B2 (CsCl-type) phase
+method: XRD
+technique: DAC
+DAC_type: laser-heated DAC
+culet: 300; 150; 100  # um
+cal_to_name: Dorogokupets and Oganov 2007
+cal_to_composition: Pt
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 32.0  # cm^3/mol (B2-KCl)
+V0_unc: 0.3
+K0: 24  # GPa
+is_K0_fixed: no
+K0_unc: 1
+K0_prime: 4.56
+K0_prime_unc: 0.05
+
+max_pressure: 167  # GPa
+PTM: None #KCl
+gasket: Re
+synchrotron: APS GSECARS 13-ID-D; APS HPCAT 16-ID-B
+peaks_used_to_fit_sample: 110; 200; 211; 220; 310; 321; 222
+reference_temperature: 300 K
+sample_heating: double-sided laser heating (up to ~2400 K)
+data_quality_notes: |
+  The 300 K isothermal EOS of B2-KCl was obtained by fitting
+  room-temperature data from Dewaele et al. (2012) together
+  with new high-P data collected prior to heating. A third-order
+  Birch–Murnaghan EOS was found to better describe the
+  low-pressure B2 data than a Rydberg–Vinet form.
+
+  The 200 reflection of KCl shows strong sensitivity to
+  nonhydrostatic strain and was excluded above ~45 GPa;
+  above ~130 GPa it is no longer observable.
+doi: [https://doi.org/10.1103/PhysRevB.104.094107]
+notes: |
+  This YAML represents the reference 300 K EOS used as the
+  baseline for the full Mie–Grüneisen–Debye thermal EOS
+  developed in this study.
+
+  The authors also report an alternative Rydberg–Vinet
+  reference EOS (V0 = 34.3(5) cm^3/mol, K0 = 13(1) GPa,
+  K0' = 6.2(1)), but favor the Birch–Murnaghan form because
+  it better captures the B1–B2 transition behavior and yields
+  lower systematic residuals at low pressure.
+
+  Thermal parameters reported separately are:
+  γ0 = 2.9(4), q = 1.0(1), θD = 235 K.

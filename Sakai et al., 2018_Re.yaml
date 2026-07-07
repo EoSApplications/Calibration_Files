@@ -1,0 +1,65 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2018
+category: 1
+composition: Re   # hcp rhenium
+method: XRD
+technique: DAC and ds-DAC
+DAC_type: conventional DAC; double-stage DAC (ds-DAC)
+culet: 3–5 μm 2nd-stage micro-anvils; 40 μm double-beveled primary anvils  # μm
+
+cal_to_name: Yokoo et al., 2009
+cal_to_composition: Pt
+
+eos: Rydberg-Vinet
+order: 3
+
+V0: 29.47              # Å^3 per hcp unit cell (2 atoms), fixed
+V0_unc:
+
+K0: 358                # GPa
+K0_unc: 10
+is_K0_fixed: no
+
+K0_prime: 4.8          # dimensionless
+K0_prime_unc: 0.2
+
+
+max_pressure: 464      # GPa, maximum Re pressure in the conventional DAC Re+Pt experiment (Run RP01)
+PTM: glycerin; silica glass
+gasket: Re (ds-DAC); W (conventional DAC)
+synchrotron: SPring-8 BL10XU
+peaks_used_to_fit_sample: hcp Re (100), (002), (101)   # 101 used for highest-pressure deconvolution
+
+reference_temperature: 300   # K
+sample_heating: none
+
+data_quality_notes: >
+  Rhenium was used both as a sample and as a pressure marker in double-stage DAC (ds-DAC)
+  experiments with nano-polycrystalline diamond (NPD) 2nd-stage anvils, and in a conventional
+  DAC experiment to 280 GPa with Pt as a co-loaded sample. Pressures in the ds-DAC runs were
+  calculated from Re unit-cell volumes using the Re EOS of Anzellini et al. (2014). In the
+  conventional DAC experiment (Run RP01), Re and Pt were compressed together with a silica
+  glass pressure medium; pressures from the Pt EOS of Yokoo et al. (2009) and Dewaele et al.
+  (2004) were compared.
+
+  To examine consistency between Pt and Re scales, Sakai et al. refit their Re compression data
+  based on the Yokoo et al. (2009) Pt scale with a Vinet EOS, fixing V0 = 29.47 Å^3 (hcp unit
+  cell), obtaining K0 = 358(10) GPa and K0' = 4.8(2). This EOS yields maximum ds-DAC pressures
+  of ~464 GPa for V = 18.65 Å^3 (V/V0 = 0.633), whereas the Re EOS of Dubrovinsky et al. (2012)
+  would give ~630 GPa for the same volume, which Sakai et al. argue is unreasonably high.
+
+  XRD peaks from Re in ds-DAC runs are very broad due to extreme pressure gradients within the
+  ~3 μm X-ray beam footprint; the highest-pressure component is extracted by deconvolving the
+  Re 101 peak into multiple Lorentzians. Conventional DAC data show sharper peaks (FWHM ~0.2°),
+  providing the main constraint for the Vinet fit.
+
+doi: 10.1080/08957959.2018.1448082
+
+notes: |
+  This YAML encodes the Re Vinet EOS (V0 fixed at 29.47 Å^3, K0 = 358 GPa, K0' = 4.8) derived
+  by Sakai et al. (2018) from combined Re+Pt compression data calibrated against the Yokoo
+  et al. (2009) Pt pressure scale. It is intended for use as an alternative high-pressure Re
+  EOS in ds-DAC contexts, particularly for pressures above ~200 GPa where discrepancies between
+  different Re scales become significant. Sakai et al. conclude that the Re EOS of Dubrovinsky
+  et al. (2012) substantially overestimates pressures in the 400–600 GPa range relative to Pt-
+  based calibrations.

@@ -1,0 +1,25 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Dewaele 2007
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: Expanded Mie–Grüneisen–Debye (EMGD) model
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Fei et al., 2007; Sata et al., 2002; Fei et al., 2007; Khishchenko et al., 2001; Ono et al., 2006
+cal_to_composition: NaCl-B2; NaCl-B2; NaCl-B2; NaCl-B2; NaCl-B2
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 24.53
+K0: 29.72 # GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 5.14
+K0_prime_unc:
+max_pressure:   # GPa, approximate extrapolation, not stated in text
+PTM: not applicable (model-based compilation)
+reference_temperature: 298 K
+sample_heating: none
+data_quality_notes: |
+doi: 10.1080/08957950701659700
+notes: |

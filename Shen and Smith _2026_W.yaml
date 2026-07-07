@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: W
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 31.704
+V0_unc: #fixed
+K0: 307.0   # GPa
+is_K0_fixed: no
+K0_unc: 0.8
+K0_prime: 4.02
+K0_prime_unc: 0.03
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (110), (200), (211), (220) (310) 
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+    The tungsten (W) dataset demonstrates strong overall quality and consistency across the full pressure range, with only minor limitations at low pressures. Diffraction peaks for W remain sharp and well-resolved up to ~140 GPa, supporting precise lattice parameter determination with typical relative volume uncertainties on the order of ~0.1% . Unit-cell volumes were derived from multiple bcc reflections, improving robustness and reducing sensitivity to peak overlap. A known limitation occurs at lower pressures (<~20 GPa), where some diffraction peaks are affected by overlap with the rhenium gasket signal, leading to reduced reliability in that region. To address this, the zero-pressure volume (V₀) was constrained using literature values during fitting. Across higher pressures, the dataset shows minimal scatter and excellent agreement between DAC-1 and DAC-2 runs, indicating negligible sensitivity to spatial positioning or pressure gradients within the sample chamber. Deviatoric stress effects remain small under helium quasihydrostatic conditions, contributing only minor systematic uncertainty. Overall, aside from low-pressure overlap effects, the W dataset is high quality, internally consistent, and reliable for EOS analysis.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+    Tungsten (W) exhibits stable and well-characterized compressional behavior, making it a reliable high-pressure calibrant in this study. The experimentally derived volume–volume (V–V) relations show strong agreement with previous measurements, particularly those obtained in helium media, reinforcing consistency across independent datasets . The fitted equation of state (EOS) parameters (K₀ ≈ 307 GPa, K′₀ ≈ 4.02) are consistent with literature values and reflect W’s high stiffness and moderate rate of stiffening under compression. Compared to other materials, W shows relatively small deviations when cross-compared with existing calibrations, indicating good internal consistency within the Cu-referenced framework. Its bulk modulus scaling behavior also aligns with other bcc metals, showing a more gradual increase in stiffness relative to close-packed metals like Pt or Au. Overall, W is confirmed as a robust and dependable calibrant with high data quality, minimal systematic issues, and strong agreement with prior high-pressure studies. For fitting, DAC-1 and DAC-2 combined. 
+    
+    

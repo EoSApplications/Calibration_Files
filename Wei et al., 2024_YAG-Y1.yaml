@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wei et al., 2024
+category: 1
+composition: YAG-Y1  # Sm3+-doped YAG
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 2007
+cal_to_composition: cBN
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 2019  # GPa
+A_unc: 22.56
+B: -1.33
+B_unc: 0.97
+lambda_0: 617.8  # nm
+max_pressure: 58.6 # GPa
+PTM: Ar
+gasket: Re
+synchrotron: SECUF #Synergic Extreme Condition User Facility
+peaks_used_to_fit_sample:
+reference_temperature: 296-850 #K
+sample_heating: 
+data_quality_notes: | 
+    The Sm³⁺:YAG fluorescence sensor (particularly the Y₁ line) exhibits generally high data quality with relatively stable peak positions and lower temperature sensitivity compared to ruby, but several factors still limit precision under extreme conditions . As shown in the spectra and temperature trends (e.g., Fig. 6 and Fig. 9), peak broadening and intensity reduction occur at elevated temperatures, and line overlap (especially between Y₁ and Y₂) can complicate peak identification at high P–T conditions. Although temperature effects are smaller than in ruby, they are not negligible—ignoring them can introduce pressure errors of several GPa at high temperatures. Data consistency also depends on calibration choice and reference standards, with differences in prior studies attributed to synthesis variations, fitting methods (linear vs nonlinear), and pressure scales. Additionally, non-hydrostatic effects are present but generally smaller than for ruby, improving reliability in DAC environments.
+doi: 10.1063/5.0178597 
+notes: | 
+    Other fits are prospoed in this study we have selected equation 10 and table 4. Sm³⁺-doped yttrium aluminum garnet (YAG) is an optical pressure sensor that uses luminescence peak shifts (notably the Y₁ transition) to determine pressure in high-pressure experiments . It is valued for its lower temperature sensitivity compared to ruby and its ability to operate over a wider temperature range, making it suitable for high-temperature DAC studies. The Y₁ line shows a predictable pressure-dependent shift and becomes more sensitive than ruby at higher pressures (above ~30 GPa), improving its usefulness in extreme conditions.

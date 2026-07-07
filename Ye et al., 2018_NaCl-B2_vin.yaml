@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ye et al., 2018
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: symmetric 
+DAC_type: 
+culet: 150-200  #um
+cal_to_name: Ye et al., 2017
+cal_to_composition: MgO  
+
+eos: Rydberg-Vinet
+order: 3
+V0: 41.35
+K0: 25.7  #GPa
+is_K0_fixed: no
+K0_unc: 0.06
+K0_prime: 5.46
+K0_prime_unc: 0.08
+
+max_pressure: 240   # NaCl-B2 used up to this range for intercalibration (e.g., Dorfman et al. data)
+PTM: Ne #(sample environment)
+gasket: Re
+synchrotron: APS GSECARS 13-ID-D; APS HPCAT 16-ID-B
+peaks_used_to_fit_sample: B2 reflections refined in re-fit dataset (not directly measured in this study)
+reference_temperature: 300 K
+sample_heating: Laser annealing (1600–2600 K) improves stress state for calibrants
+
+data_quality_notes: |
+  NaCl-B2 EOS parameters are not directly measured in this study.
+  Instead, Ye et al. (2018) re-fit the NaCl-B2 EOS from Dorfman et al. (2012)
+  after converting pressures to the MgO-Y17 scale. This gives a self-consistent
+  pressure calibration network with MgO, Pt, Au, Ne, and ruby.
+  V0 is fixed at 41.35 Å³/f.u. per the original NaCl-B2 dataset.
+
+doi: https://doi.org/10.1080/08957959.2018.1493477
+
+notes: |
+  This NaCl-B2 EOS is part of the internally consistent pressure metrology
+  proposed in Ye et al. (2018). It is not a new measurement of NaCl-B2,
+  but a recalibration of existing NaCl-B2 compression data to the MgO-Y17 scale.
+  These parameters are recommended when NaCl-B2 is used as a pressure calibrant
+  together with MgO, Pt, Au, Ne, and ruby under the Ye et al. (2018) framework.

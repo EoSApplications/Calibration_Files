@@ -1,0 +1,60 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Brown 1999
+category: 3
+composition: NaCl-B1
+method: XRD
+technique: Thermodynamic pressure scale derived from static compression, Hugoniot, and quasiharmonic modeling
+
+cal_to_name: Absolute
+cal_to_composition: NaCl-B1
+
+eos: Rydberg-Vinet
+order: 3
+
+V0:  179.41    # Å^3/unit cell, from Shen and Smith 2026
+V0_unc:
+
+K0: 24.325   # GPa
+is_K0_fixed: no
+K0_unc: 0.046
+
+K0_prime: 5.079
+K0_prime_unc: 0.012
+
+max_pressure: 25   # GPa
+PTM:
+synchrotron:
+reference_temperature: 300   # K
+
+sample_heating: >
+  Brown (1999) constructed a quasiharmonic thermodynamic
+  pressure scale using static compression, Hugoniot data,
+  Debye thermal energy, and a volume-dependent
+  Gruneisen parameter.
+
+data_quality_notes: >
+  The original Brown (1999) study did not publish a standard
+  analytic Vinet EOS parameterization. Instead, the EOS was
+  represented through spline-based thermodynamic modeling
+  and tabulated P-V-T data. Shen and Smith (2026) later fit
+  a Rydberg-Vinet EOS to the tabulated 300 K isotherm,
+  producing the parameters listed here.
+
+doi: 10.1063/1.371596
+
+notes: |
+  Rydberg-Vinet EOS parameters:
+    K0 = 24.325 ± 0.046 GPa
+    K0' = 5.079 ± 0.012
+
+  These values were obtained by Shen and Smith (2026)
+  from fitting the 300 K isotherm tabulated in Brown (1999).
+
+  Brown (1999) constructed the NaCl pressure scale using:
+    - spline-fit zero-Kelvin compression curve
+    - quasiharmonic thermal pressure model
+    - Hugoniot reduction
+    - Debye thermal energy formalism
+    - volume-dependent Gruneisen parameter
+
+  The original Brown EOS is not itself a Vinet EOS so category is 3. 

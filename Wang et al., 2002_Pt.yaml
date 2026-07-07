@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wang et al., 2002
+category: 2
+composition: Pt
+method: XRD #Shock-wave data reduction
+technique: Dynamic shock compression + mean-field potential (MFP) reduction
+cal_to_name: Absolute
+cal_to_composition: Pt
+
+eos: Vinet-Extended
+order:
+V0_per_atom: 15.095 #not given assumed from deweale et al., 2004
+V0_unc:
+K0: 280.03        # GPa (300 K isotherm, Table II; B0)
+is_K0_fixed: no
+K0_unc:
+eta: 6.3289       # 
+eta_unc:
+beta: -1.3811     # 
+beta_unc:
+psi: 61.492       # 
+psi_unc:
+gamma: -156.48    # 
+
+max_pressure: 660   # GPa (upper limit of shock data used)
+PTM: none
+synchrotron: none
+peaks_used_to_fit_sample: N/A
+sample_heating: >
+  Shock heating removed using a first-principles
+  mean-field potential (MFP) approach; reduced to 300 K isotherm.
+
+data_quality_notes: >
+  EOS represents a shock-reduced 300 K isotherm derived by subtracting
+  the calculated thermal volume expansion from experimental Hugoniot data.
+  Reduction uses ab initio 0 K energies and a mean-field potential model.
+  No empirical Grüneisen parameter or heat-capacity assumptions were used.
+  EOS is intended for interpolation within the shock pressure range.
+
+doi: 10.1063/1.1518781
+notes: |
+  Eq. (8) in Wang et al. (2002), with Pt parameters from Table II.
+  Paper uses LDA for Pt in the ab initio input (GGA noted as overcorrected).

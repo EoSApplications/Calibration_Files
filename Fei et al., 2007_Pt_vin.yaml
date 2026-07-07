@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: Pt
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Fei et al., 2007; Fei et al., 2004; Dewaele et al., 2004
+cal_to_composition: Au; Pt; Pt
+cal_to_eos: Rydberg-Vinet;
+eos: Rydberg-Vinet
+order: 3
+V0: 60.38  # A^3
+V0_unc: 0.01
+K0: 277  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.08
+K0_prime_unc: 0.02
+
+max_pressure: 94  # GPa
+PTM: He; NaCl; Ne
+gasket: Re
+synchrotron: GSECARS 13-ID-D at APS
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 300  # K
+sample_heating: external resistive heating to 1473–1873 K; data reduced to 300 K isotherm
+data_quality_notes: |
+  Pt EOS parameters optimized from Dewaele et al. (2004) room-T compression
+  data and Fei et al. (2004) P–V–T data, recalculated on the Au scale of this study
+  and the Dewaele ruby scale. Designed to be consistent with new Au, NaCl-B2,
+  and Ne scales.
+doi: 10.1073/pnas.0609013104
+notes: |
+  Vinet parameters for Pt (v0, K0T, K0T') are taken from Table 1.
+  Thermal parameters (theta0, gamma0, q0) define a Mie–Grüneisen thermal EOS.
+

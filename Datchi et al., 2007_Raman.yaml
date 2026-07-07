@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Datchi et al., 2007
+category: 1
+composition: cBN
+method: Raman
+technique: DAC
+DAC_type: membrane DAC (high-T capable), resistive-heated for HT runs
+culet: 100-400  # um (flat culets 0.1–0.4 mm)
+cal_to_name: Holzapfel 2005; Datchi et al., 2007
+cal_to_composition: Al2O3; cBN
+
+eos: Raman_Datchi
+V0: 1054          # cm^-1
+V0_unc: 0.1        # cm^-1
+A: 396.5 # labeled as B0 in text
+A_unc: 0.5
+max_pressure: 100     # GPa (recommended validity range for the Raman scale)
+PTM: He; Ne (for EOS constraints); Raman data compared to earlier HP–HT work
+gasket: Re
+synchrotron: none (Raman)
+peaks_used_to_fit_sample: c-BN TO Raman mode (~1054 cm^-1 at ambient)
+reference_temperature: 300-1000  # K (intended use range)
+sample_heating: resistive heating (for HP–HT constraint/calibration)
+data_quality_notes: |
+  This Raman TO-mode pressure scale is “constrained” by independently measured physical parameters:
+  B0(T) derived from the study’s P–V–T EOS and B0' held constant; ω0_TO(T) allowed within bounds of prior
+  measurements and refined here. Authors state it can be safely used over ~0–100 GPa and 300–1000 K.
+doi: 10.1103/PhysRevB.75.214104
+notes: |
+  Constrained Raman pressure scale (Eq. 8):
+    P = (B0(T)/3.62) * [ ( ω_TO(P,T) / ω0_TO(T) )^(2.876) - 1 ].
+  B0(T) (Eq. 7):
+    B0(T>=300K) = 396.5(5) - 0.0288(14)*(T-300) - 6.84(77)e-6*(T-300)^2  [GPa].
+  ω0_TO(T) (given with Eq. 8):
+    ω0_TO(T) = 1058.4(5) - 0.0091(23)*T - 1.54(22)e-5*T^2  [cm-1].

@@ -1,0 +1,58 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February 2026, any changes to the manuscript after this date have not been added.
+study: Gorman et al., 2023
+category: 2
+composition: Ta
+method: XRD #dynamic ramp compression
+technique: Laser-driven ramp compression with VISAR + Lagrangian analysis
+
+cal_to_name: Absolute
+cal_to_composition: Ta
+
+eos: Vinet-Extended
+order:
+
+# Initial density listed in Table I. rho0 = 16.650 g/cm^3 for the 298 K isotherm
+V0_per_atom: 18.059   # Å^3/atom
+V0_unc:
+
+K0: 179.60        # GPa (298 K isotherm, Table I)
+is_K0_fixed: no
+K0_unc: 2.18
+
+# Extended Vinet parameters from Table I
+eta: 4.68
+eta_unc: 0.16
+
+beta: -0.22
+beta_unc: 0.72
+
+psi: 10.08
+psi_unc: 1.03
+
+max_pressure: 2300   # GPa (2.30 TPa)
+PTM: none #(dynamic loading)
+
+synchrotron: NIF (laser-driven ramp compression)
+
+reference_temperature: 298   # K
+
+sample_heating: >
+  Quasi-isentropic ramp compression. Corrections applied for deviatoric
+  stress, plastic work heating, and initial shock-state heating using
+  a Mie–Grüneisen framework and strength corrections. Thermal pressure
+  correction between the isentrope and 298 K isotherm reported to be
+  small (~5 GPa at 2 TPa).
+
+data_quality_notes: >
+  Absolute pressure-density isentrope measured to 2.30 TPa and
+  ~53 g/cm^3. Final EOS constrained using ramp compression,
+  shock Hugoniot, DAC, thermal expansion, and DFT-MD data.
+  Reported uncertainty of approximately 2% at 1 TPa.
+  EOS intended for use up to 2.3 TPa and 5000 K.
+
+doi: 10.1103/PhysRevB.107.014109
+
+notes: |
+  The publication constructs a full thermodynamic Helmholtz free-energy EOS
+  including cold, ionic, and electronic contributions, then fits resulting
+  isotherms to the extended Vinet form for convenient application.

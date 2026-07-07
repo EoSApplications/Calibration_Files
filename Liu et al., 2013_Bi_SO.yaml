@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Liu et al., 2013
+category: 2
+composition: Bi  # bcc phase (Bi-V)
+method: XRD
+technique: DAC
+DAC_type: Mao–Bell–type DAC
+culet: 300  # um
+cal_to_name: Mao et al., 1986
+cal_to_composition: Al2O3
+
+
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 31.60  # Å^3; not stated taken from Akahama et al., 2002
+V0_unc: 0.04
+K0: 42.0  # GPa
+is_K0_fixed: no
+K0_unc: 1.0
+K0_prime: 5.4
+K0_prime_unc: 0.1
+K_infinity_prime:
+K_infinity_prime_unc:
+K0_dprime:
+K0_dprime_unc:
+
+max_pressure: 51.99  # GPa (fit range upper bound)
+PTM: Silicone oil (SO)  # polydimethylsiloxane (1000 cSt)
+synchrotron: BSRF 4W2
+peaks_used_to_fit_sample: 110; 200; 211; 220
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  EOS fit to Bi bcc (Bi-V) P–V data collected by angular-dispersive
+  XRD in conventional diffraction geometry using silicone oil as PTM (AXRD).
+  Fit pressure window reported in Table 2: 11.58–51.99 GPa.
+doi: 10.1002/pssb.201248414
+notes: |
+  Reported EOS parameters are from Table 2 (AXRD, SO) using a Vinet EOS.
+  Silicone oil is specified in the methods as Baysilone Oil M1000
+  (polydimethylsiloxane, viscosity 1000 cSt).

@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Rashchenko et al., 2015
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 1997; Trots et al., 2013
+cal_to_composition: SrB4O7; YAG-Y1
+eos: Datchi97_Equation
+A: 4.20 
+A_unc:
+B: 0.020
+B_unc:
+C: 0.036
+lambda_0: 685.51  # nm
+max_pressure: 120  # GPa
+PTM: He
+gasket: Re
+synchrotron:
+peaks_used_to_fit_sample: 5D0 → 7F0 line of Sm:SrB4O7
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: Calibration performed in helium quasi-hydrostatic conditions using the Sm:YAG primary scale. Wavelength hysteresis below 35 GPa yields ±0.5 GPa uncertainty. Peak width increases monotonically with pressure. The extended calibration combines Rashchenko data (0–60 GPa) with corrected Datchi et al. (1997) points up to 120 GPa.
+doi: 10.1063/1.4918304 
+notes: The use of Sm:YAG as a primary scale removes inconsistencies between the previous calibrations (Datchi 1997, Jing 2013). After correction for ruby scale biases in older work, all datasets agree within ±0.5 GPa below 60 GPa. The extended Pade-type equation should be used for pressures above 60 GPa.
+#This Yaml is for the reprocessed Dactchi et al., 1997 and Jing et al., 2013 Data

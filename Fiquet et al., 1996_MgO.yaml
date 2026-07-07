@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fiquet et al., 1996
+category: 1
+composition: MgO  # periclase, B1 (NaCl-type)
+method: XRD
+technique: DAC
+DAC_type: membrane DAC with laser heating
+culet: 500  # um
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3
+V0: 74.698 # Å^3
+V0_unc:
+K0: 164  # GPa
+is_K0_fixed: no
+K0_unc: 2
+K0_prime: 4.5
+max_pressure: 16  # GPa
+PTM: Ar
+synchrotron: LURE DCI DW11
+peaks_used_to_fit_sample: 111; 200; 220
+reference_temperature: 300 K
+sample_heating: CO2 laser (used for stress relaxation only) this yaml only reports unheated EOS, if heated for stress relation change K0 to 177+-2 GPa
+data_quality_notes: |
+  Room-temperature compression data for MgO were collected
+  before and after laser-heating cycles. Laser heating was
+  used to reduce deviatoric stress; EOS parameters reported
+  here are derived from room-temperature data only.
+
+  Pressures were determined primarily from the equation of
+  state of solid argon, which the authors argue better
+  represents the pressure at the sample position than ruby
+  fluorescence measured at the gasket edge.
+doi: 10.1016/0031-9201(95)03109-X
+notes: |
+  A third-order Birch–Murnaghan EOS was fit to the 300 K
+  compression data. When K0' is fixed at 4.5 (from Mao &
+  Bell, 1979), the authors obtain K0 = 164(2) GPa using
+  argon pressures, in good agreement with ultrasonic
+  measurements (Jackson & Niesler, 1982; Isaak et al., 1989).
+
+  Free fits yield unrealistically low K0' (~1.5), which the
+  authors attribute to the limited pressure range (≤16 GPa).
+
+  This EOS should be treated as a quasi-hydrostatic,
+  low-pressure MgO reference suitable for comparison with
+  ultrasonic and moderate-pressure DAC datasets.

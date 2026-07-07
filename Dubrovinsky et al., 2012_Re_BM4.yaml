@@ -1,0 +1,52 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dubrovinsky et al., 2012
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: Double-stage DAC with NCD semi-ball secondary anvils + conventional DAC
+culet: 250–300   # μm primary anvils; 12–20 μm NCD semi-balls as second-stage anvils
+cal_to_name: Yokoo et al., 2009
+cal_to_composition: Au
+eos: Birch-Murnaghan
+order: 4
+V0_cc_mole: 8.87 
+V0_unc: 0.01
+K0: 342                # GPa (K300 = 342(6) GPa)
+is_K0_fixed: no
+K0_unc: 6
+K0_prime: 6.15
+K0_prime_unc: 0.15
+K_infinity_prime:
+K_infinity_prime_unc:
+K0_dprime: -0.029    # GPa^-1
+K0_dprime_unc: 0.004
+max_pressure: 640          # GPa
+PTM: Paraffin; Ne; He
+synchrotron: 13-IDD APS
+peaks_used_to_fit_sample:
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+    Fourth-order Birch–Murnaghan (BM4) EOS fitted to the combined data set:
+      • Experiment no. 1: Re + Au mixture between NCD semi-ball secondary anvils,
+        paraffin pressure medium; pressures 416–640 GPa from Au EOS.
+      • Experiment no. 2: Pure Re between NCD semi-balls, Ne pressure medium;
+        pressures 441–608 GPa determined from the Re EOS of Experiment no. 1.
+      • Experiment no. 3: Re powder in He in a conventional DAC, 0–165 GPa.
+    The global BM4 fit yields:
+      K300 = 342(6) GPa
+      K0' = 6.15(15)
+      K0'' = -0.029(4) GPa^-1
+      V0 = 8.87(1) cm^3/mol = 29.46(1) Å^3 per unit cell
+    The authors show that BM3 and Vinet EOS fitted only to ≤165 GPa data
+    cannot reproduce the 400–640 GPa measurements, while this BM4 EOS does.
+doi: 10.1038/ncomms2160
+notes: |
+    This is the recommended ultra-high-pressure EOS for hcp-Re from Dubrovinsky
+    et al. (2012), valid from ambient pressure to ~640 GPa.
+    It combines conventional DAC and double-stage DAC data and explicitly
+    includes the second pressure derivative of the bulk modulus, K0''.
+    This BM4 EOS resolves discrepancies among previous Re EOS determinations
+    and demonstrates that static data in the ~0.5–0.6 TPa range are essential
+    for such a low-compressibility material.

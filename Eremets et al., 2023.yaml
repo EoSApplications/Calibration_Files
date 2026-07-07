@@ -1,0 +1,22 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Eremets et al., 2023
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: tDAC
+culet: 
+cal_to_name: Fratanduono et al., 2021
+cal_to_composition: Au
+eos: Eremets_Equation
+V0: 1332.5
+A: 517
+A_unc: 5
+B: 764
+B_unc: 14
+max_pressure: 477
+PTM: None
+synchrotron: 13-IDD at GESECARS
+doi: doi.org/10.1038/s41467-023-36429-9
+notes: |
+    They use one expression P=A*(V-Vo)/V0+B((V-v0)/vo))^2. Compared to the Akahama & Kawamura (2010) scale, the new calibration gives systematically lower pressures above ~250 GPa, with differences reaching ~20% at ~0.5 TPa.

@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ling-Yun et al., 2010
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 165  #um
+cal_to_name: Chijioke et al., 2005
+cal_to_composition: Al2O3  
+eos: Rydberg-Vinet
+order: 3
+V0: 36.01
+V0_unc:
+K0: 194  #GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 3.54 
+K0_prime_unc: 0.02
+max_pressure: 133 
+PTM: Ar
+gasket: stainless steel T301
+synchrotron: BSRF 4W2 beamline (energy-dispersive XRD)
+peaks_used_to_fit_sample: bcc-Ta powder rings (all indexed reflections)
+reference_temperature: 300   # K
+sample_heating: none
+data_quality_notes: |
+  The bcc phase of Ta was observed to remain stable up to 133 GPa using energy-dispersive
+  synchrotron XRD in a modified Mao–Bell DAC with Ar as the pressure medium. Unit-cell
+  volumes were measured and fit with the Vinet EOS, fixing V0 at 36.01 Å^3. The fit yields
+  B0 = 192.65 ± 3.08 GPa and B0' = 3.58 ± 0.11. Hydrostaticity was evaluated by (1) the
+  normalized d-spacing method for cubic crystals and (2) monitoring the ruby R1–R2 peak
+  separation. Differences between (110) and other d-spacings remain <0.1%, indicating a
+  well quasi-hydrostatic stress field over the full pressure range. Ruby R1–R2 splitting
+  increases only slowly below ~40 GPa and more noticeably above this pressure, likely when
+  ruby grains begin to bridge the anvils.
+doi: 10.1088/0256-307X/27/1/016402
+notes: |
+  EOS parameters were obtained with the Vinet form using V0 fixed at 36.01 Å^3 from their
+  own low-pressure volume determination. Results are broadly consistent with previous Ta
+  XRD studies (Cynn et al. 1999; Dewaele et al. 2004) and with ultrasonic-based B0 ~194 GPa
+  when comparing B0' values across datasets.

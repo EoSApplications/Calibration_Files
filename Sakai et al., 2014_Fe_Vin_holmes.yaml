@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2014
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 300-150 #um
+cal_to_name: Sakai et al., 2011  
+cal_to_composition: NaCl-B2 #they are going through other studys to have it be Pt, but no Pt was in the cell   
+cal_to_eos: Rydberg-Vinet
+cal_to_order: 3 
+cal_to_max_pressure:
+cal_to_is_K0_fixed: no
+cal_to_cal: Holmes et al., 1989
+eos: Rydberg-Vinet
+order: 3
+V0: 22.21      #A^3
+V0_unc: 0.23
+K0: 167.2  #GPa
+is_K0_fixed: no
+K0_unc: 2.2
+K0_prime: 5.93
+K0_prime_unc: 0.13
+
+max_pressure: 205
+PTM: NaCl
+gasket: W
+synchrotron: SPring-8 BL10XU (high-pressure XRD)
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)  # per Fig. 3
+reference_temperature: 300
+sample_heating: in situ double-sided laser annealing to relax stresses
+data_quality_notes: | 
+  synchrotron XRD, multiple diffraction peaks for volume determination, and laser annealing to reduce deviatoric stress in the DAC. However, uncertainties are strongly influenced by the pressure calibration: the Holmes et al. (1989) Pt scale is known to overestimate pressure, and this bias propagates through the NaCl-B2 calibration, leading to systematic deviations of up to ~10% at multi-megabar pressures. Residual nonhydrostatic stress (~4–5 GPa) can affect volume by ~0.4–0.6%, and weak diffraction peaks (e.g., the hcp 002 reflection) may introduce additional scatter. Furthermore, the choice of the Vinet EoS increases sensitivity in K₀′ compared to Birch–Murnaghan fits. Despite these limitations, the consistency of volume results with other studies indicates that the measurements themselves are robust, with uncertainties dominated by calibration rather than experimental precision. 
+
+doi: 10.1002/2014JB011019
+notes: |
+   In Sakai et al. (2014), the equation of state of hcp-Fe is determined from synchrotron XRD measurements in a symmetric-type DAC (300–150 µm culets), with pressure calibrated via the NaCl-B2 scale (Sakai et al., 2011) linked to the Holmes et al. (1989) Pt scale. The compression data are fitted using a third-order Rydberg–Vinet equation of state with all parameters free. For this calibration (P6-scale), the fitted parameters are approximately V₀ ≈ 22.21 Å³, K₀ ≈ 167.2 GPa, and K₀′ ≈ 5.93. The dataset extends to ~279 GPa and shows that the Holmes-based calibration yields lower bulk modulus and higher pressure derivative compared to more recent scales, reflecting a softer apparent compression curve but with similar volumes at inner core conditions. 

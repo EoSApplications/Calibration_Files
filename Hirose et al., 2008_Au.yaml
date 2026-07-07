@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hirose et al., 2008
+category: 2
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 90   # um (room-T run); 200/300 um (high-T runs, see notes)
+cal_to_name: Speziale et al., 2001
+cal_to_composition: MgO
+cal_to_eos: 
+eos: Birch-Murnaghan
+order: 3
+V0: 67.85  # Å^3 (fixed value, Takemura et al., 2001 )
+K0: 167  # GPa (fixed value, Daniels and Smith, 1958)
+K0_prime: 5.58  # (fit to room-T data; Table 2)
+is_K0_fixed: no
+K0_prime_unc: 0.02
+max_pressure: 140  # GPa
+gasket: Re
+PTM: NaCl
+reference_temperature: 300  # K
+sample_heating: Laser annealing (room T run, to ~1300 K for several minutes after pressure increments); high-T runs to 1600–2330 K by Nd:YAG laser, double-sided heating (see notes)
+data_quality_notes: |
+  Simultaneous Au and MgO volumes measured from 11 to 140 GPa and 300–2330 K.
+  Room-T volumes measured after annealing. High-T measurements performed with double-sided laser heating; temperature gradients within XRD area estimated <10%. In high-T run #3, Au and MgO peaks overlapped, increasing uncertainty in volumes at the highest pressure. At 140 GPa, diffraction peaks overlap led to larger scatter in Au volume (see Table 1, Fig. 2–3).
+doi: 10.1016/j.pepi.2008.03.002
+notes: |
+  Room-T and high-T equations of state were derived with MgO as the pressure scale (Speziale et al., 2001). See Table 2 for detailed EOS parameters.
+  - Room-temperature V0 and K0 fixed at 67.85 Å^3 and 167 GPa.
+  - K0' (K0_prime) fit as 5.58(2).
+  - High-T EOS parameters determined from DAC data (fit #1) and from combined data (fit #2).
+  - Culet size was 90 μm in the room-T run; 200 or 300 μm in high-T runs.
+  - Pressure transmitting medium was NaCl.
+  - For room-T run, sample was laser-annealed after each compression step (~1300 K).
+  - For high-T, Nd:YAG laser with double-sided heating, sample held at 1600–2330 K.
+  - All pressures referenced to the MgO scale of Speziale et al. (2001).
+  - Uncertainty in pressure at high-T includes contributions from both volume and temperature.
+  - The high-T EOS (fit #2) is consistent with MgO pressure scale up to 140 GPa and 3000 K.

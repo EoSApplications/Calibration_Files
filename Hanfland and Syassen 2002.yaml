@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hanfland and Syassen 2002
+category: 1
+composition: Ta
+method: XRD
+technique: DAC 
+DAC_type: 
+culet:  #um
+cal_to_name: Mao et al., 1986 
+cal_to_composition: Al2O3
+eos: H02
+V0_per_atom: 18.191
+V0_unc: 0.003
+K0: 207.6 #GPa
+is_K0_fixed: no
+atomic_number: 73
+K0_unc: 0.15
+K0_prime: 2.85
+K0_prime_unc: 0.10
+max_pressure: 69
+PTM: N2; Na            # two experimental runs
+gasket: Re
+synchrotron: ESRF ID9 (λ ≈ 0.41 Å)
+peaks_used_to_fit_sample: (110), (200), (211), (220), (310)  # bcc-Ta reflections visible to 25° 2θ
+reference_temperature: 298
+sample_heating: none
+data_quality_notes: >
+  Angle-dispersive synchrotron XRD was used to measure Ta P–V data up to 69 GPa.
+  Nitrogen (to 35 GPa) and sodium (to 69 GPa) were used as quasihydrostatic media.
+  Diffraction peak widths in Na remained at the instrumental limit, demonstrating
+  extremely hydrostatic conditions. Ta peak widths were slightly larger due to
+  built-in microstrain in the commercial Ta powder.
+
+  The P–V data were fit with the Holzapfel (H02) EOS (n = 5), yielding
+  B0 = 207.6 ± 1.5 GPa and B0' = 2.85 ± 0.10. The fitted ambient a0 = 3.3135 Å
+  agrees with the independently measured a0 = 3.3139(3) Å.
+
+  The authors showed that the H02 fit describes both their data (0–69 GPa)
+  and the high-pressure Au-calibrated data of Cynn & Yoo (70–174 GPa)
+  within uncertainties, providing a single consistent EOS for Ta across
+  the entire bcc stability range (to 174 GPa).
+doi: 10.1063/1.1454200
+notes: >
+  The H02 formulation was chosen over Birch-Murnaghan because BM3 gives unphysical
+  curvature at small volumes (B' < 4). The parameters reported here reproduce Ta’s
+  compression smoothly across all known experimental datasets and are commonly used
+  when a ruby-calibrated EOS is required. The value V0 = 18.191 Å^3/atom corresponds
+  to a0 = 3.3135 Å for bcc Ta.

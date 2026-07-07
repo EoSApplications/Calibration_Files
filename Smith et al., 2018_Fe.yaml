@@ -1,0 +1,73 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Smith et al., 2018
+category: 2
+composition: Fe-hcp
+method: XRD #Ramp Compression
+technique: Laser-driven ramp compression with VISAR + Lagrangian sound-speed analysis
+
+cal_to_name: Absolute
+cal_to_composition: Fe-hcp
+
+eos: Rydberg-Vinet
+order: 3
+
+V0: 22.00 # Å^3/unit cell  corresponding to rho0 = 8.43 g/cm^3 for epsilon-Fe
+V0_unc:
+
+K0: 177.7   # GPa
+is_K0_fixed: no
+K0_unc: 0.6
+
+K0_prime: 5.64
+K0_prime_unc: 0.01
+
+max_pressure: 1400   # GPa (1.4 TPa)
+
+PTM: none #(dynamic loading)
+
+synchrotron: National Ignition Facility (NIF)
+
+reference_temperature:
+sample_heating: >
+  Near-isentropic ramp compression from an initial 60 GPa shock state.
+  Thermal corrections applied for:
+    - initial 60 GPa shock heating
+    - plastic work heating from strength
+    - deviatoric stress offset.
+  Estimated sample temperatures remain substantially below the Hugoniot
+  and within the solid hcp-Fe stability field during compression.
+
+data_quality_notes: >
+  Iron was precompressed into the hcp phase using an initial 60 GPa shock
+  prior to ramp loading. Pressure-density path determined from free-surface
+  velocity histories using a Lagrangian sound-speed analysis. Final isentrope
+  corrected for strength and thermal effects. The resulting EOS extends to
+  1.4 TPa and ~20 g/cm^3, corresponding to estimated core pressures of
+  ~3.5-4 Earth-mass rocky exoplanets.
+
+doi: 10.1038/s41550-018-0437-9
+
+notes: |
+  The isentropic compression curve was fit using a third-order
+  Rydberg-Vinet equation of state:
+
+  P(X)=3K0X^-2(1-X)exp[(1.5K0'-1.5)(1-X)]
+
+  where:
+    X = (rho0/rho)^(1/3)
+    rho0 = 8.43 g/cm^3 for epsilon-Fe.
+
+  Best-fit parameters reported in the text:
+    K0 = 177.7 ± 0.6 GPa
+    K0' = 5.64 ± 0.01
+
+  The study states that extrapolation of the fitted EOS agrees with
+  first-principles calculations predicting hcp-Fe stability to ~6 TPa.
+
+  The low-pressure release isentrope and initial shocked state
+  analysis used SESAME EOS table 2150 for Fe (Kerley, 1993).
+
+  High-pressure strength corrections were constrained using:
+    Smith et al., 2013
+    Gleason and Mao, 2013
+    Huntington et al., 2017

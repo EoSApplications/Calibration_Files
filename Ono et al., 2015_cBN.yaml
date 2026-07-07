@@ -1,0 +1,66 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ono et al., 2015
+category: 1
+composition: cBN
+method: Raman
+technique: DAC (in situ Raman spectroscopy with simultaneous XRD at high P–T)
+DAC_type: hydrothermal DAC (HDAC)
+culet: not specified
+
+# --- Pressure determination ---
+# Pressure determined from in situ XRD of Au mixed in the sample chamber
+cal_to_name: Dorogokupets and Dewaele 2007
+cal_to_composition: Au
+
+eos: RamanDatchi04
+
+# --- Full P–T Raman calibration (polynomial form; Eq. 1) ---
+# ν_TO(P,T) = ν0 + aT + bT^2 + (c0 + c1 T) P + d P^2
+V0: 1059.3                  # cm^-1 (ν0 at 300 K, 0 GPa)
+V0_unc: 1.0                 # cm^-1
+A: -0.0220                  # cm^-1/K
+A_unc:                      # not independently resolved (see notes)
+B: -0.00000491              # cm^-1/K^2
+B_unc:
+C: 3.371                    # cm^-1/GPa (c0)
+C_unc: 0.070
+D: 0.000119                 # cm^-1/(GPa·K) (c1)
+D_unc: 0.000055
+E: 0                          # not used in this formulation
+E_unc:
+F: -0.0076                  # cm^-1/GPa^2
+F_unc: 0.0010
+
+max_pressure: 90            # GPa
+PTM: NaCl #(pressure medium); Au (pressure marker)
+gasket: Re
+synchrotron: SPring-8 BL10XU
+peaks_used_to_fit_sample: c-BN TO Raman mode
+reference_temperature: 300–800   # K
+sample_heating: resistive external heating (HDAC)
+
+data_quality_notes: |
+  Raman TO-mode shifts of c-BN were measured up to 90 GPa and 800 K.
+  Pressure was determined independently from the unit-cell volume
+  of gold measured by in situ synchrotron XRD, using a published
+  gold equation of state. Ruby fluorescence was not used during
+  heating.
+
+  Polynomial fitting parameters follow Eq. (1) of Ono et al. (2015).
+  Temperature-dependent coefficients a and b were partially adopted
+  from Kawamoto et al. (2004) due to limited sensitivity at ambient
+  pressure.
+
+doi: 10.1016/j.jpcs.2014.09.001
+notes: |
+  This study extends the Raman calibration of the c-BN TO mode to
+  significantly higher pressures (90 GPa) than previous work.
+  A clear reduction in dν/dP with increasing pressure is observed,
+  confirming strong nonlinearity above ~40 GPa.
+
+  Unlike Datchi & Canny (2004), pressure is determined directly from
+  an internal gold standard via XRD, making this calibration less
+  sensitive to assumptions about ruby behavior at high temperature.
+
+  The polynomial form is valid only within the calibrated P–T range;
+  extrapolation beyond 90 GPa is strongly discouraged.

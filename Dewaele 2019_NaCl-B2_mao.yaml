@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele 2019
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: membrane DAC 
+culet: 400 um to 100 x 300 (central flat x bevel) #um
+cal_to_name: Mao et al., 1986
+cal_to_composition: Al2O3 #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0_per_formula_unit: 42.3  
+V0_unc: #V0 fixed
+K0: 24.0  #GPa
+is_K0_fixed: no
+K0_unc: 1.2
+K0_prime: 5.37
+K0_prime_unc: 0.20
+
+K0_dprime:
+K0_dprime_unc:
+max_pressure: 155.6 #GPa, highest measured B2 NaCl point in Table 3
+PTM: He
+synchrotron: ESRF (ID30, ID27, ID09)
+peaks_used_to_fit_sample: 3–8 reflections per spectrum
+reference_temperature: 300 K
+sample_heating: none (ambient temperature)
+
+data_quality_notes: |
+  B2-phase volume data fitted separately from B1.
+  V0 was fixed during the fit to avoid overparameterization.
+  Agreement found with Sakai et al. (2011) and Ono et al. (2006),
+  once their calibrations are converted to the Dorogokupets ruby scale.
+doi: 10.3390/min9110684
+
+notes: |
+  B2 phase of NaCl is stable from ~30 GPa to at least 155 GPa.
+  EOS parameters correspond to the unified ruby pressure metrology adopted by Dewaele (2019).
+  Data were collected in He, giving nearly hydrostatic conditions even to Mbar pressures.

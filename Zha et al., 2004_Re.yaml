@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zha et al., 2004
+category: 1
+composition: Re
+method: XRD
+technique: DAC #internally resistively heated
+DAC_type: IHDAC
+culet:  #um
+cal_to_name:  Anderson et al., 1989 
+cal_to_composition: Au 
+
+eos: Birch-Murnaghan
+order: 3
+V0: 29.4087
+V0_unc:
+K0: 360  #GPa fixed Duffy et al., 1999
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.5 
+K0_prime_unc:
+
+K0_dprime:
+K0_dprime_unc:
+
+max_pressure: 8.47
+PTM: SiO2 glass  # pressure medium used in gasket cavity
+synchrotron: CHESS (Cornell High Energy Synchrotron Source)
+peaks_used_to_fit_sample: 100 and 101 reflections (hcp Re)
+reference_temperature: 300 K
+sample_heating: internal resistive heater (Re foil strip)
+data_quality_notes: |
+  Deviatoric stresses largely reduced at high T; random peak strain observed.
+  Volume uncertainty estimated at ΔV/V ≈ 0.0006 for Re.
+  Overall pressure uncertainty estimated at ~5% across P–T range.
+doi: https://doi.org/10.1063/1.1765752
+notes: |
+  This study constructs a full P–V–T EOS for Re using a Mie–Grüneisen linear
+  thermal pressure model combined with a fixed 300 K Birch–Murnaghan isotherm.
+  The ambient EOS parameters (K0 = 360 GPa, K0' = 4.5) were chosen for
+  consistency with shock data. Thermal parameters were obtained by fitting 
+  Eq. (6) to isochoric lines generated from simultaneous high P–T diffraction
+  measurements.
+
+  The Re EOS agrees well with shock Hugoniots up to ~150 GPa and ~3000 K, 
+  with deviation < ~3%. Larger deviations likely result from extrapolation 
+  outside the measured P–T range. 

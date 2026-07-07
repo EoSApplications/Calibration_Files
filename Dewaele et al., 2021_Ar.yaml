@@ -1,0 +1,63 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2021
+category: 1
+composition: Ar
+method: XRD
+technique: DAC
+DAC_type:
+culet: 100–300  # µm, depending on run (see Table 1)
+cal_to_name: Takemura and Dewaele 2008; Dewaele et al., 2004
+cal_to_composition: Au; Al2O3
+cal_to_eos: 
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+eos: Rydberg-Vinet #+ Mie-Grüneisen-Debye (MGD, 300 K)
+order: 3
+
+V0_per_atom: 38.0   # Å^3/atom (0 K Rydberg–Vinet parameter) 
+V0_unc:
+K0: 2.65             # GPa (0 K, from low-T measurements)
+is_K0_fixed: yes      # fixed to low-temperature literature value
+K0_unc:
+K0_prime: 7.423
+K0_prime_unc:
+K_infinity_prime:
+K_infinity_prime_unc:
+
+max_pressure: 114     # GPa, highest fcc Ar data at 296 K
+PTM: Ar # and Ar–Ne mixtures (59/41%, 40/60%) used to reduce nonhydrostaticity
+synchrotron: ESRF ID27; SOLEIL Psiché  # Table 1
+peaks_used_to_fit_sample: fcc (111), (200), (220), (311); minor hcp (100), (101) peaks observed
+
+reference_temperature: 296  # K
+sample_heating: none (ambient temperature); cryogenic run at 10 K for MGD testing
+
+data_quality_notes: >
+  The EOS fit uses quasi-hydrostatic data from Ar crystals embedded in ArNe2 (runs 2–3) 
+  combined with pure Ar below 5 GPa. Unit-cell volumes extracted via Rietveld refinement 
+  (runs 1–2) and peak fitting (runs 3–5). Non-hydrostatic stress evaluated by gamma-plots 
+  from Au lines (Fig. 6). Nonhydrostatic effects are largest below 20 GPa and minimal above 
+  ~70 GPa. hcp phase appears at pressures as low as 4.2–13 GPa, but remains <4 vol% up to 114 GPa. 
+  EOS parameters validated using low-T isobars in run 5.  # See Figs. 7–10.
+
+doi: 10.1038/s41598-021-93995-y
+
+notes: |
+  Argon EOS was determined using angle-dispersive synchrotron XRD on single crystals and 
+  powders, in pure Ar and Ar–Ne mixtures. Rydberg–Vinet parameters (V0 = 38.0 Å^3/at, 
+  K0 = 2.65 GPa, K0' = 7.423) correspond to the static 0 K part of the equation of state, 
+  with thermal pressure added through a quasi-harmonic Mie–Grüneisen–Debye model:
+      P(V,T) = P0(V) + Pth(V,T).
+  The thermal model uses:
+      γ(V) = 2.20·(V/V0) + 0.5        # eq. (4)
+      θD(V) = 93.3 * (1/x) * exp[2.20(1 - x)],  x = V/V0  # eq. (5)
+  These parameters reproduce thermal expansion and P–V data from 1–114 GPa at 296 K and 
+  10–296 K in cryogenic runs. hcp-Ar appears through stacking faults but remains a minor 
+  phase (<4%). fcc → hcp transition is stress-assisted and not thermodynamically complete 
+  up to at least 114 GPa.
+
+  This EOS can be used as a metrological pressure standard for experiments using Ar as a 
+  pressure medium at ambient or elevated temperature, as the quasi-harmonic model captures 
+  thermal pressure reliably up to high temperatures.
+

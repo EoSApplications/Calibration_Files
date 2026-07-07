@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Trots et al., 2013
+category: 1
+composition: YAG  # Sm3+-doped YAG
+method: XRD
+technique: DAC
+DAC_type:
+culet: 350-250 #um
+cal_to_name: Absolute # simultaneous XRD_Brillion 
+cal_to_composition: YAG
+eos: Birch-Murnaghan
+order: 3
+V0: 1735.15      #A^3
+V0_unc: 0.26
+K0: 185  #GPa
+is_K0_fixed: no
+K0_unc: 1.5
+K0_prime: 4.18 
+K0_prime_unc: 0.05
+
+max_pressure: 58 #max abs point
+PTM: He; Ne 
+gasket: Re
+synchrotron: APS BM-13D (GSECARS); in-house BGI system
+peaks_used_to_fit_sample: Single-crystal XRD; multiple reflections (10–15 per P point)
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: Absolute pressure obtained from simultaneous measurement of elastic moduli (Brillouin) and volume (XRD) on the same crystal. Deviatoric stresses were minimized using He/Ne pressure media. XRD peak broadening becomes significant above ~25 GPa, but volume uncertainties remain <1%. The EOS carries ±2% pressure uncertainty across the full range.
+doi: 10.1002/2013JB010519
+notes: This EOS forms the basis of the Sm:YAG primary pressure scale. The V0, K0, and K0' parameters reported above are the recommended values (Table 2). These parameters are thermodynamically consistent and were derived from a 3rd-order Birch–Murnaghan fit to KS(V) and G(V) from simultaneous Brillouin and XRD measurements.
+

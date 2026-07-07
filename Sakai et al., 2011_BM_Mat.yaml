@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2011
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 40  #um
+cal_to_name: Matsui et al., 2009   
+cal_to_composition: Pt   
+
+eos: Birch-Murnaghan
+order: 3
+V0: 37.73     #A^3
+V0_unc:
+K0: 47.00  #GPa
+is_K0_fixed: no
+K0_unc: 0.46
+K0_prime: 4.10 
+K0_prime_unc: 0.02
+
+max_pressure: 304
+PTM: NaCl
+gasket: W
+synchrotron: Spring-8, BL10XU
+peaks_used_to_fit_sample: B2 (100), (110), (111)
+reference_temperature: 300 
+sample_heating: double-sided laser annealing to ~1500–2000 K (to minimize stress) 
+data_quality_notes: |
+  The study presents experimental data extending the NaCl-B2 equation of state to ultra-high pressures (up to 304 GPa), with the B2 (CsCl-type) phase confirmed to remain stable throughout this range. Volume calculations are robustly constrained using three independent diffraction peaks—(100), (110), and (111)—which improves reliability and reduces crystallographic bias. The use of platinum as an internal pressure standard, along with detailed d-spacing measurements for both Pt and NaCl (shown in Fig. 1 on page 3), supports internal consistency. Additionally, the authors carefully address nonhydrostatic stress (estimated ~2.4 GPa) and recalibrate previous datasets (Sata et al.) using multiple Pt pressure scales, which strengthens comparability. However, uncertainties arise from dependence on pressure scale choice and the fixed V0 derived indirectly from the g–G plot, as the B2 phase cannot be quenched to ambient conditions
+doi: 10.1063/1.3573393
+notes: |
+  sing the platinum (Pt) pressure scale of Matsui et al. (2009), the NaCl-B2 equation of state provides a well-constrained and internally consistent reference across the full pressure range up to ~304 GPa. For the Birch–Murnaghan (B–M) EoS, the parameters are: zero-pressure volume V₀ ≈ 37.73 Å³ (fixed), bulk modulus K₀ ≈ 47.00 GPa, and pressure derivative K₀′ ≈ 4.10. These values represent a balanced compression behavior and are consistent with the experimental data as well as recalculated datasets from previous studies. The Matsui Pt scale also yields very small differences between the B–M and Vinet formulations (less than ~2 GPa up to 300 GPa), indicating strong agreement between models. Overall, this calibration is considered reliable and serves as a reference baseline, with other Pt scales (e.g., Fei et al.) showing only minor deviations relative to it.
+

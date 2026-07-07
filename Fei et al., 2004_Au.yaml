@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2004
+category: 1
+composition: Au
+method: XRD
+technique: Multi-anvil (in situ synchrotron XRD)
+DAC_type: multi-anvil
+culet: N/A
+cal_to_name: Shim et al., 2002
+cal_to_composition: Au
+eos: Birch-Murnaghan #Assumed for the low T part
+order: 3
+V0: 67.850         # Å^3
+V0_unc: 0.004
+K0: 167           # GPa
+K0_unc: 3
+is_K0_fixed:
+K0_prime: 5.0
+K0_prime_unc: 0.2
+PTM: MgO
+synchrotron: BL04B1 at SPring-8
+temperature_range: 300-2173  # K
+pressure_range: 0-28         # GPa
+doi: 10.1016/j.pepi.2003.09.018
+notes: >
+  Au thermal EOS is based on Shim et al. (2002), but the Grüneisen q value
+  was modified (q = 0.7 ± 0.3) to achieve pressure consistency with the
+  MgO scale of Speziale et al. (2001). All other parameters follow Shim et al. (2002).

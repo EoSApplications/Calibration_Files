@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Frost et al., 2023
+category: 1
+composition: Pd
+method: XRD
+technique: DAC
+DAC_type: Boehler–Almax geometry
+culet: 100–250  # um (depending on run)
+cal_to_name: Dewaele et al., 2004; Dorfman et al., 2012
+cal_to_composition: W; Au
+
+eos: Rydberg-Vinet
+order: 3
+V0: 58.678  # Å^3 per unit cell
+V0_unc: 0.073
+K0: 189.3  # GPa
+is_K0_fixed: no
+K0_unc: 3
+K0_prime: 5.473
+K0_prime_unc: 0.063
+
+max_pressure: 182  # GPa
+PTM: Ne
+gasket: Re
+synchrotron: APS HPCAT 16-ID-B
+peaks_used_to_fit_sample: 111; 200; 220; 311
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Palladium was statically compressed in neon with all sources of
+  hydrogen rigorously excluded to avoid hydride formation. Three
+  independent DAC runs are reported and show mutually consistent
+  P–V behavior. Palladium remains fcc to the maximum pressure
+  investigated (182 GPa), with no phase transitions observed.
+doi: 10.1063/5.0161038
+notes: |
+  EOS parameters are taken from Table I (Vinet fit, “This work”).
+  The authors also report a third-order Birch–Murnaghan fit, but
+  favor the Vinet EOS for high-pressure extrapolation.
+
+  Pressure was determined primarily using a tungsten pressure
+  marker (Dewaele et al., 2004); the highest-pressure run used
+  gold (Dorfman et al., 2012). The motivation of the study is to
+  resolve discrepancies in prior Pd EOS results caused by
+  inadvertent hydrogen contamination, which can artificially
+  increase lattice volume and bias fitted compressibility.

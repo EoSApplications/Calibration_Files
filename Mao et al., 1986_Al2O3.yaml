@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Mao et al., 1986
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Mao et al., 1986; Zou et al., 1982; Carter et al., 1971; Carter et al., 1971
+cal_to_composition: Cu; Ag; Cu; Ag
+eos: Power
+order:
+# Quasi-hydrostatic ruby equation (Argon PTM)
+# P (GPa) = (A/B) * [ (1 + Δλ/λ0)^B – 1 ]
+A: 1904
+A_unc:
+B: 7.665
+B_unc:
+lambda_0: 694.24   # nm
+
+max_pressure: 80  # GPa
+PTM: Ar            # solid argon (quasi-hydrostatic)
+synchrotron: none
+peaks_used_to_fit_sample: R1 luminescence line; Cu (111), (200) XRD
+reference_temperature: 25   # °C
+sample_heating: none
+
+data_quality_notes: |
+  This is the quasi-hydrostatic ruby pressure scale obtained using argon
+  as the PTM, which remains soft and nearly hydrostatic up to ~20 GPa and
+  still provides much lower deviatoric stress than NaCl or no PTM. The
+  authors used in-situ XRD volumes of Cu to calibrate pressure, anchored
+  to shock-wave–reduced isothermal Cu and Ag EOS.
+
+  The best-fit ruby equation:
+      P (Mbar) = (A/B) * [ (1 + Δλ/λ0)^B – 1 ]
+      A = 19.04 Mbar, B = 7.665
+
+  This scale differs systematically from the earlier nonhydrostatic
+  Mao et al. (1978) curve at P > 40–50 GPa.
+
+doi: 10.1029/JB091iB05p04673
+notes: |
+  This is the canonical quasi-hydrostatic “Mao86” ruby scale used up to
+  the early 2000s as the standard reference prior to Chijioke05, Dewaele08,
+  and Ruby2020.

@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Vohra et al., 1987
+category: 1
+composition: Re
+method: XRD
+technique: DAC, effectivly a fit to Mcqueen et al., 1970 Shock Data
+DAC_type: 
+culet: 50-60  #um
+cal_to_name: Bell et al., 1986; McQueen et al., 1970 #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3; Re  #separate by a - if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 14.715
+V0_unc:
+K0: 372  #GPa
+is_K0_fixed: 
+K0_unc:
+K0_prime: 4.05
+K0_prime_unc:
+max_pressure: 216
+PTM: None
+gasket: Re
+synchrotron: Cornell High Energy Synchrotron Source (CHESS)
+peaks_used_to_fit_sample: Re hcp 100, 002, 101, 102, 110, 103, 200, 112, 201, 202, 211, 114 #infered from figure 1
+reference_temperature: 
+sample_heating: 
+data_quality_notes: Data is uncertain between 140-280 GPa because the diamond signal is masking the ruby signal. The isothermal EOS of Re above 200 GPa is based on shock-wave measurements on Re (McQueeen et al., 1970)
+doi: 10.1103/PhysRevB.36.9790
+notes: |
+    This paper investigates the behavior of rhenium under extremely high pressures (up to 216 GPa) using energy-dispersive x-ray diffraction in a diamond-anvil cell.Their results show that rhenium maintains its hexagonal close-packed (hcp) structure throughout the entire range, with no phase transition observed, and that its axial ratio remains essentially constant with pressure. Additionally, the study presents one of the first x-ray-based pressure profiles across a diamond surface, revealing how pressure is distributed within the sample. Overall, the findings demonstrate both the structural stability of rhenium at extreme conditions and its suitability for use in high-pressure experimental setups.

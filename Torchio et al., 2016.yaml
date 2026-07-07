@@ -1,0 +1,54 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Torchio et al., 2016
+category: 1
+composition: Co-hcp  # hcp cobalt
+method: XRD
+technique: DAC
+DAC_type: Le Toullec-type DAC
+culet: 75 × 300 μm beveled diamonds
+
+cal_to_name: Dewaele et al., 2004
+cal_to_composition: W
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 11.09     # Å^3/atom (Table I) 
+V0_unc: 0.07
+
+P0: 0
+
+K0: 186               # GPa (Table I)
+is_K0_fixed: no
+K0_unc: 8
+
+K0_prime: 5.1
+K0_prime_unc: 0.4
+
+
+max_pressure: 160     # GPa reached in quasihydrostatic run
+PTM: Ne               # Neon transmitting medium (quasihydrostatic)
+synchrotron: ESRF ID27 (λ = 0.3738 Å)
+peaks_used_to_fit_sample: hcp reflections (multiple hkl; see Fig. 2)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  EOS was derived from a quasihydrostatic Ne-loaded Co grain.
+  These data showed no hcp → fcc transition up to 160 GPa,
+  confirming that the transition observed in earlier nonhydrostatic
+  measurements (e.g., Yoo et al., 2000) was stress-induced.
+  Table I compares this EOS to results from Dewaele 2008,
+  Antonangeli 2008, and Yoo 2000; the present work gives the
+  most hydrostatic and highest-pressure hcp-Co EOS available.
+  Volume compression V/V0 extends to 0.695, with full Vinet
+  fitting shown in Fig. 1.
+
+doi: 10.1103/PhysRevB.94.024429
+
+notes: |
+  This EOS represents the most hydrostatic high-pressure measurement
+  of hcp Co up to 160 GPa. Torchio et al. merged their low-pressure data
+  with Dewaele et al. (2008) to obtain a single Vinet fit. Their structural
+  and magnetic results show that the inversion in the pressure derivative
+  of c/a (around V/V0 ≈ 0.76) is linked to magnetism, not to the hcp–fcc
+  transition. The hcp phase remains stable to at least 160 GPa under
+  quasihydrostatic conditions.

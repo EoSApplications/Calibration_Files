@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2012
+category: 1
+composition: KCl-B2
+method: XRD
+technique: DAC
+DAC_type: #not speccified
+culet: #not specified 
+cal_to_name: Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3
+eos: Rydberg-Vinet
+order: 3
+V0: 54.5  # A^3/f.u. (B2 phase, 298 K reference)
+V0_unc: 
+K0: 17.2  # GPa
+is_K0_fixed: yes
+K0_unc: #not speccified
+K0_prime: 5.89
+K0_prime_unc: #not speccified
+max_pressure: 165  # GPa
+PTM: He
+synchrotron: ESRF ID09a or ID27
+peaks_used_to_fit_sample: 2–5 peaks; (100),(200),(210) excluded above ~50 GPa due to stress effects
+reference_temperature: 298  # K
+sample_heating: # not specified, samples were dried at 550K before loading
+data_quality_notes: Ambient-T compression to 165 GPa; selection of reflections minimizes nonhydrostatic bias. B2 parameters are “fictive” 298 K values for the B2 form. 
+doi: [https://doi.org/10.1103/PhysRevB.85.214105]
+notes: |
+  Table III lists the 298 K B2 EOS (RV): V0=54.5 Å^3/f.u. (fixed), K0=17.2 GPa, K0′=5.89. He PTM; ruby gauge per Dorogokupets & Oganov (2007). Measured P–V points tabulated (Table I).
+

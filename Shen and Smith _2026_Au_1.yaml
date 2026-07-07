@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 67.792
+V0_unc: #fixed
+K0: 167.5   # GPa
+is_K0_fixed: no
+K0_unc: 0.3
+K0_prime: 5.85
+K0_prime_unc: 0.01
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: fcc (111), (220), (222), (311)  
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+    The gold (Au) dataset exhibits high overall precision, though with slightly more variability compared to Pt due to experimental factors. Diffraction peaks remain sharp throughout compression to ~140 GPa, allowing reliable extraction of lattice parameters with typical relative volume uncertainties of ~0.05–0.1% . Multiple fcc reflections [(111), (220), (222), and (311)] were used to improve accuracy and reduce sensitivity to stress anisotropy. Small discrepancies are observed between the two experimental runs (DAC-1 and DAC-2), primarily attributed to differences in grain size and initial loading conditions. In particular, the Au grain in DAC-2 showed signs of increased deviatoric stress and possible partial bridging, leading to slightly higher scatter in the measured volumes. Lattice-strain analysis confirms that Au experiences somewhat higher stress in DAC-2 relative to DAC-1, though still within acceptable limits for quasihydrostatic conditions. Consequently, the DAC-1 dataset, which shows lower scatter, is selected for primary analysis. Despite these minor variations, the Au data remain internally consistent, with deviations well within experimental uncertainty.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+    Gold (Au) is a widely used pressure calibrant and demonstrates consistent, well-characterized compressional behavior in this study. The experimentally determined volume–volume (V–V) relations show strong agreement with prior literature and confirm Au’s reliability as a secondary standard when referenced to Cu . The derived equation of state (EOS) parameters (K₀ ≈ 167.5 GPa, K′₀ ≈ 5.85) closely match previous static and dynamic measurements, reinforcing confidence in its calibration performance. However, comparison with ramp-derived EOS models reveals a small systematic negative deviation (ΔV/V ≈ −0.4%), suggesting that the dynamic Au EOS predicts slightly larger volumes (i.e., a softer response) relative to the Cu-referenced scale. Despite this minor offset, the discrepancy remains small and within the broader uncertainty range of high-pressure EOS comparisons. DAC-1 was used for fitting. 
+    

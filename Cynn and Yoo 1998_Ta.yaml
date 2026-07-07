@@ -1,0 +1,53 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Cynn and Yoo 1999
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: Mao-Bell
+culet: 300 μm (low P), beveled 300→100 μm with 7° bevel (high P)
+cal_to_name: Heinz and Jeanloz 1984
+cal_to_composition: Au
+
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 10.865
+V0_unc:
+K0: 194.7  #GPa
+is_K0_fixed: no
+K0_unc: 4.8
+K0_prime: 3.4
+K0_prime_unc: 0.1
+
+K0_dprime:
+K0_dprime_unc:
+
+max_pressure: 174
+PTM: Ar
+gasket: Re
+synchrotron: SSRL beamline 10-2
+peaks_used_to_fit_sample: Seven bcc-Ta reflections (110, 200, 211, etc.)
+
+reference_temperature: 300    # K
+sample_heating: none
+
+data_quality_notes: >
+  Angle-resolved synchrotron XRD was used to measure the compression of bcc-Ta
+  up to 174 GPa. Pressures were determined using an internal Au calibrant with
+  the Heinz & Jeanloz (1984) 3rd-order Birch–Murnaghan EOS (V0 = 10.215 cm^3/mol,
+  K0T = 166.6 GPa, K' = 5.5). Two DAC configurations were used: 300-μm flats for
+  pressures to 50 GPa and beveled anvils (300→100 μm, 7°) for higher pressures.
+  Pressure uncertainties were 0.7–2% using ruby and ~1.5% from the Au EOS.
+  The measured lattice parameters show no evidence of structural transitions,
+  confirming that bcc Ta is stable to 174 GPa. The derived EOS parameters
+  (K0T = 194.7±4.8 GPa, K' = 3.4±0.1) agree with ultrasonic B0S measurements
+  converted to isothermal conditions (189–195 GPa). Earlier XRD results (Xu et al.)
+  overestimated K0T due to a rapidly softening EOS fit.
+
+doi: 10.1103/PhysRevB.59.8526
+
+notes: >
+  This EOS is widely used as a high-pressure standard. The relatively low K'
+  (compared to Au) means Ta compresses more uniformly with pressure and provides
+  more stable pressure determination above 100 GPa. All EOS parameters correspond
+  to isothermal values at ambient temperature.

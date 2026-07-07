@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2006
+category: 1
+composition: Fe-hcp  # ε-Fe (hcp)
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: various see table 1 of manuscript
+cal_to_name: Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3; W
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 11.214  # A^3
+V0_unc: 0.049
+K0: 163.4  # GPa
+is_K0_fixed: no
+K0_unc: 7.9
+K0_prime: 5.38
+K0_prime_unc: 0.16
+max_pressure: 197  # GPa
+PTM: He
+synchrotron: ESRF ID27
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: EOS fitted from hydrostatic He runs; ruby and W pressure calibrations cross-checked. 
+doi: [https://doi.org/10.1103/PhysRevLett.97.215504]
+notes: |
+  Table III Vinet fit. K0 free; V0 determined from ambient extrapolation. Pressure range 17–197 GPa under quasihydrostatic conditions. 

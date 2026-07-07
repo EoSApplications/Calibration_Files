@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Loubeyre et al., 1993
+category: 1
+composition: He
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 200-550  #um
+cal_to_name: Mao et al., 1986  #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3  #separate by a ; if multiple compositions are used  
+cal_to_eos: 
+cal_to_max_pressure: 
+cal_to_is_K0_fixed: 
+eos: Rydberg-Vinet 
+order: 3
+V0_per_atom: 22.77 #13.72 cm^3/mol × (1e24 Å^3/cm^3) / (6.02214e23 mol^-1) = 22.77 Å^3/atom
+V0_unc:
+K0: 0.225 #GPa
+is_K0_fixed: no
+K0_unc:
+K0_prime: 7.35 
+K0_prime_unc:
+
+max_pressure: 58
+PTM: He
+synchrotron: NSLS X17C superconducting wiggler beamline  
+peaks_used_to_fit_sample: #One case;  (010), (011), (002), Second case; (111), (112), (210)
+reference_temperature: 0K
+sample_heating: 
+data_quality_notes: |
+   Helium DAC data show high precision but include several key uncertainties. Volume measurements have ~0.4% uncertainty from diffraction angle, energy calibration, and reflection centering, while pressure relies on the quasi-hydrostatic ruby scale, introducing calibration dependence.  Although He provides near-ideal hydrostatic conditions, its very low x-ray scattering leads to signal limitations, and small alignment or positioning errors can affect results. At higher pressures (>20 GPa), increased data scatter and deviations arise from thermal and many-body effects, and phase transitions show hysteresis and crystal break-up, complicating precise phase boundary determination.
+doi: 10.1103/PhysRevLett.71.2272
+notes: |
+    Helium DAC measurements by Loubeyre et al. (1993) use single-crystal synchrotron X-ray diffraction over ~1–58 GPa and 46–400 K, producing high-quality P–V–T data with sharp reflections from in situ grown crystals. The hcp structure is stable across most conditions, with a limited fcc stability loop near melting and strong hysteresis in the fcc–hcp transition, indicating path-dependent phase boundaries and crystal break-up during transformation. The equation of state shows no significant change in c/a ratio but deviates from simple pair-potential models, demonstrating the increasing importance of many-body interactions at high density. Thermal expansion data (95–304 K) further reveal excess thermal pressure relative to theoretical predictions, suggesting non-phonon contributions. 

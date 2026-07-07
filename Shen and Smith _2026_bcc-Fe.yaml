@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May  2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Fe-bcc
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 23.506
+V0_unc: #fixed
+K0: 162.1  # GPa
+is_K0_fixed: no
+K0_unc: 2.5
+K0_prime: 5.4
+K0_prime_unc: 0.5
+
+max_pressure: 15.5 # GPa, phase transition up to 15.5 GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (110), (200), (211), (220) (310) 
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+   The body-centered cubic iron (bcc-Fe) dataset shows strong data quality within its stability range, with precise and consistent measurements under quasihydrostatic conditions. Diffraction peaks remain well-resolved throughout the low- to mid-pressure regime prior to the phase transition, allowing unit-cell volumes to be determined with typical relative uncertainties of ~0.05–0.1% . Multiple bcc reflections were used to improve robustness and minimize the effects of peak overlap. Agreement between DAC-1 and DAC-2 runs is excellent, with relative volume differences generally below ~0.1%, indicating minimal influence from spatial pressure gradients or sample positioning. Deviatoric stress effects are small in the helium medium, contributing only minor systematic uncertainty. However, data near the bcc-to-hcp phase transition must be treated carefully, as structural changes can introduce inconsistencies. Overall, within its single-phase stability field, the bcc-Fe dataset is high quality, internally consistent, and reliable.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+   Body-centered cubic iron (bcc-Fe) exhibits expected compressional behavior at lower pressures and serves as an important reference phase for iron under compression. The experimentally derived volume–volume (V–V) relations relative to Cu are smooth and consistent within the bcc stability range, reflecting reliable relative compressibility . The fitted equation of state (EOS) parameters are well constrained and align with previous studies, supporting confidence in the dataset. As pressure increases, Fe transitions to the hcp phase, marking the limit of applicability for the bcc dataset. Comparisons with other calibrants show good internal consistency, with only minor deviations within experimental uncertainty. For fiiting, DAC-1 and DAC-2 combined. 
+    

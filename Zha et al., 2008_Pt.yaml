@@ -1,0 +1,51 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zha et al., 2008
+category: 1
+composition: Pt  # fcc platinum
+method: XRD
+technique: DAC with internal resistive heating
+DAC_type: 
+culet: not specified  # um
+cal_to_name: Speziale et al., 2001
+cal_to_composition: MgO
+
+eos: Birch-Murnaghan
+order: 3
+V0: 60.38  # A^3 per unit cell (fcc, Z = 4), fixed
+V0_unc:
+K0: 273.5  # GPa
+is_K0_fixed: no
+K0_unc: 1.0
+K0_prime: 4.70
+K0_prime_unc: 0.06
+
+max_pressure: 80  # GPa
+PTM: MgO (mixed with Pt) #1:5 volume ratio
+gasket: Re
+synchrotron: CHESS (Cornell High Energy Synchrotron Source)
+peaks_used_to_fit_sample: 111; 200; 220; 311
+reference_temperature: 300 K
+sample_heating: internal resistive heating (up to 1900 K)
+data_quality_notes: |
+  Room-temperature EOS data were collected after thermal
+  annealing cycles to minimize deviatoric stress. The 300 K
+  data from this study are consistent with quasihydrostatic
+  DAC data of Dewaele et al. (2004) and multianvil data of
+  Fei et al. (2004) in the overlapping pressure range.
+
+  The final 300 K EOS parameters were obtained by fitting
+  combined data from this study, Dewaele et al. (2004),
+  and Fei et al. (2004), with V0 fixed at 60.38 A^3.
+doi: 10.1063/1.2844358
+notes: |
+  The preferred 300 K EOS for Pt is a third-order
+  Birch-Murnaghan form with:
+    V0 = 60.38 A^3 (fixed),
+    K0 = 273.5(1.0) GPa,
+    K0' = 4.70(6).
+
+  This EOS serves as the reference isotherm for the full
+  P–V–T EOS inversion using both thermodynamic and
+  Mie–Gruneisen–Debye approaches. Thermal parameters
+  (gamma0, q0, q1, theta0) are reported separately and
+  should be stored in a linked thermal-EOS YAML.

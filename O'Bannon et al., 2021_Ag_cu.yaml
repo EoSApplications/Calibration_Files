@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: O'Bannon et al., 2021
+category: 1
+composition: Ag  # fcc
+method: XRD
+technique: DAC
+DAC_type: tDAC (LLNL design)
+culet: 9 #um
+cal_to_name: Fratanduono et al., 2020
+cal_to_composition: Cu
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 17.031  
+V0_unc: 0.001
+
+K0: 104            # GPa (fixed to ultrasonic value) 
+is_K0_fixed: no
+K0_unc: 1
+
+K0_prime: 5.98    
+K0_prime_unc: 0.03
+
+max_pressure: 350        # GPa (maximum pressure reached in Exp. 2)
+PTM: None # (Ag + Cu powders without medium)
+gasket: Re
+synchrotron: APS 16-ID-B (HPCAT)
+peaks_used_to_fit_sample: fcc 111 only (least stress-sensitive)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Experiment 2 used Cu as the in situ pressure standard. Pressures were initially
+  nonhydrostatic due to the absence of a PTM; corrected volumes were computed via
+  elastic-strain line-shift analysis (Cij-based) assuming α = 1, following 
+  Singh’s method. Only the (111) reflection was used to extract Ag lattice 
+  parameters due to its minimal orientation sensitivity. Corrected P–V data were 
+  fit to a Vinet EOS with V0 and K0 fixed, yielding K0' = 6.10 ± 0.01.
+
+doi: 10.1063/5.0045374
+
+notes: |
+  This YAML corresponds strictly to the corrected EOS parameters for Experiment 2 
+  (Ag + Cu) from O’Bannon et al. (2021). Experiment 2 provides an independent EOS 
+  using Cu rather than Au as the pressure calibrant. The resulting Vinet slope 
+  K0' = 6.10 is consistent with Experiment 1 (K0' = 6.02) and with theoretical 
+  predictions.

@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hirao et al., 2022
+category: 1
+composition: Ni
+method: XRD
+technique: DAC
+DAC_type: double-beveled diamond anvils
+culet: 27–500  # μm; see Table I for individual runs 
+cal_to_name: Fratanduono et al., 2021; Dewaele et al., 2004
+cal_to_composition: Pt; Al2O3
+
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 10.9376 # Å^3/atom
+V0_unc: 0.0004
+K0: 173.5  # GPa
+is_K0_fixed: no
+K0_unc: 1.4
+K0_prime: 5.55
+K0_prime_unc: 0.05
+max_pressure: 368  # GPa 
+PTM: MEW #(16:4:1 methanol–ethanol–water); He; none 
+gasket: Re
+synchrotron: SPring-8 BL10XU and BL04B2
+peaks_used_to_fit_sample: fcc-Ni 111, 200, 220, 311, 222, 331, 420, 400 
+reference_temperature: 298 K
+sample_heating: none (room-temperature compression)
+data_quality_notes: |
+  fcc-Ni remains stable with no structural transition up to 368 GPa at 298 K.
+  P–V data from five runs were fit to the Vinet EOS with fixed V0 and refined
+  K0 and K0'. Nonhydrostatic stress was evaluated via gamma plots for Ni and Pt;
+  the derived uniaxial stress components (~0.9 GPa at 368 GPa for Ni) are within
+  the quoted pressure uncertainty, so nonhydrostatic effects are considered
+  negligible for the EOS determination.
+doi: 10.1063/5.0074340
+notes: |
+  The new Ni EOS yields volumes at 365 GPa ~1.5% larger than those from
+  extrapolated previous EOSs on older Pt/ruby scales, implying densities ~1.5%
+  lower at inner core pressures. Combined with the Fe EOS in this study, it
+  allows direct estimation of Fe–Ni alloy densities at Earth inner-core
+  pressures without large extrapolation from lower P.

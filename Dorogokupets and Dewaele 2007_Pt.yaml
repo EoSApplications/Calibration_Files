@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Dewaele 2007
+category: 2
+composition: Pt
+method: XRD
+technique: Expanded Mie–Grüneisen–Debye (EMGD) model
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Khishchenko et al., 2001
+cal_to_composition: Pt
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 9.091 #assumed same as Dorogokupets and Oganov 2005, not explicitly stated in text 
+K0: 277.3 # GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 5.12
+K0_prime_unc:
+max_pressure: 200   # GPa, approximate extrapolation, not stated in text
+PTM: not applicable (model-based compilation)
+reference_temperature: 298 K
+sample_heating: none
+data_quality_notes: |
+  EMGD model constrained by shock, XRD, and thermodynamic data.
+  Platinum shows strong deviation from simple MGD behavior and
+  requires anharmonic + electronic contributions.
+
+doi: 10.1080/08957950701659700
+
+notes: |
+  Pt exhibits significant electronic contribution to free energy.
+  Differences with Fei et al. scales increase at high temperature.

@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 74.636
+V0_unc: #fixed
+K0: 161.9   # GPa
+is_K0_fixed: no
+K0_unc: 0.7
+K0_prime: 4.08
+K0_prime_unc: 0.03
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (200), (220) 
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+    The magnesium oxide (MgO) dataset shows good overall quality with reliable measurements across the full pressure range, though with slightly larger uncertainty compared to some metallic calibrants. Diffraction peaks remain well-defined up to ~140 GPa, allowing extraction of lattice parameters with typical relative volume uncertainties of ~0.1% . Unit-cell volumes were determined using the (200) and (220) reflections, which provide sufficient constraint while minimizing peak overlap. Data were obtained from DAC-2, where MgO was co-loaded with other calibrants in a helium pressure medium, ensuring quasihydrostatic conditions. Deviatoric stress effects are present but remain small, contributing only minor systematic uncertainty. Compared to metals like Pt or Mo, MgO exhibits slightly greater scatter and sensitivity to stress due to its ionic structure, but the dataset remains internally consistent. Overall, the MgO data are of solid quality, with manageable uncertainties and no major anomalies.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+    Magnesium oxide (MgO) serves as an important ionic pressure calibrant and displays consistent compressional behavior in this study. The experimentally derived volume–volume (V–V) relations relative to Cu are smooth and well-defined, though comparisons with previous studies show larger discrepancies (exceeding ~1% in volume in some cases), suggesting greater sensitivity to experimental conditions or calibration methods . The fitted equation of state (EOS) parameters (K₀ ≈ 161.9 GPa, K′₀ ≈ 4.08) are generally consistent with prior work, supporting its validity as a secondary standard. In terms of stiffness scaling, MgO behaves similarly to bcc metals, showing moderate increases in bulk modulus with compression. While slightly less precise than some metallic calibrants, MgO remains a useful and widely applied standard, particularly for comparisons involving oxide materials. For fitting, DAC-2 was used. 
+    
+    

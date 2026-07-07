@@ -1,0 +1,56 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holzapfel 2005
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Occelli et al., 2003; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004;
+cal_to_composition: Diamond; Cu; Au; W; Al; Pt; Ta
+eos: HP02Ruby #Modified-Freund–Ingalls
+equation_full: |
+  # Modified Freund–Ingalls / HP02 functional form (Eq. 3 in Holzapfel 2005):
+  # λ(p) form:
+  #   λ = λ0 * [ 1 - (C / (B + C)) * ln( 1 + ((B + C)/A) * p ) ]^(-1/C)
+  #
+  # p(λ) form:
+  #   p = (A / (B + C)) * { exp[ ((B + C)/C) * ( 1 - (λ0/λ)^C ) ] - 1 }
+  #
+  # where:
+  #   p  = pressure (GPa)
+  #   λ0 = ambient-pressure R1 wavelength
+  #   λ  = R1 wavelength at pressure p
+A: 1845        # GPa
+A_unc:
+B: 14.7        # dimensionless
+B_unc:
+C: 7.5         # dimensionless
+C_unc:
+lambda_0: 694.2   # nm (ruby R1 ambient wavelength used in Holzapfel, 2005)
+max_pressure: Not Applicable
+PTM: Not Applicable # (this is an analysis paper); underlying datasets use He (diamond, Cu, Au, W, Al, Pt, Ta) and earlier Ar/Ne calibrations
+synchrotron: not specified  # original XRD data from Occelli et al. 2003; Dewaele et al. 2004
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  The study refines a practical ruby pressure scale by simultaneously fitting high-pressure
+  single-crystal XRD data on diamond, Cu, Au, W, Al, Pt, and Ta (mostly in He as PTM)
+  together with ruby R1 luminescence shifts, using AP2 EOS forms for the calibrants.
+  V0 and K0 are fixed to literature/ultrasonic values, and K0' for each calibrant plus the
+  ruby parameters A, B, and C are co-fitted.
+  The modified Freund–Ingalls (HP02-type) form provides a better representation of the
+  ruby line shift than the older modified Murnaghan form, especially at higher pressures.
+  The recommended parameters are A = 1845 GPa, B = 14.7, C = 7.5, with an estimated
+  uncertainty of ±25 GPa in A; corresponding bounds imply B ≈ 13.0–16.3 and C ≈ 5.5–9.3.
+doi: 10.1080/09511920500147501
+notes: >
+  This YAML captures the 2005 refit of the HP02/modified Freund–Ingalls ruby scale using
+  AP2 EOS forms for Cu, Au, diamond, W, Al, Pt, and Ta. The preferred parameters
+  (A = 1845 GPa, B = 14.7, C = 7.5) are obtained from a correlated fit with V0 and K0
+  fixed to literature values and K0' and ruby A, B, C treated as free parameters.
+  Holzapfel also reports alternative ruby parameter sets based on different assumptions
+  and datasets (e.g., polynomial fits and other EOS forms), but this file adopts the AP2-based
+  global fit that the author identifies as the most consistent realization of a practical
+  pressure scale in the 1–300 GPa range.

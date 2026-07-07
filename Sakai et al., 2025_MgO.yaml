@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: LHDAC
+culet: 40 #um (see Table 1, Run #7a; other runs used larger culets at lower pressure)
+cal_to_name: Sakai et al., 2025
+cal_to_composition: Pt
+cal_to_eos: Rydberg-Stacey
+eos: Rydberg-Stacey
+V0: 74.698 # A^3/unit cell, Tange et al., 2009 (as cited in Sakai et al., 2025 Table 2, ref 37)
+K0: 160.6 # GPa, Tange et al., 2009 (as cited in Sakai et al., 2025 Table 2, ref 37)
+is_K0_fixed: yes
+K0_prime: 4.227 # see Table 2
+K0_prime_unc: 0.009 # see Table 2
+K_infinity_prime: 1.66667 # Fixed, see Table 2 and text; value is 1.666...
+K_infinity_prime_unc: fixed
+max_pressure: 314 # GPa (see Table 1, Run #7a, LHDAC)
+PTM: None
+gasket: W for runs 7a, 7b and 7c; Re for rest 
+synchrotron: SPring-8 BL10XU and BL37XU
+peaks_to_fit_sample:
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: Laser annealing up to ~2000 K was applied during compression; see Methods and Table 1.
+data_quality_notes: |
+  Good agreement with previous EoS and ab initio results up to 400–500 GPa; see discussion and Supplementary Fig. S10.
+  Data are consistent above 150 GPa. Multiple calibration paths confirm internal consistency.
+  Rydberg–Stacey EoS parameters for MgO are from Tange et al., 2009, as cited in Table 2.
+doi: https://doi.org/10.1038/s43246-025-00792-5
+notes: |
+  MgO equation of state was calibrated using LHDAC up to 314 GPa (culet 40 um, Run #7a), as well as at lower pressures in Run #7b (culet 100 um, max P 144 GPa) and Run #7c (culet 300 um, max P 55 GPa).
+  Calibration path: Cu → Re → Pt → MgO (see Figure 1).
+  All EoS parameters (except K0_prime, which was refined) were fixed to literature values as listed in Table 2.
+  Laser annealing up to ~2000 K was applied to MgO/Pt mixtures during compression.
+  Runs #7b and #7c were performed at larger culet sizes (100 um and 300 um, respectively) and lower maximum pressures, providing consistency across the pressure range.
+  Rydberg–Stacey EoS parameters for MgO: V0 = 74.698 Å³/unit cell (Tange et al., 2009, as cited in Table 2); K0 = 160.6 GPa; K0' = 4.227; K_infinity' = 5/3.
+  For further details on experimental runs, data sources, and calibration sequence, see Table 1, Table 2, and Figure 1 of Sakai et al., 2025.

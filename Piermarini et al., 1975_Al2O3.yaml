@@ -1,0 +1,58 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Piermarini et al., 1975
+category: 1
+composition: Al2O3  # ruby (0.5% Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC (ruby fluorescence + XRD of NaCl)
+DAC_type: Waspaloy-type diamond anvil cell
+culet: not specified
+
+# --- Pressure determination ---
+# Pressure derived from NaCl compression using Decker EOS
+cal_to_name: Decker 1971  #Also cited Decker 1965/1966
+cal_to_composition: NaCl-B1
+
+
+eos: LinearShift
+
+# --- Linear ruby calibration at 25 °C ---
+# P (kbar) = A * Δλ; LinearShift Equation is P=Δλ/Ae
+lambda_0: 694.24            # nm (R1 line at 25 °C, ambient pressure)
+lambda_0_unc: 0.02           # nm (instrumental uncertainty)
+
+A: 0.36417                  # nm/GPa =2.746 kbar/Å
+A_unc:              # 0.014 kbar/Å (95% confidence interval)
+
+
+max_pressure: 19.5           # 195 kbar (~19.5 GPa)
+PTM: ME #methanol–ethanol (4:1)
+synchrotron: none (laboratory Mo Kα XRD)
+peaks_used_to_fit_sample: ruby R1 fluorescence line; NaCl (200) XRD
+reference_temperature: 25   # °C
+sample_heating: none
+
+data_quality_notes: |
+  Ruby R1 wavelength shifts were calibrated against pressures
+  derived from NaCl compression using the Decker equation of
+  state. Measurements were hydrostatic to ~104 kbar and
+  quasi-hydrostatic from 104–195 kbar. Separate fits for
+  hydrostatic and combined datasets yield indistinguishable
+  slopes within uncertainty.
+
+  Quadratic terms in Δλ were evaluated but found to be statistically
+  insignificant over the full pressure range.
+
+doi: 10.1063/1.321957
+notes: |
+  Recommended calibration (25 °C):
+    P (kbar) = 2.740 · Δλ (Å)
+
+  This calibration defines pressures relative to the Decker EOS
+  for NaCl and does not constitute an absolute pressure standard.
+  The authors explicitly caution that systematic uncertainty is
+  dominated by the NaCl EOS rather than by ruby fluorescence
+  measurement precision.
+
+  This study establishes ruby as a secondary pressure standard
+  and forms the foundation for later ruby scales (e.g., Mao 1978,
+  Mao 1986), which adopt different functional forms and anchors.

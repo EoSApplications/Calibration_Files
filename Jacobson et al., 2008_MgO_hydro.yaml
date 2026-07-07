@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jacobsen et al., 2008
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 100
+cal_to_name: Mao et al., 1986; Sun et al., 2005
+cal_to_composition: Al2O3; Diamond
+eos: Birch-Murnaghan
+order: 3
+V0: 74.697   # Å^3
+V0_unc: 0.007
+P0: 0
+K0: 159.6    # GPa  
+is_K0_fixed: no
+K0_unc: 0.6
+K0_prime: 3.74
+K0_prime_unc: 0.03
+
+max_pressure: 118
+PTM: He
+synchrotron: APS GSECARS 13-BM-D
+peaks_used_to_fit_sample: hk0 and hkl reflections; ≥8 reflections per frame  
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Helium medium provides nearly hydrostatic conditions up to ~60 GPa.
+  At higher pressures, minor deviations arise due to ruby calibration in He,
+  leading to an anomalously low K′ = 3.74 compared with earlier MgO references.
+  A revised ruby calibration specific to He was proposed in the paper. Switch to diamond Raman at high pressure 
+
+doi: 10.2138/am.2008.2988
+notes: |
+  This EOS is derived from three single-crystal MgO + He diffraction runs.
+  The authors concluded that the low K′ reflects ruby metrology issues in helium,
+  not intrinsic elastic behavior. 

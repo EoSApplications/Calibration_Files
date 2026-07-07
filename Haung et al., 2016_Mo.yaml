@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Haung et al., 2016
+category: 1
+composition: Mo #bcc
+method: XRD
+technique: Laser-heated DAC + synchrotron angle-dispersive XRD
+DAC_type: double-sided laser heating, beveled anvils
+culet: 300 μm and 200 μm
+cal_to_name: Sokolova et al., 2013
+cal_to_composition: MgO
+eos: Birch-Murnaghan
+order: 3
+V0: 31.22
+V0_unc: 0.08
+K0: 273          # GPa  
+K0_unc: 15
+is_K0_fixed: no
+K0_prime: 3.6
+K0_prime_unc: 0.4
+max_pressure: 80     # cold compression range at 300 K  
+PTM: Ne
+synchrotron: APS 16-ID-B (HPCAT)
+peaks_used_to_fit_sample: bcc {110, 200, 211, 220} (≥4 reflections per P–V point)
+reference_temperature: 300 K
+sample_heating: none for cold-compression EOS
+data_quality_notes: |
+  Room-temperature compression measured up to 80 GPa using Ne PTM.
+  The bcc structure was preserved at all pressures up to at least 94 GPa.
+  EOS fit performed only on cold-compression P–V data (Fig. 2).
+doi: 10.1038/srep19923
+notes: |
+  This YAML includes only the 300 K Birch-Murnaghan EOS for bcc-Mo determined
+  from cold-compression data. The study also reports a complete thermal EOS using
+  both thermodynamic and Mie–Grüneisen–Debye inversion methods, with additional
+  parameters (γ0, q, αKT, θ0), but those are excluded here by request.
+  The 300 K EOS values are:
+     V0 = 31.22 ± 0.08 Å³ (unit cell),
+     K0 = 273 ± 15 GPa,
+     K0' = 3.6 ± 0.4.
+#note these values were found in the conclusion+fig2 not the table

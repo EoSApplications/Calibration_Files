@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorfman et al., 2012
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 50-100
+cal_to_name: Dorfman et al., 2012
+cal_to_composition: NaCl-B2
+cal_to_eos: Rydberg-Vinet
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+eos: Rydberg-Vinet
+order: 3
+V0: 67.85  # A^3
+V0_unc: 0.01
+K0: 167  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.88
+K0_prime_unc: 0.02
+
+max_pressure: 265 # GPa
+PTM: Ne; NaCl
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: 
+doi: 10.1029/2012JB009292
+notes: |
+  Uncertainty attributed to the Tange et al., 2009 MgO EoS is assumed to be ~0.8 GPa. In these experiments they observed that the uncertainy reaches 3 % at 2.5 Mbar.The measured peak widths vary between runs see Figure 11, 
+

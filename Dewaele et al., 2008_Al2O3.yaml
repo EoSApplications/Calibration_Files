@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2008
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3 used as pressure calibrant)
+method: Luminescence
+technique: DAC
+DAC_type: membrane DAC with boron-diamond supports
+culet: not specified
+cal_to_name: Dewaele et al., 2008; Dewaele et al., 2008; Dewaele et al., 2008; Dewaele et al., 2008
+cal_to_composition: Zn; Ni; Mo; Ag #normialized these and adjusted Mao et al., 1986
+eos: Power #PR' = (A/B)[(λ/λ0)^B – 1]
+order: #not applicable
+A: 1920  # GPa
+A_unc: #not specified
+B: 9.61
+B_unc: #not specified
+lambda_0: 694.25  # reference wavelength not given in this study, using value from Shen et al., 2020
+max_pressure: 156  # GPa (maximum reached in experiments with metals; ruby calibration extended accordingly)
+PTM: He
+synchrotron: ESRF, beamline ID30
+peaks_used_to_fit_sample: R1 fluorescence line of ruby
+reference_temperature: room temperature (298 K)
+sample_heating: none
+data_quality_notes: |
+  Data are obtained under near-hydrostatic conditions using helium as a
+  pressure medium, with explicit identification and exclusion of data affected by sample
+  bridging and nonhydrostatic stress (e.g., Ag and Mo above ~100 GPa). Pressure calibration
+  relies on updated ruby fluorescence scales and is cross-validated against ultrasonic and
+  reduced shock-wave EoS, reducing systematic uncertainty to ~2–3 GPa at ~150 GPa. Absolute
+  pressures at the highest compressions remain model-dependent through the choice of RSW
+  datasets and ruby calibration, but internal consistency across metals is high. 
+doi: doi.org/10.1103/PhysRevB.78.104102
+
+notes: |
+  This calibration is based on static XRD EOS of four metals measured 
+  under quasihydrostatic conditions. 
+  The revised ruby scale  should be used instead of 
+  the classical Mao et al. (1986) scale

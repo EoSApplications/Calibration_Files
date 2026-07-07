@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated July 2026, any changes to the manuscript after this date have not been added.
+study: Zurkowski et al., 2026
+category: 1
+composition: Ta
+method: XRD 
+technique: tDAC
+
+cal_to_name: Fratanduono et al., 2020; Campbell et al., 2023
+cal_to_composition: Cu; Bi 
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 18.037   # Å^3/atom
+V0_unc: 0.002
+
+K0: 172      
+is_K0_fixed: no
+K0_unc: 1
+K0_prime: 4.43
+K0_prime_unc: 0.04
+
+max_pressure: 433 
+PTM: none, Cu, Bi, Ne
+
+synchrotron: 16-ID-B (APS, HPCAT) and PETRA-III (P02.2, DESY)
+
+reference_temperature: 298   # K
+
+sample_heating: >
+  No heating
+
+data_quality_notes: >
+  The authors tested this third-order Vinet fit but did not use it as their preferred EoS.
+  They report that the pressure residuals increase substantially above 300 GPa, and that the
+  third-order fit does not reproduce the ultrasonically derived ambient isothermal bulk modulus
+  within uncertainty. The fourth-order Vinet fit is preferred.
+
+notes: |
+  The abstract "The volume compression of body-centered cubic tantalum has been measured to 433 in the standard bevel and toroidal diamond anvil cell (DAC) using synchrotron-based angle-dispersive powder x-ray diffraction. Six experiments were carried out achieving a maximum pressure of 433(6) GPa. Pressures were estimated using an equation of state (EoS) of Cu or Bi for all experiments. We additionally calculated the elastic constants of Ta and Bi and used our previously calculated values for Cu to inform the stress state of the sample and an EoS of Ta for comparison to our experimental data. Our experimental pressure–volume data for Ta was fit with a fourth-order Vinet EoS, resulting in parameters K0 = 192(5) GPa, η  = 6.4(6), β = −35(5), and Ψ  = 141(13). This Ta EoS is consistent within uncertainty with the ultrasonically derived ambient isothermal bulk modulus, with existing DAC data up to 100 GPa, and with Ta ramp EoS measurements that exceed the pressures of the current study."

@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Liu et al., 1970
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: Bassett-style DAC
+culet:
+cal_to_name: Weaver et al., 1971 #https://books.google.com/books?hl=en&lr=&id=I4Xs4lChrKEC&oi=fnd&pg=PR7&dq=WEAVER+J.+S.,+TAKAHASHI+T.+and+BASSETT+W.+A.,+Symposium+on+the+Accurate+Characterisation+of+High+Pressures+(Edited+by+E.+Lloyd).+National+Bureau+of+Standard,+Washington,+D.C.+(In+press).&ots=0_CrgxL2Ot&sig=MN9-Qcg1yFELjBMp-tPc6GsSAqQ#v=onepage&q&f=false  start on page 189 
+cal_to_composition: NaCl-B1
+cal_to_eos: #Hildebrand
+cal_to_order:
+cal_to_max_pressure: 
+cal_to_is_K0_fixed:
+eos: Birch-Murnaghan 
+order: 3
+V0_per_atom: 14.71         # Å^3, from 8.86 cm3/mol
+V0_unc:
+K0: 336                    # GPa
+is_K0_fixed: yes
+K0_unc: 15
+K0_prime: 4
+K0_prime_unc:         # fixed
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 35          # GPa
+PTM: NaCl
+synchrotron:
+peaks_used_to_fit_sample: (100),(002),(101),(102),(110),(103),(112),(201)
+reference_temperature: 23 °C
+sample_heating: none
+data_quality_notes: K0' = 4 was fixed by the authors (δ = 0). K0 = 3.36 ± 0.15 Mbar from this constrained fit.
+doi:
+notes: |
+    This is the constrained Birch–Murnaghan fit where δ is fixed to zero, giving K0' = 4.
+    Authors report K0 = 3.36 ± 0.15 Mbar under this assumption.
+    Fit applies to the same P–V dataset (0–350 kbar).

@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wang et al., 2002
+category: 2
+composition: Au
+method: XRD #Shock-wave data reduction
+technique: Dynamic shock compression + mean-field potential (MFP) reduction
+cal_to_name: Absolute
+cal_to_composition: Au
+
+eos: Vinet-Extended
+order:
+V0_per_atom: 16.962  # A^3/atom #not given assumed from Deweale et al., 2004
+K0: 177.26        # GPa (300 K isotherm, Table II; B0)
+is_K0_fixed: no
+K0_unc:
+eta: 6.3800       # 
+eta_unc:
+beta: 1.9334      # 
+beta_unc:
+psi: -1.0292      # 
+psi_unc:
+gamma: 33.941     # 
+
+max_pressure: 513   # GPa (upper limit of shock data used)
+PTM: none
+synchrotron: none
+peaks_used_to_fit_sample: N/A
+sample_heating: >
+  Shock heating removed using a first-principles
+  mean-field potential (MFP) approach; reduced to 300 K isotherm.
+
+data_quality_notes: >
+  EOS represents a shock-reduced 300 K isotherm derived by subtracting
+  the calculated thermal volume expansion from experimental Hugoniot data.
+  Reduction uses ab initio 0 K energies and a mean-field potential model.
+  No empirical Grüneisen parameter or heat-capacity assumptions were used.
+  EOS is intended for interpolation within the shock pressure range.
+
+doi: 10.1063/1.1518781
+notes: |
+  Eq. (8) in Wang et al. (2002), with Au parameters from Table II.
+  Paper uses LDA for Au in the ab initio input (GGA noted as overcorrected).

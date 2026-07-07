@@ -1,0 +1,54 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ding et al., 2025
+category: 1
+composition: W
+method: XRD
+technique: tDAC
+DAC_type: #modified toroidal (mt-DAC), Boehler–Almax force pattern
+culet: 16–17  # µm (Table I)
+cal_to_name: Dewaele et al., 2018; Akahama and Kawamura 2010
+cal_to_composition: Au; Diamond
+cal_to_eos: Rydberg-Vinet; Akahama10_Equation
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+eos: Rydberg-Vinet
+order: 3
+V0: 31.716  # Å^3 (fixed)  # from RV fit description, page 4
+V0_unc: 
+K0: 298.6     # GPa (fixed in their fit)
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.103
+K0_prime_unc: 0.029
+K_infinity_prime:
+K_infinity_prime_unc:
+
+max_pressure: 527  # GPa
+PTM: None #(W is both sample and gasket); ultrahigh-pressure nonhydrostatic environment
+synchrotron: ESRF ID27 (run 1), SSRF BL15U1 (runs 2–8)
+peaks_used_to_fit_sample: bcc W (110), (200), (211), (220), (310); Au peaks for pressure
+reference_temperature: 296  # K
+sample_heating: none
+data_quality_notes: >
+  W retains the bcc structure up to 527 GPa (Fig. 2). Pressures were determined using the 
+  Au t-DAC pressure scale of Dewaele et al. (2018), validated against Fratanduono et al. 
+  (shockless Au) and diamond Raman in some comparative runs. XRD profiles above 300 GPa 
+  show peak broadening due to nonhydrostatic stresses typical of ultrahigh-pressure t-DAC 
+  experiments. Uniaxial stresses estimated by peak-width method (Supplemental Fig. S4). 
+  EOS comparison with Dewaele (2004) and Dubrovinsky (2012) indicates consistency to 250 GPa.
+doi: 10.1103/PhysRevB.111.214101
+notes: |
+  The W P–V data were fitted using the Rydberg–Vinet (RV) equation of state:
+     P(V) = 3K0 * (1 - x) / x^2 * exp[ (3/2)(K0' - 1)(1 - x) ]
+     where x = (V/V0)^(1/3).
+  For their global ultrahigh-pressure RV fit:
+     V0 was fixed to 31.716 Å^3,
+     K0 fixed to 298.6 GPa,
+     K0' = 4.103 ± 0.029.
+  Data extend to 527(7) GPa in run 1 using a Boehler–Almax mt-DAC. W remains bcc throughout 
+  compression. Authors note excellent agreement with quasihydrostatic W EOS below 200 GPa 
+  (Dewaele 2004; Dewaele 2019). High-pressure deviations relative to shock Hugoniot EOS 
+  expected due to temperature and strength effects.
+  This EOS should be classified as a static, ultrahigh-pressure RV scale dependent on an Au 
+  reference scale measured in the same toroidal DAC configuration.
