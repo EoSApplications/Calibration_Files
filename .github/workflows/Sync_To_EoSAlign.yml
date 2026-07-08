@@ -17,9 +17,14 @@ name: Sync calibrations to EoSAlign
 #     EOSALIGN_SYNC_TOKEN secret (Settings -> Secrets and variables ->
 #     Actions -> New repository secret). A plain GITHUB_TOKEN cannot push
 #     to a different repository.
-#   - When bumping either pinned action below, re-pin to the new tag's exact
-#     commit SHA (see Public_Release_Repo_Protections_Options.md) - don't
-#     switch back to a mutable version tag.
+#   - When bumping the pinned checkout action below, re-pin to the new tag's
+#     exact commit SHA (see Public_Release_Repo_Protections_Options.md) -
+#     don't switch back to a mutable version tag. The PR-creation step uses
+#     GitHub's own `gh` CLI (preinstalled on ubuntu-latest) rather than a
+#     third-party action, since EoSApplications' org Actions policy only
+#     allows actions from EoSApplications itself, GitHub, or verified
+#     Marketplace publishers - peter-evans/create-pull-request doesn't
+#     qualify despite being pinned.
 
 on:
   push:
@@ -62,17 +67,26 @@ jobs:
           done
 
       - name: Open a PR against EoSAlign with the change
-        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
-        with:
-          token: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
-          path: EoSAlign
-          branch: sync-calibrations-${{ github.sha }}
-          commit-message: "Sync calibration files from Calibration_Files@${{ github.sha }}"
-          title: "Sync calibration files from Calibration_Files@${{ github.sha }}"
-          body: |
-            Automated sync from the `Calibration_Files` repo
-            (EoSApplications/Calibration_Files@${{ github.sha }}).
+        env:
+          GH_TOKEN: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd EoSAlign
+          BRANCH="sync-calibrations-${{ github.sha }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add Code/Calibration_Files
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git commit -m "Sync calibration files from Calibration_Files@${{ github.sha }}"
+          git push origin "$BRANCH"
+          gh pr create \
+            --repo EoSApplications/EoSAlign \
+            --head "$BRANCH" \
+            --title "Sync calibration files from Calibration_Files@${{ github.sha }}" \
+            --body "Automated sync from the \`Calibration_Files\` repo (EoSApplications/Calibration_Files@${{ github.sha }}).
 
-            This content was already reviewed there against the source
-            paper via the Calibration_Change PR template - this PR only
-            needs a human to confirm the mirrored files match and merge.
+          This content was already reviewed there against the source paper via the Calibration_Change PR template - this PR only needs a human to confirm the mirrored files match and merge."
