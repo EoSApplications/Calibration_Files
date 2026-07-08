@@ -42,8 +42,8 @@ jobs:
       - name: Commit and push back onto the PR branch, if anything changed
         run: |
           set -euo pipefail
-          git config user.name "github-actions[bot]"
-          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git config user.name "Heidi Krauss"
+          git config user.email "Heidi.N.Krauss@gmail.com"
           git add Distribution/index.json Distribution/Calibration_Files_Bundle.json
           if git diff --cached --quiet; then
             echo "No changes to the manifest or bundle"
