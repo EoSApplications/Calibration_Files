@@ -1,22 +1,39 @@
 name: Sync calibration data to Development
-# After a calibration change merges to main, mirrors this repo's .yaml files into
-# Development's staged EoSAlign copy, then runs Development's own full local
-# website-build pipeline (Website_Files/Update_Gh_Pages_Staging.py) and pushes
-# everything it touches - so Development/Website_Files and
-# Development/Staged__Public_Repositories/Website stay current automatically,
-# with zero local steps - Development_Tools/Refresh_Staged_EoSAlign_Calibration_Mirror.py
-# and its post-merge hook used to do this locally (only when someone remembered to
-# `git pull` the Calibration_Files sibling clone); both were deleted once this workflow
-# replaced them. See Sync_To_Website.yml's own comments for the fuller history.
+# After a calibration change merges to main, keeps Development current
+# automatically, with zero local steps, in two sequential jobs:
 #
-# Checks out this repo a second time at a sibling path to Development, matching
-# Website_Files/Build/Sync_Pyodide_Packages.py's own REPO_ROOT.parent / "Calibration_Files"
-# assumption - that script expects the real Calibration_Files repo to sit next to
-# Development on disk, same as it does on a real dev machine.
+#   1. mirror-calibration-files: mirrors this repo's .yaml files into
+#      Development's staged EoSAlign copy and pushes that alone.
+#   2. rebuild-website (needs job 1): runs Development's own full local
+#      website-build pipeline (Website_Files/Update_Gh_Pages_Staging.py) -
+#      including Build_Calibration_Graph.py, the fragile PySide6-dependent
+#      step - and pushes everything it touches.
 #
-# Pushes directly to Development's main (not a PR) - Development is a private
-# solo working repo, and this is purely a derived-data mirror + rebuild, not
-# authored content, matching Sync_To_Website.yml's same reasoning.
+# Split into two jobs, rather than one, specifically so a failure in the
+# heavier, more fragile job 2 (a future Qt/PySide6 dependency hiccup, say)
+# never blocks job 1's simple, near-impossible-to-fail file mirror from
+# landing. `needs:` makes job 2 wait for job 1 to finish (and push) before
+# it even starts, so job 2's checkout of Development naturally picks up
+# job 1's already-landed commit with no push race between them - this is
+# why it's two jobs in one workflow file rather than two separate workflow
+# files, which would run in parallel by default and risk exactly that race.
+#
+# Development_Tools/Refresh_Staged_EoSAlign_Calibration_Mirror.py and its
+# post-merge hook used to do all of this locally (only when someone
+# remembered to `git pull` the Calibration_Files sibling clone); both were
+# deleted once this workflow replaced them. See Sync_To_Website.yml's own
+# comments for the fuller history.
+#
+# Job 2 checks out this repo a second time at a sibling path to
+# Development, matching Website_Files/Build/Sync_Pyodide_Packages.py's own
+# REPO_ROOT.parent / "Calibration_Files" assumption - that script expects
+# the real Calibration_Files repo to sit next to Development on disk, same
+# as it does on a real dev machine.
+#
+# Both jobs push directly to Development's main (not a PR) - Development is
+# a private solo working repo, and this is purely a derived-data mirror +
+# rebuild, not authored content, matching Sync_To_Website.yml's same
+# reasoning.
 #
 # Needs a DEVELOPMENT_SYNC_TOKEN secret: a fine-grained PAT scoped to the
 # Development repo only, with Contents: Read & Write. Development is private, so
@@ -30,12 +47,10 @@ on:
       - '*.yaml'
 
 jobs:
-  sync-development:
+  mirror-calibration-files:
     runs-on: ubuntu-latest
-    env:
-      QT_QPA_PLATFORM: offscreen
     steps:
-      - name: Check out Calibration_Files (this repo, at a path sibling to Development)
+      - name: Check out Calibration_Files (this repo)
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           path: Calibration_Files
@@ -59,6 +74,38 @@ jobs:
               rm "$existing"
             fi
           done
+
+      - name: Commit and push, if anything changed
+        run: |
+          set -euo pipefail
+          cd Development
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git commit -m "Sync calibration files from Calibration_Files@${{ github.sha }} [Staging Change Acknowledged]"
+          git push origin main
+
+  rebuild-website:
+    needs: mirror-calibration-files
+    runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - name: Check out Calibration_Files (this repo, at a path sibling to Development)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          path: Calibration_Files
+
+      - name: Check out Development (private repo, already has job 1's mirror commit)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          repository: EoSApplications/Development
+          token: ${{ secrets.DEVELOPMENT_SYNC_TOKEN }}
+          path: Development
 
       - name: Install system libraries PySide6 needs even for headless imports
         run: |
@@ -92,5 +139,5 @@ jobs:
             echo "No changes to sync"
             exit 0
           fi
-          git commit -m "Sync calibration data from Calibration_Files@${{ github.sha }}"
+          git commit -m "Rebuild website build output from Calibration_Files@${{ github.sha }} [Staging Change Acknowledged]"
           git push origin main
