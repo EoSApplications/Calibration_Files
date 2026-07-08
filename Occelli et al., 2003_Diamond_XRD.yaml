@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Occelli et al., 2003
+category: 1
+composition: Diamond
+method: XRD
+technique: DAC
+DAC_type: 
+culet:  #um
+cal_to_name: Mao et al., 1986; Zha et al., 2000; Datchi et al., 1997
+cal_to_composition: Al2O3; MgO; SrB4O7
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 3.4170         # cm^3/mol at ambient pressure
+V0_unc: 0.0008
+P0: 0                      # GPa
+K0: 446                    # GPa
+K0_unc: 1
+is_K0_fixed: no
+K0_prime: 3.0
+K0_prime_unc: 0.1
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 140
+PTM: He
+gasket: Re
+synchrotron: ESRF ID30/ID09 (energy-dispersive single-crystal XRD)
+peaks_used_to_fit_sample: (111), (220), (113), additional reflections (6 total)
+
+reference_temperature: 300
+sample_heating: none
+
+data_quality_notes: >
+  Single-crystal diamond (1.1% 13C) was measured in helium PTM under quasi-hydrostatic
+  conditions up to 140 GPa. Ruby pressures are constrained to ±1% to 55 GPa using the
+  Zha et al. (2000) MgO elasticity scale and agree with the Au EOS in He to 124 GPa.
+  Six diamond reflections were tracked, showing minimal broadening, confirming excellent
+  hydrostaticity. The Vinet EOS fit to XRD data gives V0 = 3.4170(8) cm^3/mol,
+  K0 = 446(1) GPa, K0' = 3.0(1). The fit reproduces pressures within <1% to 140 GPa.
+
+doi: 10.1038/nmat831
+
+notes: >
+  This EOS corresponds to the static isothermal (300 K) diamond EOS. It is used for
+  absolute pressure calibration and for comparison with diamond Raman gauge calibrations.

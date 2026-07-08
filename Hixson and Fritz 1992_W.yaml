@@ -1,0 +1,22 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hixson and Fritz 1992
+category: 3
+composition: W
+method: XRD
+technique: Shock
+cal_to_name: Absolute
+cal_to_composition: W
+
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 9.5466 #fixed
+K0: 311.24    # GPa
+is_K0_fixed: no
+K0_unc: 0.123
+K0_prime: 3.8959 
+K0_prime_unc: 0.00188
+max_pressure: 300  # GPa
+PTM: 
+reference_temperature: 293 K
+notes: |
+  Simplified EOS from this study were fit for EoSAlign. Fits were made from the data reported in table 4.

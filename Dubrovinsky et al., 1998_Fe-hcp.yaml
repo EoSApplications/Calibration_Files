@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dubrovinsky et al., 1998
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: internally heated Mao–Bell and Merrill–Bassett DACs
+culet: 150-600 #um
+cal_to_name: Not Specified
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 6.75  # cm^3/mol (Table 1, Model II)
+V0_unc:
+K0: 162.1  # GPa (Table 1, Model II)
+K0_unc:  # GPa (range 253–259.9 across models)
+K0_prime: 5.47
+K0_prime_unc:
+max_pressure: 54  # GPa (highest P used for fits without thermocouple drift)
+PTM: NaCl; MgO; Al2O3
+synchrotron: BNL X17C beamline (synchrotron) and rotating anode Mo Kα
+peaks_used_to_fit_sample: (100), (101), (102)
+reference_temperature: 300  # K
+sample_heating: internal resistive wire heating up to 1700 K
+data_quality_notes: |
+  EOS fits based only on data collected above 900 K to minimize deviatoric stress.
+  Four EOS models tested; Model II (middle values) recommended.
+doi: [https://doi.org/10.1007/s002690050168]
+notes: |
+  Thermal EOS parameters for ε-Fe from in situ P–V–T data to 54 GPa and 1700 K.
+  Model II (Table 2) gives K0=162.1 GPa, K0′=5.47, V0=6.75 cm^3/mol, dK/dT = -0.044 GPa/K.
+  ε–γ transition observed up to 42 GPa and 1560 K.

@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Shi et al., 2022
+category: 1
+composition: Al2O3  # corundum
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC with laser heating
+culet: 150-200  #um 200 µm for <90 GPa; beveled 150 µm anvils above 90 GPa
+cal_to_name: Fei et al., 2007
+cal_to_composition: Pt
+eos: Birch-Murnaghan #high temp Mie-Grüneisen-Debye
+order: 3
+V0: 255.1  # ambient volume from Lutterotti and Scardi 1990
+V0_unc:
+K0: 246  # GPa
+K0_unc: 2
+is_k0_fixed: false
+K0_prime: 4.0  
+K0_prime_unc: fixed
+max_pressure: 153  # GPa
+PTM: NaCl
+gasket: Re
+synchrotron: APS GSECARS beamline 
+peaks_used_to_fit_sample: 5–8 diffraction peaks of corundum used for refinement
+reference_temperature: 300  # K
+sample_heating: laser heating up to 3400 K
+data_quality_notes: |
+  Pressure-volume-temperature data collected up to 153 GPa and 3400 K.
+  Thermal EoS derived by fitting with the Mie-Grüneisen-Debye formulation.
+  At 300 K, corundum EOS fit yielded K0=246(2) GPa, K0'=4 (fixed), V0=255.1 Å^3/hex cell (fixed).
+  Corundum stable up to 106 GPa at 300 K; above ~2300 K transforms to Rh2O3(II)-type phase.
+doi: [https://doi.org/10.1029/2021JB023805]
+notes: |
+  Corundum powder (99.9%) mixed with 7.5 wt% Pt used as sample and pressure calibrant.
+  NaCl served as pressure medium and thermal insulator.
+  Observed transition to Rh2O3(II)-type Al2O3 above ~106 GPa at 2300 K.
+  Thermal EoS parameters reported in Table 1 and Table 2; corundum KT0=246(2) GPa, K0'=4 (fixed), V0=255.1 Å^3 (fixed).

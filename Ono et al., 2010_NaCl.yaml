@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ono 2010
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 100, 300, 600 #um
+cal_to_name: Takemura 2007; Dorogokupets and Oganov 2007 #separate by a ; if multiple references are used 
+cal_to_composition: Au; Al2O3  #used the Au scale but corrected it using the updated ruby scale  
+
+eos: Rydberg-Vinet 
+order: 3
+V0: 39.28
+V0_unc: 2.24
+K0: 39.26  #GPa
+is_K0_fixed: no
+K0_unc: 13.77
+K0_prime: 4.72
+K0_prime_unc: 0.50
+
+max_pressure: 270
+PTM: MgO
+gasket: Re
+synchrotron: PF BL13A and SPring-8 BL10XU
+peaks_used_to_fit_sample: (100), (110), (111)
+reference_temperature: 300
+sample_heating: in situ laser annealing to remove deviatoric stress (not used for EOS fitting)
+data_quality_notes: |
+  The B2-type NaCl EOS study by Ono (2010) includes several notable sources of uncertainty. Experimental data are affected by differential stress in the DAC, which requires laser annealing to reduce but may not be fully eliminated, introducing residual non-hydrostatic errors. Pressure determination depends on gold as an internal calibrant combined with revised ruby scales, meaning results are sensitive to the chosen pressure standard and known discrepancies between scales (up to ~5–10% at high pressure). The study also highlights that first-principles calculations carry significant uncertainty, with previously reported bulk moduli differing by up to ~50%, and results depending on computational choices (GGA, PAW, simulation conditions).
+doi: 10.1088/1742-6596/215/1/012196
+notes: |
+  no (2010) investigates the equation of state of B2-type NaCl using a combination of high-pressure diamond anvil cell experiments and first-principles molecular dynamics calculations up to ~270 GPa and 3000 K. Room-temperature experimental data are used to constrain the static EOS, while simulations are used to model thermal pressure and high-temperature behavior. The results are fitted using a Vinet EOS, yielding bulk modulus and pressure derivative values consistent with corrected pressure scales. The study finds that thermal pressure has only weak volume dependence but strong temperature dependence, and that the Grüneisen parameter varies with temperature, indicating significant anharmonic effects. Overall, the work shows that conventional approaches like the Mie–Grüneisen approximation are insufficient for B2 NaCl at high P–T conditions, and that combining experimental and computational methods is necessary for a more reliable EOS.
+
+

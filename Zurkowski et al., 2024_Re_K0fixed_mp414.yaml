@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zurkowski et al., 2024
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Fratanduono et al., 2021 #separate by a ; if multiple references are used 
+cal_to_composition: Pt #separate by a ; if multiple compositions are used  
+cal_to_eos: Rydberg-Vinet
+cal_to_order: 3
+cal_to_is_K0_fixed: no
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 14.733
+V0_unc: #fixed
+K0: 360  # GPa
+is_K0_fixed: yes
+K0_unc: #fixed from ultrasonics Manghnani 1974
+K0_prime: 4.73
+K0_prime_unc: 0.02
+
+max_pressure: 414 # GPa
+PTM: None 
+synchrotron:
+peaks_used_to_fit_sample: (111)
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: | 
+    The rhenium EOS dataset obtained from XRD in the DAC shows consistent compression behavior up to 414 GPa, though it is influenced by nonhydrostatic conditions and calibration dependence . Volumes are derived from multiple lattice planes ((100), (101), (102)), improving robustness compared to single-peak approaches, but residual uniaxial stress is present due to the absence of a pressure-transmitting medium. The pressure calibration relies on the Pt standard, introducing systematic uncertainty tied to that EOS. Despite these factors, the Re P–V data display a smooth trend and agree closely (within ~0.75% in volume) with hydrostatic reference equations of state, indicating high internal consistency. No major peak overlap issues are reported for Re, supporting more stable fitting at ultrahigh pressures compared to Au. Overall, the dataset is reliable for EOS determination at multi-megabar conditions, with remaining uncertainties primarily from nonhydrostatic stress and calibration transfer.
+doi:  [https://doi.org/10.1038/s41598-024-61861-2]
+notes: | 
+    This study determines the equation of state of rhenium up to 414 GPa using synchrotron XRD in a DAC, applying a third-order Rydberg-Vinet model with V0 = 14.733 A^3 per atom, K0 = 360 GPa (fixed), and K0 prime = 4.73 . Pressure is calibrated using platinum based on the Fratanduono et al. (2021) scale, and multiple diffraction peaks are used to determine volume. The results show a smooth compression curve that agrees well with previous hydrostatic and theoretical studies, particularly those using helium as a pressure medium. Fixing K0 based on ultrasonic data improves stability of the fit while allowing K0 prime to capture high-pressure behavior. Overall, rhenium is confirmed as a reliable material for high-pressure EOS studies and as a potential calibration reference at extreme conditions.

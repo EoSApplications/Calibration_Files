@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Lei et al., 2013(P2)
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Carter et al., 1971; Not Specified
+cal_to_composition: Mo; Mo
+eos: Power
+order:
+# Quasi-hydrostatic ruby equation (Argon PTM)
+# P (GPa) = (A/B) * [ (1 + Δλ/λ0)^B – 1 ]
+A: 1904
+B: 8.671  # for P2 scale (Mo in 4:1 ME)
+lambda_0: 694.24   # nm
+
+max_pressure: 100  # GPa
+PTM: ME #Ar for Cu & Ag; 4:1 methanol–ethanol (ME) for Mo (in the corrected MXB86 datasets)
+synchrotron: none
+peaks_used_to_fit_sample: R1 luminescence line
+reference_temperature: 300 #K
+sample_heating: none
+
+data_quality_notes: |
+  This study revisits the ruby fluorescence pressure scale by explicitly correcting
+  non-hydrostatic stress effects in the DAC X-ray diffraction experiments used by
+  Mao et al. (1978, 1986) to calibrate the classic MBSS78 and MXB86 scales.
+  The authors model the influence of pressure gradients and differential stress on
+  measured d-spacings, expressing the error in d/d0 in terms of the yield strength
+  of the pressure transmitting medium (PTM) and the shear modulus of the standard
+  material. Using these corrections, they recalculate the Cu and Ag compression
+  data in Ar, and Mo in 4:1 methanol–ethanol, then refit the ruby scale with
+  functional form I:
+    P = (A/B)[(1 + Δλ/λ0)^B - 1].
+  The main P1 scale, based on corrected Cu+Ag-in-Ar data, yields A = 1904 GPa
+  (fixed) and B = 9.827. A secondary P2 scale from corrected Mo-in-ME data (where this data comes from is not cited) gives
+  B = 8.761. The authors show that P1 agrees well with several recent ruby scales
+  (DLM04, CNSS05, DO07, DTLM08) below ~100 GPa and therefore regard P1 as the
+  preferred revised ruby pressure scale.
+
+doi: 10.1088/1674-1056/22/5/056201
+notes:

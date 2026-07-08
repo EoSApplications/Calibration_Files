@@ -1,0 +1,56 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Schulte and Holzapfel 1996
+category: 1
+composition: Zn
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 300  #um
+cal_to_name: Mao et al., 1978  #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3 #separate by a ; if multiple compositions are used  
+
+eos: H12
+V0_per_atom: 15.22      # Å^3/atom; V0(Zn) = 0.01522 nm^3 from Donohue (1974), cited in the paper 
+V0_unc:
+K0: 63        # GPa this study only 
+is_K0_fixed: no
+
+K0_unc: 2
+K0_prime: 5.2    
+K0_prime_unc: 0.7
+atomic_number: 30 
+
+max_pressure: 74     # GPa; highest Zn pressure reached in this study 
+PTM: Liquid N2; mineral oil  # both used, no notable differences reported
+gasket: Inconel X750 
+synchrotron: HASYLAB DESY, EDS station F3; plus laboratory W-anode tube 
+peaks_used_to_fit_sample: Five hP2 Zn reflections (five dhkl values used to refine a and c at each pressure)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Zinc was studied up to 74 GPa in the hP2 structure with energy-dispersive XRD.
+  Pressures were measured using ruby luminescence on the Mao et al. (1978) nonlinear scale.
+  The axial ratio c/a decreases monotonically with pressure and crosses the ideal hcp value
+  (c/a = 1.633) near V/V0 ≈ 0.74. Previous low-pressure XRD anomalies in c/a are attributed
+  to deviatoric stress; the present data show only a smooth decrease. The authors compare
+  multiple EOS forms (MU2, BE2, MV2, H02, H12, H11) for Zn and conclude that the simple,
+  one-parameter Holzapfel H11 form gives an excellent description of the combined static,
+  shock, and ultrasonic data, with K0 ≈ 61 GPa and an implied K0′ ≈ 5.5.
+
+doi: 10.1103/PhysRevB.53.569
+
+notes: |
+  This YAML records the Zn EOS using the Holzapfel H11 form, which the authors identify as
+  the most appropriate "simple" EOS for Zn when all available p–V data (static DAC, volumetric,
+  and shock-wave) are considered together. In H11, only K0 is an independent parameter; K0′ is
+  determined by the correlation K0′ = 3 - (2/3) ln(3K0 / pFG0), where pFG0 is the Fermi-gas
+  limiting pressure at V0. For Zn, this yields K0′ ≈ 5.5 for K0 ≈ 61 GPa. Alternative two-parameter
+  fits (MU2, BE2, MV2, H02, H12) give similar K0–K0′ pairs but diverge more strongly at extreme
+  compression. Zn behaves as a "soft" simple solid relative to the ideal Thomas–Fermi-like
+  asymptotic behavior in h–X plots, consistent with its unusual c/a and d-band contributions.
+
+
+
+
+

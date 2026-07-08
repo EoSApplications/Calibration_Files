@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Bell et al., 1986
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC #(simultaneous ruby fluorescence + XRD of Au and Cu)
+DAC_type: diamond-window high-pressure cell
+culet: not specified
+cal_to_name: Gray 1972; Heinz and Jeanloz 1984
+cal_to_composition: Cu; Au
+eos: Power
+order:
+A: 1904   # GPa--380.8*B
+A_unc:
+B: 5
+B_unc:
+lambda_0: 694.2   # nm
+max_pressure: 180  #1.8 Mbar (validated); extrapolation discussed to ~2–2.5 Mbar
+PTM: None  # none specified (metal powders in gasket)
+synchrotron: none (laboratory Mo Kα XRD)
+peaks_used_to_fit_sample: ruby R1 luminescence line; Au(111,200); Cu(111,200)
+reference_temperature: ~300  # K
+sample_heating: none
+
+data_quality_notes: |
+  Unit-cell volumes of Au and Cu were measured by Mo Kα XRD in the same DAC
+  experiments as ruby fluorescence. Pressures were obtained from shock-wave–
+  reduced EOS of Au and Cu (Gray, 1972; Heinz & Jeanloz, 1984). Ruby R1 shifts
+  were spatially averaged over the X-ray beam footprint to match the XRD
+  sampling volume. The close agreement of Au- and Cu-derived pressures
+  validates the ruby calibration to at least 1.8 Mbar.
+
+doi: 10.1007/978-1-4684-5311-8_12
+notes: |
+  This study extends the working ruby pressure scale by more than a factor
+  of two relative to Mao et al. (1978), confirming the same functional form
+  with an updated prefactor. The equation used here is explicitly that of
+  Mao et al. (1978), revalidated and extended using Au and Cu standards.
+  Extrapolation beyond ~1.8 Mbar is discussed but not independently verified. The equation and parameters is identical to Mao et al., 1978

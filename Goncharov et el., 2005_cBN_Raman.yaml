@@ -1,0 +1,49 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Goncharov et al., 2005
+category: 1
+composition: cBN
+method: Raman
+technique: DAC (Raman spectroscopy; resistive + laser heating)
+DAC_type: symmetric DAC
+culet: not specified
+cal_to_name: Not Specified
+cal_to_composition: Al2O3
+eos: Raman_Goncharov
+# High-T Raman pressure scale based on TO phonon (Eq. 2)
+#   P = (K / b) * [ (ω / ω0)^b - 1 ]
+# where K, ω0, and b are temperature dependent
+
+# Temperature-dependent coefficients (explicitly given in text)
+A: 322.5764    #324.5-6.13*10^-3*T-0.94*10^-6*T^2; T=300
+B: 3.43463    #3.47-8.61*10^-5*T-1.06*10^-7*T^2;  T=300
+V0: 1055.94    #1060.2-0.010*T-1.40*10^-5*T^2; T=300
+
+max_pressure: 40     # GPa
+PTM: Ar; Al2O3
+synchrotron: none
+peaks_used_to_fit_sample: c-BN TO Raman mode (~1055–1060 cm⁻¹)
+reference_temperature: 300–2300   # K
+sample_heating: internal resistive heating + laser heating
+data_quality_notes: |
+  Raman TO-mode frequencies measured to 40 GPa and 1750 K (laser heating),
+  and to 2300 K at 26 GPa (internal heating). Pressure at 300 K was measured
+  using ruby fluorescence and assumed constant upon heating; thermal
+  pressure was estimated to be ≤1.5 GPa.
+
+  The pressure scale is constructed by separating quasiharmonic (volume-
+  dependent) and intrinsic anharmonic contributions to the TO-mode shift.
+  This is the first experimentally constrained pressure scale valid above
+  1000 K for c-BN.
+
+doi: 10.1103/PhysRevB.72.100104
+notes: |
+  Pressure scale given by Eq. (2):
+    P = (K(T)/b(T)) * [ (ω/ω0(T))^b(T) - 1 ].
+
+  Temperature-dependent parameters:
+    K(T) = 324.5 - 6.13×10⁻3 T - 0.94×10⁻6 T²  (GPa)
+    ω0(T) = 1060.2 - 0.010 T - 1.40×10⁻5 T²  (cm⁻¹)
+    b(T) = 3.47 - 8.61×10⁻5 T - 1.06×10⁻7 T²
+
+  This Raman scale is intended for high-temperature use and should not
+  be extrapolated beyond ~40 GPa without independent EOS constraints.

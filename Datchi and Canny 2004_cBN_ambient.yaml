@@ -1,0 +1,64 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Datchi and Canny 2004 (ambient) #Model 0
+category: 1
+composition: cBN
+method: Raman
+technique: DAC (Raman spectroscopy at simultaneous high P–T)
+DAC_type: membrane DAC (MDAC)
+culet: not specified
+
+# --- Pressure determination ---
+# Ruby and SrB4O7:Sm2+ explicitly loaded and equations given
+cal_to_name: Mao et al., 1986; Datchi et al., 1997
+cal_to_composition: Al2O3; SrB4O7
+
+
+eos: RamanDatchi04
+
+# --- Full P–T Raman calibration (Eq. 8, model 2 preferred) ---
+# ν_TO(P,T) = ν0 + aT + bT^2 + (c0 + c1 T + c2 T^2) P + d P^2
+V0: 1054                 # cm^-1
+V0_unc: 0.14               # cm^-1 
+A: 0                  # cm^-1/K
+A_unc: 0           # cm^-1/K
+B: 0               # cm^-1/K^2
+B_unc: 0                # cm^-1/K^2
+C: 3.33                    # cm^-1/GPa; C0
+C_unc: 0.03                # cm^-1/GPa
+D: 0                 # cm^-1/(GPa·K)
+D_unc: 0            # cm^-1/(GPa·K)
+E: 0
+F: -0.00885
+F_unc: 0.00015
+
+max_pressure: 21             # GPa
+PTM: Ne 
+gasket: Re
+synchrotron: none
+peaks_used_to_fit_sample: c-BN TO Raman mode
+reference_temperature: 300–723   # K
+sample_heating: resistive external heating
+
+data_quality_notes: |
+  Raman measurements performed on a single c-BN crystal compressed
+  in neon. Pressure measured in situ using ruby and SrB4O7:Sm2+
+  fluorescence; explicit wavelength–pressure equations are given
+  in the text (Eqs. 1–2). The TO-mode frequency shift is shown to be
+  a coupled function of pressure and temperature.
+
+  Bulk modulus and its pressure derivative are derived quantities,
+  obtained by inverting a first-order Murnaghan EOS using a literature
+  mode Grüneisen parameter; they are not independently calibrated EOS
+  parameters.
+
+doi: 10.1103/PhysRevB.69.144106
+notes: |
+  This study provides the first experimental Raman calibration of c-BN
+  at simultaneous high pressure and temperature (to 21 GPa, 723 K).
+  The preferred pressure-reading formulation is given by inversion of
+  Eq. (8) (model 2), yielding pressure uncertainties of ~0.15 GPa
+  within the calibrated range.
+
+  The Raman-based pressure scale is intended for high-T DAC experiments
+  where ruby becomes unreliable; extrapolation beyond the measured P–T
+  range is discouraged.

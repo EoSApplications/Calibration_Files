@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Shim et al., 2002
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: 
+culet:  #um
+cal_to_name: Mao et al., 1986; Takemura 2001  #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3; Au  #separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0: 67.850 # fixed from Takemura 2001
+V0_unc:
+K0: 167  #GPa
+is_K0_fixed: yes
+K0_unc: 3 #fixed from Daniels et al., 1958, Hiki et al., 1966; Golding et al., 1967, and Biswas et al., 1981 ultra sonic data. 
+K0_prime: 5.01
+K0_prime_unc: 0.2
+max_pressure: 75
+PTM: He
+synchrotron:
+peaks_used_to_fit_sample:
+reference_temperature: 
+sample_heating: 
+data_quality_notes: |
+  They constructed P–V–T equation of state (EoS) for gold by combining quasi-hydrostatic compression data (using helium as a pressure medium) with shock-wave (Hugoniot) data, significantly improving data reliability compared to earlier non-hydrostatic studies. The use of helium minimizes deviatoric stress, and multiple diagnostics (e.g., diffraction peak consistency) confirm near-hydrostatic conditions, enhancing confidence in the 300 K isotherm (page 2–3). However, uncertainties remain due to reliance on the ruby pressure scale (~1% uncertainty), assumptions in the Mie–Grüneisen–Debye model, and limitations in low-compression Hugoniot data where shear strength effects distort results.
+doi: 10.1016/S0012-821X(02)00917-2
+notes: |
+  Data from Takemura et al 2001 were fit. This paper develops an improved gold EoS by jointly inverting static compression and shock-wave data, yielding key parameters such as K₀′ ≈ 5.0 and Grüneisen parameter q ≈ 1.0, and incorporating both phonon and electronic effects. The resulting model provides a more accurate pressure scale, particularly at high P–T conditions relevant to Earth’s mantle. Compared to previous EoSs, the new formulation better reproduces shock data and reduces systematic errors, shifting calculated pressures by about +1 GPa at 660 km depth. Despite this improvement, a remaining ~1.5 GPa discrepancy persists between experimental phase boundaries and seismic observations, indicating that uncertainties in temperature measurements and other experimental factors are still significant.
+

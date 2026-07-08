@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Tange et al., 2009
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Absolute #not linked to another study
+cal_to_composition: MgO
+eos: Rydberg-Vinet
+order: 3
+V0: 74.698  # A^3
+V0_unc: 
+K0: 160.63  # GPa
+is_K0_fixed: no
+K0_unc: 0.18
+K0_prime: 4.367
+K0_prime_unc: 0.13
+
+max_pressure: 300  # GPa, approximated from figure
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: |
+  limitations in high-pressure elastic (Kₛ) data above ~100 GPa and reliance on shock data for the highest pressures introduce some uncertainty in separating isothermal and thermal contributions. Despite these factors, the consistency across diverse datasets makes this one of the most reliable primary EoSs for MgO .
+
+doi: 10.1029/2008JB005813
+notes: |
+  Tange et al. (2009) developed a primary, pressure-scale-independent equation of state for MgO by combining multiple datasets, including XRD, elastic (Kₛ), thermal expansion, and shock compression measurements. The 300 K isothermal compression is described using a third-order Rydberg–Vinet equation with parameters V₀ ≈ 74.698 Å³, K₀ ≈ 160.63 GPa, and K₀′ ≈ 4.367. This model is embedded within a Mie–Grüneisen–Debye framework to account for thermal effects, allowing accurate reproduction of P–V–T behavior over a wide range of conditions up to ~200 GPa (and extended toward ~300 GPa). The resulting EoS provides a self-consistent and widely applicable primary pressure standard, independent of secondary calibrations

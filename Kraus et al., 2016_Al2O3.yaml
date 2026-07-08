@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Kraus et al., 2016
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Kraus et al., 2016; Dewaele et al., 2004
+cal_to_composition: Cu; Cu
+
+eos: Power
+A: 1915.1   
+A_unc:
+B: 10.603
+B_unc:
+lambda_0: 694.24   # nm, infered 
+
+max_pressure: 150  # GPa (data constrained to ~150 GPa; higher shown as extrapolation)
+PTM: quasi-hydrostatic (from referenced DAC studies)
+synchrotron: none
+peaks_used_to_fit_sample: R1 luminescence line; Cu XRD
+reference_temperature: 298   # K
+sample_heating: none
+
+data_quality_notes: |
+  Ruby R1-line calibration derived by Kraus et al. (2016) using the
+  newly determined 298 K isotherm of Cu as an absolute pressure reference.
+  The calibration relies on quasi-hydrostatic DAC data from Dewaele et al. (2004),
+  with pressure recalculated using the Kraus Cu isotherm.
+
+  The functional form follows the standard ruby power-law:
+      P = (A/B) * [ (1 + Δλ/λ0)^B – 1 ]
+  where A = 19.151 Mbar and B = 10.603.
+
+  Uncertainty is dominated by the Cu isotherm uncertainty (~3% at 150 GPa)
+  and possible nonhydrostatic stress in the referenced DAC measurements.
+
+doi: 10.1103/PhysRevB.93.134105
+notes: |
+  This ruby calibration supersedes Mao et al. (1986) at high pressure and
+  is consistent with Holzapfel (2010) and Chijioke et al. (2005) within
+  stated uncertainties. Above ~150 GPa the calibration is unconstrained
+  by data and should be treated as extrapolative.

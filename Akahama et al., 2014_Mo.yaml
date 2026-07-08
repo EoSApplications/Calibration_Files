@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama et al., 2014
+category: 1
+composition: Mo
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 25 μm (Run 1), 20 μm (Run 2); with 250 μm and 450/350 μm bevels  #um
+cal_to_name: Holmes et al., 1989  #separate by a ; if multiple references are used 
+cal_to_composition: Pt  #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 31.155
+V0_unc: 0.024
+K0: 262.3  #GPa
+is_K0_fixed: no
+K0_unc: 4.6
+K0_prime: 4.55
+K0_prime_unc: 0.16
+max_pressure: 410        # GPa; highest pressure achieved in the study 
+PTM: None #(Mo + Pt embedded directly in Re gasket)
+gasket: Re
+synchrotron: SPring-8 BL10XU
+peaks_used_to_fit_sample: Mo (200) for volume; Pt (111) for pressure  # described on p. 3 
+reference_temperature: 298 K
+sample_heating: none
+
+data_quality_notes: |
+  Unit-cell volumes of Mo and Pt were measured simultaneously. Pressure is taken
+  from the Pt Vinet EOS. The Mo lattice constants were extracted primarily from
+  the (200) reflection to minimize nonhydrostatic effects, which remained small.
+  Standard deviation in Mo lattice parameters ranged from 0.0005–0.0036 Å.
+  Uniaxial stress analysis (Fig. 5 and 6) shows limited nonhydrostatic distortion
+  thanks to the Re gasket confinement.
+
+doi: 10.1063/1.4903940
+
+notes: |
+  The bcc phase of Mo remained stable up to 410 GPa.
+  The EOS agrees with ultrasonic data to within 2.5% at 200 GPa and 3.3% at 400 GPa,
+  but differs significantly from shock-derived EOSs (7–11% lower pressures).
+  The authors conclude the Pt pressure scale is reliable in the multimegabar regime.

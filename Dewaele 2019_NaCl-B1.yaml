@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele 2019
+category: 1
+composition: NaCl-B1
+method: XRD
+technique: DAC
+DAC_type: membrane DAC 
+culet: 400 um to 100 x 300 (central flat x bevel) #um
+cal_to_name: Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3 #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0_per_formula_unit: 44.93  
+V0_unc:
+K0: 23.4  #GPa
+is_K0_fixed: no
+K0_unc:
+K0_prime: 5.29
+K0_prime_unc:
+max_pressure: 27 #GPa (transition region); data measured to ~27.6 GPa in B1 for this study
+PTM: He
+synchrotron: ESRF (ID30, ID27, ID09)
+peaks_used_to_fit_sample: 3–8 reflections per spectrum (rock-salt)
+reference_temperature: 300 K
+sample_heating: none (ambient temperature)
+data_quality_notes: |
+  B1-phase stable to ~27–36 GPa depending on run.
+  Compression quasi-hydrostatic due to He medium.
+  Relative volume precision ~5×10⁻⁴.
+doi: 10.3390/min9110684
+
+notes: |
+  EOS parameters correspond to the Dorogokupets (2007) updated ruby scale,
+  which is the unified metrology used throughout the paper (Table 1).
+  Transition to B2 occurs near 30 GPa; this YAML covers only the B1 regime.

@@ -1,0 +1,52 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Pigott et al., 2015
+category: 1
+composition: Ni  # fcc nickel
+method: XRD
+technique: Laser-heated DAC + in situ synchrotron micro-diffraction
+DAC_type: symmetric DAC with nanofabricated Ni/SiO2/Ni double hot-plate samples
+culet: 
+cal_to_name: Speziale et al., 2001
+cal_to_composition: MgO
+
+
+eos: Birch-Murnaghan
+order: 3
+
+V0_cc_mole: 6.579        # cm^3/mol  
+V0_unc: 0.001
+
+K0: 201                  # GPa  (300 K BM3 fit)
+is_K0_fixed: no
+K0_unc: 6
+
+K0_prime: 4.4
+K0_prime_unc: 0.3
+
+
+max_pressure: 109        # GPa (maximum Ni pressure measured at 300 K)  
+PTM: MgO #powder (also serves as pressure standard)
+synchrotron: APS 16-ID-B (HPCAT)
+peaks_used_to_fit_sample: fcc 111, 200, 220, 311 (typical; peaks shown in Fig. 1e)
+reference_temperature: 300 K
+sample_heating: yes (double-sided laser heating); annealing used to remove deviatoric stress
+
+data_quality_notes: |
+  The 300 K EOS for Ni is derived from measurements taken during cooling after
+  laser annealing, ensuring deviatoric stresses were minimized. V0 was directly
+  measured from recovered nanofabricated samples (6.579(1) cm^3/mol).
+  Pressures were determined using the thermal MgO EOS (Speziale et al., 2001),
+  with propagated uncertainties of 3–13% in total pressure. The authors note
+  that their K0 and K0' differ from Dewaele et al. (2008) due to pressure-scale
+  differences and the strong correlation between K0 and K0'.
+
+doi: 10.1002/2015GL066577
+
+notes: |
+  This YAML includes only the 300 K Birch-Murnaghan EOS: V0 = 6.579 cm^3/mol,
+  K0 = 201 GPa, K0' = 4.4 (Fig. 2 and Table 1). Pigott et al. also provide full
+  Mie-Grüneisen-Debye (MGD) and high-temperature Birch-Murnaghan (HTBM)
+  thermal EOS parameters (γ0, q, α0, α1, ∂K/∂T), but these are not included here
+  per user request. Their nanofabricated Ni/SiO2/Ni geometry provides extremely
+  uniform heating and reduces thermal gradients, yielding one of the highest-
+  quality thermal EOS datasets for Ni up to 109 GPa and ~3000 K.

@@ -1,0 +1,45 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Chijioke et al., 2005
+category: 2
+composition: Cu
+method: XRD
+technique: Shock
+DAC_type: Not Specified
+culet: Not Specified
+cal_to_name: Mitchell and Nellis 1981; McQueen et al., 1970
+cal_to_composition: Cu; Cu
+eos: Vinet-Extended
+order:
+V0_cc_mole: 7.116 # #not given assumed from Carter et al., 1971
+V0_unc:
+K0: 133.3       # GPa
+is_K0_fixed: yes #K0 is fixed at ultrasonic value
+K0_unc:
+eta: 5.4167       
+eta_unc:
+beta: 15.921     
+beta_unc:
+psi: -90.223   
+psi_unc:
+gamma: 235.81
+
+
+max_pressure: 200
+PTM: Not Applicable
+synchrotron: Not Applicable
+peaks_used_to_fit_sample: 
+reference_temperature: 300 K #isotherm
+sample_heating: none
+data_quality_notes: |
+  Hugoniot data sources include Mitchell & Nellis (1981) and McQueen et al. (1970),
+  as summarized in Table I of Chijioke et al. (2005).
+  Thermal pressure corrections follow Wang et al. (2002).
+  Strength corrections use experimental results compiled by Asay et al. (1986).
+
+  The maximumdeviations of the data from the Vinet fits are 0.8 GPa for Ta, 0.5 GPa for W, 0.1 GPa for Cu, and 0.2 GPa for Al.
+doi: High-pressure equations of state of Al, Cu, Ta, and W
+notes: |
+  "Hugoniot data were reduced to isotherms using calculated thermal pressures. For these four metals,
+  available experimental results permitted corrections of Hugoniot data for shock-induced strength as
+  a function of shock pressure. High-pressure shock-wave data are extended to zero pressure using
+  ultrasonically determined bulk moduli."

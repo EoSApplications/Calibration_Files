@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2011
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 40  #um
+cal_to_name: Holmes et al., 1989 
+cal_to_composition: Pt   
+eos: Rydberg-Vinet
+order: 3
+V0: 38.01     #A^3
+V0_unc:
+K0: 36.07  #GPa
+is_K0_fixed: no
+K0_unc: 0.54
+K0_prime: 5.49
+K0_prime_unc: 0.04
+
+max_pressure: 304
+PTM: NaCl
+gasket: W
+synchrotron: Spring-8, BL10XU
+peaks_used_to_fit_sample: B2 (100), (110), (111)
+reference_temperature: 300 
+sample_heating: double-sided laser annealing to ~1500–2000 K (to minimize stress) 
+data_quality_notes: |
+  The study presents experimental data extending the NaCl-B2 equation of state to ultra-high pressures (up to 304 GPa), with the B2 (CsCl-type) phase confirmed to remain stable throughout this range. Volume calculations are robustly constrained using three independent diffraction peaks—(100), (110), and (111)—which improves reliability and reduces crystallographic bias. The use of platinum as an internal pressure standard, along with detailed d-spacing measurements for both Pt and NaCl (shown in Fig. 1 on page 3), supports internal consistency. Additionally, the authors carefully address nonhydrostatic stress (estimated ~2.4 GPa) and recalibrate previous datasets (Sata et al.) using multiple Pt pressure scales, which strengthens comparability. However, uncertainties arise from dependence on pressure scale choice and the fixed V0 derived indirectly from the g–G plot, as the B2 phase cannot be quenched to ambient conditions.
+doi: 10.1063/1.3573393
+notes: |
+  Using the platinum (Pt) pressure scale of Holmes et al. (1989), the NaCl-B2 equation of state fitted with the Vinet formulation shows noticeable deviations compared to more recent calibrations, particularly at extreme pressures. The fitted parameters are: zero-pressure volume V₀ ≈ 38.01 Å³ (fixed), bulk modulus K₀ ≈ 36.07 GPa, and pressure derivative K₀′ ≈ 5.49. These values indicate a relatively softer bulk modulus and a stronger pressure dependence (higher K₀′), leading to steeper curvature under compression. As a result, this calibration produces significantly higher pressure estimates, with differences reaching up to about +37 GPa (~10%) at ~364 GPa compared to more recent Pt scales. Overall, while internally consistent, the Holmes et al. Vinet-based calibration tends to overestimate pressure at multi-megabar conditions, highlighting limitations of older Pt pressure scales for modern high-pressure studies.

@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jacobsen et al., 2008
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 100
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3
+V0: 74.698   # Å^3
+V0_unc: 0.007
+P0: 0
+K0: 164.1    # GPa  
+is_K0_fixed: no
+K0_unc: 0.9
+K0_prime: 4.05
+K0_prime_unc: 0.04
+max_pressure: 80
+PTM: KCl
+synchrotron: APS GSECARS 13-BM-D
+peaks_used_to_fit_sample: hk0 and hkl reflections; nonhydrostatic broadening visible above ~40 GPa
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  KCl medium becomes non-hydrostatic at relatively low pressures.
+  MgO compression in KCl produces significantly higher K0 and K′ than in helium.
+  This KCl-derived EOS agrees well with independent ultrasonic and Brillouin data,
+  supporting K′ ≈ 4.0 as the intrinsic value for MgO.
+doi: 10.2138/am.2008.2988
+notes: |
+  This EOS is used in the paper to demonstrate that the anomalously low K′ = 3.74
+  from the He-medium data is not intrinsic to MgO but arises from ruby scale issues.
+  The KCl-derived EOS provides an upper bound on MgO stiffness under non-hydrostatic
+  compression and matches the expected elastic constants much better.

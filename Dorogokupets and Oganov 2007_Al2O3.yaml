@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Oganov 2007
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: 
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Occelli et al., 2003; Zha et al., 2000; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007; Dorogokupets and Oganov 2007
+eos: Polynomial
+order: 2    # not specified
+A: 1884   # GPa
+A_unc: not specified
+B: 5.5        # called m
+B_unc: 
+lambda_0: 694.24  # nm infered from equation 1a
+max_pressure: 160  # GPa, infer extrapolation to 300 GPa possibl
+PTM: He #(in calibration datasets)
+synchrotron: not specified
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: room temperature
+sample_heating: none
+data_quality_notes: |
+  Dorogokupets and Oganov (2007) constructed semiempirical EOSs for several
+  metals and MgO from shock-wave, ultrasonic, x-ray, and thermochemical data.
+  These were used to cross-check and refine ruby pressure scales. The final 
+  recommended ruby scale was expressed in the form:
+    P = 1884 * (Δλ/λ0) * [1 + 5.5*(Δλ/λ0)].
+  This scale agrees with recalibrated metal EOS up to ~160 GPa and provides a 
+  single consistent description up to ~300 GPa. Deviations are typically ≤1–2 GPa
+  compared to independent isotherm measurements.
+doi: 10.1103/PhysRevB.75.024115
+notes: |
+  Recommended ruby scale: P = 1884(Δλ/λ0)(1 + 5.5 Δλ/λ0), valid up to ~300 GPa. 
+  Authors emphasize improved internal consistency with Al, Au, Cu, Pt, Ta, W, MgO,
+  and diamond EOS compared to earlier calibrations.

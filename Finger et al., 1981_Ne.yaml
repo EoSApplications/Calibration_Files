@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Finger et al., 1981
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: #diamond-window, cryogenic/liquefaction loading cell
+culet: not specified
+cal_to_name: Piermarini et al., 1975
+cal_to_composition: Al2O3
+eos: Murnaghan
+order: 2  # second-order Murnaghan with fixed V0, K0
+V0_cc_mole: 13.394
+P0: -0.1337
+K0: 0.7437  # GPa from Table II, Batchelder et al., 1967
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 7.071
+K0_prime_unc: 0.057
+K0_dprime: -0.51
+K0_dprime_unc: 0.04
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 14.4  # GPa
+PTM: Ne
+synchrotron: Not specified 
+peaks_used_to_fit_sample: fcc (111), (200), (220), (311) single-crystal reflections
+reference_temperature: 293
+sample_heating: none
+data_quality_notes: Pressures measured using ruby fluorescence (±0.5 kbar). Unit-cell constants, corrected to 0 K using Debye zero-point model. EOS parameters fitted to the static zero-K Murnaghan form described in the text.
+doi: 10.1063/1.92597
+notes: EOS parameters reflect the zero-Kelvin static part after correcting experimental, pressures for thermal and zero-point effects using the Debye model. Volume ratio is referenced to V0 from low-temperature experiments, not measured 293 K values. Pressure equation used is the "second-order Murnaghan" of Finger et al. (1981).
+#Warning, this EOS is very bad above 15 GPa

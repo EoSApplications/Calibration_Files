@@ -1,0 +1,106 @@
+name: Sync calibration data to Website
+# After a calibration change merges to main, regenerates two artifacts the public
+# Website repo needs and pushes them there directly - Website has no branch
+# protection, and these are derived data files (not human-authored content), so a
+# second review adds no value:
+#
+#   - data/Calibration_Files_Source.json: the pinned-commit config
+#     Pyodide_Bootstrap.js reads to find the live jsDelivr CDN URL for this
+#     commit's calibration data.
+#   - data/Calibration_Graph.json: the static snapshot of the calibration network
+#     the EoSHolo page renders. Building this needs the actual calibration-parsing
+#     and label-formatting code from EoSAlign, not just the raw yaml data - see
+#     .github/scripts/Generate_Calibration_Graph.py's own header for why that
+#     pulls in EoSAlign's full dependency list (including PySide6, only imported
+#     for a few pure label-formatting functions and never instantiated).
+#
+# Needs a WEBSITE_SYNC_TOKEN secret: a fine-grained PAT scoped to the Website
+# repo only, with Contents: Read & Write - same pattern as EOSALIGN_SYNC_TOKEN,
+# see that secret's own setup walkthrough.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.yaml'
+
+jobs:
+  sync-website:
+    runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
+    steps:
+      - name: Check out Calibration_Files (this repo)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          path: Calibration_Files
+
+      - name: Check out EoSAlign (public repo, read-only, no token needed)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          repository: EoSApplications/EoSAlign
+          path: EoSAlign
+
+      - name: Check out Website
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          repository: EoSApplications/Website
+          token: ${{ secrets.WEBSITE_SYNC_TOKEN }}
+          path: Website
+
+      - name: Install system libraries PySide6 needs even for headless imports
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libegl1 libgl1 libopengl0 libxkbcommon0 libxkbcommon-x11-0 \
+            libdbus-1-3 libxcb-cursor0 libxcb-icccm4 libxcb-image0 \
+            libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 \
+            libxcb-xfixes0 libxcb-xinerama0 libxcb1 libx11-xcb1 libxrender1 \
+            libxi6 libsm6 libnss3
+
+      - name: Install EoSAlign's Python dependencies
+        run: python3 -m pip install --no-input -r EoSAlign/requirements.txt
+
+      - name: Mirror this repo's calibration files into the EoSAlign checkout, for the freshest possible graph data
+        run: |
+          set -euo pipefail
+          DEST="EoSAlign/Code/Calibration_Files"
+          mkdir -p "$DEST"
+          cp Calibration_Files/*.yaml "$DEST"/
+          for existing in "$DEST"/*.yaml; do
+            name="$(basename "$existing")"
+            if [ ! -f "Calibration_Files/$name" ]; then
+              rm "$existing"
+            fi
+          done
+
+      - name: Write data/Calibration_Files_Source.json
+        run: |
+          set -euo pipefail
+          mkdir -p Website/data
+          cat > Website/data/Calibration_Files_Source.json <<EOF
+          {
+            "Pinned_Commit": "${{ github.sha }}",
+            "Base_URL": "https://cdn.jsdelivr.net/gh/EoSApplications/Calibration_Files@${{ github.sha }}/Distribution/"
+          }
+          EOF
+
+      - name: Generate data/Calibration_Graph.json
+        run: |
+          python3 Calibration_Files/.github/scripts/Generate_Calibration_Graph.py \
+            --eosalign-code EoSAlign/Code \
+            --output Website/data/Calibration_Graph.json
+
+      - name: Commit and push, if anything changed
+        run: |
+          set -euo pipefail
+          cd Website
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/Calibration_Files_Source.json data/Calibration_Graph.json
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git commit -m "Sync calibration data from Calibration_Files@${{ github.sha }}"
+          git push origin main

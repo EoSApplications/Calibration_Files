@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Greene et al., 1994
+category: 2
+composition: Al
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 35- 50  #um
+cal_to_name: Holmes et al., 1989  #separate by a ; if multiple references are used 
+cal_to_composition: Pt  #separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 16.505  #not in paper assumed from Holzapfel 2005
+V0_unc:
+K0: 72.7                # GPa (fixed to ultrasonic value)
+is_K0_fixed: yes
+K0_unc: 0.2
+K0_prime: 4.14          # BE2 fit from text
+K0_prime_unc:
+max_pressure: 220
+PTM: None
+synchrotron: CHESS
+peaks_used_to_fit_sample: fcc 111, 200, 220, 311
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  The BE2 equation (second-order Birch form) provides a reasonable empirical fit to
+  the measured P–V data of Al under compression, but begins to deviate above ~50 GPa.
+doi: 10.1103/PhysRevLett.73.2075
+notes: |
+  The authors report that the BE2 equation can fit the static compression data with
+  K0 = 72.7 GPa and K0' = 4.14. However, they emphasize that K0' differs greatly
+  from the thermodynamic value and therefore the BE2 form is physically inconsistent.
+  For this reason, the BE2 EOS is NOT recommended for extrapolation, and the authors
+  conclude that the Holzapfel H11 “simple solid” EOS provides a significantly better
+  description of Al to 220 GPa.

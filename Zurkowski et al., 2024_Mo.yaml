@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zurkowski et al., 2024
+category: 1
+composition: Mo  # bcc
+method: XRD
+technique: DAC
+DAC_type: toroidal DAC and conventional DAC
+culet: 15 μm, 9 μm (tDAC); 75/300 μm (beveled DAC)
+
+cal_to_name: Dewaele et al., 2004
+cal_to_composition: Cu
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 15.592      # Å^3/atom (fixed in Table 3)
+V0_unc: 0.001
+
+K0: 275.4               
+is_K0_fixed: no
+K0_unc: 0.8
+
+K0_prime: 3.80
+K0_prime_unc: 0.01
+
+max_pressure: 328   # GPa (Mo(200) tracked to this pressure)
+PTM: Cu; Ne # (tDAC), Ne (DAC)
+synchrotron: APS 16-ID-B; PETRA III P02.2
+peaks_used_to_fit_sample: Mo(200) primary; 110, 211, 220 also measured
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  EOS-1 reflects the preferred Vinet fit where K0 is fixed to the ultrasonic
+  value of 261 GPa. Mo(200) provides the least deviatoric strain and yields 
+  the most hydrostatic volumes. The Cu EOS from Dewaele et al. (2004) was
+  used for pressure calibration.
+
+doi: 10.1103/PhysRevB.110.024105
+
+notes: |
+  EOS-1 is the recommended calibration for Mo because fixing K0 reduces
+  covariance between K0 and K0'. This fit reproduces all Mo(200) volumes 
+  up to 328 GPa

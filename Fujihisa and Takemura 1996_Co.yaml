@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fujihisa and Takemura 1996
+category: 1
+composition: Co-hcp # (hcp)
+method: XRD
+technique: DAC, angle-dispersive synchrotron XRD
+DAC_type: symmetric DACs with 400 μm and 300 μm culets
+culet: 400 μm (P < 47 GPa); 300 μm (P > 47 GPa)
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 6.626 #from table 0.1124 cc/g
+V0_unc:
+P0: 0
+K0: 199                    # GPa  
+K0_unc: 6
+is_K0_fixed: no
+K0_prime: 3.6
+K0_prime_unc: 0.2
+max_pressure: 79          # hcp stable to highest measured P
+PTM: ME #4:1 MeOH–EtOH mixture
+gasket: Udimet 700 (Ni based alloy)
+synchrotron: KEK Photon Factory BL-6B
+peaks_used_to_fit_sample: h100, h101, h102 (hcp reflections)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Starting powder contained both hcp and metastable fcc Co.
+  fcc phase fully converted to hcp by 24 GPa.
+  No phase transition observed from hcp up to 79 GPa.
+  Vinet EOS fitted to normalized volumes (Fig. 3).
+  c/a ratio decreases continuously under pressure; fitted with a polynomial.
+  fcc volume found to be ~0.2% larger than hcp at identical pressures.
+
+doi: 10.1103/PhysRevB.54.5
+
+notes: |
+  This EOS is one of the primary experimental references for hcp-Co at 300 K.
+  Later studies (Yoo 2000; Antonangeli 2008) confirm similar values:
+  K0 ≈ 199 GPa, K0' ≈ 3.6. V0 not explicitly measured in this paper and is
+  taken from Yoo 2000

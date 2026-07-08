@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama et al., 2006
+category: 1
+composition: Al #fcc
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 30-50  #um
+cal_to_name: Akahama and Kawamura 2004; Holmes et al., 1989 #separate by a ; if multiple references are used 
+cal_to_composition: Diamond; Pt  #separate by a ; if multiple compositions are used  
+
+eos: Birch-Murnaghan
+order: 3
+V0: 66.39
+V0_unc: 0.002
+K0: 72.7  #GPa, ultrasonics 
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.446
+K0_prime_unc: 0.087
+max_pressure: 222   # GPa; 333 highest pressure reached in hcp field, fcc EOS constrained up to transition region
+PTM: None #(Al + Pt in Re gasket; Al acts as soft medium)
+gasket: Re
+synchrotron: SPring-8 BL10XU
+peaks_used_to_fit_sample: fcc 111, 200, 220, 311 (EOS fit); hcp 100, 101, 102 near transition
+reference_temperature: 297 K
+sample_heating: none
+
+data_quality_notes: |
+  Pressures were determined from the EOS of Pt (Holmes et al., 1989) using in situ Pt lattice parameters.
+  No pressure transmitting medium was used; however, Al itself (lower shear modulus) acted as an efficient
+  pressure medium, limiting uniaxial stress. Standard deviation of Pt-derived pressures is ~0.6 GPa for the
+  preferred Vinet fit with K0 fixed at 72.7 GPa and K0' = 4.83. The fcc–hcp transition begins at V/V0 = 0.509(1),
+  corresponding to 217 ± 10 GPa.
+
+doi: 10.1103/PhysRevLett.96.045505
+notes: |
+  EOS parameters are for fcc-Al at 297 K, fitted to the Vinet formulation with K0 fixed to the ultrasonic/
+  low-pressure value 72.7 GPa and K0' = 4.83(3). This EOS is proposed as suitable for use as a pressure
+  standard up to the multimegabar range. Above ~217 GPa, hcp-Al appears and coexists with fcc-Al over a
+  broad pressure interval; the EOS here describes the fcc branch only.

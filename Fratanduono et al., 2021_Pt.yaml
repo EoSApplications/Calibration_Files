@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fratanduono et al., 2021
+category: 1
+composition: Pt
+method: XRD
+technique: Ramp
+DAC_type: 
+culet: 
+cal_to_name: Absolute
+cal_to_composition: Pt
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 15.102
+V0_unc: 
+K0: 259.7  # GPa
+is_K0_fixed: no
+K0_unc: 0.16
+K0_prime: 5.839
+K0_prime_unc: 0.003
+
+max_pressure: 1100 # GPa
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: |
+    Ramp-compression data from NIF and Z are combined and reduced to the 298 K isotherm.
+    Pt shows ~3.9% relative standard deviation at 800 GPa.
+    Vinet EOS provides an accurate fit across the entire experimental range
+doi: 10.1126/science.abh0364
+notes: |
+    Vinet EOS parameters (V0, K0,T, K′0,T) taken directly from Table 1 of the manuscript.
+    These values define the recommended Pt 298 K isotherm up to 1.1 TPa.
+    These parameters should not be extrapolated beyond the region constrained by data.
+

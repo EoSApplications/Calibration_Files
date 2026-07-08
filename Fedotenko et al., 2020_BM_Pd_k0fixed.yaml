@@ -1,0 +1,45 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fedotenko et al., 2020
+category: 1
+composition: Pd
+method: XRD
+technique: DAC
+DAC_type: BX90 DAC with Boehler–Almax anvils
+culet: 250  # um
+cal_to_name: Fei et al., 2007
+cal_to_composition: Ne
+eos: Birch-Murnaghan
+order: 3
+V0: 58.863  # Å^3 per unit cell
+V0_unc: 0.002
+K0: 203  # GPa
+is_K0_fixed: no, K0' fixed
+K0_unc: 3
+K0_prime: 4
+K0_prime_unc: 0
+max_pressure: 31.2  # GPa
+PTM: Ne
+synchrotron: ESRF ID15B
+peaks_used_to_fit_sample: 111; 200; 220; 311
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Pure Pd metal was compressed in neon and measured by powder XRD
+  up to ~31 GPa to establish reference compressibility data for
+  comparison with Pd carbides and hydrides synthesized at HP–HT.
+  No structural phase transitions were observed over the pressure
+  range investigated.
+doi: 10.1016/j.jallcom.2020.156179
+notes: |
+  EOS parameters are derived from a third-order Birch–Murnaghan fit
+  to Pd P–V data collected during compression in Ne (DAC1, Table 1;
+  Fig. 1). The fitted parameters are:
+  V0 = 58.868(2) Å^3, K0 = 157(3) GPa, K0' = 9.9(4).
+
+  The authors note that the unusually high K0' value is atypical for
+  transition metals and may reflect the limited pressure range
+  (≤31 GPa). When K0' is fixed to the value reported by Mao et al.
+  (1978), a higher K0 (~190 GPa) is obtained.
+
+  This Pd EOS is intended as an internal reference within the study
+  and should not be treated as a high-pressure primary calibration.

@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Mashimo et al., 2016
+category: 2
+composition: W
+method: XRD
+technique: Symmetric-impact shock compression + VISAR
+
+cal_to_name: Absolute
+cal_to_composition: W
+
+eos: Birch-Murnaghan
+order: 3
+
+V0_per_atom: 15.87   # Å^3/atom from rho0 = 19.23 g/cm^3
+V0_unc:
+
+K0: 321.1   # GPa
+is_K0_fixed: no
+K0_unc:
+
+K0_prime: 3.80
+K0_prime_unc:
+
+
+max_pressure: 345   # GPa
+PTM: none
+synchrotron:
+reference_temperature: 300   # K
+
+sample_heating: >
+  Shock compression. Hydrostatic isothermal compression curve derived
+  from Hugoniot data using Mie-Gruneisen thermal corrections and
+  shear-strength correction.
+
+data_quality_notes: >
+  EOS fit corresponds to the BM-3 fit in Table V (typo labeled as BM-2) using strength-corrected
+  hydrostatic isothermal compression data. Fit performed up to 345 GPa.
+  Authors state BM-3 fits well up to ~200 GPa but deviates to higher
+  pressure at higher compression.
+
+doi: 10.1063/1.4939725
+
+notes: |
+  EOS parameters from Table V, BM-3 fit with strength correction.
+  Uses third-order Birch-Murnaghan formalism.
+  Assumes q = dln(gamma)/dln(V) = 1 and gamma/V = const.

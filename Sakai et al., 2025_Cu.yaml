@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: Cu
+method: XRD
+technique: DAC
+DAC_type: tDAC
+culet: 20 #um
+cal_to_name: Fratanduono et al., 2020
+cal_to_composition: Cu
+cal_to_eos:
+eos: Rydberg-Stacey
+V0: 47.218 # A^3/unit cell, Fratanduono et al., 2020 (as cited by Sakai et al., 2025 Table 2)
+K0: 133.6 # GPa, Fratanduono et al., 2020 (as cited by Sakai et al., 2025 Table 2)
+is_K0_fixed: yes
+K0_prime: 5.2035 # Fratanduono et al., 2020 (as cited by Sakai et al., 2025 Table 2)
+K0_prime_unc: 0.0006 # Fratanduono et al., 2020 (as cited by Sakai et al., 2025 Table 2)
+K_infinity_prime: 2.000 # Fixed, see Table 2 and text
+K_infinity_prime_unc: 0.002 # Fratanduono et al., 2020 (as cited by Sakai et al., 2025 Table 2)
+max_pressure: 431 # GPa (see Table 1, Run #1a, t-DAC)
+PTM: None
+gasket: W for runs 7a, 7b and 7c; Re for rest 
+synchrotron: SPring-8 BL10XU and BL37XU
+peaks_to_fit_sample:
+gasket: W for runs 7a, 7b and 7c; Re for rest
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: No heating or laser annealing was applied; measurements performed at ambient temperature. See Methods and Table 1.
+data_quality_notes: No significant data scatter reported; unit cell volume measurements for Cu are consistent across the pressure range investigated.
+doi: https://doi.org/10.1038/s43246-025-00792-5
+notes: |
+  Copper equation of state was calibrated using t-DAC up to 431 GPa (culet 20 um, Run #1a) and conventional DAC up to 88 GPa (culet 300 um, Run #1b).
+  Calibration path: Cu (primary scale, based on Fratanduono et al., 2020). All EoS parameters except K0_prime and K_infinity_prime_unc were fixed to values from Fratanduono et al., 2020, as cited by Sakai et al., 2025.
+  The Rydberg–Stacey EoS parameters for Cu are listed in Table 2.
+  For further details on data sources and calibration sequence, see Figure 1 and Table 1 of Sakai et al., 2025.

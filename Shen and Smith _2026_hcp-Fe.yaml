@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 22.352
+V0_unc: #fixed
+K0: 168.55  # GPa
+is_K0_fixed: no
+K0_unc: 0.6
+K0_prime: 5.53
+K0_prime_unc: 0.03
+
+max_pressure: 140 # GPa, hcp  phase above 16 GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (100), (002), (101), (103)
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+   The hexagonal close-packed iron (hcp-Fe) dataset demonstrates high data quality across the high-pressure range where this phase is stable. Diffraction peaks remain well-defined up to ~140 GPa, allowing accurate determination of unit-cell volumes with typical relative uncertainties of ~0.05–0.1% . Volumes were calculated using multiple hcp reflections [(100), (002), (101), and (103)], improving robustness and reducing sensitivity to peak overlap. Compared to its bcc counterpart, hcp-Fe exhibits slightly broader diffraction peaks at high pressure, consistent with modest increases in strain and/or grain-size effects, but still within acceptable limits for precise analysis. Measurements from DAC-1 and DAC-2 show excellent agreement, with minimal scatter and relative differences generally below ~0.1%, indicating a uniform pressure environment. Deviatoric stress effects remain small under helium quasihydrostatic conditions, contributing only minor systematic uncertainty. Overall, the hcp-Fe dataset is dense, internally consistent, and reliable for EOS determination.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+  Hexagonal close-packed iron (hcp-Fe) represents the stable high-pressure phase of iron and is critical for understanding compression behavior at extreme conditions. The experimentally derived volume–volume (V–V) relations relative to Cu are smooth and well-defined, reflecting consistent relative compressibility across the studied pressure range . Cross-comparison with ramp-derived EOS models reveals a systematic positive deviation (ΔV/V up to ~+0.9%), indicating that the dynamic EOS predicts a slightly stiffer response (smaller volumes) relative to the Cu-referenced scale. Despite this offset, the discrepancies are modest and provide useful constraints for refining EOS models. In terms of stiffness scaling, hcp-Fe behaves similarly to other close-packed metals, showing relatively rapid stiffening with compression. DAC-1 and DAC-2 combined. eos

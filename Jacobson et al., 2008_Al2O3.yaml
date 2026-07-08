@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jacobsen et al., 2008
+category: 2
+composition: Al2O3
+method: Luminescence
+technique: DAC
+DAC_type: symmetric DAC
+culet: 100
+cal_to_name: Zha et al., 2000
+cal_to_composition: MgO
+
+eos: Power
+order: 2
+A: 1940   # GPa
+A_unc: 
+B: 10.32  #m in text
+B_unc: 0.007
+lambda_0: 694.2  # nm, assumed value, not listed in text
+
+max_pressure: 118   # range of He-MgO dataset used to derive this scale
+PTM: He
+gasket: Re
+synchrotron: APS GSECARS 13-BM-D
+peaks_used_to_fit_sample: Ruby R1 fluorescence
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  This revised helium-specific ruby scale was constructed so that pressures derived
+  from ruby fluorescence match those inferred from the primary MgO scale (Zha et al. 2000)
+  during single-crystal MgO compression in He. The previous ruby scale (Mao et al. 1986)
+  underestimates pressures by 5–8% above 60–80 GPa in helium environments.
+
+doi: 10.2138/am.2008.2988
+
+notes: |
+  This calibration is valid only for experiments performed in helium as a pressure 
+  medium. It should not be used for non-He media (Ne, Ar, KCl, MEW, etc.) because the 
+  correction is specific to the soft stress environment of He in DACs. Jacobsen et al. 
+  proposed this ruby correction to reconcile He-based MgO measurements with the 
+  primary MgO scale.

@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele and Torrent, 2013
+category: 1
+composition: Al2O3 #α-Al2O3 (corundum)
+method: XRD
+technique: DAC
+DAC_type: membrane-type with BN supports
+culet: not specified  # ruby spheres chosen small enough not to bridge culets
+cal_to_name: Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3 #(ruby)
+cal_to_eos: #not specified 
+cal_to_order: #not specified 
+eos: Rydberg-Vinet
+order: 3
+V0: 255.45  # A^3 per hexagonal cell (6 f.u.)
+V0_unc: 0.52
+K0: 254.1  # GPa
+is_K0_fixed: no
+K0_unc: 7.6
+K0_prime: 4.00
+K0_prime_unc: 0.15
+K_infinity_prime: #not applicable
+K_infinity_prime_unc: #not applicable
+max_pressure: 165  # GPa
+PTM: He
+synchrotron: ESRF ID27 and ID09
+peaks_used_to_fit_sample: 4–8 single-crystal diffraction peaks integrated individually
+reference_temperature: 300  #K
+sample_heating: none
+data_quality_notes: >
+  Ruby remains in corundum structure metastably to 165 GPa with no evidence
+  of amorphization or irreversible changes. Peak broadening above ~80 GPa
+  attributed to nonhydrostaticity. Luminescence shifts on decompression are minor.
+doi: https://doi.org/10.1103/PhysRevB.88.064107
+notes: |
+  Experimental Rydberg-Vinet fit parameters were obtained from three runs using
+  He PTM. Fit values match well with ultrasonic bulk modulus (253 ± 2 GPa).
+  Pressure calibration relied on ruby luminescence. Authors caution against
+  extrapolating beyond 165 GPa.
+

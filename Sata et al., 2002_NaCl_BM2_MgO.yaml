@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sata et al., 2002
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 300
+cal_to_name: Speziale et al., 2001
+cal_to_composition: MgO
+# NaCl-B2 is ONLY stable above ~30 GPa.
+eos: Birch-Murnaghan
+order: 3
+V0: 27.17 
+P0: 31.78
+K0: 153.8       # GPa
+K0_unc: 0.11
+is_K0_fixed: yes
+K0_prime: 4
+K0_prime_unc: 0.1
+
+K_infinity_prime:
+K_infinity_prime_unc:
+
+max_pressure: 68        # GPa (maximum pressure in the experiment)
+PTM: None # Pt + MgO mixture; NaCl (sample)
+gasket: Re
+synchrotron: APS GSECARS 13-BM-D
+peaks_used_to_fit_sample: (100), (110), (200) B2 reflections  # see Table I
+
+reference_temperature: 300   # K
+sample_heating: laser annealing to ~1200 K at each pressure step (stress relaxation)
+
+data_quality_notes: >
+  NaCl-B2 unit-cell volumes were measured from 30–68 GPa. Laser annealing
+  significantly reduced differential stress, improving precision. Because
+  B2-phase NaCl is not stable at low pressure, the authors used a modified
+  third-order Birch–Murnaghan EOS referenced at Vr=27.17 Å³ rather than
+  the conventional zero-pressure form. Pt and MgO calibrations give consistent
+  results. Zero-pressure V0 cannot be determined from B2 data.
+
+doi: 10.1103/PhysRevB.65.104114
+
+notes: >
+  EOS parameters listed are from the Pt-calibrated experiment (Table II).
+  MgO calibration yields similar values: Pr=32.08 GPa, Kr=143.2 GPa,
+  Kr′=3.94. The modified EOS should be evaluated exactly as given in Eq. (1a)
+  rather than a standard BM3 form.

@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Yoo et al., 2000
+category: 1
+composition: Co-hcp #hcp
+method: XRD
+technique: DAC 
+DAC_type: 
+culet: 300 μm flats (P < 70 GPa); beveled 300→100 μm at 8° (P > 70 GPa)  #um
+cal_to_name: Holmes et al., 1989; Cynn and Yoo 1999 #separate by a ; if multiple references are used 
+cal_to_composition: Pt; Ta  #separate by a ; if multiple compositions are used  
+
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 6.626 #from table 0.1124 cc/g
+V0_unc:
+K0: 199 #GPa
+is_K0_fixed: no
+K0_unc:
+K0_prime: 3.6
+K0_prime_unc:
+
+max_pressure: 100   # GPa; ε(hcp)-Co stable to ~100 GPa at 300 K, fcc stable to at least 150 GPa 
+PTM: Ar; NaCl       # Ar or NaCl used as pressure media
+gasket: Re
+synchrotron: NSLS X17C (BNL)  # superconducting wiggler beamline
+peaks_used_to_fit_sample: hcp 100, 002, 101, 102, 110, 103 (≥4 reflections used per pattern)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Pressures were determined from the equations of state of Pt or Ta using their 
+  in situ lattice parameters, with uncertainties of ~4 GPa at 100 GPa and ~6 GPa 
+  at 200 GPa. The ε(hcp) phase is observed up to ~100 GPa at room temperature and 
+  then gradually transforms to a new β(fcc) Co phase between ~105–150 GPa. 
+  Third-order Birch–Murnaghan fits to the ε-Co P–V data give B0 = 199 GPa and 
+  B0' = 3.6, in agreement with previous measurements and first-principles calculations.
+
+doi: 10.1103/PhysRevLett.84.4132
+notes: |
+  This YAML describes the ε(hcp) Co equation of state at 300 K from Yoo et al. (2000).
+  The study also reports a martensitic transition to a β(fcc) phase near 105 GPa with 
+  negligible volume change; the fcc phase has V0 = 0.1056 cm^3/g, B0 = 224 GPa, 
+  and B0' = 5.8 (Table II), but those parameters are not included here.

@@ -1,0 +1,51 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holzapfel 2005
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Holzapfel 2005; Holzapfel 1996; Occelli et al., 2003; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004;
+cal_to_composition: Al2O3; Au; Diamond; Cu; Au; W; Al; Pt; Ta
+eos: AP2
+equation_full: |
+  # AP2 Equation of State (Holzapfel AP2 form)
+  #
+  # p(V) = 3*K0 * (1 - x)/x^5 * [1 + c2*x*(1 - x)] * exp[c0*(1 - x)]
+  #
+  # where:
+  #   x = (V / V0)^(1/3)
+  #
+  # AP2 parameters:
+  #   c0 = - ln(3*K0 / a_FG) - (5/3) * ln(V0 / Z)
+  #   c2 = (3/2)*(K0' - 3) - c0
+  #
+  # Constants:
+  #   a_FG = 0.02337 GPa·nm^5   (Fermi-gas constant)
+
+V0_per_atom: 16.95  # Å^3 (converted from 0.011789 nm^3, Table 1 Vo_fit)
+V0_unc:
+K0: 168  # GPa, fixed 
+K0_unc:
+is_K0_fixed: no
+K0_prime: 6.2  
+K0_prime_unc:
+
+atomic_number: 79  
+max_pressure: Not Applicable
+PTM: Not Applicable # (this is an analysis paper); underlying datasets use He (diamond, Cu, Au, W, Al, Pt, Ta) and earlier Ar/Ne calibrations
+synchrotron: not specified  # original XRD data from Occelli et al. 2003; Dewaele et al. 2004
+peaks_used_to_fit_sample:
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  The EOS parameters are the AP2-fit values (Vo_fit, Ko_fit, K0'fit) taken from the
+  upper section of Table 1 in Holzapfel (2005), evaluated after adopting the HP05 ruby
+  scale with parameters A = 1845 GPa, B = 14.7, and C = 7.5. These fit values represent
+  the EOS derived purely from the single-crystal XRD data recalculated using the updated
+  ruby scale. Literature (Ho96) values for Au (V0_lit = 0.016959 nm^3, K0_lit = 167 GPa,
+  K0'_lit = 6.2) serve as a reference set against which the fit values were compared; the
+  agreement is within the expected ~1% uncertainty for high-pressure EOS determinations.
+doi: 10.1080/09511920500147501
+notes:

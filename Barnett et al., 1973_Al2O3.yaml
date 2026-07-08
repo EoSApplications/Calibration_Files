@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Barnett et al., 1973
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: piston–cylinder diamond anvil cell (Waspaloy design)
+culet: Not Specified
+cal_to_name: Not Specified
+cal_to_composition: Not Specified 
+eos: LinearShift
+lambda_0: 694.2  # nm
+A: 0.36                  # nm/GPa
+max_pressure: 10      
+PTM: ME
+synchrotron: none
+peaks_used_to_fit_sample: ruby R1 and R2 fluorescence lines
+reference_temperature: 298   # K
+sample_heating: external resistive heating possible (to ~700 °C)
+
+data_quality_notes: |
+  This study establishes ruby fluorescence as a practical pressure
+  sensor in the diamond anvil cell. The pressure dependence of the
+  ruby R-lines is shown to be approximately linear over the explored
+  pressure range. The reported pressure coefficient (dλ/dP ≈ 0.365 Å/kbar)
+  is an experimental measurement intended for comparison and method
+  validation, not a finalized pressure scale.
+
+  Absolute pressure calibration is explicitly stated to be uncertain
+  above ~40 kbar, and no analytic pressure scale equation is proposed.
+
+doi: 10.1063/1.1685943
+notes: |
+  Barnett et al. (1973) is a foundational instrumentation paper.
+  It introduces ruby fluorescence as a pressure sensor and
+  demonstrates its precision and practicality.

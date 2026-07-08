@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Walker et al., 2002
+category: 1
+composition: KCl-B2  # B2 (CsCl-type) structure
+method: XRD
+technique: multi-anvil press (EDXRD)
+DAC_type: # not applicable
+culet: # not applicable  #um
+cal_to_name: Birch 1986 
+cal_to_composition: NaCl-B1
+eos: Birch-Murnaghan
+order: 3
+V0: 53.53  # A^3 per cubic cell (1 f.u.) — fictive V* at 298 K from ambient-T fit
+V0_unc: # not specified
+K0: 23.7  # GPa  (237 kbar preferred ambient-T fit)
+is_K0_fixed: no
+K0_unc: # not specified
+K0_prime: 4.4
+K0_prime_unc: # not specified
+max_pressure: 8.1  # GPa (ambient-T measurements up to ~81 kbar)
+PTM: Not Applicable
+synchrotron: CLRC Daresbury Laboratory, Station 16.4
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 298  # K
+sample_heating: # not applicable for ambient-T runs
+data_quality_notes: |
+  Ambient-temperature B2 KCl volumes measured in a large-volume multi-anvil press and referenced to NaCl (BE2) as pressure standard. Preferred ambient-T fit (Table 3, bold entry) gives V* = 53.53 A^3/cell (Z=1), K0 = 237 kbar, K0' = 4.4. Ambient-T series covers ~19–81 kbar (Table 2).
+doi: 10.2138/am-2002-0701 
+notes: |
+  Paper derives B2 KCl ambient volume (V0) by fitting the Birch BE1 (Birch–Murnaghan) form to 298 K data because B2 is not stable at 0 GPa. Calibration pressures come from NaCl BE2 (Birch, 1986). Relevant details and tabulated ambient-T points are in Table 2; EOS parameters summarized in Table 3 (preferred bold entry).

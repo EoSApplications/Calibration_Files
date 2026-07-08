@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Litasov et al., 2013
+category: 1
+composition: Mo  # bcc-Mo
+method: XRD
+technique: Multi-anvil press (in situ synchrotron XRD)
+cal_to_name: Litasov et al., 2013; Litasov et al., 2013
+cal_to_composition: MgO; Au
+
+eos: Rydberg-Vinet
+order: 3
+V0: 31.14
+V0_unc: 0.02
+K0: 260  # GPa
+is_K0_fixed: no
+K0_unc: 1
+K0_prime: 4.21
+K0_prime_unc: 0.05
+
+max_pressure: 31  # GPa
+PTM: not applicable (multi-anvil pressure media; e.g., Co-doped MgO / ZrO2 assemblies described)
+synchrotron: SPring-8 (BL04B1), SPEED-MkII and SPEED-1500 (energy-dispersive XRD)
+peaks_used_to_fit_sample: Mo 4–5 major diffraction lines (not individually listed). Pressure markers Au or MgO typically used (111), (200), (220), (311), (222).
+reference_temperature: 298.15  # K
+sample_heating: in situ measurements to 1673 K (P–V–T dataset)
+data_quality_notes: Hydrostaticity assessed via line widths; differential stress largely relaxed by high-T annealing; reported pressure uncertainty from marker volume fits typically <0.1 GPa.
+doi: 10.1063/1.4794127
+notes: |
+  - The room-temperature (≈298 K) compression was summarized with a Vinet EOS giving V0 = 31.14 ± 0.02 Å^3,
+    K0 = 260 ± 1 GPa, and K0' = 4.21 ± 0.05.

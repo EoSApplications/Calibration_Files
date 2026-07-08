@@ -1,0 +1,50 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ross et al., 1986
+category: 3
+composition: Ar  # solid argon, fcc
+method: XRD
+technique: DAC
+DAC_type: diamond-window DAC
+cal_to_name: Piermarini et al., 1975
+cal_to_composition: Al2O3  # ruby
+eos: Birch-Murnaghan  # Fit in EoSAlign paper to the data in table 1
+order: 3
+V0_cc_mole: 21.343   # cm^3/mol (liquid Ar reference at 87 K, used in Hugoniot reduction)
+V0_unc: 3.78
+K0: 5.6987
+is_K0_fixed: no
+K0_unc: 6.06
+K0_prime: 5.5081
+K0_prime_unc: 1.22
+
+
+max_pressure: 80.6  # GPa (~800 kbar)
+PTM: None #self Ar
+synchrotron: laboratory Mo Kα source
+peaks_used_to_fit_sample: 111; 200
+reference_temperature: 298 K
+sample_heating: none
+data_quality_notes: |
+  Static compression data for solid argon were collected to
+  800 kbar at room temperature. Argon remains fcc over the
+  entire pressure range. Unit-cell volumes were determined
+  from the (111) and (200) reflections.
+
+  Pressure was determined using a ruby fluorescence scale
+  calibrated for hydrostatic and quasi-hydrostatic conditions,
+  appropriate for weakly bound solids such as Ar.
+doi: 10.1063/1.451346
+notes: |
+  This study does not present a closed-form analytical EOS
+  (e.g., Birch–Murnaghan or Vinet) fit to the static Ar data.
+  Instead, static P–V measurements are compared directly
+  with isotherms reduced from shock Hugoniot data using an
+  exp-6 interatomic potential.
+
+  The agreement between static and shock-derived isotherms
+  is excellent up to ~400 kbar, supporting the validity of
+  the ruby pressure scale at these pressures to within ~10%.
+
+  The authors suggest that solid argon may serve as a static
+  pressure standard up to ~3–4 Mbar when combined with
+  theoretical reduction of shock data.

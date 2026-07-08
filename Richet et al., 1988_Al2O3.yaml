@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Richet et al., 1988
+category: 2
+composition: Al2O3  # α-Al2O3 (corundum)
+method: XRD
+technique: DAC
+DAC_type: Mao–Bell type diamond anvil cell
+culet: 550  #um 
+cal_to_name: Mao et al., 1986
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 25.58 # not specified explicitly, cited in Dubrovinsky et al., 1998
+V0_unc: # not specified
+K0: 253  # GPa #final isothermal values, averaging their data and others (Table 2)
+K0_unc: 10
+K0_prime: 5.0 #final isothermal values, averaging their data and others (Table 2)
+K0_prime_unc: 0.4
+max_pressure: 49.3 #GPa
+PTM: Ar
+synchrotron: NSLS X17C (white beam energy-dispersive diffraction)
+peaks_used_to_fit_sample: multiple single-crystal reflections (not individually listed)
+reference_temperature: 298  # K
+sample_heating: none
+data_quality_notes: |
+  Pressures measured with automated ruby-fluorescence system (Mao et al., 1983).
+  The quasi-hydrostatic ruby scale of Mao et al., 1986 was used; pressures also checked against compression of argon, which gave consistent results.
+doi: [https://doi.org/10.1007/BF00220687]
+notes: |
+  Study performed high-pressure X-ray diffraction on corundum (Al2O3) in a Mao–Bell DAC.
+  Pressure determined using the ruby scale of Mao et al., 1986 and cross-checked against argon.
+  Equation of state analysis with a third-order Birch–Murnaghan fit gave K0=252(5) GPa, K0′=4.2(2).

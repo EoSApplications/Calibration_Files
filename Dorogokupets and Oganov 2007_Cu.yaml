@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Oganov 2007
+category: 1
+composition: Cu
+method: XRD
+technique: Calculation+Shock Data
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Khishchenko et al., 2001
+cal_to_composition: Cu
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 7.113
+K0: 133.41 # GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 5.37
+K0_prime_unc:
+max_pressure: 200  # GPa, approximate extrapolation, not stated in text
+PTM: 
+reference_temperature: 293 K
+sample_heating: none
+data_quality_notes:
+doi: 10.1103/PhysRevB.75.024115
+notes: |
+  Abstract: "We have constructed semiempirical equations of state of Al, Au, Cu, Pt, Ta, and W, which within experimental
+  error bars describe the available shock-wave, ultrasonic, x-ray, and thermochemical data in the temperature
+  range from 10–20 K up to the melting temperature and to compression x=V/V0=0.5–0.7. The
+  comparison of the calculated room-temperature isotherms for these metals with quasihydrostatic measurements
+  supports recently proposed ruby pressure scales. We recommend a new ruby pressure scale in the form ...Polynomial... with parameters A=1884 GPa and m=5.5. The cross check on independent data
+  confirms the obtained PVT equations of state of Ag, Al, Au, Cu, Pt, Ta, W, MgO, and diamond. The equations
+  of state of these materials obtained here provide accurate and versatile means for calibrating pressure at all
+  temperatures below the melting point. Furthermore, they can be used for accurate tabulation of thermodynamic
+  properties (heat capacities, entropies) of these reference substances in a wide P-T range.

@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2014
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 300-150 #um
+cal_to_name: Dorfman et al., 2012  
+cal_to_composition: NaCl-B2 #they are going through other studys to have it be Pt, but no Pt was in the cell   
+cal_to_eos: Rydberg-Vinet
+cal_to_order: 3 
+cal_to_max_pressure:
+cal_to_is_K0_fixed: no
+cal_to_cal:
+eos: Birch-Murnaghan
+order: 3
+V0: 22.07      #A^3
+V0_unc: 0.20
+K0: 195.1 #GPa
+is_K0_fixed: no
+K0_unc: 2.4
+K0_prime: 4.93
+K0_prime_unc: 0.12
+
+max_pressure: 279
+PTM: NaCl
+gasket: W
+synchrotron: SPring-8 BL10XU (high-pressure XRD)
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)  # per Fig. 3
+reference_temperature: 300
+sample_heating: in situ double-sided laser annealing to relax stresses
+data_quality_notes: |
+  synchrotron XRD measurements and the use of laser annealing to reduce deviatoric stress, combined with multiple diffraction peaks (4–8 lines) for robust volume determination. However, uncertainties arise primarily from pressure calibration and nonhydrostatic effects. The choice of NaCl-B2 (Dorfman et al., 2012) introduces systematic dependence on its EoS, and different pressure scales can lead to variations of up to ~10% in pressure at ~300 GPa. Residual uniaxial stress in the DAC (estimated ~4–5 GPa) can affect volume by ~0.4–0.6% at high pressure, while limited diffraction quality (e.g., weak 002 peak in hcp Fe) and peak selection can influence lattice parameter accuracy. 
+
+doi: 10.1002/2014JB011019
+notes: |
+  For hcp-Fe measured by XRD in a symmetric-type DAC (300–150 µm culets), the equation of state was determined using NaCl-B2 as a pressure calibrant following Dorfman et al. (2012). Using this calibration (P4-scale), the fitted EoS parameters for pure iron are approximately V₀ ≈ 22.07 Å³, K₀ ≈ 195.1 GPa, and K₀′ ≈ 4.93, indicating relatively stiff compression at high pressures. The dataset extends to ~279 GPa and shows that different pressure scales mainly shift K₀ while producing very similar volumes at core conditions (differences ~0.3–0.4%). 

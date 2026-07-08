@@ -1,0 +1,29 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wei et al., 2024
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 2007
+cal_to_composition: cBN
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 1909.4  # GPa
+A_unc: 1.55
+B: 9.88
+B_unc: 0.03
+lambda_0: 694.25  # nm
+max_pressure: 150  # GPa
+PTM: Ar
+gasket: Re
+synchrotron: SECUF #Synergic Extreme Condition User Facility
+peaks_used_to_fit_sample: R1 and R2 luminescence 
+reference_temperature: 296-850 #K
+sample_heating: 
+data_quality_notes: | 
+    The ruby fluorescence pressure scale demonstrates strong signal intensity and well-defined R₁/R₂ peaks under ambient conditions, making it a reliable pressure calibrant in DAC experiments; however, its data quality degrades at elevated temperatures due to thermal broadening, reduced intensity, and significant redshift of the fluorescence lines . As shown in the spectra (e.g., Fig. 1 and Fig. 2), peak widths increase and signal-to-noise decreases with temperature, limiting precise measurements above ~773–850 K due to fluorescence quenching and peak overlap. Additionally, pressure calibration accuracy is affected by temperature–pressure coupling, meaning that neglecting temperature corrections can introduce systematic errors of several GPa at high P–T conditions. Calibration consistency also depends on the chosen ruby scale and pressure-transmitting medium, with non-hydrostatic effects (e.g., Ar vs He) introducing measurable deviations.
+   
+doi: 10.1063/5.0178597 
+notes: |
+    Ruby (Cr³⁺-doped Al₂O₃) is one of the most widely used optical pressure sensors in DAC experiments due to its strong fluorescence and clear pressure-dependent spectral shifts, particularly the R₁ line arising from crystal field splitting of Cr³⁺ ions . Its pressure calibration is well established up to tens of GPa and can be extended further with modern scales, making it a standard reference for high-pressure studies. However, the material exhibits strong temperature sensitivity, with fluorescence peaks shifting and broadening significantly at elevated temperatures, requiring temperature-corrected calibration models. Compared to newer sensors, ruby offers excellent signal strength but reduced reliability under high-temperature conditions, where alternative materials may provide better spectral stability.

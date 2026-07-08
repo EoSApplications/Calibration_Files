@@ -1,0 +1,47 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zha et al., 2000
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 400 #um
+cal_to_name: Absolute
+cal_to_composition: MgO
+eos: Birch-Murnaghan
+order: 3
+V0_per_formula_unit: 18.67        # Å^3/formula unit 
+K0: 160.2        # GPa (isothermal bulk modulus at 300 K)
+K0_unc: 0.7
+is_K0_fixed: no
+K0_prime: 4.03   # dimensionless
+K0_prime_unc: 0.03
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 55
+PTM: He; ME #He above 10 GPa; methanol–ethanol mixture below 10 GPa
+gasket: Re
+synchrotron: NSLS X17C (energy-dispersive XRD)
+peaks_used_to_fit_sample: polycrystalline MgO diffraction lines (NaCl-type B1 structure)
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Zha et al. (2000) determine a primary pressure–density equation of state for MgO
+  to 55 GPa by combining single-crystal Brillouin scattering (elastic tensor C11,
+  C12, C44) with polycrystalline x-ray diffraction densities under nearly hydrostatic
+  helium conditions. The isothermal bulk modulus and its pressure derivative at 300 K
+  are K0T = 160.2(7) GPa and K0T' = 4.03(3), respectively, obtained by converting the
+  adiabatic moduli to isothermal and integrating KT = ρ (dP/dρ)T. The reference density
+  is ρ0 = 3.585 g/cm^3 for MgO at 300 K, from which V0 ≈ 18.67 Å^3 per formula unit is
+  derived. The authors estimate that the resulting MgO-based primary pressure scale
+  has an accuracy of ~1% to 55 GPa under hydrostatic conditions.
+
+doi: 10.1073/pnas.240466697
+notes: >
+  This YAML captures the 300 K primary MgO equation of state from Zha et al. (2000),
+  which is obtained by integrating Brillouin-derived elastic moduli with XRD densities
+  and fitting the resulting pressure–density relation to a third-order Birch–Murnaghan
+  form. The resulting MgO EOS is then used in the same paper to recalibrate the ruby
+  fluorescence pressure scale, providing a hydrostatic primary reference for pressures
+  up to 55 GPa.

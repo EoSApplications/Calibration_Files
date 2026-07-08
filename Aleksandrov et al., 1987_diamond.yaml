@@ -1,0 +1,45 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Aleksandrov et al., 1987
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: 
+culet: Not Specified
+cal_to_name: Aleksandrov et al., 1987 #did not report specific Ruby scale assume same study
+cal_to_composition: Al2O3
+eos: Akahama06_Equation
+V0: 1333
+A: 442 #K0
+A_unc:
+B: 4.0 #K0p
+B_unc: 0.7
+max_pressure: 42 #GPa
+PTM: He
+reference_temperature: Room temperature #297 K
+doi: | 
+    Title: Diamond at high pressures: Raman scattering of light, equation of state, and high pressure scale. 
+
+data_quality_notes: |
+  Pressure determination relies on the contemporaneous ruby R1 fluorescence scale, which the
+  authors explicitly identify as internally inconsistent at high pressures. Above ~35–40 GPa,
+  deviation from hydrostatic conditions is observed due to helium solidification, leading to
+  crystal degradation (rocking-curve broadening) and Raman line broadening. X-ray lattice
+  parameter measurements are limited to a single (440) reflection and are affected by non-
+  hydrostatic stress. Absolute pressure values above ~40 GPa are model-dependent and tied to
+  an a priori diamond EOS rather than an independently validated pressure scale. 
+notes: |
+  Aleksandrov et al. (1987) combine Raman scattering and x-ray diffraction to derive the diamond
+  equation of state up to ~42 GPa and directly determine the Grüneisen parameter for the LTO(T)
+  mode (γ₀ ≈ 0.965), finding it density-independent up to ~40 GPa. The work demonstrates that
+  discrepancies between experimental EOS data, ultrasonic measurements, and theory arise
+  primarily from systematic errors in the ruby pressure scale, and proposes a revised high-
+  pressure calibration based on an a priori diamond EOS. 
+
+# Raman–EOS relation from the paper:
+# 1) Grüneisen-type relation:  (ν/ν0) = (V/V0)^(-γ)
+#    where γ = 0.965 ± 0.005
+# 2) Density–Raman relation:  ρ/ρ0 - 1 = 4.28(ν/ν0 - 1)
+# 3) Pressure–Raman polynomial expansion:
+#       P = K0 * (Δν/ν0) + 0.5 * K0 * (K0' - 1) * (Δν/ν0)^2
+#    where K0 = 442 GPa, K0' = 4.0, Δν = ν - ν

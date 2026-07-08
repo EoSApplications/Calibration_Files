@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2018
+category: 1
+composition: Ar
+method: XRD
+technique: DAC
+DAC_type: tDAC
+culet: 16 #um
+cal_to_name: Anzellini et al., 2014
+cal_to_composition: Re
+cal_to_eos: Rydberg-Vinet
+cal_to_order: 3
+eos: H02
+order: 3
+V0_per_atom: 37.45  # Å^3/atom, fixed
+K0: 2.65  # GPa, fixed 
+K0_prime: 7.119   # 
+is_K0_fixed: yes
+K0_prime_unc: 0.02
+max_pressure: 248  # GPa
+gasket: Re
+atomic_number: 18
+PTM: None
+synchrotron: ESRF ID27
+peaks_used_to_fit_sample: (111)
+reference_temperature: 0  # K — these are 0 K cold isotherm parameters from a Mie-Grüneisen-Debye model fit; V0=37.45 Å³/atom is the ~0 K ambient-pressure volume
+sample_heating: None
+data_quality_notes: "0 K cold isotherm parameters extracted via Mie-Grüneisen-Debye decomposition: P(V,T)=P_cold(V,0K)+P_thermal(V,T). The H02/AP2 form is inadequate for soft noble gases at strong compression (see Holzapfel 1991) and gives larger errors than Vinet for the same dataset. When used without the Debye thermal correction at 300 K, significant pressure errors are expected, especially above 100 GPa. Use the Vinet entry from this paper instead."
+doi: 10.1038/s41467-018-05294-2
+notes: Anvils used were 25-30um beveled to 350 um with an angle of 10 degrees. Anvils were then milled to 16-25 um flats. Au was measured in run 1 (603 GPa), run2 (443 GPa. with KCl), and run 3 (317 GPa with Al). Exposure time is 20sn 1 (603 GPa), run2 (443 GPa. with KCl), and run 3 (317 GPa with Al). Exposure time is 20s

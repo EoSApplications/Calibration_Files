@@ -1,0 +1,53 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ren et al., 2023
+category: 1
+composition: cBN
+method: Raman
+technique: DAC (in situ Raman spectroscopy at ambient temperature)
+DAC_type: BX90 DAC
+culet: 250–500  # µm (depending on target pressure)
+
+cal_to_name: Mao et al., 1986; Datchi et al., 1997
+cal_to_composition: Al2O3; SrB4O7
+
+eos: RamanRen23
+# --- Ambient-temperature Raman calibration (Eq. 4) ---
+# ν_TO(P, T=293 K) = ν0 + a·P + b·P^2
+V0: 1055.37                  # cm^-1 (TO mode at 293 K, ~0 GPa)
+V0_unc: 0.18                 # cm^-1
+P0: 0
+
+A: 3.35                      # cm^-1/GPa
+A_unc: 0.02
+B: -0.011                    # cm^-1/GPa^2
+B_unc: 0.001
+
+max_pressure: 46             # GPa (room-temperature calibration range)
+PTM: He
+gasket: Re
+synchrotron: none #experiments conducted at HPSTAR
+peaks_used_to_fit_sample: c-BN TO Raman mode
+reference_temperature: 293   # K
+sample_heating: none
+
+data_quality_notes: |
+  Room-temperature Relative Wavenumberss of the c-BN TO mode were measured
+  from ambient pressure to 46 GPa using helium as the pressure
+  transmitting medium. Pressure was independently determined using
+  ruby and Sm2+:SrB4O7 fluorescence standards.
+
+  Below ~10 GPa the pressure dependence is effectively linear,
+  but significant nonlinearity is observed at higher pressure.
+  The quadratic form (Eq. 4) provides the best fit over the full
+  pressure range.
+
+doi: 10.2138/am-2022-8372
+notes: |
+  This YAML represents a strictly ambient-temperature (293 K)
+  Raman pressure calibration for c-BN derived from Ren et al. (2023)
+  Eq. (4):
+
+    ν_TO(P) = 1055.37 + 3.35·P - 0.011·P^2
+
+  No temperature-dependent terms or P–T coupling terms are included.
+  This calibration should not be used at elevated temperature.

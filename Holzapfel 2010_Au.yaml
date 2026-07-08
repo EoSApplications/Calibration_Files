@@ -1,0 +1,50 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holzapfel 2010
+composition: Au   # fcc
+method: XRD # Thermodynamic evaluation (fit to ambient-P thermophysical data + AP2 cold EOS)
+technique: Analysis / Compilation
+DAC_type: Not Applicable
+culet: Not Applicable
+# This paper derives Vr, Kr, and K'r by fitting ambient-pressure datasets:
+# cp0(T), V0(T), K0(T), and K0'(T). These are the contributing studies explicitly cited for those datasets.
+cal_to_name: Not Specified #Multiple references,  currently a placeholder
+cal_to_composition: Au
+eos: AP2
+equation_full: |
+  # AP2 (adapted polynomial, 2nd order) cold isotherm used for the reference p(V) isotherm:
+  #
+  # p_AP2(x) = 3*Kr * (1 - x)/x^5 * exp[c0*(1 - x)] * [1 + cAP2*x*(1 - x)]
+  # where x = (V/Vr)^(1/3)
+  #
+  # c0 = -ln(3*Kr/pFGr)
+  # pFGr = aFG * Z / Vr^(5/3)
+  # aFG = 0.02337  (GPa·nm^5)
+  #
+  # cAP2 = (3/2)*(K'r - 3) - c0
+  #
+  # Vr, Kr, K'r are the reference-state parameters reported in Table 4.
+
+# Table 4 (reference / room-temperature isotherm parameters)
+V0_per_atom: 17.057
+V0_unc: 0.001
+K0: 166.7
+K0_unc: 0.6
+is_K0_fixed: no
+K0_prime: 6.23
+K0_prime_unc: 0.06
+atomic_number: 79  # Z used in pFGr
+max_pressure: 300
+PTM: Not Applicable
+synchrotron: Not Applicable
+peaks_used_to_fit_sample: Not Applicable
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  This is a thermodynamic re-evaluation (not a new DAC dataset).
+  The reference-state parameters (Vr, Kr, K'r) come from correlated fits to ambient-pressure
+  cp0(T), V0(T), K0(T), and K0'(T) datasets cited in the paper; Table 4 reports the best values
+  and uncertainties for the room-temperature reference p(V) isotherm.
+doi: Equations of state for Cu, Ag, and Au and problems with shock wave reduced isotherms
+notes: |
+  Reference-state parameters are taken from Table 4 (“Present best values and uncertainties…”).
+  Units: Vr is per-atom volume in nm^3 (also provided as Å^3/atom).

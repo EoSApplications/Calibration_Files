@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Evans et al., 2005
+category: 1
+composition: Be #hcp
+method: Raman
+technique: DAC
+DAC_type: 
+culet: 300 μm flats; 300→100 μm beveled anvils   #um
+cal_to_name: Mao et al., 1986 
+cal_to_composition: Al2O3 
+eos: Raman_Polynomial
+order: 2
+A: 459
+A_unc: 2.1
+B: 2.806
+B_unc: 0.113
+C: -0.011
+C_unc: 0.001
+
+max_pressure: 80    # Raman limit before signal degradation 
+PTM: Ar 
+gasket: Re
+synchrotron: GSECARS HPCAT
+peaks_used_to_fit_sample: E2g phonon
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Raman peak positions obtained with 0.24 cm^-1 instrumental resolution. Above 60 GPa,
+  peak intensity decreases and uncertainty increases (~1 cm^-1). Ruby scale accuracy ±0.5 GPa.
+  Raman and pressure collected at same spot to avoid pressure gradients.
+
+doi: 10.1103/PhysRevB.72.094113
+
+notes: |
+  The Raman E2g mode provides a proxy for shear modulus C44. Combined with the EOS,
+  the authors compute C44(P), finding C44 ≈ 110.6 + 1.784 P – 0.0028 P^2 (GPa).
+  No structural transitions observed to 80 GPa.
+
+#E= 459+2.806P-0.011P2

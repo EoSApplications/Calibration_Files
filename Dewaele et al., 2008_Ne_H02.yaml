@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2008
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: # not specified
+cal_to_name: Holzapfel 2005; Datchi et al., 1997; Dorogokupets and Oganov 2007 # mis cited Dewaele et al., 2006
+cal_to_composition: Al2O3; SrB4O7; W
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: H02 
+order:
+V0_per_atom: 22.234  # A^3/atom
+V0_unc:  # V0 fixed during fit
+K0: 1.397  # GPa
+is_k0_fixed: no
+K0_unc: 0.026
+K0_prime: 7.43
+K0_prime_unc: 0.03
+atomic_number: 10
+max_pressure: 208.8  # GPa
+PTM: Ne  # sample itself
+synchrotron: ESRF ID27 and ID09
+peaks_used_to_fit_sample: 111
+reference_temperature: 0  # K — these are 0 K cold isotherm parameters from a Mie-Grüneisen-Debye model fit (see Table II caption in paper); V0=22.234 Å³/at is the ~4 K ambient-pressure volume 
+sample_heating: # not specified
+data_quality_notes: "0 K cold isotherm parameters extracted via Mie-Grüneisen-Debye decomposition: P(V,T)=P_cold(V,0K)+P_thermal(V,T). The H02 form performs poorly for Ne even as a cold isotherm: χ²=13.3 vs 8.9 for Vinet (Table II). When applied without the Debye thermal correction at 298 K, gives ~29 GPa RMS error. The H02 functional form is fundamentally inadequate for soft noble gases at strong compression — see Holzapfel 1991 which states Ne requires at minimum a third-order expansion. Do not use for pressure determination; use the Vinet entry from this paper instead."
+doi: [https://doi.org/10.1103/PhysRevB.77.094106]
+notes: |
+  Parameters from Table II (third row, H02). Fixed quantities during fitting: V0=22.234 A^3/atom; θ0, γ0 parameters of the MGD model (see text). Pressure range to 208.8 GPa at 298 K.

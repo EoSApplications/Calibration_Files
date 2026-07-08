@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 36.14
+V0_unc: #fixed
+K0: 195.2   # GPa
+is_K0_fixed: no
+K0_unc: 0.4
+K0_prime: 3.62
+K0_prime_unc: 0.02
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (110), (200), (211), (220) (310)  
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: | 
+    The tantalum (Ta) dataset shows notable variability and requires careful selection due to anomalous behavior observed in one experimental run. While diffraction data generally extend to high pressures with measurable peaks, the DAC-2 Ta dataset exhibits significant scatter, broadened diffraction peaks, and an anomalously stiff compression trend relative to both DAC-1 and literature values . This behavior is attributed to likely helium incorporation or defect-related lattice effects, supported by separate heating experiments in which Ta showed irreversible lattice expansion and abnormal thermal response compared to co-loaded materials. As a result, the DAC-2 Ta data are excluded from the primary analysis. In contrast, the DAC-1 dataset demonstrates more consistent behavior, with reasonable agreement with prior studies and acceptable scatter within experimental uncertainty. Although deviatoric stress effects are present, they remain within the quasihydrostatic regime of the helium medium. Overall, the reliability of the Ta dataset depends strongly on dataset selection, with DAC-1 providing usable, moderate-quality data and DAC-2 identified as compromised.
+    
+doi: 10.1103/fxgq-96sg  
+
+notes: |
+    Tantalum (Ta) exhibits more complex and less stable behavior under high-pressure conditions compared to other metallic calibrants in this study. The accepted DAC-1 data produce a consistent volume–volume (V–V) relationship relative to Cu, though with slightly greater uncertainty than materials like Pt or Au . The derived equation of state (EOS) parameters (K₀ ≈ 195 GPa, K′₀ ≈ 3.62) are broadly consistent with previous experimental results, supporting its general validity as a pressure calibrant. However, cross-comparison with ramp-derived EOS models reveals a modest, pressure-dependent positive deviation (ΔV/V up to ~+0.4%), indicating some inconsistency with the Cu-referenced scale at intermediate pressures. The anomalous behavior observed in DAC-2 highlights Ta’s sensitivity to experimental conditions, particularly possible interactions with helium, which may affect lattice properties. Overall, while Ta can serve as a useful calibrant, its data quality is more condition-dependent, and it requires careful validation compared to more robust standards like Pt or Au. For fiitng, DAC-1 used and DAC-2 excluded. 
+    
+    

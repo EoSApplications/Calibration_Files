@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Yagi 1978
+category: 2
+composition: KCl-B2  # B2 (CsCl-type) structure
+method: XRD
+technique: multi-anvil (energy dispersive XRD)
+DAC_type: # not applicable
+culet: # not applicable
+cal_to_name: Decker 1971 
+cal_to_composition: NaCl-B1
+eos: Birch-Murnaghan
+order: 3 #2 publish listed here as 3 with Kp set to 4
+V0_cc_mole: 32.76  # cm^3/mol → derived from 0.872 ratio from Walker et al.,2002
+V0_unc: # not specified
+K0: 19.6 #GPa
+K0_unc: 0.9
+K0_prime: 5.3
+K0_prime_unc: 0.15 
+max_pressure: 9  # GPa
+PTM: ME #4:1 methanol–ethanol + NaCl (internal)
+synchrotron: laboratory XRD 
+peaks_used_to_fit_sample: (100), (110), (211)
+reference_temperature: 298  # K
+sample_heating: up to 800 °C, but EOS given at 25 °C
+data_quality_notes: |
+  B2 KCl appears above ~21 kbar with ΔV/V ≈ –0.108 across transition.
+  EOS parameters derived from second-order Birch–Murnaghan fits at 25, 100, 200 °C.
+  At 25 °C: K0 ≈ 370 kbar, K0′ = 5.4, fictive V0 ≈ 0.863 of B1 volume (≈31.8 cm³/mol).
+doi: [https://doi.org/10.1016/0022-3697(78)90037-9]
+notes: |
+  The B1 → B2 transition in KCl was found at 21.2 ±0.3 kbar with ΔV/V ≈ –0.108.
+  For KCl-II (B2), Table 3 gives: at 25 °C, K0 = 370(20) kbar, K0′ = 5.4.
+  V0 is fictive, scaled from B1 volume using thermal expansion data.
+  EOS fits limited to ~90 kbar. Results consistent with earlier piston-displacement experiments.

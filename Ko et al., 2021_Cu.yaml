@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ko et al., 2021
+category: 1
+composition: Cu #(fcc)
+method: XRD
+technique: DAC, angle-dispersive XRD
+DAC_type: symmetric DAC
+culet: 250 μm
+
+cal_to_name: Not Specified
+cal_to_composition: Al2O3
+
+eos: Birch-Murnaghan
+order: 3
+
+V0: 47.256         # Å^3 (unit cell)
+V0_unc: 0.004
+K0: 120.8
+K0_unc: 4.4
+is_K0_fixed: no
+
+K0_prime: 7.1
+K0_prime_unc: 0.4
+
+max_pressure: 49
+PTM: He gas
+synchrotron: PAL 5A
+reference_temperature: 300 K
+
+data_quality_notes: |
+  Helium PTM greatly improved hydrostatic conditions. Heat-treated Cu had 
+  fewer microstructural defects, yielding more uniform Debye rings and more 
+  consistent P–V data.
+doi: doi.org/10.1016/j.cap.2021.08.006
+notes: |
+  Only the heat-treated polycrystalline Cu sample is retained in the EoSAlign
+  database because Ko et al. (2021) show that this dataset provides the most
+  reliable and internally consistent equation of state. Among the three sample
+  types studied (polycrystalline untreated, polycrystalline heat-treated,
+  and single crystal), the heat-treated polycrystal exhibited: 
+    (1) the most hydrostatic conditions due to helium PTM, 
+    (2) the lowest microstructural defect density, 
+    (3) the most uniform and symmetric diffraction rings, and 
+    (4) the smallest residuals in the Birch–Murnaghan fit.
+  The untreated polycrystalline sample shows softening attributed to defect
+  populations, and the single-crystal sample shows orientation effects and
+  nonuniform intensities. For these reasons, the heat-treated polycrystalline
+  Cu dataset is considered the authoritative EOS representation in this study.

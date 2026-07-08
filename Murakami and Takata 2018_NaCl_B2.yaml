@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Murakami and Takata 2019
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: Symmetric
+culet: 300
+cal_to_name: Absolute
+cal_to_composition: NaCl-B2
+
+# NaCl-B2 is ONLY stable above ~30 GPa.
+eos: Birch-Murnaghan
+order: 3
+V0: 27.25
+P0: 32.3
+K0: 151       # GPa
+K0_unc: 0.9
+is_K0_fixed: no
+K0_prime: 3.1
+K0_prime_unc: 0.1
+
+K_infinity_prime:
+K_infinity_prime_unc:
+
+
+max_pressure: 120     # GPa (1.2 Mbar)  
+PTM: None # (no pressure medium; sample itself is measured)
+gasket: Re
+synchrotron: SPring-8 BL10XU  
+peaks_used_to_fit_sample: B2 (100), (110), (111)  # XRD images on page 3
+
+reference_temperature: 300  # K (ambient)
+sample_heating: none
+doi: [https://doi.org/10.1029/2019JB017635] 
+data_quality_notes: >
+  The pressure scale is determined absolutely from simultaneous 
+  longitudinal and transverse acoustic velocities and XRD volumes 
+  of NaCl-B2 up to ~1.2 Mbar without any prior pressure standard.
+  Because NaCl-B2 cannot be quenched, the EOS is defined relative 
+  to a reference point (Pr, Vr) instead of V0. The elastic moduli 
+  (KSr, Gr) were derived by finite-strain fits and corrected to 
+  isothermal values (KTr, K′Tr). Nonhydrostatic stress was low 
+  (|t| = 2.1–3.3 GPa), comparable to Ne/He media (Fig. 3). 

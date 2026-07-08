@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jeanloz et al., 1991
+category: 2
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: Modified Mao–Bell DAC
+culet: 250–350  # μm, 1/4 carat diamonds with either 250 or 350 μm culets
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+cal_to_is_K0_fixed:
+
+eos: Birch-Murnaghan
+order: 4
+V0_cc_mole: 8.8726  #cc/mol, not reported explicitly in this paper value taken from Anzellini et al., 2014
+V0_unc:
+K0: 360.3           # GPa, K0T = 360.3 ± 1.5 GPa
+is_K0_fixed: no
+K0_unc: 1.5
+K0_prime: 5.43      # K0T' = 5.43 ± 0.35
+K0_prime_unc: 0.35
+K0_dprime: -0.061666          # the paper reports K0T*K0T'' = -22.2 ± 1.5, 
+K0_dprime_unc:
+K_infinity_prime:   
+K_infinity_prime_unc:
+max_pressure: 170   # GPa, range of the combined 300 K isotherm
+PTM: ME; None #4:1 methanol:ethanol; none  some runs with 4:1 MeOH:EtOH, one without medium (nonhydrostatic)
+gasket: steel
+synchrotron:
+peaks_used_to_fit_sample: (100),(002),(101),(102),(110),(103)  # peaks illustrated in Fig. 2
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: Static DAC experiments were conducted under nonhydrostatic conditions (with and without a 4:1 methanol:ethanol medium), leading to significant shear stresses and preferred orientation in Re. The DAC XRD P–V data are systematically biased (volumes too large at a given pressure) relative to a hydrostatic 300 K isotherm.The reported equation of state is a fourth-order Eulerian finite-strain EOS for Re at 300 K, obtained by combining ultrasonic measurements (K0T, K0T') with shock Hugoniot data reduced using a Mie–Grüneisen formalism.
+doi: [Static strength and equation of state of rhenium at ultra-high pressures]
+notes: |
+    This paper investigates the static strength and equation of state of rhenium (Re) at pressures up to ~120 GPa using diamond-anvil cell X-ray diffraction, revealing that rhenium is one of the strongest known polycrystalline metals under extreme compression . By analyzing pressure–volume data alongside ultrasonic and shock-wave measurements, the authors show that a fourth-order equation of state is required to accurately describe Re’s compression behavior, and that nonhydrostatic stresses in experiments lead to systematic deviations in measured volumes. These deviations are used to quantify shear stresses, which reach ~10–15 GPa at high pressures, corresponding to ~4% of the shear modulus—consistent with theoretical expectations. 

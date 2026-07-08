@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Goncharov et al., 2007
+category: 1
+composition: cBN
+method: XRD
+technique: DAC (angle-dispersive XRD, laser-heated)
+DAC_type: symmetric DAC with Boehler–Almax anvils
+culet: not specified
+cal_to_name: Mao et al., 1986
+cal_to_composition: Al2O3
+
+eos: Birch-Murnaghan
+order: 3
+
+# --- Reference state (300 K) ---
+V0_per_atom: 5.904     # Å^3/atom (from a0 ≈ 3.6157 Å)
+V0_unc: 0.0013
+K0: 387                # GPa
+is_K0_fixed: no
+K0_unc: 4
+K0_prime: 3.06
+K0_prime_unc: 0.15
+
+max_pressure: 70      # GPa
+PTM: Ar
+synchrotron: ESRF ID27
+peaks_used_to_fit_sample: c-BN (111), (200), (311)
+reference_temperature: 300–3300   # K
+sample_heating: double-sided laser heating
+
+data_quality_notes: |
+  High-temperature XRD measurements used to construct a thermal EOS
+  of c-BN. Pressures were measured using ruby fluorescence before and
+  after heating; thermal pressure was treated explicitly. EOS is
+  intended for high-T pressure determination rather than ultra-high
+  static compression.
+
+doi: 10.1103/PhysRevB.75.224114
+notes: |
+  Third-order Birch–Murnaghan EOS with temperature-dependent elastic
+  parameters. This EOS underpins the Raman pressure scale presented
+  in the same study.

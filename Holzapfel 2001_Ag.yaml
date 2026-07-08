@@ -1,0 +1,53 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holzapfel et al., 2001
+category: 1
+composition: Ag
+method: XRD
+technique: DAC #Analysis (shock + ultrasonic constraints; thermodynamic modeling)
+DAC_type: not specified
+culet: not specified
+cal_to_name: Not Specified #References 54, 36-45, and 43-45 in paper
+cal_to_composition: Ag
+eos: AP2
+equation_full: |
+  # AP2 Equation of State (Holzapfel AP2 form)
+  #
+  # p(V) = 3*K0 * (1 - x)/x^5 * [1 + c2*x*(1 - x)] * exp[c0*(1 - x)]
+  #
+  # where:
+  #   x = (V / V0)^(1/3)
+  #
+  # AP2 parameters:
+  #   c0 = - ln(3*K0 / a_FG) - (5/3) * ln(V0 / Z)
+  #   c2 = (3/2)*(K0' - 3) - c0
+  #
+  # Constants:
+  #   a_FG = 0.02337 GPa·nm^5   (Fermi-gas constant)
+
+V0_per_atom: 17.057       # Å^3/atom  (Table 1: V0R = 0.017057 nm^3)
+V0_unc: 0.001             # Å^3/atom  (Table 1: ±0.000001 nm^3)
+
+K0: 101.0                 # GPa (Table 1, TR = 300 K)
+K0_unc: 0.2               # GPa
+is_K0_fixed: no
+
+K0_prime: 6.15            # (Table 1, TR = 300 K)
+K0_prime_unc: 0.15
+
+atomic_number: 47
+max_pressure: 500         # GPa (paper scope: up to 500 GPa and above)
+PTM: Not Applicable
+synchrotron: Not Applicable
+peaks_used_to_fit_sample: Not Applicable
+reference_temperature: 300 K
+sample_heating: none
+atomic_number: 47
+
+data_quality_notes: |
+  Parameters V0, K0, and K0' at TR = 300 K are the primary input values
+  listed in Table 1 for Ag (based on literature constraints as compiled in this paper).
+  The AP2 form (Eq. 13) is used for representing isotherms in the framework developed here.
+
+doi: 10.1063/1.1370170
+notes: |
+    This paper develops a comprehensive and thermodynamically consistent set of equations of state (EOS) for Cu, Ag, and Au over wide pressure (up to ≥500 GPa) and temperature ranges by combining shock-wave data, ultrasonic measurements, and theoretical modeling. Using a refined Mie–Grüneisen framework with a modified pseudo-Debye–Einstein model for thermal effects, the authors resolve longstanding discrepancies between dynamic (shock) and static data by imposing new constraints on the volume dependence of the Grüneisen parameter. They show that commonly used EOS forms (e.g., Birch or Vinet) can lead to inaccuracies at high compression, while their preferred AP2 formulation provides a more reliable representation consistent with both experimental datasets. 

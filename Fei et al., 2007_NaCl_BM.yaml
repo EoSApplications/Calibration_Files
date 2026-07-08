@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Fei et al., 2007; Bukuwinski and Aidun 1985
+cal_to_composition: Pt; NaCl-B2
+eos: Birch-Murnaghan
+order: 3
+V0: 41.35 # A^3
+V0_unc:
+K0: 30.69  # GPa
+is_K0_fixed: no
+K0_unc: 2.90
+K0_prime: 4.33
+K0_prime_unc: 0.26
+
+max_pressure: 107  # GPa
+PTM: NaCl, Ne
+gasket: Re
+synchrotron: GSECARS 13-ID-D at APS
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 300 K
+sample_heating: laser-annealed to 1600 K, then measured at 300 K
+data_quality_notes: |
+  NaCl-B2 compression data collected after laser annealing to reduce deviatoric stress.
+  Pressures based on the internally consistent Pt pressure scale of this study.
+  Vinet EOS gives the best representation over ~50% volume compression.
+doi: 10.1073/pnas.0609013104
+notes: |
+  Vinet parameters (v0, K0T, K0T') are taken directly from Table 1.
+  Thermal parameters (theta0, gamma0, q0) are also given in Table 1 but not repeated here.

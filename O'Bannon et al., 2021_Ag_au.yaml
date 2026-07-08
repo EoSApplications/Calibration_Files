@@ -1,0 +1,51 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: O'Bannon et al., 2021
+category: 1
+composition: Ag  # fcc
+method: XRD
+technique: DAC
+DAC_type: tDAC (LLNL design)
+culet: 9 #um
+cal_to_name: Yokoo et al., 2009
+cal_to_composition: Au
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 17.031  
+V0_unc: 0.001
+
+K0: 103            # GPa
+is_K0_fixed: no
+K0_unc: 1
+
+K0_prime: 5.92   
+K0_prime_unc: 0.04
+
+
+max_pressure: 416  # GPa (maximum in Experiment 1)
+PTM: None  # no pressure medium; nonhydrostatic, later corrected
+gasket: Re
+synchrotron: APS 16-ID-B (HPCAT)
+peaks_used_to_fit_sample: fcc (111) used exclusively for volume determination
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  No pressure-transmitting medium was used (uniaxial stress present).
+  Corrected volumes were obtained via line-shift analysis using 
+  calculated Cij elastic constants and α = 1 assumption. 
+  Only the (111) reflection was used to determine lattice parameters 
+  because it is least sensitive to nonhydrostatic effects.
+  Experiment 1 (Ag + Au) achieved 416 GPa, the highest pressure in the study.
+  Vinet EOS fits were performed with V0 fixed to the measured ambient 
+  atomic volume (17.031 Å^3) and K0 fixed to the ultrasonic value (101 GPa).
+
+doi: 10.1063/5.0045374
+
+notes: |
+  This YAML uses the corrected hydrostatic EOS parameters from Experiment 1 
+  (Ag + Au). The resulting K0' = 6.02 agrees well with both 
+  helium-medium DAC studies and reduced-shock/ultrasonic results.
+  Experiment 2 (Ag + Cu) yields a similar EOS (K0' = 6.10), but Experiment 1 
+  provides the highest-pressure dataset and the most stable pressure marker. Experiment 2 is slighlt lower pressure base on Fratanduono et al., 2020 

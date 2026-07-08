@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Heinz and Jeanloz 1984
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: Mao–Bell type diamond cell   # page 885, 
+culet:
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3 
+V0_per_atom: 16.9583  # Å³ per atom, derived from molar volume 10.215 cm³/mol (Table III, based on I4X_ray Powder Data File, card #4-0784 (American Society of Testing and Materials, Philadelphia, Pennsylvania, 1960).)
+V0_unc:
+K0: 166.6   # GPa
+is_K0_fixed: no
+K0_unc: 10.8
+K0_prime: 5.5        
+K0_prime_unc: 0.8
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 70     # GPa
+PTM: ME #4:1 methanol–ethanol mixture
+synchrotron: 
+peaks_used_to_fit_sample: (111),(200),(220),(311)
+reference_temperature: 298 K
+sample_heating: none (room temperature only)
+data_quality_notes: |
+    Pressures determined by ruby fluorescence; hydrostatic below 10 GPa using 4:1 MeOH–EtOH,
+    with <10% pressure gradients above 10 GPa. Finite-strain (Eulerian) analysis shows linear
+    F–f relation and good agreement with ultrasonic moduli. Third-order BM equation of
+    state is statistically favored; fourth-order terms unjustified. Data accurately reproduce
+    the Jamieson et al. 300 K isotherm within ~1–2% up to 70 GPa.
+doi: [https://doi.org/10.1063/1.333139]
+notes: |
+    Static compression measurements for Au to 70 GPa using a Mao–Bell DAC.
+    BM3 fit yields K0T = 167 ± 11 GPa and K0T′ = 5.5 ± 0.8.
+    V0 uses 10.215 cm³/mol from Table III.
+    This study is the foundational experimental confirmation of the gold 300 K equation
+    of state used for pressure calibration and is consistent with prior ultrasonic and Hugoniot data.

@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ye et al., 2017
+category: 1
+composition: Pt
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet:  #um
+cal_to_name: Dorogokupets and Dewaele 2007
+cal_to_composition: Au
+
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 9.091 #taken from Dorogokupets and Dewaele 2007
+V0_unc:
+K0: 277.3 #GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.230
+K0_prime_unc: 0.033
+
+max_pressure: 135
+PTM: Ne; Ar
+gasket: Re
+synchrotron: APS GSECARS 13-ID-D; APS HPCAT 16-ID-B
+peaks_used_to_fit_sample: 111, 200, 220, 311 (Pt)
+reference_temperature: 300 K
+sample_heating: laser annealed >1900 K
+
+data_quality_notes: |
+  Pt+MgO data allow direct comparison with MgO at high pressure.
+  Pt EOS refined by fixing K0 and V0 to D07, fitting only K′0.
+  Pt scale matches Au and MgO within ~1 GPa up to 135 GPa at 300 K.
+
+doi: 10.1002/2016JB013811
+notes: |
+  Pt is considered the most reliable standard for lower-mantle-scale studies due to
+  high melting temperature and reduced anharmonic effects.

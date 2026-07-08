@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sun et al., 2005
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: symmetric DAC
+culet: 35  # um (diamond tip diameter reported)
+
+cal_to_name: Holmes et al., 1989
+cal_to_composition: Pt
+
+eos: LinearShift
+# ν_diamond (cm^-1) = A + B * P(GPa)
+P0: 50 #GPa, not valid below this pressure
+V0: 1362.1
+V0_unc: 5.0
+A: 1.54
+A_unc: 0.02
+# Ambient diamond Raman reference (reported, not fit parameter)
+PTM: CH4
+
+max_pressure: 300  # GPa
+
+doi: 10.1063/1.1840117
+
+notes: >
+  Diamond Raman pressure scale calibrated against a primary Pt
+  equation of state derived from shock Hugoniot data (Holmes et al., 1989).
+  Relative Wavenumbers measured at the diamond–sample interface.
+  High-frequency cutoff corrected by subtracting constant FWHM (8 cm^-1).
+  Calibration valid from 50 to 300 GPa at 300 K.

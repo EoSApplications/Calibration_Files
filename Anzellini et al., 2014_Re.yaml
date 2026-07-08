@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Anzellini et al., 2014
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: DAC
+culet: 100-300  #um
+cal_to_name: Dewaele et al., 2004; Dorogokupets and Oganov 2007; Loubeyre et al., 1993
+cal_to_composition: W; Al2O3; He #(13,14)
+cal_to_eos: 
+cal_to_order: 
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 8.8726  #cc/mol
+V0_unc: 0.01
+K0: 352.6  #GPa
+is_K0_fixed: no
+K0_unc: 8
+K0_prime: 4.56 
+K0_prime_unc: 0.17
+max_pressure: 144 #GPa
+PTM: He
+gasket: Re
+synchrotron: ESRF ID27 and ID09
+peaks_used_to_fit_sample: (100), (002), (101), (102), (110), (103), (112)
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: 
+doi: [http://dx.doi.org/10.1063/1.4863300]
+notes: Three runs were conducuted, run 1 was calibrated using ruby to ~37 GPa with 300 um culet (Dewaele et al., 2004; Dorogokupets and Oganov 2007). Run 2 was calibrated using He to ~65 GPa with 150 um culet (Loubeyre et al., 1994). Run 3 was calibrated using W and ruby with 100 um culet (Dorogokupets and Oganov 2007). All runs had He PTM. 
+

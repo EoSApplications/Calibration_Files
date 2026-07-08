@@ -1,0 +1,26 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Trots et al., 2013
+category: 1
+composition: YAG-Y2  # Sm3+-doped YAG
+method: Luminescence
+technique: DAC
+DAC_type:
+culet: 350-250 #um
+cal_to_name: Absolute # simultaneous XRD_Brillion 
+cal_to_composition: YAB-Y2
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 2578.22  # GPa
+A_unc: 48.70
+B: -15.38
+B_unc: 1.62
+lambda_0: 616.07  # nm
+max_pressure: 58  # GPa
+PTM: He; Ne
+gasket: Re
+synchrotron: APS BM-13D (GSECARS); in-house BGI system
+peaks_used_to_fit_sample: Y1 fluorescence line
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: Y2 line is more stable than Y1 at high pressure, does not split up to 58 GPa, and becomes the preferred Sm:YAG pressure indicator. Absolute pressures carry ±2% uncertainty due to Brillouin + XRD integration.
+doi: 10.1002/2013JB010519
+notes: Y2 fluorescence is the recommended line for pressures above ~40 GPa. Maintains a clean peak profile and does not show splitting like the Y1 band.

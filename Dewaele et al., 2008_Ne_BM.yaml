@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2008
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: # not specified
+cal_to_name: Holzapfel 2005; Datchi et al., 1997; Dorogokupets and Oganov 2007 # mis cited Dewaele et al., 2006
+cal_to_composition: Al2O3; SrB4O7; W
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 22.234  # A^3/atom
+V0_unc:  # V0 fixed during fit
+K0: 1.420  # GPa
+is_k0_fixed: False
+K0_unc: 0.083
+K0_prime: 8.03
+K0_prime_unc: 0.29
+max_pressure: 208.8  # GPa
+PTM: Ne
+synchrotron: ESRF ID27 and ID09
+peaks_used_to_fit_sample: 111
+reference_temperature: 0  # K — these are 0 K cold isotherm parameters from a Mie-Grüneisen-Debye model fit (see Table II caption in paper); V0=22.234 Å³/at is the ~4 K ambient-pressure volume 
+sample_heating: # not specified
+data_quality_notes: "0 K cold isotherm parameters extracted via Mie-Grüneisen-Debye decomposition: P(V,T)=P_cold(V,0K)+P_thermal(V,T). To reproduce 298 K pressures exactly the Debye thermal pressure must be added (Θ0=75.1 K, γ1=2.442, q=0.97). Higher χ²=23.3 than Vinet (8.9) for the same dataset; not the recommended form for this material."
+doi: [https://doi.org/10.1103/PhysRevB.77.094106]
+notes: |
+  Parameters from Table II (BM row). Pressure coverage to 208.8 GPa at 298 K. 

@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: Pt 
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 60.364
+V0_unc: #fixed
+K0: 261.2   # GPa
+is_K0_fixed: no
+K0_unc: 0.5
+K0_prime: 5.75
+K0_prime_unc: 0.02
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: fcc (111), (220), (222), (311)  
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: | 
+    The platinum (Pt) dataset demonstrates high precision and reliability across the full pressure range investigated. Diffraction peaks for Pt remain sharp and well-defined up to ~140 GPa, enabling accurate determination of lattice parameters with very low uncertainty (on the order of ~0.05–0.1% in volume) . The use of multiple reflections [(111), (220), (222), and (311)] further improves robustness by minimizing sensitivity to deviatoric stress effects. Comparison between independent experimental runs (DAC-1 and DAC-2) shows minor differences, primarily attributed to variations in grain size or initial loading conditions rather than systematic error. Pt exhibits very low deviatoric stress (t < 0.5 GPa), corresponding to a negligible volume bias (<0.2%), confirming near-hydrostatic conditions in the helium medium . The selected dataset (DAC-2) shows lower scatter and is therefore used for primary analysis, though inclusion of both runs does not significantly alter the fitted relations. Overall, the Pt data are internally consistent, reproducible, and among the highest-quality measurements in the study.
+    
+doi: 10.1103/fxgq-96sg 
+
+notes: | 
+    Platinum (Pt) serves as a key metallic pressure calibrant and exhibits stable, well-behaved compression under high-pressure conditions. In this study, Pt shows strong agreement with other calibrants through directly measured volume–volume (V–V) relations, indicating consistent relative compressibility when referenced to Cu . The derived equation of state (EOS) parameters for Pt (K₀ ≈ 261 GPa, K′₀ ≈ 5.75) align closely with prior experimental and ramp-compression studies, supporting its reliability as a secondary standard. Additionally, cross-comparisons with dynamic EOS models show that Pt has negligible residual differences (ΔV/V ≈ 0), indicating excellent consistency with the Cu reference scale and reinforcing its role as a benchmark material. Its high bulk modulus and strong stiffening behavior under compression further highlight its suitability for high-pressure calibration work. Overall, Pt is confirmed as a robust, precise, and internally consistent calibrant within the experimental framework. For fitting, DAC-2 used. 
+    
+    

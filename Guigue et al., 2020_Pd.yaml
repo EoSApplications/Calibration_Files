@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Guigue et al., 2020
+category: 1
+composition: Pd
+method: XRD
+technique: DAC
+DAC_type: laser-heated DAC
+culet: 300; 150  # um (two anvil sizes used)
+cal_to_name: Takemura and Dewaele 2008; Mao et al., 1986
+cal_to_composition: Au; Al2O3
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 14.75  # Å^3
+V0_unc: 0.04
+K0: 162  # GPa
+is_K0_fixed: no
+K0_unc: 2
+K0_prime: 6.2
+K0_prime_unc: 0.9
+max_pressure: 100  # GPa
+PTM: Ne
+gasket: Re
+synchrotron: ESRF ID27
+peaks_used_to_fit_sample: 111; 200; 220; 311
+reference_temperature: 300 K
+sample_heating: laser-heated (≥1300 K)
+data_quality_notes: |
+  Pure Pd compression was measured in neon to establish a reference
+  EOS for comparison with PdH and PdD. Volumes were obtained by
+  Le Bail refinement of fcc Pd (Fm-3m). No phase transition was
+  observed for Pd up to 100 GPa.
+doi: 10.1063/1.5138697
+notes: |
+  EOS parameters are taken from Table I (Pd in Ne). The reported
+  Vinet parameters are: V0 = 14.75(4) Å^3, K0 = 162(2) GPa,
+  K0' = 6.2(9).
+
+  Pressure was determined using either a gold pressure marker
+  (Takemura & Dewaele, 2008) or ruby fluorescence below ~40 GPa.
+  This Pd EOS serves as an internal reference baseline for quantifying
+  volume expansion and isotopic effects in PdH and PdD.

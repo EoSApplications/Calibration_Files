@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hemley et al., 1989
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: 
+culet:  #um
+cal_to_name: Mao et al., 1986; McQueen et al., 1970
+cal_to_composition: Al2O3; W  #separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 22.22 #A^3 #v0=13.384 cm3/mol
+V0_unc:
+K0: 1.097  #GPa
+is_K0_fixed: no
+K0_unc:
+K0_prime: 9.23 
+K0_prime_unc: 0.03
+
+max_pressure: 110 #GPa
+PTM: Ne
+gasket: T301 stainless steel
+synchrotron: NSLS X13A (now X7A) 2.5 GeV, 50–120 mA
+peaks_used_to_fit_sample: fcc (111), (200)  # Fig. 1, page 3
+reference_temperature: 300
+sample_heating: none
+data_quality_notes: |
+    Neon crystallizes in the fcc structure at 4.7 GPa and remains fcc to at least 110 GPa (Fig. 1). Unit-cell parameters and molar volumes were determined from energy-dispersive synchrotron XRD. Pressures were determined from ruby fluorescence (primary) and W XRD (secondary) for cross-checking. 
+    The temperature reduction to 0 K uses a Mie-Grüneisen–Debye model with Debye temperature θ and zero-point + thermal pressure terms P_zp(V) and P_th(V). The 300-K isotherm agrees closely with electronic-structure calculations and is significantly softer than pure pair-potential models.
+doi: 10.1103/PhysRevB.39.11820
+notes: |
+    This paper reports high-pressure X-ray diffraction measurements of solid neon up to 110 GPa at 300 K, showing that neon remains an insulating face-centered cubic (fcc) solid throughout this range while undergoing large compression (down to ~28% of its original volume) . The experimentally determined pressure–volume equation of state agrees well with electronic structure calculations but is not accurately described by traditional two-body (pair) interatomic potentials, which overestimate stiffness at high pressures. Additionally, the study validates and extends the ruby fluorescence pressure scale beyond 100 GPa, contributing to improved high-pressure measurement techniques.
+

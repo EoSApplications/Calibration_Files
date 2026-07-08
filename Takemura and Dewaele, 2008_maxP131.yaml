@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Takemura and Dewaele 2008
+category: 1
+composition: Au
+method: XRD
+technique: 
+DAC_type: 
+culet: 100-300  #um
+cal_to_name: Dorogokupets and Oganov 2007 #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3 #separate by a ; if multiple compositions are used  
+
+eos: Rydberg-Vinet  
+order: 3
+V0_per_atom: 16.962
+V0_unc:
+K0: 167 #GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 5.9
+K0_prime_unc: 
+
+max_pressure: 131 
+PTM: He
+gasket: Re
+synchrotron: ESRF 1D27 beamline 
+peaks_used_to_fit_sample:
+reference_temperature: 300 # K 
+sample_heating: 
+data_quality_notes: |
+  Helium pressure medium, synchrotron XRD (ESRF ID27), and careful experimental design including multiple runs and stress analysis. However, the study highlights that nonhydrostatic stress develops above ~30 GPa even in He, leading to uniaxial stresses that affect lattice spacings depending on crystallographic orientation. The choice to use the (111) reflection minimizes this bias, but residual uncertainties remain. Additional systematic uncertainty arises from pressure calibration, as different ruby scales can shift pressures by ~5–6% at ~100 GPa. Variations in stress state between runs (including both positive and negative uniaxial stress) further contribute to scatter. Overall, the measurements are precise, but accuracy is primarily limited by stress effects and pressure scale calibration rather than instrumental resolution.
+doi: 10.1103/PhysRevB.78.104119 
+notes: |
+    Takemura and Dewaele (2008) determined the equation of state of Au using XRD measurements in a membrane DAC (100–300 µm culets) with a He pressure medium, reaching pressures up to ~131 GPa. The pressure scale is evaluated relative to updated calibrations (including Dorogokupets and Oganov, 2007), and the data are fitted using a third-order Rydberg–Vinet EoS with the bulk modulus fixed at K₀ = 167 GPa. The resulting parameters are V₀ ≈ 16.962 Å³ per atom and K₀′ ≈ 5.9 when using the revised pressure scale, in excellent agreement with ultrasonic and theoretical constraints. The study demonstrates that when stress effects are minimized (by using the (111) reflection), Au provides a reliable and internally consistent pressure standard at high pressures.

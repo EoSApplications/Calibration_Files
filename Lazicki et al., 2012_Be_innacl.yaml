@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Lazicki et al., 2012
+category: 1
+composition: Be
+method: XRD
+technique: DAC
+culet: 150 x 350 µm (Be+He), 70 x 300 µm (high-P NaCl cells)  # Table I 
+cal_to_name: Ono et al., 2006; Sakai et al., 2011
+cal_to_composition: NaCl-B2; NaCl-B2
+cal_to_eos: 
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+eos: Rydberg-Vinet
+order: 3
+# From Table III (Be in He, 0–93 GPa)
+V0_per_atom: 8.133    # Å^3/atom  
+V0_unc:
+K0: 110            # GPa
+is_K0_fixed: no
+K0_unc: 2
+K0_prime: 3.62
+K0_prime_unc: 0.09
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 192  # GPa 
+PTM: NaCl
+synchrotron: ESRF ID30 (ED-XRD)  # cold EoS runs; ID27 for laser heating  
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)
+reference_temperature: 300  # K
+sample_heating: none for cold-compression EOS
+data_quality_notes: |
+  Pressure determination relies on the NaCl equation of state and is further affected by strong thermal gradients during laser heating, leading to uncertainties of approximately ±5 GPa at high temperature. Temperature measurements from pyrometry carry an additional uncertainty of about ±100 K. Structural parameters such as lattice constants and the c/a ratio show increased dispersion due to heterogeneous stress distributions across crystallites.
+
+doi: 10.1103/PhysRevB.86.174118
+notes: |
+  Beryllium experiments conducted in a NaCl pressure medium (runs Be_1–Be_5) used laser-heated diamond anvil cells with NaCl serving as both a pressure-transmitting medium and thermal insulator, while pressure was determined from the NaCl (B1/B2) equation of state and, in some cases, supplemented by MgO at high temperature. These measurements extended to ~205 GPa and ~4000 K and provided P–V–T data for constructing the high-pressure equation of state and thermal expansion of Be.
+

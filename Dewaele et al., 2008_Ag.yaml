@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2008
+category: 1
+composition: Ag #fcc
+method: XRD
+technique: DAC
+DAC_type: membrane DAC
+culet: 100-400  #um  Table 1
+cal_to_name: Dewaele et al., 2004
+cal_to_composition: Al2O3
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 17.021  # A^3/atom
+V0_unc:
+K0: 103.9  # GPa
+is_K0_fixed: false
+K0_unc: 1.4
+K0_prime: 5.78
+K0_prime_unc: 0.09
+max_pressure: 122 # GPa
+PTM: He
+synchrotron: ID30 or ID27 ESRF # not specified
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: |
+  Volume uncertainties are ~±0.01 Å³/atom and pressure uncertainties increase from ~0.05 GPa at low pressure to ~2 GPa near 150 GPa (systematic). Ab initio PAW calculations benchmarked against all-electron methods show that GGA-PBE overestimates equilibrium volume, underestimates K₀, and overestimates K₀′, becoming too stiff at high compression, while LDA shows the opposite trend; overall, the Ag dataset is high quality below 100 GPa and well suited for pressure-scale calibration and DFT benchmarking.
+doi: [https://doi.org/10.1103/PhysRevB.78.104102]
+notes: |
+  Table IV Vinet fit (DAC PR′). V0 fixed from low-P data; K0 and K0′ are fit parameters.

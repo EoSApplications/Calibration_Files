@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Goncharov et al., 2007
+category: 1
+composition: cBN
+method: Raman
+technique: DAC (Raman spectroscopy, laser-heated)
+DAC_type: symmetric DAC
+culet: not specified
+cal_to_name: Goncharov et al., 2007; Mao et al., 1986
+cal_to_composition: cBN; Al2O3
+cal_to_method: XRD; Luminescence
+
+eos: Raman_Goncharov
+
+# High-T Raman pressure scale based on TO phonon (Eq. 2)
+#   P = (A / B) * [ (V / V0)^B - 1 ]
+# where K, ω0, and b are temperature dependent
+
+# Temperature-dependent coefficients (explicitly given in text)
+A: 321.469     #325.6-1.11*10^-2*T-8.90*10^-6*T^2; T=300
+B: 3.4198    #3.48-1.75*10^-4*T-8.55*10^-8*T^2;  T=300
+V0: 1055.187     #1060.2-0.012*T-1.57*10^-5*T^2; T=300
+
+max_pressure: 65      # GPa
+PTM: Ar
+synchrotron: none
+peaks_used_to_fit_sample: c-BN TO Raman mode
+reference_temperature: 300–3300   # K
+sample_heating: double-sided laser heating
+
+data_quality_notes: |
+  Raman TO-mode frequencies measured up to ~3300 K and ~65 GPa.
+  Pressure determination relies on the independently measured
+  XRD-based thermal EOS from this study. The Raman scale is intended
+  for high-temperature use where ruby becomes unreliable.
+
+doi: 10.1103/PhysRevB.75.224114
+notes: |
+  Raman pressure scale constructed by combining measured TO-mode
+  frequencies with the thermal EOS of c-BN. This scale complements
+  ruby at extreme temperatures and is internally consistent with
+  the XRD dataset of Goncharov et al. (2007).

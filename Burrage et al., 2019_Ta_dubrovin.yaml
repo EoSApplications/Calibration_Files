@@ -1,0 +1,52 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Burrage et al., 2019
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: Toroidal DAC
+culet: 8-16  # µm central flat; starting beveled anvils were 25 µm flat, 8 degree bevel to 300 µm
+
+cal_to_name: Dubrovinsky et al., 2012
+cal_to_composition: Re
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 18.001  # Å^3/atom
+V0_unc:
+
+K0: 166.1  # GPa
+is_K0_fixed: no
+K0_unc: 1.4
+
+K0_prime: 6.05
+K0_prime_unc: 0.01
+
+max_pressure: 422  # GPa (using Dubrovinsky Re calibration)
+PTM: none
+synchrotron: HPCAT 16-ID-B, APS
+peaks_used_to_fit_sample: bcc Ta (110), (200), (211), (220), (310)
+reference_temperature: 300  # K
+sample_heating: none
+
+data_quality_notes: >
+  Non-hydrostatic Ta EOS derived using the Dubrovinsky et al. (2012)
+  Re pressure calibration. The authors conclude this Re EOS significantly
+  overestimates pressure at ultrahigh pressure, producing a substantially
+  higher pressure estimate than the Anzellini et al. (2015) calibration
+  at equivalent compression.
+
+doi: 10.1080/08957959.2019.1641203
+
+notes: |
+  EOS parameters are from Table 1, labeled:
+  "Non-hydrostatic II using Dubrovinsky et al. EOS for Re".
+
+  The reported maximum pressure reaches 422 GPa using the Dubrovinsky
+  Re calibration, compared to 310 GPa using the Anzellini et al. (2015)
+  Re EOS for the same compression data.
+
+  The study states that the Dubrovinsky et al. Re EOS overestimates
+  pressure in the multimegabar regime and therefore omits this calibration
+  from preferred comparison with shock and ultrasonic data.

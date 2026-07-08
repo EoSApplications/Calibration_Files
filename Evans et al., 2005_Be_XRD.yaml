@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Evans et al., 2005
+category: 2
+composition: Be #hcp
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: 300 μm flats; 300→100 μm beveled anvils   #um
+cal_to_name: Anderson et al., 1989  #separate by a ; if multiple references are used 
+cal_to_composition: Au  #separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 8.133    # Å^3/atom  assumed from Lazicki et al., 2012
+V0_unc:
+K0: 109.88  #GPa
+is_K0_fixed: no
+K0_unc: 1.05
+K0_prime: 3.59
+K0_prime_unc: 0.027
+
+max_pressure: 182   # Be XRD data to 182 GPa 
+PTM: He
+gasket: Re
+synchrotron: APS GSECARS and HPCAT
+peaks_used_to_fit_sample: 100, 002, 101, 102, 110, 103; above 100 GPa only 100 & 101 visible
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  XRD and Au calibrant measured simultaneously at the same spot to minimize pressure gradients.
+  He pressure medium produced highly hydrostatic conditions, improving EOS accuracy vs earlier studies.
+  EOS accuracy dominated by c-axis uncertainties (0.1%).
+
+doi: 10.1103/PhysRevB.72.094113
+
+notes: |
+  The EOS is noticeably stiffer than earlier non-hydrostatic studies and agrees with dynamic
+  shock-derived curves. No phase transitions observed to 182 GPa. The increasing c/a ratio
+  toward 1.60 at 180 GPa suggests more isotropic bonding at high P.

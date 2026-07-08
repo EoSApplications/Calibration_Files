@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Datchi et al., 1997
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type: membrane DAC (MDAC)
+culet: not specified
+cal_to_name: Mao et al., 1986
+cal_to_composition: Al2O3
+eos: Datchi97_Equation  #Pressure=A*Δλ (1+BΔλ)/(1+CΔλ)
+A: 4.032
+A_unc:
+B: 0.00929 
+B_unc: 0.0004
+C: 0.0232 
+C_unc: 0.0006
+lambda_0: 685.41  # nm
+max_pressure: 124  # GPa hydrostatic, nonhydrostatic to 130 GPa
+PTM: He
+gasket: Re
+synchrotron: ESRF ID9
+peaks_used_to_fit_sample:
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: |
+    Overall, uncertainties are mainly governed by the ruby primary scale 
+    (~3% at 100 GPa) and gold EOS (~1–2%), while spectroscopic precision is high. 
+    Datchi et al. (1997) show that the SrB₄O₇:Sm²⁺ (0–0) fluorescence line has 
+    extremely low temperature sensitivity, with negligible shift up to 500 K and 
+    only a very small nonlinear shift (~0.06 nm) up to 900 K—far smaller than 
+    ruby’s temperature dependence. Thermal broadening remains limited, though 
+    signal intensity decreases significantly above 700 K, restricting practical 
+    use to about 900 K. The study also provides an updated calibration of ruby’s 
+    R₁ temperature shift, linear up to 600 K and nonlinear at higher temperatures.
+    The authors propose an improved in situ pressure–temperature metrology method
+    for diamond anvil cells. Overall accuracy is mainly limited by the ruby 
+    pressure scale and gold equation of state.
+doi: [https://doi.org/10.1063/1.365025]
+notes: Additonal experiment was done in ICE PTM, no equation was derived, this experiment was mixed with Au and Al2O3, XRD was collected at the ESRF. They show good agreement Fig 3. Datchi et al. (1997) recalibrated the SrB₄O₇:Sm²⁺ (0–0) fluorescence line as an optical pressure gauge up to 124 GPa in helium and 130 GPa in ice, with temperature calibration up to 900 K. The study demonstrates strong data quality, based on 58 well-reproduced pressure measurements with minimal scatter. The pressure-induced wavelength shift is nonlinear and accurately described by a quadratic fit, while an alternative Padé-type equation reproduces pressures with a mean deviation of only 0.1 GPa. Validation against the gold equation of state shows excellent agreement (within 1.4% in helium and 2.6% in ice), confirming calibration reliability. Unlike ruby, the borate 0–0 line remains sharp, intense, and well isolated even at very high pressures, with no luminescence quenching observed up to 130 GPa, making it a more robust and accurate high-pressure sensor.

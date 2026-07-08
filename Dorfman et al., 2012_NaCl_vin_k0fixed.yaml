@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorfman et al., 2012
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Tange et al., 2009
+cal_to_composition: MgO
+eos: Rydberg-Vinet
+order: 3
+V0: 41.35  # A^3
+V0_unc:
+K0: 24.2  # GPa
+is_K0_fixed: yes
+K0_unc: 0.3
+K0_prime: 5.76
+K0_prime_unc: 0.03
+
+max_pressure: 265 # GPa
+PTM: Ne; He; none
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: 
+doi: 10.1029/2012JB009292
+notes: |
+    NaCl B2 pressures depend heavily on the chosen reference (MgO vs Au). When referenced to MgO (Tange et al., 2009), previous NaCl B2 EOS overestimate compressibility, leading to pressure offsets of ~15 GPa at 2.5 Mbar.
+

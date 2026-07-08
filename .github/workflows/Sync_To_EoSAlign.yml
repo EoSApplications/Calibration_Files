@@ -1,0 +1,92 @@
+name: Sync calibrations to EoSAlign
+# See "Decision: Bundled Copy Auto-Synced From Calibration_Files" in
+# Public_Release_Repo_And_Calibration_Data_Plan.md.
+#
+# Runs only on push to this repo's main (not on the PR itself) - by the
+# time this fires, the calibration content already went through the usual
+# Calibration_Change.md review here. What this workflow does is separate:
+# it mirrors that already-reviewed content into EoSAlign's bundled
+# Code/Calibration_Files/ folder, as its own PR over there, reviewed again
+# by a human on that repo. It never pushes directly to EoSAlign's main -
+# that repo's own branch protection has no bypass, including for this bot.
+#
+# TODO before this is ever enabled on the real repo:
+#   - Create a fine-grained PAT (or small GitHub App) scoped to the
+#     EoSAlign repo only, with just Contents: Read & Write and
+#     Pull requests: Read & Write, and store it as this repo's
+#     EOSALIGN_SYNC_TOKEN secret (Settings -> Secrets and variables ->
+#     Actions -> New repository secret). A plain GITHUB_TOKEN cannot push
+#     to a different repository.
+#   - When bumping the pinned checkout action below, re-pin to the new tag's
+#     exact commit SHA (see Public_Release_Repo_Protections_Options.md) -
+#     don't switch back to a mutable version tag. The PR-creation step uses
+#     GitHub's own `gh` CLI (preinstalled on ubuntu-latest) rather than a
+#     third-party action, since EoSApplications' org Actions policy only
+#     allows actions from EoSApplications itself, GitHub, or verified
+#     Marketplace publishers - peter-evans/create-pull-request doesn't
+#     qualify despite being pinned.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.yaml'
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Calibration_Files (this repo)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          path: Calibration_Files
+
+      - name: Check out EoSAlign
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          repository: EoSApplications/EoSAlign
+          token: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
+          path: EoSAlign
+
+      - name: Mirror changed calibration files into EoSAlign's bundled copy
+        run: |
+          set -euo pipefail
+          DEST="EoSAlign/Code/Calibration_Files"
+          mkdir -p "$DEST"
+          # Add/update every .yaml file from this repo
+          cp Calibration_Files/*.yaml "$DEST"/
+          # Remove any bundled file that no longer exists in this repo -
+          # same add/remove/change logic as Run_Pre_Commit_Calibration_Checks.py's
+          # Sync_Bundled_Mirror_From_Source(), just running against a real
+          # clone of EoSAlign instead of a local staged folder
+          for existing in "$DEST"/*.yaml; do
+            name="$(basename "$existing")"
+            if [ ! -f "Calibration_Files/$name" ]; then
+              rm "$existing"
+            fi
+          done
+
+      - name: Open a PR against EoSAlign with the change
+        env:
+          GH_TOKEN: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
+        run: |
+          set -euo pipefail
+          cd EoSAlign
+          BRANCH="sync-calibrations-${{ github.sha }}"
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add Code/Calibration_Files
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git commit -m "Sync calibration files from Calibration_Files@${{ github.sha }}"
+          git push origin "$BRANCH"
+          gh pr create \
+            --repo EoSApplications/EoSAlign \
+            --head "$BRANCH" \
+            --title "Sync calibration files from Calibration_Files@${{ github.sha }}" \
+            --body "Automated sync from the \`Calibration_Files\` repo (EoSApplications/Calibration_Files@${{ github.sha }}).
+
+          This content was already reviewed there against the source paper via the Calibration_Change PR template - this PR only needs a human to confirm the mirrored files match and merge."

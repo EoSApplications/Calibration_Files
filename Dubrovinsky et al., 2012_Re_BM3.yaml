@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dubrovinsky et al., 2012
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: bevel
+culet: 250-300 #um
+cal_to_name: Yokoo et al., 2009
+cal_to_composition: Au
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 8.87
+V0_unc: 0.01
+K0: 353            # GPa
+is_K0_fixed: no
+K0_unc: 3
+K0_prime: 5.80
+K0_prime_unc: 0.07
+K_infinity_prime:
+K_infinity_prime_unc:
+K0_double_prime:
+K0_double_prime_unc:
+max_pressure: 165  # GPa
+PTM: He
+gasket: Re
+synchrotron: 13-IDD APS
+peaks_used_to_fit_sample:
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+    BM3 EOS fitted to Re powder compressed in a He pressure medium
+    in a conventional DAC (Experiment no. 3). Pressures were determined
+    using the Au EOS of Yokoo et al. (2009). The BM3 parameters are:
+      K300 = 353(3) GPa, K0' = 5.80(7), V0 = 8.87(1) cm^3/mol
+    Extrapolation of this BM3 EOS to 400–640 GPa underestimates pressure
+    by ~10% and fails to match the ultra-high-pressure data.
+doi: 10.1038/ncomms2160
+notes: |
+    This entry represents the third-order Birch–Murnaghan EOS for hcp-Re
+    derived from data up to 165 GPa in a conventional DAC (Experiment no. 3).
+    It is not adequate for extrapolation into the 0.5–0.6 TPa regime but is
+    appropriate for lower-pressure applications.

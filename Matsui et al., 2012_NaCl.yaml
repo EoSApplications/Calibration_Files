@@ -1,0 +1,53 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Matsui et al., 2012
+category: 1
+composition: NaCl-B1  # B1 phase
+method: XRD #Ultrasonic interferometry + X-ray diffraction + radiography
+technique: Multi-anvil (Kawai-type)
+DAC_type: none
+culet: none  # um
+
+cal_to_name: Absolute  # primary absolute pressure scale
+cal_to_composition: NaCl-B1 
+
+eos: Birch-Murnaghan
+order: 4
+
+# V0 from JCPDS card 05-0628 (used explicitly in Table 1)
+V0: 179.425  # 
+
+P0: 0
+
+K0: 23.7  # GPa (KT0, fixed in the fit)
+is_K0_fixed: yes
+K0_unc:
+
+K0_prime: 5.14
+K0_prime_unc: 0.05
+
+K0_dprime: -0.392   # GPa^-1
+K0_dprime_unc: 0.021
+
+max_pressure: 12.04  # GPa (300 K highest point)
+PTM: BN; Si3N4  # provides quasi-hydrostatic environment
+synchrotron: SPring-8, BL04B1
+peaks_used_to_fit_sample: (200), (220), (222), (400), (331), (420), (422)
+
+reference_temperature: 300 K
+sample_heating: Annealed to 873 K before measurement to reduce deviatoric stress
+data_quality_notes: |
+  Sample lengths measured directly with X-ray radiography, avoiding EOS-derived thickness errors.
+  Sound velocities measured after annealing, reducing non-hydrostatic effects.
+  One KT data point (ρ = 2.666 g/cm³) excluded from final EOS fit.
+
+doi: 10.2138/am.2012.4136
+
+notes: |
+  This study establishes a primary absolute pressure scale for NaCl at 300 K.
+  The EOS is determined using simultaneous ultrasonic P- and S-wave velocities 
+  and X-ray densities in a multi-anvil apparatus up to 12 GPa.
+  KT0 was fixed at 23.7 GPa (converted from KS0 = 25.0 GPa using α0γ0T).
+  Fitted parameters are: K0' = 5.14 ± 0.05 and K0'' = -0.392 ± 0.021 GPa^-1.
+  A high-temperature Mie–Grüneisen–Debye EOS was also developed using q = 0.96 
+  and Θ0 = 279 K, but only the 300 K EOS is included here unless otherwise requested.
+

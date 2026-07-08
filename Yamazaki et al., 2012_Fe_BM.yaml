@@ -1,0 +1,92 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Yamazaki et al., 2012
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: Kawai-type multi-anvil press + synchrotron XRD
+DAC_type: Sintered diamond Kawai-type apparatus
+culet: 1.0 mm TEL
+
+cal_to_name: Tsuchiya 2003
+cal_to_composition: Au
+
+eos: Birch-Murnaghan
+order: 3
+
+V0: 22.15   # Å^3/unit cell
+V0_unc: 0.05
+
+K0: 202   # GPa
+is_K0_fixed: no
+K0_unc: 7
+
+K0_prime: 4.5
+K0_prime_unc: 0.2
+
+#gamma0: 3.2
+#gamma0_unc: 0.2
+
+#theta0: 1173  # K
+#theta0_unc: 62
+
+#q: 0.8
+#q_unc: 0.3
+
+max_pressure: 80   # GPa
+
+PTM: MgO + 5% Cr2O3
+synchrotron: SPring-8 BL04B1
+
+peaks_used_to_fit_sample: >
+  hcp Fe (100), (002), (101), (102), (110),
+  (103), (112), (201)
+
+reference_temperature: 300   # K
+
+sample_heating: >
+  Resistive heating using TiB2 + BN + AlN heater in a
+  Kawai-type multianvil apparatus. Measurements performed
+  up to 1900 K. Thermal pressure modeled using a
+  Mie-Gruneisen-Debye formalism including quasi-harmonic,
+  anharmonic, and electronic thermal pressure terms.
+
+data_quality_notes: >
+  In situ synchrotron XRD measurements performed on epsilon-Fe
+  up to 80 GPa and 1900 K. Pressure determined from Au using
+  the Tsuchiya (2003) Au EOS. The Vinet and third-order
+  Birch-Murnaghan fits produced nearly identical compression
+  curves over the measured pressure range.
+  Authors report the hcp phase remained stable
+  throughout the measured high-pressure range.
+
+doi: 10.1029/2012GL053540
+
+notes: |
+  Table 1 reports both Birch-Murnaghan and Vinet EOS fits.
+  This yaml corresponds to the Vinet fit:
+
+    V0 = 22.17(6) Å^3
+    KT0 = 196(8) GPa
+    KT0' = 4.8(2)
+    gamma0 = 3.2(2)
+    theta0 = 1168(61) K
+    q = 0.8(3)
+
+  Pressure was determined from Au diffraction peaks using
+  the Au EOS of Tsuchiya (2003).
+
+  The thermal EOS was modeled using:
+
+    P(V,T) = PT0(V) + ΔPth(V,T)
+
+  where PT0(V) was fit using both:
+    - third-order Birch-Murnaghan EOS
+    - Vinet EOS
+
+  The authors note that both EOS forms produce nearly
+  identical compression curves within the experimental range.
+
+  Measurements were conducted at:
+    - pressures up to 80 GPa
+    - temperatures up to 1900 K
+    - using the SPEED-Mk.II Kawai apparatus at SPring-8.

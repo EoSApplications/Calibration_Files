@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: N/A # DAC (literature, recalibrated)
+DAC_type: N/A # recalibrated, not a new experiment
+culet: N/A
+cal_to_name: Sakai et al., 2025; Sakai et al., 2025; Sakai et al., 2025
+cal_to_composition: Pt; Au; MgO #(simultaneous compression, literature)
+cal_to_eos: Rydberg-Stacey
+eos: Rydberg-Stacey
+V0: 39.57 # A^3/unit cell, Sata et al., 2002; Sakai et al., 2011 (as cited in Sakai et al., 2025 Table 2, refs 38,39)
+V0_unc: 0.06 # see Table 2
+K0: 37.12 # GPa, Matsui et al., 2012 (as cited in Sakai et al., 2025 Table 2, ref 40)
+is_K0_fixed: no
+K0_unc: 3.9 # GPa, see Table 2
+K0_prime: 4.637 # see Table 2
+K0_prime_unc: 0.13 # see Table 2
+K_infinity_prime: 1.66667 # Fixed, see Table 2 and text; value is 1.666...
+K_infinity_prime_unc: fixed
+max_pressure: Not Applicable #(recalibrated from literature data; B2 phase up to ~300 GPa in referenced works)
+PTM: None
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: Not applicable; all values from literature studies (see references in Sakai et al., 2025)
+data_quality_notes: |
+  NaCl-B2 EoS was not measured directly in this study but was recalibrated using volume–volume relationships from simultaneous compression experiments of Pt–NaCl, Au–NaCl, and MgO–NaCl, based on previously published data (see main text and references 36, 38, 39).
+  EoS is anchored to the B1–B2 transition at 32.3 GPa, V = 27.25 Å³/unit cell (Matsui et al., 2012).
+  Parameters were fitted using the internally consistent scale established in this work.
+doi: https://doi.org/10.1038/s43246-025-00792-5
+notes: |
+  The NaCl-B2 EoS in Sakai et al., 2025 is not from new experiments but is recalibrated using simultaneous compression data from previous studies (mainly Dorfman et al., 2012; Sata et al., 2002; Sakai et al., 2011) and anchored at the B1–B2 transition (32.3 GPa, Matsui et al., 2012), using the new internally consistent pressure scale developed in this work.

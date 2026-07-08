@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wei et al., 2024
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 2007
+cal_to_composition: cBN
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 2761  # GPa
+A_unc: 20.02
+B: -9.88
+B_unc: 0.82
+lambda_0: 685.2  # nm
+max_pressure: 58.6  # GPa
+PTM: Ar
+gasket: Re
+synchrotron:
+peaks_used_to_fit_sample: SECUF #Synergic Extreme Condition User Facility
+reference_temperature: 296-850 #K
+sample_heating: 
+ata_quality_notes: | 
+     Temperature was  controlled and cross-checked, with overall uncertainty constrained to ~1%, and spectral calibration was rigorously validated. The authors explicitly quantify temperature–pressure coupling, demonstrating that neglecting temperature effects leads to systematic pressure underestimation—up to ~2.5 GPa for Sm²⁺:SrB₄O₇ and ~3.9–4.6 GPa for Sm³⁺:YAG at the highest P–T conditions—while ruby becomes unreliable above ~750–800 K due to line broadening and overlap. Empirical power-law calibrations including temperature-dependent terms reproduce experimental data within ~1–2.5 GPa across the full range.
+doi: 10.1063/5.0178597 
+notes: |
+        Other fits are proposed in this study, and we have selected equation 10 and table 4. Among the sensors studied, Sm²⁺:SrB₄O₇ (λ₁ line) exhibits the best spectral quality, minimal thermal quenching, and lowest sensitivity to non-hydrostatic stress, making it the most robust fluorescence pressure marker for high-temperature DAC experiments, although the authors note that future refinement would benefit from calibration against primary EOS standards such as Au or Pt.

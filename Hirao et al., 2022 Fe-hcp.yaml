@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Hirao et al., 2022
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: double-beveled diamond anvils
+culet: 28–500  # μm; see Table I for individual runs 
+cal_to_name: Fratanduono et al., 2021; Dewaele et al., 2004
+cal_to_composition: Pt; Al2O3
+
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 11.215  # Å^3/atom
+V0_unc: 0.029
+K0: 159.27  # GPa
+is_K0_fixed: no
+K0_unc: 0.99
+K0_prime: 5.86
+K0_prime_unc: 0.04
+max_pressure: 354  # GPa 
+PTM: He; None  # quasi-hydrostatic He at low P; no PTM at highest P 
+gasket: Re
+synchrotron: SPring-8 BL10XU and BL04B2
+peaks_used_to_fit_sample: multiple hcp-Fe reflections (e.g., 010, 002, 011, 012, 110, 013, 112, 021 at highest P)
+reference_temperature: 298 K
+sample_heating: none (room-temperature compression)
+data_quality_notes: |
+  hcp-Fe is stable from ~15 GPa to 354 GPa at 298 K. Pressures were determined
+  mainly from the latest Pt EOS of Fratanduono et al. (2021), with a revised
+  ruby scale used in low-pressure, quasi-hydrostatic runs. EOS parameters were
+  obtained by least-squares fitting of P–V data to the Vinet form, varying V0,
+  K0, and K0'. Nonhydrostatic effects are minimized by small beam size and
+  evaluated via Pt lattice strains; pressure uncertainty is estimated to be ±1%.
+doi: 10.1063/5.0074340
+notes: |
+  The resulting EOS gives volumes at 365 GPa that are ~2.3% larger than those
+  from previous hcp-Fe EOSs once placed on the same Pt pressure scale, implying
+  that inner-core Fe densities are correspondingly lower than previously
+  inferred. This Fe EOS is referenced to the quasi-absolute Pt scale derived
+  from shockless dynamic compression.

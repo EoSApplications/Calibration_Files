@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Antonangeli et al., 2008
+category: 2
+composition: Co-hcp
+method: XRD
+technique: DAC
+DAC_type: membrane DAC with beveled anvils
+culet: 150 μm flats beveled from 300 μm at 8°  # experimental setup described on p.2
+cal_to_name: Dewaele et al., 2004  #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3  #separate by a ; if multiple compositions are used  
+
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 6.626 #not given assumed to be 0.1124 cc/g from Yo et al., 2000 = 6.626 cc/mol
+V0_unc:
+K0: 203 #GPa
+is_K0_fixed: no
+K0_unc: 2
+K0_prime: 3.6
+K0_prime_unc: 0.1
+max_pressure: 90    # highest Co pressure measured in this study
+PTM: Ne
+gasket: Re
+synchrotron: ESRF ID09A
+reference_temperature: 300 K
+sample_heating: none
+peaks_used_to_fit_sample: hcp 100, 002, 101, 102, 110, 103 (6–9 reflections per pattern)  # Fig.1sample_heating: none
+
+data_quality_notes: |
+  Compression of hcp Co measured quasi-hydrostatically in Ne to 90 GPa.
+  Diffraction showed no fcc contamination. Pressure measured by ruby and 
+  confirmed by Pt EOS. Compression curve matches previous EOS studies and 
+  is well fit by a single BM3 equation. Main result of this study is the 
+  detection of an inversion in dc/a/dP at ~75 GPa, attributed to collapse 
+  of the magnetic moment.
+
+doi: 10.1063/1.2897038
+
+notes: |
+  This study does NOT determine a new EOS for hcp Co. Instead, it confirms 
+  that previously published BM3 EOS parameters (K0 = 199±6 GPa, K'0 = 3.6±0.2) 
+  adequately describe the compression. The scientific contribution is the 
+  high-precision mapping of the c/a ratio, revealing a magnetoelastic anomaly 
+  near 75 GPa.

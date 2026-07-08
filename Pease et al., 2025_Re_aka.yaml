@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Pease et al., 2025
+category: 1
+composition: Re
+method: Raman  
+technique: DAC
+DAC_type: tDAC, Bevel, Flat
+culet: 15-300 #um
+cal_to_name: Akahama and Kawamura 2010 
+cal_to_composition: Diamond  #Raman
+
+eos: Raman_Polynomial_AP
+
+V0: 119.3
+V0_unc: 0.6
+A: 1.631
+A_unc: 0.099
+B: 0.0262
+B_unc: 0.0034
+
+max_pressure:  287
+PTM: None
+gasket: Re 
+synchrotron: GSECARS_APS
+peaks_used_to_fit_sample: E2g
+reference_temperature: 300 K 
+sample_heating: none
+data_quality_notes: 
+doi: 10.1063/5.0268317
+notes: |

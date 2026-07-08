@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Shen et al., 2020
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Dewaele et al., 2008; Dewaele et al., 2004; Zha et al., 2000; Occelli et al., 2003
+cal_to_composition: Mo; Cu; MgO; Diamond
+eos: Polynomial
+order: 2
+A: 1870   # GPa
+A_unc: 10
+B: 5.63
+B_unc: 0.03
+lambda_0: 694.25  # nm
+max_pressure: 150  # GPa
+PTM: He
+synchrotron: synchrotron-based XRD; facility not specified in Shen et al. (2020)
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: room temperature
+sample_heating: none
+data_quality_notes: |
+  Ruby2020 was derived by combining three independent calibration
+  paths: (1) metals (Mo, Cu) reduced from dynamic compression and
+  converted via V–Δλ data; (2) MgO Brillouin+XRD with direct P–Δλ;
+  (3) diamond EOS combined with measured V–Δλ. All V–Δλ data were
+  collected with small-spot synchrotron XRD and ruby in He-loaded DACs.
+  Global fit: P = A(Δλ/λ0)[1 + B(Δλ/λ0)] with A=1870 GPa, B=5.63,
+  RMS ≈ 0.7 GPa (0–150 GPa). Estimated maximum uncertainty ±2.5%.
+doi: 10.1080/08957959.2020.1791107
+notes: |
+  AIRAPT endorsed Ruby2020 in June 2020. Valid up to 150 GPa at room T.
+  Extrapolation above 150 GPa is discouraged; ruby fluorescence weakens
+  and ruby is metastable at very high pressures.
