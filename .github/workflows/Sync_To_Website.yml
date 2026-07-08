@@ -48,6 +48,16 @@ jobs:
           token: ${{ secrets.WEBSITE_SYNC_TOKEN }}
           path: Website
 
+      - name: Install system libraries PySide6 needs even for headless imports
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y --no-install-recommends \
+            libegl1 libgl1 libopengl0 libxkbcommon0 libxkbcommon-x11-0 \
+            libdbus-1-3 libxcb-cursor0 libxcb-icccm4 libxcb-image0 \
+            libxcb-keysyms1 libxcb-randr0 libxcb-render-util0 libxcb-shape0 \
+            libxcb-xfixes0 libxcb-xinerama0 libxcb1 libx11-xcb1 libxrender1 \
+            libxi6 libsm6 libnss3
+
       - name: Install EoSAlign's Python dependencies
         run: python3 -m pip install --no-input -r EoSAlign/requirements.txt
 
