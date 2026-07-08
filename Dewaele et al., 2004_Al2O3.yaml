@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2004
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3 used as pressure calibrant)
+method: Luminescence
+technique: DAC
+DAC_type: membrane DAC with boron-diamond supports
+culet: not specified
+cal_to_name: Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Mao et al., 1986
+cal_to_composition: Cu; Al; Ta; W; Pt; Au; Al2O3 #normialized these and adjusted Mao et al., 1986
+eos: Power #PR' = (A/B)[(λ/λ0)^B – 1]
+order: #not applicable
+A: 1904  # GPa
+A_unc: #not specified
+B: 9.5
+B_unc: #not specified
+lambda_0: 694.25  # reference wavelength not given in this study, using value from Shen et al., 2020
+max_pressure: 153  # GPa (maximum reached in experiments with metals; ruby calibration extended accordingly)
+PTM: He
+synchrotron: ESRF, beamline ID30
+peaks_used_to_fit_sample: R1 fluorescence line of ruby
+reference_temperature: room temperature (298 K)
+sample_heating: none
+data_quality_notes: |
+  The ruby luminescence scale of Mao et al. (1986) was tested 
+  against XRD equations of state of six metals (Al, Cu, Ta, W, Pt, Au) 
+  measured up to 153 GPa in quasihydrostatic He PTM at ESRF.
+  It was concluded that the classical ruby scale underestimates 
+  pressure above 100 GPa by up to ~10 GPa. 
+  A revised calibration was proposed, keeping the same functional form 
+  but with B increased to 9.5. Agreement is within ±3 GPa at 150 GPa.
+doi: 10.1103/PhysRevB.70.094112
+notes: |
+  This calibration is based on static XRD EOS of six metals measured 
+  under quasihydrostatic conditions. 
+  The revised ruby scale (Eq. 1 in the paper) should be used instead of 
+  the classical Mao et al. (1986) scale for pressures above ~30 GPa. 
+  Below ~55 GPa, the two scales differ by <2%.

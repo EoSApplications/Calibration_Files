@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: Pt
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Fei et al., 2007; Fei et al., 2004; Dewaele et al., 2004
+cal_to_composition: Au; Pt; Pt
+cal_to_eos: Birch-Murnaghan;
+eos: Birch-Murnaghan
+order: 3
+V0: 60.38  # A^3
+V0_unc: 0.01
+K0: 277  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.95
+K0_prime_unc: 0.02
+
+max_pressure: 94  # GPa
+PTM: He; NaCl; Ne
+gasket: Re
+synchrotron: GSECARS 13-ID-D at APS
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: external resistive heating to 1473–1873 K; data reduced to 300 K
+data_quality_notes: |
+  BM3 fit to the same Pt data set as the Vinet fit, with K0 fixed at 277 GPa.
+  Pt scale of Holmes et al. (1989) is shown to overestimate pressures by ~4 GPa
+  at 100 GPa compared to this internally consistent Pt scale.
+doi: 10.1073/pnas.0609013104
+notes: |
+  BM3 parameters for Pt (v0, K0T, K0T') are taken directly from Table 1.
+  This Pt scale is intended to be consistent with the updated Au, NaCl-B2, and Ne scales,
+  and with the modern ruby and W-based pressure scales.
+

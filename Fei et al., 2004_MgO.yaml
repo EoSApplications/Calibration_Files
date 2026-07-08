@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2004
+category: 1
+composition: MgO
+method: XRD
+technique: Multi-anvil (in situ synchrotron XRD)
+DAC_type: multi-anvil
+culet: N/A
+cal_to_name: Speziale et al., 2001
+cal_to_composition: MgO
+eos: Birch-Murnaghan #Assumed for the low T part
+order: 3
+V0: 74.71          # Å^3
+V0_unc: 0.01
+K0: 160.2         # GPa
+K0_unc: 0.2
+is_K0_fixed: no
+K0_prime: 3.99
+K0_prime_unc: 0.01
+PTM: MgO
+synchrotron: BL04B1 at SPring-8
+temperature_range: 300-2173  # K
+pressure_range: 0-28         # GPa
+doi: 10.1016/j.pepi.2003.09.018
+notes: >
+  MgO is used as the reference pressure scale in this study.
+  All MgO EOS parameters are adopted directly from Speziale et al. (2001),
+  including variable-q formulation. No MgO EOS refitting was performed.

@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Mao et al., 1978
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: not specified
+culet: not specified
+cal_to_name: Carter et al., 1971; Carter et al., 1971; Carter et al., 1971; Carter et al., 1971
+cal_to_composition: Cu; Mo; Pd; Ag
+eos: Power
+order:
+A: 1904     # GPa
+A_unc:
+B: 5
+B_unc:
+lambda_0: 694.2   # nm
+max_pressure: 100  # GPa
+PTM: ME; None #methanol–ethanol (4:1) <0.1 Mbar; H2O or none >0.1 Mbar
+synchrotron: none
+peaks_used_to_fit_sample: R1 luminescence 
+reference_temperature: 25   # °C
+sample_heating: none
+data_quality_notes: |
+    Pressures determined from Cu, Mo, Pd, and Ag volume compression relative to Carter et al. (1971) isotherms. R1 line broadens significantly above ~0.2 Mbar due to nonhydrostatic stress. Pressure uncertainties estimated at ±6% to 1 Mbar.
+doi: 10.1063/1.325277
+notes: |
+    Mao et al. (1978) measured the specific volumes of Cu, Mo, Pd, and Ag under static compression in a diamond anvil cell and compared them with established shock-wave equations of state to determine absolute pressures. These measurements were used to calibrate the ruby R1 fluorescence pressure scale from 0.06 to ~1 Mbar, establishing a widely adopted empirical relationship between ruby fluorescence shift and pressure that became a standard for high-pressure experiments.

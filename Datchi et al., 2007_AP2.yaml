@@ -1,0 +1,33 @@
+﻿# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Datchi et al., 2007
+category: 2
+composition: cBN
+method: XRD
+technique: DAC (single-crystal XRD, angular-dispersive)
+DAC_type: membrane DAC (high-T capable), resistive-heated for HT runs
+culet: 100-400  # um (flat culets 0.1–0.4 mm)
+cal_to_name: Holzapfel 2005; Datchi et al., 1997; Loubeyre et al., 1993
+cal_to_composition: Al2O3; SrB4O7; He
+
+eos: AP2
+V0_per_atom: 5.9062    # Ã…^3/atom at 295 K (fixed to measured 1 atm value)
+V0_unc: 0.0006         # Ã…^3/atom (from 5.9062(6))
+K0: 397              # GPa
+is_K0_fixed: no
+K0_unc: 2              # GPa (395(2))
+K0_prime: 3.50
+K0_prime_unc: 0.05
+max_pressure: 162      # GPa (295 K data extend to 162.5 GPa)
+PTM: He, Ne #He (above 50 GPa); Ne (otherwise)
+gasket: Re
+atomic_number: 6 #assumed
+synchrotron: ESRF ID27 (λ = 0.3738 Å, MAR345)
+peaks_used_to_fit_sample: 6-9 single-crystal reflections; zinc-blende (F-43m)
+reference_temperature: 295   # Kss
+sample_heating: resistive heating used for HT dataset only
+data_quality_notes: >
+  Single-crystal c-BN in He/Ne quasi-hydrostatic media. Lattice parameter refined from multiple reflections;
+  uncertainty on a ~5e-4 Å. EOS fits compared across Vinet, BM2, AP2 and found consistent over 0.77<=V/V0<=1.
+doi: 10.1103/PhysRevB.75.214104
+notes: |
+  Table I reports parameters with V0 fixed to the measured 295 K, 1 atm value

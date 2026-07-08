@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Velisavljevic et al., 2002
+category: 1
+composition: Cu
+method: XRD
+technique: shock #Data fit to reduced shock Hugoniot
+DAC_type:  
+culet:  
+cal_to_name: McQueen et al., 1970; Nellis et al., 1988
+cal_to_composition: Cu; Cu
+eos: AP2
+V0_per_atom: 11.815 
+V0_unc:
+K0: 133      # GPa (static AP2 fit)
+K0_unc:
+is_K0_fixed: no
+K0_prime: 5.4
+K0_prime_unc:
+atomic_number: 29
+
+max_pressure: 70
+PTM: None
+synchrotron: none
+peaks_used_to_fit_sample: 
+reference_temperature: 
+sample_heating:
+data_quality_notes: |
+  The Cu EOS recorded here is not based on new Cu experiments in Velisavljević et al. (2002),
+  but on an AP2-form fit to existing Cu shock Hugoniot data. The authors state that fitting the
+  Cu shock data to the AP2-EOS yields K0 = 133 GPa and K0' = 5.4, and that these parameters
+  were used for pressure determination when Cu served as the internal standard in their Be
+  diamond-anvil cell experiments. The AP2 c0 parameter is constrained by K0, V0, and the
+  atomic number Z via the Fermi-gas constant a_FG and is not explicitly tabulated in this
+  paper. The pressure range of the underlying Cu shock data (McQueen et al., 1970; Nellis
+  et al., 1988) exceeds that of the Be static experiments and provides a high-pressure
+  reference EOS for Cu.
+doi: 10.1103/PhysRevB.65.172107
+
+notes: >
+  This YAML captures the AP2 EOS parameters for Cu (K0 = 133 GPa, K0' = 5.4) as used by
+  Velisavljević et al. (2002) for pressure calibration. V0 is taken from standard ambient fcc
+  Cu (0.011815 nm^3 per atom) consistent with later AP2-based Cu EOS work, though it is not
+  explicitly refit in this study.

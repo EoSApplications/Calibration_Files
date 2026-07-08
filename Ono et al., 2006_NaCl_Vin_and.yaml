@@ -1,0 +1,41 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ono et al., 2006
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 100, 300, 600  #um
+cal_to_name: Anderson et al., 1989
+cal_to_composition: Au
+eos: Rydberg-Vinet
+order: 3
+V0: 27.7
+P0: 30
+K0: 135.1        # GPa (K30 GPa, Vinet fit) 
+K0_unc: 0.38
+is_K0_fixed: no
+K0_prime: 3.9
+K0_prime_unc: 0.1
+
+K_infinity_prime:
+K_infinity_prime_unc:
+
+max_pressure: 134   # GPa (highest experimental pressure)
+PTM: MgO #MgO + Au mixed with NaCl (MgO as PTM and thermal insulator)
+synchrotron: Photon Factory BL13A and SPring-8 BL10XU
+peaks_used_to_fit_sample: B2 (100), (110), (111), etc.  # see Table 1 & Fig. 1
+
+reference_temperature: 300
+sample_heating: laser heating after each pressure step to remove differential stress
+
+data_quality_notes: >
+  CsCl-type NaCl (B2) was studied between 32 and 134 GPa at 300 K.
+  Differential stress was removed via in-situ laser heating, and only heated
+  diffraction patterns were used for EOS fitting.
+  Pressure determinations depend on the choice of Au EOS, leading to a
+  ~3–4% systematic discrepancy at >70 GPa.
+  Because B2–NaCl is not stable below 30 GPa, the EOS was fit at 30 GPa,
+  not extrapolated to 0 GPa. V0 cannot be obtained from this study.
+
+doi: 10.1016/j.ssc.2006.01.022

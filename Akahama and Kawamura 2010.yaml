@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama and Kawamura 2010
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: 
+culet: double bevel with first bevel at 250 um and 8 degrees; Second bevel at 450 um and 15 degrees
+cal_to_name: Holmes et al., 1989
+cal_to_composition: Pt 
+eos: Akahama10_Equation
+V0: 1334
+A: 547 #K0
+A_unc: 11
+B: 3.75 #K0p
+B_unc: 0.20
+C: 3141
+C_unc: 3
+D: 4.157
+D_unc: 0.020
+E: 0.001429
+E_unc: 0.000012
+PTM: None
+max_pressure: 410 #GPa
+synchrotron: BLX10XU at SPring-8
+doi: 10.1088/1742-6596/215/1/012195
+notes: |
+    They repot 2 equation. The high-frequency edge corresponds to the singlet mode of the stress-split F₂g phonon for [001]-oriented anvils and shifts monotonically with increasing pressure.
+# pressure=K0*((V-V0)/V0)*(1+0.5*(K0p-1)*((V-V0)/V0)) below 200 GPa (aka: Akahama06_equation)
+# pressure=C-D*v+E*v^2

@@ -1,0 +1,58 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May  2026, any changes to the manuscript after this date have not been added.
+study: Luo et al., 2023
+category: 3 #Fit in Shen and Smith, 2026
+composition: MgO
+method: XRD
+technique: Two-stage light gas gun shock compression + pyrometry + sound velocity measurements
+
+cal_to_name: Absolute
+cal_to_composition: Mgo
+
+eos: Rydberg-Vinet
+order: 3
+
+V0: 74.572   # Å^3/unit cell
+V0_unc:
+
+K0: 161.2   # GPa
+is_K0_fixed: no
+K0_unc: 0.3
+
+K0_prime: 4.586
+K0_prime_unc: 0.007
+
+max_pressure: 345   # GPa
+PTM: none
+synchrotron:
+reference_temperature: 300   # K
+
+sample_heating: >
+  Shock compression experiments performed using a two-stage
+  light gas gun with pyrometry and sound velocity measurements.
+  The complete thermodynamic EOS was constructed from a
+  quasi-Debye Helmholtz free-energy formalism constrained by
+  Hugoniot P-V-T data, sound velocities, and thermal data.
+
+data_quality_notes: >
+  The room-temperature Rydberg-Vinet EOS listed here was not
+  directly fit by Luo et al. (2023). Instead, Shen and Smith (2026)
+  fit a Rydberg-Vinet EOS to the tabulated compression data from
+  this study. The underlying Luo et al. EOS is a thermodynamic
+  Helmholtz free-energy model extending to 345 GPa and 8500 K.
+
+doi: 10.1103/PhysRevB.107.134116
+
+notes: |
+  Room-temperature Rydberg-Vinet EOS parameters:
+    V0 = 74.572 Å^3/unit cell
+    K0 = 161.2 ± 0.3 GPa
+    K0' = 4.586 ± 0.007
+
+  These values are reported by Shen and Smith (2026)
+  from fitting a Vinet EOS to the tabulated compression
+  data generated from the Luo et al. (2023) thermodynamic EOS.
+
+  Luo et al. derived the MgO EOS from a quasi-Debye
+  Helmholtz free-energy framework with parameters (0K):
+    K0 = 169.8 ± 0.5 GPa
+    K0' = 4.501 ± 0.007

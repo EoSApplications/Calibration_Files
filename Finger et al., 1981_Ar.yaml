@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Finger et al., 1981
+category: 2
+composition: Ar
+method: XRD
+technique: DAC
+DAC_type: #diamond-window, cryogenic/liquefaction loading cell
+culet: not specified
+cal_to_name: Piermarini et al., 1975
+cal_to_composition: Al2O3
+eos: Murnaghan
+order: 2  # second-order Murnaghan with fixed V0, K0
+V0_cc_mole: 22.557 #cm^3/mol (from Table II) Peterson et al., 1966
+P0: -0.10289
+K0: 2.3701  # GPa from Table II
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 6.97
+K0_prime_unc: 0.11
+K_infinity_prime:
+K_infinity_prime_unc:
+K0_dprime: -0.4
+K0_dprime_unc: 0.1
+max_pressure: 8.2  # GPa
+PTM: Ar 
+gasket: stainless steel
+synchrotron: Not specified
+peaks_used_to_fit_sample: fcc (111), (200), (220)
+reference_temperature: 293
+sample_heating: none
+data_quality_notes: Argon crystallizes into fcc at 11.5 ± 0.5 kbar and remains fcc to 82 kbar. Sharp single-crystal diffraction maxima were obtained up to 80 kbar (minor spot diffuseness above ~80 kbar). Unit-cell volumes are accurate to ±0.02% (diffractometer) or ±0.05% (film). EOS fitted with fixed V0 and K0 derived from low-temperature measurements.  # Table I & Table II.
+doi: 10.1063/1.92597
+notes: The EOS follows the exact "second-order Murnaghan" expression of Finger et al., incorporating static K0, K0', Debye-derived Pz0, and the derived q parameter. No phase transitions were observed; argon remains fcc to 82 kbar.

@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Errandonea et al., 2018
+category: 1
+composition: Zn
+method: XRD
+technique: DAC
+DAC_type: 
+culet:  #um
+cal_to_name: Syassen 2008  #separate by a ; if multiple references are used 
+cal_to_composition: Al2O3  #separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+V0: 30.6
+V0_unc: 0.1
+K0: 63  #GPa
+is_K0_fixed: no
+K0_unc: 2 
+K0_prime: 5.6
+K0_prime_unc: 0.4
+max_pressure: 16       # Maximum P–V data for EOS determination
+PTM: NaCl #at RT; MgO for melting experiments
+gasket: Re
+synchrotron: ALBA MSPD-BL04; Diamond Light Source I15
+peaks_used_to_fit_sample: hcp (002), (100), (101), (102), (103), (110)
+reference_temperature: 300 K
+sample_heating: none for EOS; HT used for melting studies only
+data_quality_notes: |
+  Room-temperature EOS obtained from P–V data up to 16 GPa.
+  Zn remains hcp throughout this pressure range but shows a kink in c/a near 10 GPa,
+  marking an isomorphic transition between hcp and hcp′. No volume discontinuity is observed,
+  so all RT data included in the EOS fit. EOS agrees with earlier studies (Kenichi 1999; Schulte & Holzapfel 1996).
+  Thermal expansion determined separately: α = 95×10⁻⁶ K⁻¹.
+doi: 10.1088/1361-648X/aacac0
+notes: |
+  This YAML describes only the 300 K hcp-Zn isothermal equation of state.
+  The study also reports a melting curve to 135 GPa using a Simon–Glatzel relation
+  and a P–V–T EOS, but these parameters are not included here.

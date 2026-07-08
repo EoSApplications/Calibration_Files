@@ -1,0 +1,29 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wei et al., 2024
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 2007
+cal_to_composition: cBN
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 1881.16  # GPa
+A_unc: 0.61
+B: 10.94
+B_unc: 0.03
+lambda_0: 694.25  # nm
+max_pressure: 58.6  # GPa
+PTM: Ar
+gasket: Re
+synchrotron: SECUF #Synergic Extreme Condition User Facility
+peaks_used_to_fit_sample: R1 and R2 luminescence 
+reference_temperature: 296-850 #K
+sample_heating: 
+data_quality_notes: | 
+    The ruby fluorescence dataset shows high signal quality and well-resolved R1 and R2 peaks at room temperature, but data quality degrades with increasing temperature due to thermal effects . Peak broadening, reduced intensity, and fluorescence quenching become significant above ~773–850 K, limiting measurement precision and eventually making ruby unusable at higher temperatures. Additionally, strong temperature-induced redshifts and pressure–temperature coupling introduce systematic errors if not corrected, with deviations increasing across the full P–T range. Even under quasi-hydrostatic conditions with Ar as a pressure-transmitting medium, nonhydrostatic effects may still contribute minor uncertainties. The use of cBN as an independent calibration standard improves reliability, but overall accuracy depends on applying temperature-corrected calibration relationships.
+   
+doi: 10.1063/5.0178597 
+notes: | 
+    This study calibrates ruby fluorescence as a pressure sensor up to 58.6 GPa and 850 K using a power-law relationship between pressure and wavelength shift, with parameters A = 1881.16 GPa and B = 10.94 at 296 K . The R1 and R2 luminescence lines are used to determine pressure, with calibration tied to a cBN reference scale. Ruby exhibits strong fluorescence intensity and clear spectral features at ambient conditions, making it a widely used pressure sensor. However, it shows significant temperature sensitivity, including peak broadening and redshift, requiring temperature-dependent corrections for accurate pressure determination. Compared to other sensors in the study, ruby has the strongest signal but the highest temperature sensitivity, limiting its effectiveness at high temperatures.

@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2014
+category: 1
+composition: Fe-hcp
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet: 300-150 #um
+cal_to_name: Sakai et al., 2011  
+cal_to_composition: NaCl-B2 #they are going through other studys to have it be Pt, but no Pt was in the cell   
+cal_to_eos: Birch-Murnaghan
+cal_to_order: 3 
+cal_to_max_pressure:
+cal_to_is_K0_fixed: no
+cal_to_cal: Dorogokupets and Oganov 2007 
+eos: Birch-Murnaghan
+order: 3
+V0: 22.14      #A^3
+V0_unc: 0.19
+K0: 185 #GPa
+is_K0_fixed: no
+K0_unc: 2.3
+K0_prime: 4.94
+K0_prime_unc: 0.12
+
+max_pressure: 279
+PTM: NaCl
+gasket: W
+synchrotron: SPring-8 BL10XU (high-pressure XRD)
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)  # per Fig. 3
+reference_temperature: 300
+sample_heating: in situ double-sided laser annealing to relax stresses
+data_quality_notes: |
+  multiple diffraction peaks and high-pressure DAC experiments with laser annealing to reduce deviatoric stress. However, significant uncertainties arise from the indirect calibration strategy: pressures depend on external Pt-based scales (e.g., Dorogokupets and Oganov, 2007), introducing systematic bias tied to those references. The zero-pressure volume V₀ is not directly measured but inferred from g–G analysis, adding uncertainty to the EoS parameters. Additionally, differences between pressure scales can produce variations of several GPa (up to ~10% near 300 GPa), and residual nonhydrostatic stresses (estimated a few GPa) can affect volume by ~0.4–0.6% at extreme conditions.
+
+doi: 10.1002/2014JB011019
+notes: |
+  In Sakai et al. (2011), the NaCl-B2 phase is established as a pressure scale using a third-order Birch–Murnaghan (3BM) equation of state, indirectly calibrated to platinum-based standards, including Dorogokupets and Oganov (2007), despite Pt not being present in the experimental cell. For this calibration, the EoS parameters are approximately V₀ ≈ 37.76 Å³ (derived from the g–G method), K₀ ≈ 47.24 GPa, and K₀′ ≈ 4.14. The pressure scale is constructed by combining new high-pressure compression data with recalibrated literature datasets, producing a consistent pressure framework up to multi-megabar conditions. The resulting NaCl-B2 scale aligns reasonably well with other Pt-based calibrations, with only moderate deviations at the highest pressures

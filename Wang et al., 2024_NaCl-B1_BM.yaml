@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wang et al., 2024
+category: 1
+composition: NaCl-B1
+method: XRD
+technique: DAC (He medium)
+DAC_type: membrane DAC
+culet: 400 μm 
+cal_to_name: Shen et al., 2020
+cal_to_composition: Al2O3
+cal_to_eos: 
+cal_to_order: 
+cal_to_max_pressure:
+cal_to_is_K0_fixed: 
+
+eos: Birch-Murnaghan
+order: 3
+V0_per_formula_unit: 44.572 
+V0_unc: 0.0001
+K0: 24.211        # GPa 
+is_K0_fixed: no
+K0_unc: 0.009
+K0_prime: 4.932      
+K0_prime_unc: 0.002
+max_pressure: 14       # hydrostatic limit before He solidification
+PTM: He
+gasket: Re
+synchrotron: APS 16-ID-B (HPCAT)
+peaks_used_to_fit_sample: 200, 220, 400
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  EOS based on 6000 hydrostatic P–V points collected simultaneously with ruby.
+  Above 14 GPa, He solidifies and NaCl peaks broaden, so data were excluded.
+  RV pressures agree with Ruby2020 within ±0.05 GPa.
+
+doi: 10.1080/08957959.2023.2301561
+
+notes: |
+  NaCl RV EOS is smoother and more internally consistent than BM3 and shows best
+  agreement with Brown (1999) NaCl scale up to ~25 GPa.

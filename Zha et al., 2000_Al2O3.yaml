@@ -1,0 +1,43 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zha et al., 2000
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: 
+culet: 400
+cal_to_name: Zha et al., 2000
+cal_to_composition: MgO
+eos: Power
+A: 1904        # GPa
+A_unc:
+B: 7.715        # dimensionless
+B_unc:
+lambda_0: 694.2   # nm
+max_pressure: 55
+PTM: He
+gasket: Re
+synchrotron: SLS X17C (for XRD); optical Brillouin system at Carnegie/CHiESS
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Zha et al. (2000) derive a primary pressure–density scale for MgO to 55 GPa
+  by integrating single-crystal Brillouin velocities with polycrystalline x-ray
+  diffraction densities under nearly hydrostatic He conditions. Using this MgO
+  primary scale, they recalibrate the ruby R1 fluorescence pressure scale and
+  fit Eq. (7): P(GPa) = (A/B)*[(λ/λ0)^B - 1], with A fixed at 1904 GPa and
+  B = 7.715. This functional form is identical to the Mao et al. (1986) ruby
+  scale but with slightly larger curvature B, reflecting the more hydrostatic
+  MgO-based primary calibration. The authors state that the resulting ruby
+  scale is accurate to within ~1% up to 55 GPa under hydrostatic conditions.
+
+doi: 10.1073/pnas.240466697
+notes: |
+  This YAML records the MgO-based ruby scale from Zha et al. (2000), which
+  refines the curvature parameter B in the standard P = (A/B)[(λ/λ0)^B – 1]
+  form. The initial slope A = 1904 GPa is retained from earlier ruby scales,
+  while B = 7.715 is determined by fitting ruby shifts to the MgO primary
+  pressure–density relation. λ0 is taken as the conventional ambient R1
+  wavelength (~694.2 nm) consistent with Piermarini et al. (1975) and
+  subsequent ruby work.

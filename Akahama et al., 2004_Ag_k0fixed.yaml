@@ -1,0 +1,45 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama et al., 2004
+category: 2
+composition: Ag
+method: XRD
+technique: DAC
+DAC_type: Beveled diamond-anvil cell
+culet: 300 μm (150 μm anvil face, 8.5° bevel angle)
+
+cal_to_name: Anderson et al., 1989
+cal_to_composition: Au
+cal_to_eos: Birch-Murnaghan
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 17.057      #assumed from Table 2, Carter et al., 
+V0_unc:
+
+K0: 98                 # GPa 
+K0_unc: 1.6
+is_K0_fixed: yes  # from Data in G. Simmons and H. Wang, Single Crystal Elastic Constants and Calculated Aggregate Properties: A Handbook ~MIT Press, Cambridge, MA, 1971
+K0_prime: 5.47
+K0_prime_unc: 0.02
+
+max_pressure: 150
+PTM: None   # no pressure medium used
+gasket: Re
+synchrotron: SPring-8 BL04B2
+peaks_used_to_fit_sample: fcc Ag reflections (5–8 peaks used per pattern)
+
+reference_temperature: 300
+sample_heating: none
+
+data_quality_notes: >
+  Ag and Au samples were simultaneously compressed to ~150 GPa with no PTM,
+  leading to measurable but relatively small differential stresses. Nonhydrostatic
+  stress correction was applied using measured at-values obtained from gamma-plots.
+  A Vinet EOS fit to corrected Ag compression data yields K0 = 89.8(1.3) GPa and
+  K0' = 5.92(7). Constraining K0 to the ultrasonic value of 98(1.6) GPa gives K0' = 5.47(2).
+  Volume correction uncertainties produce up to ±4 GPa pressure uncertainty for Ag
+  at 150 GPa.
+
+doi: 10.1063/1.1690456
+
+notes: >
+  The published Ag EOS is one of the few high-pressure Ag calibrations extending to 150 GPa. Both corrected and uncorrected datasets show consistent trends. K0 = 89.8 GPa is preferred for direct comparison within this study, while K0 = 98 GPa (ultrasonic anchored) provides consistency with ultrasonic-based standards.

@@ -1,0 +1,54 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Decker 1971
+category: 3
+composition: NaCl-B1
+method: XRD #Calculated EOS
+technique: Mie–Gruneisen–Debye formulation
+DAC_type: N/A
+culet: N/A
+
+
+cal_to_name: Not Specified #Calculation using Fritz et al. 1967,1971(shock Hugoniot); ultrasonic elastic data; thermal expansion data
+cal_to_composition: NaCl-B1
+
+
+eos: Birch-Murnaghan #Mie-Gruneisen-Debye provided adjusted to BM-Category 3
+order: 3
+
+P0: 0
+reference_temperature: 25 #C
+
+V0_cc_mole: 27.012 #assumed from Weaver et al., 1971              
+
+# Elastic parameters (Table I)
+K0: 25.03                   # GPa
+is_K0_fixed: yes # K0 held fixed during fitting
+K0_unc: 0.08                # GPa
+K0_prime: 4.5206
+K0_prime_unc: 0.00508
+
+max_pressure: 30       
+PTM: N/A
+synchrotron: N/A
+peaks_used_to_fit_sample: N/A
+sample_heating: modeled up to 2000 °C
+
+data_quality_notes: |
+  Pressure is calculated using a Mie–Gruneisen–Debye EOS constrained
+  by experimentally determined elastic constants, thermal expansion,
+  Debye temperature, and Gruneisen parameter. The paper provides
+  tabulated pressure values as a function of compression and
+  temperature; no closed-form pressure–volume equation is proposed.
+
+  Estimated pressure uncertainty is stated to increase with pressure,
+  from approximately 1.1% below 50 kbar to ~2.4% below 200 kbar.
+
+  Maoie–Gruneisen–Debye EOS is not supported in EoSAlign; so we have refit using BM for direct comparison.
+
+doi: 10.1063/1.1660714
+notes: |
+  This study presents a calculated P–V–T equation of state for NaCl.
+  All pressure values are derived from the model described in the text
+  and tables. The EOS is intended for interpolation within the tabulated
+  pressure–volume–temperature range and should not be extrapolated
+  beyond the limits discussed by the author.

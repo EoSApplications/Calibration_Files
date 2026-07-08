@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Wei et al., 2024
+category: 1
+composition: YAG-Y2  # Sm3+-doped YAG
+method: Luminescence
+technique: DAC
+DAC_type: Bx90
+culet: 300 #um
+cal_to_name: Datchi et al., 2007
+cal_to_composition: cBN
+eos: Power #P = (A0/B0) * [ (λ/λT)^B0 – 1]
+A: 2594  # GPa
+A_unc: 23.63
+B: -16.78
+B_unc: 0.91
+lambda_0: 616.00  # nm
+max_pressure: 58.6  # GPa
+PTM: Ar
+gasket: Re
+synchrotron: SECUF #Synergic Extreme Condition User Facility
+peaks_used_to_fit_sample:
+reference_temperature: 296-850 #K
+sample_heating: 
+data_quality_notes: | 
+    The Y₂ fluorescence line of Sm³⁺:YAG provides generally reliable pressure measurements with good signal persistence at high pressures, but its data quality is influenced by temperature effects, peak evolution, and experimental conditions . Compared to Y₁, the Y₂ peak becomes increasingly dominant at higher pressures (surpassing Y₁ around ~40 GPa) and can remain observable to even higher pressures, which supports its usefulness in extreme regimes. However, temperature-induced peak shifts and broadening are still present, and neglecting temperature corrections can introduce multi-GPa errors under high P–T conditions. Additionally, at elevated temperatures, overlapping features and changes in relative peak intensity complicate accurate peak fitting. While non-hydrostatic effects exist, they are smaller than those affecting ruby, contributing to improved consistency. Variations across studies are also linked to calibration methods and sample differences. Overall, the Y₂ line maintains good usability at high pressure but requires careful spectral analysis and temperature-corrected calibration for high-precision work.
+doi: 10.1063/5.0178597 
+notes: | 
+    Other fits are prospoed in this study we have selected equation 10 and table 4. The Y₂ luminescence line of Sm³⁺:YAG is an important pressure-sensitive feature used in DAC experiments, particularly at higher pressures where it becomes stronger and more stable than the Y₁ line . It shows a clear and predictable pressure-dependent wavelength shift, enabling reliable pressure calibration across a wide range. Compared to ruby, Sm³⁺:YAG (including Y₂) exhibits lower temperature sensitivity and better performance in high-temperature environments. The Y₂ line is especially valuable at extreme pressures due to its persistence and increasing intensity, making it suitable for extending measurements beyond the limits of other sensors. Although temperature effects are smaller, they are still significant enough to require correction for accurate results.

@@ -1,0 +1,53 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Holmes et al., 1989
+category: 1
+composition: Pt  # fcc platinum
+method: XRD #Shock (two-stage light-gas gun) + first-principles theory
+technique: Shock compression (impedance matching to Ta)
+cal_to_name: Absolute #technically related toMitchell and Nellis, 1981 (Ta Hugoniot impedance-match standard); McQueen et al., 1970 (Ta/Pt shock database)
+cal_to_composition: Pt
+eos: Rydberg-Vinet
+order: 3
+V0: 60.38 # Å^3/unit cell (experimental equilibrium atomic volume; converted from 101.9 a.u.^3)
+V0_unc:
+K0: 266  # GPa (BT at 300 K, from Vinet-fit to theoretical 300 K isotherm)
+is_K0_fixed: no
+K0_unc:
+K0_prime: 5.81
+K0_prime_unc:
+max_pressure: 660  # GPa (shock Hugoniot measurements); 300 K isotherm analytic fit stated valid to ~550 GPa
+PTM: not applicable
+reference_temperature: 300
+data_quality_notes: |
+  Pt was shock-compressed (Ta flyer / Ta standard) and the Pt Hugoniot was
+  characterized by a linear Us–up relation over 32–660 GPa. A first-principles
+  (LMTO) cold curve plus thermal terms was used to compute the Hugoniot and
+  a 300 K isotherm; agreement between calculated and measured Hugoniot
+  qualifies the 300 K isotherm to ~10% in pressure at a given density.
+
+  The paper provides an analytic “universal EOS” representation of the
+  *theoretical* 300 K isotherm in Vinet form.
+doi: 10.1063/1.344177
+notes: |
+  Universal EOS (Vinet form) used for the 300 K isotherm:
+    P300(X) = PT * [(1 - X)/X^2] * exp[η(1 - X)],
+    where X = (V/V0)^(1/3), PT = 3*BT, and η = 1.5*(B' - 1).
+
+  Holmes et al. (1989) report the equilibrium volume V0 in atomic units
+  (a.u.^3 per atom), where 1 a.u. is the Bohr radius (a0 = 0.529177 Å).
+  Conversion to crystallographic units was performed as:
+
+    1 a.u.^3 = (0.529177 Å)^3 = 0.1481847 Å^3
+
+  The reported value V0 = 101.9 a.u.^3/atom therefore corresponds to:
+
+    V0 = 15.095 Å^3/atom
+
+  Platinum crystallizes in the fcc structure with Z = 4 atoms per
+  conventional unit cell, so the unit-cell volume used here is:
+
+    V0 = 60.38 Å^3/unit cell
+
+  This value is consistent with ambient-pressure lattice parameters
+  of fcc Pt (a ≈ 3.92 Å) and is used as the reference volume for the
+  Vinet (universal) 300 K isotherm derived in this study.

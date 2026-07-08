@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ye et al., 2018
+category: 1
+composition: Ne
+method: XRD
+technique: 
+DAC_type: symmetric
+culet: 150-200  #um
+cal_to_name: Ye et al., 2017
+cal_to_composition: MgO  
+
+eos: Rydberg-Vinet
+order: 3
+V0: 88.967
+K0: 1.28  #GPa
+is_K0_fixed: no
+K0_unc: 0.06
+K0_prime: 8.00
+K0_prime_unc: 0.09
+
+max_pressure: 130  # main Ne dataset after annealing
+PTM: Ne #(self-medium)
+gasket: Re
+synchrotron: GSECARS 13-ID-D; HPCAT 16-ID-B  
+peaks_used_to_fit_sample: 111, 200 for Ne (fcc)
+reference_temperature: 300 K
+sample_heating: Double-sided laser heating to 1600–2600 K (annealing only)
+
+data_quality_notes: |
+  Laser annealing significantly reduces deviatoric stress from ~8–24×10⁻³ (unannealed)
+  to ~2–9×10⁻³ (annealed) in S·t values (Figure 2). 
+  Uniaxial stress after annealing is <1 GPa below 75 GPa and ~2 GPa at 130 GPa.
+  Unit-cell volumes refined using both 111 and 200 peaks; similar to Dewaele 2008
+  and Takemura 2010 who used 111 only above 100 GPa.
+
+doi: https://doi.org/10.1080/08957959.2018.1493477
+
+notes: |
+  - Solid Ne is fcc above 4.5 GPa and remains fcc throughout the 30–130 GPa range.
+  - Pressures are recalculated using the internally consistent MgO-Y17 scale.
+  - The study identifies a fully self-consistent set of EOSs for MgO, Pt, Au, Ne, 
+    NaCl-B2, and ruby (Table 2), all agreeing within ~3% up to 240 GPa.
+  - This EOS is intended as a new reference for Ne-loaded DAC experiments
+    where Ne is both sample environment and pressure medium.

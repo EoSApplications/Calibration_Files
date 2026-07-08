@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: Mo
+method: XRD
+technique: DAC
+DAC_type: tDAC
+culet: 20 #um
+cal_to_name: Sakai et al., 2025
+cal_to_composition: W
+cal_to_eos: Rydberg-Stacey
+eos: Rydberg-Stacey
+V0: 31.12 # A^3/unit cell, Dewaele et al., 2008 (as cited in Sakai et al., 2025 Table 2, ref 34)
+K0: 261 # GPa, Katahara et al., 1979 (as cited in Sakai et al., 2025 Table 2, ref 68)
+is_K0_fixed: yes
+K0_prime: 4.141 # see Table 2
+K0_prime_unc: 0.009 # see Table 2
+K_infinity_prime: 1.66666 # Fixed, see Table 2 and text; value is 1.666...
+K_infinity_prime_unc: fixed
+max_pressure: 395 # GPa (see Table 1, Run #5, t-DAC)
+PTM: None
+gasket: W for runs 7a, 7b and 7c; Re for rest 
+synchrotron: SPring-8 BL10XU and BL37XU
+peaks_to_fit_sample:
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: No heating or laser annealing was applied; measurements performed at ambient temperature. See Methods and Table 1.
+data_quality_notes: |
+  There is some scatter in the data below 150 GPa, but above 150 GPa their data is in good agreement with our EoS.
+  Note that for pressures below 150 GPa our Mo R–S EoS have adopted compression data using the ruby or MgO scale in a He pressure medium (Dewaele et al., 2008; Dorfman et al., 2012, refs 34,36).
+doi: https://doi.org/10.1038/s43246-025-00792-5
+notes: |
+  Molybdenum equation of state was calibrated using t-DAC up to 395 GPa (culet 20 um, Run #5).
+  Calibration path: Cu → W → Mo (see Figure 1).
+  All EoS parameters (except K0_prime, which was refined) were fixed to literature values as listed in Table 2.
+  Rydberg–Stacey EoS parameters for Mo: V0 = 31.12 Å³/unit cell (Dewaele et al., 2008, as cited in Table 2); K0 = 261 GPa; K0' = 4.141; K_infinity' = 5/3.
+  For further details on experimental runs, data sources, and calibration sequence, see Table 1, Table 2, and Figure 1 of Sakai et al., 2025.
+

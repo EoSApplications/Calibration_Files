@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorfman et al., 2012
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Tange et al., 2009; Dorfman et al., 2012
+cal_to_composition: MgO; NaCl-B2
+eos: Rydberg-Vinet
+order: 3
+V0: 88.967  # A^3
+V0_unc: 0.01
+K0: 1.04        # GPa
+is_K0_fixed: yes 
+K0_unc: 0.02
+K0_prime: 8.48
+K0_prime_unc: 0.04
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 265   # GPa (Ne as PTM to 2.5 Mbar in co-compression)
+PTM: Ne
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: 
+doi: 10.1029/2012JB009292
+notes: |
+

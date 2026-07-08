@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2004
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC
+culet: # not specified
+cal_to_name: Mao et al., 1986 #(ruby fluorescence scale, quasihydrostatic)
+cal_to_composition: Al2O3 #(ruby)
+cal_to_eos: # not applicable
+cal_to_order: # not applicable
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 18.033  # A^3
+V0_unc:
+K0: 194  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 3.25
+K0_prime_unc: 0.04
+max_pressure: 101  # GPa
+PTM: He
+synchrotron: ESRF ID30
+peaks_used_to_fit_sample: ~7 reflections per run (single-crystal)
+reference_temperature: 300  # K
+sample_heating: # not specified
+data_quality_notes: Fit performed with V0 fixed to measured ambient value; K0 free. Hydrostatic He PTM to 101 GPa.
+doi: [https://doi.org/10.1103/PhysRevB.69.092106]
+notes: |
+  This corresponds to the first row of Table II (current XRD Vinet fit, K0 free). V0 fixed to 18.033 Å^3 from 

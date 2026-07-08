@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2008
+category: 1
+composition: Diamond
+method: XRD
+technique: DAC
+DAC_type: membrane-type DAC with resistive heating
+culet: # not specified
+cal_to_name: Holzapfel 2005; Datchi et al., 1997; Dorogokupets and Oganov 2007 # mis cited Dewaele et al., 2006
+cal_to_composition: Al2O3; SrB4O7; W
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 5.6693  # A^3/atom
+V0_unc: 0.0016
+K0: 444.5  # GPa
+is_k0_fixed: yes
+K0_unc:
+K0_prime: 4.18
+K0_prime_unc: 0.15
+
+max_pressure: 80  # GPa (298 K data)
+PTM: Ne
+synchrotron: ESRF ID27, ID09
+peaks_used_to_fit_sample: 5–9 single-crystal reflections
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: Vinet fit to 298 K compression data only. K0 fixed to 444.5 GPa from Brillouin scattering. 
+doi: [https://doi.org/10.1103/PhysRevB.77.094106]
+notes: |
+  Table III, row “this study, data at 298 K.” Ambient temperature Vinet EOS fit with K0 fixed to ultrasonic/Brillouin value. K0′=4.18(15). 

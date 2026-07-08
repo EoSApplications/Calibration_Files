@@ -1,0 +1,40 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sokolova et al., 2013
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: optimization of the data of shock-wave experiments and ultrasonic, X-ray diffraction, dilatometric, and thermochemical measurements
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Sokolova et al., 2013; Dorogokupets and Oganov 2007
+cal_to_composition: Diamond; MgO; Al; Cu; Nb; Mo; Ag; Ta; W; Pt; Au; Al2O3
+eos: Polynomial
+order: 2    # not specified
+A: 1870   # GPa
+A_unc: not specified
+B: 6.0        # 
+B_unc: 
+lambda_0: 694.24  # nm
+max_pressure: Not Specified  # GPa, infer extrapolation to 300 GPa possibl
+PTM: Not Applicable #(in calibration datasets)
+synchrotron: not specified
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: room temperature
+sample_heating: 
+data_quality_notes: |
+  They recalculate Al2O3 scale based on their XRD based EOS
+doi: Self-consistent pressure scales based on the equations of state
+  for ruby, diamond, MgO, B2–NaCl, as well as Au, Pt, and other metals
+  to 4 Mbar and 3000 K
+notes: |
+  absrtact: Based on the modified formalism of Dorogokupets and Oganov (2007), we calculated the equation of state for diamond, MgO, Ag, Al,
+  Au, Cu, Mo, Nb, Pt, Ta, and W by simultaneous optimization of the data of shock-wave experiments and ultrasonic, X-ray diffraction,
+  dilatometric, and thermochemical measurements in the temperature range from ~100 K to the melting points and pressures of up to several
+  Mbar, depending on the material. The obtained room-temperature isotherms were adjusted with a shift of the R1 luminescence line of ruby,
+  which was measured simultaneously with the unit cell parameters of metals in the helium and argon pressure media. The new ruby scale is
+  expressed as P(GPa) = 1870⋅Δλ / λ0(1 + 6⋅Δλ / λ0). It can be used for correction of room-pressure isotherms of metals, diamond, and periclase.
+  New simultaneous measurements of the volumes of Au, Pt, MgO, and B2-NaCl were used for interrelated test of obtained equations of state
+  and calculation of the room-pressure isotherm for B2-NaCl. Therefore, the constructed equations of state for nine metals, diamond, periclase,
+  and B2-NaCl can be considered self-consistent and consistent with the ruby scale and are close to a thermodynamic equilibrium. The calculated
+  PVT relations can be used as self-consistent pressure scales in the study of the PVT properties of minerals using diamond anvil cell in a wide
+  range of temperatures and pressures.

@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Oganov 2003
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: 
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Mao et al., 1986; Dorogokupets and Oganov 2003; Dorogokupets and Oganov 2003
+cal_to_composition: Al2O3; Cu; Ag
+eos: Power
+order:     # not specified
+A: 1871  # GPa
+A_unc: #not specified
+B: 10.06        # called m
+B_unc: 
+lambda_0: 694.24  # nm infered 
+max_pressure: 70  # GPa, 
+PTM: Not Applicaple # Form shock Data+Mao et al., 1986
+synchrotron: not specified
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: room temperature
+sample_heating: none
+data_quality_notes:
+doi: Equations of State of Cu and Ag and Revised Ruby Pressure Scale
+notes: |
+  This is a ruby pressure scale based on shock-wave data and the Mao et al. (1986) ruby scale. The authors fit a power law to the shock-wave data, anchored to the Mao et al. (1986) scale at low pressure, to obtain the following equation:
+      P (GPa) = A * [ (1 + Δλ/λ0)^B – 1 ]
+      A = 1871 GPa, B = 10.06
+      Where Cu and Ag are refit from Carter et al., 1971|

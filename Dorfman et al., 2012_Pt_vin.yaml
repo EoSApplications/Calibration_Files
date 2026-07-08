@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorfman et al., 2012
+category: 1
+composition: Pt
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Tange et al., 2009; Dorfman et al., 2012
+cal_to_composition: MgO; NaCl-B2
+eos: Rydberg-Vinet
+order: 3
+V0: 60.38  # A^3
+V0_unc: 0.01
+K0: 280  # GPa
+is_K0_fixed: no
+K0_unc: 2
+K0_prime: 5.29
+K0_prime_unc: 0.07
+
+max_pressure: 226  # GPa
+PTM: He; Ne
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: 
+doi: 10.1029/2012JB009292
+notes: |
+    The Pt equation of state (EOS) derived here agrees well with recent reduced shock isotherms (Yokoo et al.), but shows systematic deviations below ~1 Mbar when compared to some shock and static datasets, indicating remaining uncertainty in intermediate-pressure behavior.
+
+

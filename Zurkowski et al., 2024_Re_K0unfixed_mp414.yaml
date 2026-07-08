@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Zurkowski et al., 2024
+category: 1
+composition: Re
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Fratanduono et al., 2021 #separate by a ; if multiple references are used 
+cal_to_composition: Pt #separate by a ; if multiple compositions are used  
+cal_to_eos: Rydberg-Vinet
+cal_to_order: 3
+cal_to_is_K0_fixed: no
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom:  14.733
+V0_unc: #fixed
+K0: 374  # GPa
+is_K0_fixed: no
+K0_unc: 17 
+K0_prime: 4.5
+K0_prime_unc: 0.2
+
+max_pressure: 414 # GPa
+PTM: None
+synchrotron:
+peaks_used_to_fit_sample: 
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: | 
+    The rhenium EOS dataset shows consistent compression behavior up to 414 GPa, though uncertainties are higher when both K0 and K0 prime are treated as free parameters . Volumes are determined from multiple lattice planes, which improves reliability, but the absence of a pressure-transmitting medium introduces nonhydrostatic stress that can affect lattice spacing measurements. Calibration to the Pt standard (Fratanduono et al., 2021) introduces an additional systematic dependency. Compared to fixed-K0 fits, allowing K0 to vary increases uncertainty (e.g., larger K0 uncertainty of ±17 GPa), reflecting sensitivity to fitting choices and data scatter at extreme pressures. Despite this, the P–V trend remains smooth and agrees within ~1% in volume with hydrostatic reference data, indicating strong internal consistency
+doi:  [https://doi.org/10.1038/s41598-024-61861-2] 
+notes: |
+    This study determines the equation of state of rhenium up to 414 GPa using synchrotron XRD in a DAC, fitting a third-order Rydberg-Vinet model with V0 = 14.733 A^3 per atom, K0 = 374 GPa, and K0 prime = 4.5 . Pressure is calibrated using platinum based on the Fratanduono et al. (2021) scale, and volumes are derived from multiple diffraction peaks to improve accuracy. Allowing K0 to vary provides flexibility in capturing compression behavior at extreme pressures but introduces larger uncertainties compared to fixed-K0 approaches. The results remain consistent with previous hydrostatic and theoretical studies, supporting the reliability of rhenium as a high-pressure reference material.

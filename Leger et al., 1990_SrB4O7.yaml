@@ -1,0 +1,26 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Leger et al., 1990
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type:
+culet: 500-100 #um
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3
+eos: Power   # P(GPa) = 384.0[(λ/λ0)^7 – 1]
+A: 2688 # value they give is 384, make it compatable with existing power equation (* by B or 7 Pressure=A/B*〖((λp/λ0)〗^B-1) 
+A_unc:
+B: 7
+B_unc:
+lambda_0: 685.4  # nm
+max_pressure: 108  # GPa
+PTM: ME; None
+gasket: T301 stainless steel
+synchrotron: 
+peaks_used_to_fit_sample:
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: 
+doi: 
+notes: additonal experiment was done in ICE PTM, no equation was derived, this experiment was mixed with Au and Al2O3, XRD was collected at the ESRF. They show good agreement Fig 3.

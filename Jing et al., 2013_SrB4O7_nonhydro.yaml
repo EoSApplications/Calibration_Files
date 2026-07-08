@@ -1,0 +1,28 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jing et al., 2013
+category: 1
+composition: SrB4O7 #Sm2+
+method: Luminescence
+technique: DAC
+DAC_type: Mao-Bell DAC
+culet: 300-150 #um
+cal_to_name: Anderson et al., 1989
+cal_to_composition: Au
+eos: Datchi97_Equation  #Pressure=A*Δλ (1+BΔλ)/(1+CΔλ)
+A: 3.953
+A_unc:
+B: 0.0044
+B_unc: 0.0057
+C: 0.0120
+C_unc: 0.0070
+lambda_0: 685.41  # nm
+max_pressure: 127  # GPa
+PTM: None
+gasket: T301 stainless steel
+synchrotron: BSRF 4W2
+peaks_used_to_fit_sample:
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: 
+doi: [http://dx.doi.org/10.1063/1.4774113]
+notes: Quasi-hydrostatic calibration performed with Ar as PTM and ruby as the pressure standard up to 48 GPa. Non-hydrostatic calibration performed without PTM, using Au EOS as pressure standard, up to 127 GPa.

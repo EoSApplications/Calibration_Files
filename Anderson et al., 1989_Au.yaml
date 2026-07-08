@@ -1,0 +1,47 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Anderson et al., 1989
+category: 2
+composition: Au  # fcc gold
+method: XRD
+technique: Calculation from publishedUltrasonic + thermal expansion (no direct DAC compression)
+cal_to_name: Neighbours and Alers, 1958; Chang and Himmel, 1966
+cal_to_composition: Au; Au
+
+eos: Birch-Murnaghan
+order: 3
+V0_per_atom: 16.9583  # Å³ per atom, derived from molar volume 10.215 cm³/mol (Table III, based on I4X_ray Powder Data File, card #4-0784 (American Society of Testing and Materials, Philadelphia, Pennsylvania, 1960).)
+#category 2
+K0: 166.65  # GPa (KT0 at 300 K)
+is_K0_fixed: no
+K0_prime: 5.4823
+
+max_pressure: not specified #(model EOS)
+PTM: not applicable
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  This study does not report new static compression data.
+  Instead, it derives a thermodynamically consistent equation
+  of state for gold by combining ultrasonic elastic constants,
+  thermal expansivity, and specific heat data.
+
+  The isothermal bulk modulus KT0 at 300 K is obtained from
+  elastic constants using standard thermodynamic relations.
+  Pressure derivatives are constrained by consistency
+  between (∂KT/∂P)T, thermal pressure, and anharmonic terms.
+doi: 10.1063/1.342969
+notes: |
+  The authors argue that thermodynamic consistency favors
+  (∂KT/∂P)T ≈ 5.5 at ambient conditions, lower than some
+  earlier values. This choice leads to a nonzero
+  (∂KT/∂T)V and significant anharmonic corrections to the
+  thermal pressure at high temperature.
+
+  The EOS is expressed as:
+    P(V,T) = P_BM(V,300) + P_TH(V,T),
+  where P_BM is a third-order Birch–Murnaghan isotherm
+  and P_TH includes explicit anharmonic volume dependence.
+
+  This YAML represents the **reference 300 K isotherm only**.
+  The full thermal EOS (anharmonic Mie–Grüneisen–type
+  formulation) should be stored as a separate linked entry.

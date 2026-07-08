@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Dewaele et al., 2004; Fei et al., 2004; Dewaele et al., 2004
+cal_to_composition: Al2O3; Au; Au
+eos: Rydberg-Vinet
+order: 3
+V0: 67.850  # A^3
+V0_unc: 0.004
+K0: 167  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 6.00
+K0_prime_unc: 0.02
+
+max_pressure: 89 # GPa
+PTM: Ne
+gasket: Re
+synchrotron:  GSECARS 13-ID-D at APS 
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 300 K
+sample_heating: laser-annealed to 1600 K, then measured at 300 K; additional high-T data up to 2173 K used in thermal fit
+data_quality_notes: |
+  Vinet EOS parameters optimized from Dewaele et al. (2004), Fei et al. (2004),
+  and new Au compression data in Ne from this study, with pressures based on the
+  updated ruby scale of Dewaele et al. (2004). Fully consistent with modern metal
+  and ruby scales.
+doi: 10.1073/pnas.0609013104
+notes: |
+  Table 1 lists v0, K0T, K0T' for Au at 300 K for the Vinet form.
+  Thermal parameters (theta0, gamma0, q0) define a Mie–Grüneisen thermal EOS.
+  This Au scale is designed to be internally consistent with the Pt, NaCl-B2, and Ne scales.

@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Olijnyk et al., 2001
+category: 1
+composition: Re   # hcp
+method: Raman
+technique: DAC
+DAC_type: symmetric DAC
+culet: not reported
+
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3   # ruby fluorescence
+
+eos: Raman_Polynomial_OJ #  ν(P) / ν0 = [ 1 - (δ0 / δ0_prime) * P ]^(-δ0_prime / δ0)
+
+# Raman TO (E2g) parameters from Table I  (Re row)
+V0: 120.9             # cm^-1, ν0 at P=0
+V0_unc: 0.3
+
+A: 0.004954           # δ0 = (d ln ν / dP)_0, GPa^-1
+A_unc: 0.00025
+
+B: -0.00006669        # δ0' = dδ/dP at P=0, GPa^-2
+B_unc: 0.000016
+
+max_pressure: 60        # GPa
+PTM: None
+synchrotron: 
+peaks_used_to_fit_sample: E2g (TO) Raman mode
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Pressures were determined using ruby fluorescence (Mao et al., 1978).
+  The TO (E2g) phonon frequency increases monotonically with pressure to 60 GPa.
+  Eq. (1) provides an excellent representation of ν(P) with δ0 and δ0' from Table I.
+  No structural transitions or mode anomalies were observed.
+doi: 10.1209/epl/i2001-00181-4
+notes:

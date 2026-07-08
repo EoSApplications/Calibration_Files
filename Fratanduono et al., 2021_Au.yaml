@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fratanduono et al., 2021
+category: 1
+composition: Au
+method: XRD
+technique: Ramp
+DAC_type: 
+culet: 
+cal_to_name: Absolute
+cal_to_composition: Au
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 16.929
+V0_unc:
+K0: 170.90  # GPa
+is_K0_fixed: no
+K0_unc: 0.24
+K0_prime: 5.88
+K0_prime_unc: 0.005
+
+max_pressure: 1100 # GPa
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: Quasi-absolute stress-density measurements from NIF and Z-machine ramp compression. Reduced to hydrostatic 298 K isotherm using thermodynamic modeling. Corrections for deviatoric stress, plastic work, and weak-shock heating are included.Final Au isotherm shows ~5% relative standard deviation at 800 GPa.
+doi: 10.1126/science.abh0364
+notes: |
+    Vinet EOS parameters (V0, K0,T, K′0,T) taken directly from Table 1.
+    This is the recommended 298 K isotherm standard for Au up to 1.1 TPa.
+    These parameters are valid only within the measured pressure range and
+    should not be extrapolated beyond the experimental limits.
+

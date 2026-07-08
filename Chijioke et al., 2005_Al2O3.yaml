@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Chijioke et al., 2005
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: Not Specified
+culet: Not Specified
+cal_to_name: Wang et al., 2002; Wang et al., 2002; Chijioke et al., 2005; Chijioke et al., 2005; Chijioke et al., 2005; Chijioke et al., 2005
+cal_to_composition: Au; Pt; Al; Cu; Ta; W
+eos: Power
+order:
+A: 1876  # GPa
+A_unc: 6.7
+B: 10.71
+B_unc: 0.14
+lambda_0: 694.24  # nm
+max_pressure: 150   # GPa
+PTM: He; H2; Xe #(only He and H2 used for fit; Xe excluded due to nonhydrostaticity)
+synchrotron: CHESS (Cornell), NSLS (Brookhaven)
+peaks_used_to_fit_sample: R1 fluorescence line of ruby
+reference_temperature: room temperature (298 K)
+sample_heating: none
+data_quality_notes:
+doi: 10.1063/1.2135877
+notes: |
+  Known as the CNSS05 ruby scale. Validated to 150 GPa in quasihydrostatic
+  helium. Recommended over older scales (MBSS78, MXB86). A quadratic
+  variant (Form II, Eq. 2) is also provided in the paper but not recommended
+  as the primary calibration.

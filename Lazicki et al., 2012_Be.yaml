@@ -1,0 +1,59 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Lazicki et al., 2012
+category: 1
+composition: Be
+method: XRD
+technique: DAC
+culet: 150 x 350 µm (Be+He), 70 x 300 µm (high-P NaCl cells)  # Table I 
+cal_to_name: Dorogokupets and Oganov 2007
+cal_to_composition: Al2O3
+cal_to_eos: 
+cal_to_order:
+cal_to_max_pressure:
+cal_to_is_K0_fixed:
+eos: Rydberg-Vinet
+order: 3
+# From Table III (Be in He, 0–93 GPa)
+V0_per_atom: 8.133    # Å^3/atom  
+V0_unc: 0.005
+K0: 114.0             # GPa
+is_K0_fixed: no
+K0_unc: 1.0
+K0_prime: 3.27
+K0_prime_unc: 0.05
+K_infinity_prime:
+K_infinity_prime_unc:
+max_pressure: 93  # GPa 
+PTM: He
+synchrotron: ESRF ID30 (ED-XRD)  # cold EoS runs; ID27 for laser heating  
+peaks_used_to_fit_sample: hcp (100), (002), (101), (102), (110)
+reference_temperature: 300  # K
+sample_heating: none for cold-compression EOS
+data_quality_notes: >
+  The Be-in-He measurements (Be+He_1, He_2, He_3) provide the most 
+  hydrostatic and lowest-scatter P–V data, extending from ambient pressure 
+  to 93 GPa without observable nonhydrostatic peak broadening. These 
+  measurements determine V0 directly and yield the preferred Rydberg–Vinet 
+  EOS parameters (V0, K0, K0'). The NaCl-based compression data are 
+  slightly stiffer due to nonhydrostatic stresses and were not used for 
+  determining V0.  # Fig. 2 and Table III.
+
+doi: 10.1103/PhysRevB.86.174118
+
+notes: |
+  EOS fitting:
+    The Rydberg–Vinet form used (Eq. 1 in the paper):
+       P = 3 K0 X^-2 (1 - X) exp[1.5 (K0' - 1)(1 - X)],
+       where X = (V/V0)^(1/3).
+    V0, K0, K0' obtained from the normalized stress vs Eulerian strain 
+    plot (inset of Fig. 2). The Be-in-He dataset determines V0 = 8.133 Å^3/atom.
+  
+  Structure:
+    Beryllium retains the α-Be (hcp) structure up to at least 205 GPa 
+    and 4000 K (no evidence for β-Be or bcc-Be).  # Fig. 1 and sections II–III.
+
+  High-T data:
+    P–V–T measurements up to 82 GPa and 2630 K are fit separately using 
+    a quasiharmonic Mie–Grüneisen–Debye model; these parameters were 
+    not included here because you asked for the EOS from this paper "only"
+    and strictly the cold compression values.

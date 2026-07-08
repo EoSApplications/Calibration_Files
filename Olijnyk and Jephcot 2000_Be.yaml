@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Olijnyk and Jephcoat 2000
+category: 1
+composition: Be   # hcp
+method: Raman
+technique: DAC
+DAC_type: symmetric DAC
+culet: not reported
+cal_to_name: Olijnyk et al., 2000
+cal_to_composition: Zn   #Raman mode
+
+eos: Raman_Polynomial_OJ
+V0: 457          # cm^-1
+V0_unc: 1
+A: 0.00808    # GPa^-1 
+A_unc: 0.0004
+B: -0.000332   # GPa^-2
+B_unc: 0.00007
+
+max_pressure: 23
+PTM: None
+peaks_used_to_fit_sample: TO (E2g) phonon mode
+
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Raman spectra collected to 23 GPa using Ar+ 514.5 nm laser excitation. The transverse-optical (E2g) zone-center phonon is the only Raman-active mode in Be.Pressures were determined from the Relative Wavenumbers of a Zn reference loaded with Be. No anomalies or discontinuities in ν(P) were observed in the 8.6–14.5 GPa range, where an hcp → distorted-hcp transition had been previously claimed from XRD. The frequency shift is positive and smooth across the full range.
+
+doi: 10.1088/0953-8984/12/41/317
+
+notes: |
+  Equation (1) parameters δ0 and δ0' define the nonlinear ν(P) dependence. Authors relate the TO frequency to the elastic shear modulus C44.They find Be’s unusually low mode Grüneisen parameter arises from a high C44 relative to its bulk modulus. No structural transition is detected by Raman to 23 GPa.

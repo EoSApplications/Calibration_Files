@@ -1,0 +1,44 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Matsui et al., 2009
+category: 1
+composition: Pt  # fcc platinum
+method: XRD
+technique: Multi-anvil press; shock compression (combined)
+cal_to_name: Absolute
+cal_to_composition: Pt
+
+eos: Rydberg-Vinet
+order: 3
+V0: 60.38  # Å^3 per unit cell (fcc, Z = 4)
+K0: 273  # GPa (K0T at 300 K)
+is_K0_fixed: no
+K0_unc:
+K0_prime: 5.20
+
+max_pressure: 290  # GPa (shock data constraint)
+PTM: #MgO, Not applicable  
+synchrotron: SPring-8 BL04B1 (SPEED-Mk.II)
+peaks_used_to_fit_sample: 111; 200; 220; 311; 222
+reference_temperature: 300 K
+sample_heating: yes (thermal expansion data to ~2000 K; T–P–V data to 1600 K)
+data_quality_notes: |
+  The 300 K isotherm was derived using a Vinet EOS constrained
+  primarily by shock compression data to 290 GPa and by
+  ambient-pressure thermal expansion data between 100 and
+  nearly 2000 K. Additional T–P–V data collected in a
+  Kawai-type multi-anvil press to 42 GPa and 1600 K were used
+  as an independent consistency check.
+
+  The EOS was developed without reference to any external
+  pressure scale and is intended to function as a primary
+  pressure standard.
+doi: 10.1063/1.3054331
+notes: |
+  Optimized EOS parameters for the 300 K isotherm are:
+  V0 = 60.38 Å^3, K0 = 273 GPa, K0' = 5.20.
+
+  The full T–P–V EOS includes lattice thermal pressure
+  (Mie–Grüneisen–Debye with γ0 = 2.70, q = 1.10, θ0 = 230 K)
+  and an electronic thermal pressure term. These thermal
+  parameters are not included here and should be stored as
+  a separate thermal-EOS entry linked to this reference.

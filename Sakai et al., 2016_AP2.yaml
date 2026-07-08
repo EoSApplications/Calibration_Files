@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2016
+category: 2
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Tange et al., 2009; Tange et al., 2009  #fit published in supplement from data used in Tange et al.,
+cal_to_composition: MgO; MgO
+cal_to_eos: Birch-Murnaghan; Rydberg-Vinet
+eos: AP2
+V0: 74.698  # A^3
+V0_unc: 
+K0: 160.634  # GPa
+is_K0_fixed: no
+K0_unc: 
+K0_prime: 4.312
+K0_prime_unc:
+atomic_number: 10 #converted per atom to match AP function in EoSAlign----paper reports 20 (per formula unit)
+max_pressure: 300  # GPa, approximated from figure
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature:  # K
+sample_heating: # not specified
+data_quality_notes: 
+doi: Experimental and theoretical thermal equations of state of MgSiO3 post-perovskite at multi-megabar pressures 
+notes: |
+

@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2004
+category: 1
+composition: W
+method: XRD
+technique: DAC
+DAC_type: membrane-type with boron-diamond supports
+culet: not specified
+cal_to_name: Dewaele et al., 2004; Hixson and Fritz 1992
+cal_to_composition: Al2O3; W
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 15.862  # A^3/atom
+V0_unc:
+K0: 296  # GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.30
+K0_prime_unc: 0.02
+
+max_pressure: 153  # GPa
+PTM: He
+synchrotron: ESRF ID30
+peaks_used_to_fit_sample: # not specified, Absence of peak splitting, minimal peak broadening, and consistent lattice parameters across reflections demonstrate quasihydrostatic conditions up to 150 GPa (see Fig. 1 discussion) 
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: PR'-scale fit with K0 fixed to ultrasonic value (bold in Table II).
+doi: [https://doi.org/10.1103/PhysRevB.70.094112]
+notes: |
+  First three columns only; PR'-scale Rydberg-Vinet fit with K0 fixed.

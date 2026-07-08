@@ -1,0 +1,42 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Kraus et al., 2016
+category: 1
+composition: Cu
+method: XRD # Dynamic ramp compression (shockless)
+technique: Pulsed-power ramp compression with VISAR + Iterative Lagrangian Analysis (ILA)
+cal_to_name: Absolute
+cal_to_composition: Cu
+
+eos: Vinet-Extended
+order: 
+V0_per_atom: 11.8045   # Å^3/atom (derived from rho0 = 8.939 g/cm^3; fcc Cu, 4 atoms/cell)
+V0_unc:
+K0: 127.61        # GPa (298 K isotherm)
+is_K0_fixed: no
+atomic_number: 29
+K0_unc:
+
+
+# Extended Vinet parameters (Table I, Eq. 17)
+eta: 8.151
+beta: -14.452
+psi: 49.034
+
+max_pressure: 450   # GPa
+PTM: none #(dynamic loading)
+synchrotron: Z pulsed-power accelerator at Sandia National Laboratories
+peaks_used_to_fit_sample: N/A
+reference_temperature: 298   # K
+sample_heating: >
+  Plastic work heating corrected; isentrope corrected to 298 K
+  using a Mie–Grüneisen Debye thermal model.
+data_quality_notes: >
+  Absolute stress–density path derived from shockless ramp compression.
+  Strength and deviatoric stress explicitly corrected.
+  Fits intended for interpolation, not extrapolation beyond reported range.
+doi: 10.1103/PhysRevB.93.134105
+notes: |
+  EOS given in Eq. (17) of Kraus et al. (2016):
+  P(X) = 3K0[(1 - X^(1/3))/X^(2/3)] *
+         exp[η(1 - X^(1/3)) + β(1 - X^(1/3))^2 + ψ(1 - X^(1/3))^3],
+  where X = ρ0 / ρ and ρ0 = 8.939 g/cm^3.

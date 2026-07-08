@@ -1,0 +1,57 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Burrage et al., 2019
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: Toroidal DAC
+culet: 8-16  # µm central flat; starting beveled anvils were 25 µm flat, 8 degree bevel to 300 µm
+
+cal_to_name: Anzellini et al., 2014
+cal_to_composition: Re
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 18.001  # Å^3/atom
+V0_unc:
+
+K0: 186.6  # GPa, non-hydrostatic I using Anzellini et al. 2015 Re EOS
+is_K0_fixed: no
+K0_unc: 2.0
+
+K0_prime: 4.36
+K0_prime_unc: 0.05
+
+max_pressure: 310  # GPa
+PTM: none
+synchrotron: HPCAT 16-ID-B, APS
+peaks_used_to_fit_sample: bcc Ta (110), (200), (211), (220), (310)
+reference_temperature: 300  # K
+sample_heating: none
+
+data_quality_notes: >
+  Ta was measured in non-hydrostatic compression using Re as an internal
+  pressure marker. The bcc phase of Ta was stable to the highest pressure
+  of 310 GPa, corresponding to V/V0 = 0.581. The authors compare two Re
+  calibrations and conclude that the Dubrovinsky et al. (2012) Re EOS
+  overestimates pressure at ultrahigh pressure; the Anzellini et al. (2015)
+  Re calibration is used for the preferred non-hydrostatic Ta EOS.
+
+doi: 10.1080/08957959.2019.1641203
+
+notes: |
+  EOS parameters are from Table 1, "Non-hydrostatic I using Anzellini et al. EOS for Re".
+  All fit parameters in the study are based on the Rydberg-Vinet equation of state.
+
+  The study also reports:
+  - Non-hydrostatic II using Dubrovinsky et al. (2012) Re EOS:
+    K0 = 166.1 ± 1.4 GPa, K0_prime = 6.05 ± 0.01, pressure range 0–422 GPa.
+  - Quasi-hydrostatic neon-medium experiment using Au pressure marker:
+    K0 = 201.0 ± 2.4 GPa, K0_prime = 3.21 ± 0.11, pressure range 0–80 GPa.
+  - Shock-compression fit:
+    K0 = 189.4 ± 1.8 GPa, K0_prime = 3.90 ± 0.05, pressure range 0–230 GPa.
+
+  The quasi-hydrostatic experiment used neon as the pressure medium and Au as
+  the pressure marker, while the ultrahigh-pressure toroidal DAC experiment was
+  non-hydrostatic and used Re as the pressure marker.

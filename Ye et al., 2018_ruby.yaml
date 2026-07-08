@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ye et al., 2018
+category: 1
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: DAC
+DAC_type: symmetric
+culet: not specified
+cal_to_name: Ye et al., 2017
+cal_to_composition: MgO 
+eos: Polynomial
+order: 2
+A: 1887   # GPa
+A_unc: 3
+B: 5.4  #m in text
+B_unc: 0.1
+lambda_0: 694.25  # nm, assumed value, not listed in text
+max_pressure: 150  # validated up to ~150 GPa per analysis in Fig. S3 and Table 2
+PTM: He; Ne # (from supporting MgO + ruby datasets)
+gasket: Re
+synchrotron: APS (datasets from Speziale et al. 2001; Jacobsen et al. 2008)
+peaks_used_to_fit_sample: R1 fluorescence line
+reference_temperature: 300 K
+sample_heating: none for ruby calibration itself
+
+data_quality_notes: |
+  Ruby scale refit based on simultaneous compression of MgO and ruby in He.
+  Parameters A = 1887(3) GPa and m = 5.4(1) match Dorogokupets & Oganov (2007)
+  within 0.5 GPa to 150 GPa. This scale is internally consistent with MgO-Y17,
+  Pt-Y17, Au-Y17, Ne, and NaCl-B2 calibrations identified in this study.
+
+doi: https://doi.org/10.1080/08957959.2018.1493477
+
+notes: |
+  This ruby scale is not the Mao (1986) or Piermarini (1975) form. Instead, it is a 
+  refit of the Aleksandrov et al. (1987) / Dorogokupets–Oganov polynomial expression:
+      P = A*(Δλ/λ0)*(1 + m*(Δλ/λ0)).
+  This scale is recommended for pressure determination when using the internally
+  consistent calibrant set MgO–Pt–Au–Ne–NaCl-B2 defined in Ye et al. (2018).

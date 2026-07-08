@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Olijnyk et al., 2000
+category: 1
+composition: Zn   # hcp
+method: Raman
+technique: DAC
+DAC_type: symmetric DAC
+culet: not reported
+
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3   # ruby fluorescence
+eos: Raman_Polynomial_OJ
+
+# Raman TO (E2g) parameters from Table I (Zn)
+V0: 71.1              # cm^-1, ν0 at P = 0
+V0_unc: 0.3
+
+A: 0.05315            # δ0 = (d ln ν / dP)_0, GPa^-1
+A_unc: 0.0015
+
+B: -0.00728           # δ0' = dδ/dP at P = 0, GPa^-2
+B_unc: 0.0005
+
+max_pressure: 58      # GPa
+PTM: He; ME
+synchrotron:
+peaks_used_to_fit_sample: E2g (TO) Raman mode
+reference_temperature: 300 K
+sample_heating: none
+
+data_quality_notes: |
+  Pressures were determined using ruby fluorescence (Mao et al., 1978).
+  Measurements were conducted up to 58 GPa at room temperature.
+  Helium was used as a pressure transmitting medium in one run to ensure
+  quasi-hydrostatic conditions; a second run used 4:1 methanol:ethanol.
+  The E2g (TO) Raman mode frequency increases monotonically with pressure.
+  No frequency anomaly was observed near 9–10 GPa where electronic
+  topological transitions had been predicted.
+  Linewidth shows an irregularity near ~10 GPa, possibly related to
+  phonon–phonon or electron–phonon interactions.
+
+doi: 10.1103/PhysRevB.62.5508
+
+notes: >
+  This study reports a Raman frequency–pressure calibration only.
+  No volume EOS (V0, K0, K0') for Zn is derived in this work.
+  A Birch–Murnaghan EOS from Takemura (1997) was used only for
+  calculating mode Grüneisen parameters.

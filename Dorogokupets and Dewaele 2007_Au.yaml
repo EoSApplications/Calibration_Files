@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Dewaele 2007
+category: 2
+composition: Au
+method: XRD
+technique: Expanded Mie–Grüneisen–Debye (EMGD) model
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Takemura 2001; Dewaele et al., 2004; Chijioke et al., 2005
+cal_to_composition: Au; Au; Au
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 10.215 #assumed same as Dorogokupets and Oganov 2005, not explicitly stated in text 
+K0: 167 # GPa
+is_K0_fixed:
+K0_unc:
+K0_prime: 5.9
+K0_prime_unc:
+max_pressure: 200   # GPa, approximate extrapolation, not stated in text
+PTM: not applicable (model-based compilation)
+reference_temperature: 298 K
+sample_heating: none
+data_quality_notes: |
+  This EOS is not a simple experimental fit. It is derived from a global thermodynamic
+  model (EMGD) constrained by shock-wave, XRD, thermochemical, and elastic data.
+  The cold curve is approximated using a Vinet-type formulation, but full pressure
+  requires thermal contributions (Grüneisen, anharmonic, electronic).
+  Reported parameters represent an internally consistent pressure scale.
+
+doi: 10.1080/08957950701659700
+
+notes: |
+  - The Au EOS is constructed as part of a multi-calibrant internally consistent framework.
+  - K0 = 167 GPa and K0' ≈ 5.9 represent the preferred average of recent quasihydrostatic data.
+  - The formulation includes intrinsic anharmonicity and electronic contributions,
+    which are required for accurate high-temperature behavior.
+  - Differences of up to ~4 GPa can occur relative to other scales at high P–T.
+  - Not directly equivalent to a standalone BM3 or Vinet fit used in static DAC studies.

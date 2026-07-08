@@ -1,0 +1,25 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama and Kawamura 2006
+category: 1
+composition: Diamond
+method: Raman
+technique:
+DAC_type: 
+culet: 30-35 #um
+cal_to_name: Holmes et al., 1989
+cal_to_composition: Pt 
+eos: Akahama06_Equation
+V0: 1334
+A: 547 #K0
+A_unc: 11
+B: 3.75 #K0p
+B_unc: 0.20
+PTM: None
+max_pressure: 310 #GPa
+synchrotron: BL10XU at SPring-8
+doi: doi.org/10.1063/1.2335683
+data_quality_notes: |
+    The average pressure uncertainty derived from Pt EOS is ±2 GPa below 250 GPa, increasing to ±3 GPa at 310 GPa due to deviatoric stress in the pressure marker.
+notes: |
+    They repot 1 equation.
+# pressure=K0*((V-V0)/V0)*(1+0.5*(K0p-1)*((V-V0)/V0))

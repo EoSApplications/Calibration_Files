@@ -1,0 +1,32 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Tange et al., 2009
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 
+cal_to_name: Absolute #not linked to another study
+cal_to_composition: MgO
+eos: Birch-Murnaghan
+order: 3
+V0: 74.698  # A^3
+V0_unc: 
+K0: 160.64  # GPa
+is_K0_fixed: no
+K0_unc: 0.18
+K0_prime: 4.221
+K0_prime_unc: 0.011
+
+max_pressure: 300  # GPa, approximated from figure
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample: # not specified
+reference_temperature: # K
+sample_heating: # not specified
+data_quality_notes: |
+  limitations in high-pressure elastic (Kₛ) data above ~100 GPa and reliance on shock data for the highest pressures introduce some uncertainty in separating isothermal and thermal contributions. Despite these factors, the consistency across diverse datasets makes this one of the most reliable primary EoSs for MgO .
+
+doi: 10.1029/2008JB005813
+notes: |
+  Tange et al. (2009) present a unified and self-consistent P–V–T equation of state for MgO based on multiple pressure-scale-independent datasets, including XRD, elastic (Kₛ), thermal expansion, and shock compression data. The 300 K isotherm is described using a third-order Birch–Murnaghan EoS with parameters V₀ ≈ 74.698 Å³, K₀ ≈ 160.64 GPa, and K₀′ ≈ 4.221, while thermal effects are incorporated through a Mie–Grüneisen–Debye framework. The model successfully reproduces experimental data up to ~200 GPa (and extrapolated toward ~300 GPa) and high temperatures with high accuracy (RMS pressure residual ~0.8 GPa). Importantly, this EoS is developed as a primary pressure scale, independent of other calibrants, and is widely applicable for high-pressure and high-temperature experiments .

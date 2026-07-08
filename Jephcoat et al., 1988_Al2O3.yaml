@@ -1,0 +1,36 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Jephcoat et al., 1988
+category: 2
+composition: Al2O3  
+method: XRD
+technique: DAC
+DAC_type: bevelled 
+culet: 100-300  #um (bevelled 10° from 100 µm flat, total culet 300 µm) 
+cal_to_name: Mao et al., 1978 
+cal_to_composition: Al2O3
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 25.59  # not given in this study, set to Dubrovinsky et al., 1998 value
+V0_unc: # not specified
+K0: 254.4  # GPa
+K0_unc: 2 # not specified
+K0_prime: 4.275
+K0_prime_unc: 0.006 # not specified
+max_pressure: 175  # GPa
+PTM: None #(ruby powder mixed with Si grains)
+synchrotron: NSLS (X13A beamline, white beam EDXRD)
+peaks_used_to_fit_sample: 8 reflections including (113), (116), (214) up to 175 GPa
+reference_temperature: 298  # K
+sample_heating: none
+data_quality_notes: |
+  Ruby (Al2O3:Cr3+) compressed in a DAC to 175 GPa at room temperature.
+  No reconstructive transition observed. Pressure measured by X-ray–induced ruby fluorescence.
+  Weakening and broadening of the R1–R2 luminescence at high pressure produced large uncertainties.
+  Unit-cell volume at highest pressure corresponded to V/Vo = 0.71, consistent with a Birch–Murnaghan EOS
+  using K0=254 GPa and K0′=4.3.
+doi: [https://doi.org/10.1016/0378-4363(88)90112-X]
+notes: |
+  The study confirms stability of corundum structure to 175 GPa at room T.
+  The c/a ratio remains ~constant, indicating isotropic compression.
+  EOS comparison: their measured P–V curve matches a 3rd-order Birch–Murnaghan EOS with ultrasonic values (254(6) GPa, 4.3).
+  A PIB model calculation is also in close agreement at 175 GPa.

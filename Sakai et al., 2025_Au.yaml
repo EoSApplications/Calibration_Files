@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: Au
+method: XRD
+technique: DAC
+DAC_type: tDAC
+culet: 16 #um
+cal_to_name: Sakai et al., 2025
+cal_to_composition: W
+cal_to_eos: Rydberg-Stacey
+eos: Rydberg-Stacey
+V0: 67.716 # A^3/unit cell, calculated from NIST density (see Table 2)
+K0: 167 # GPa, Holzapfel et al., 2001 (as cited in Sakai et al., 2025 Table 2, ref 69)
+K0_prime: 5.780 # see Table 2
+is_K0_fixed: yes
+K0_prime_unc: 0.004 # see Table 2
+K_infinity_prime: 1.66666667
+K_infinity_prime_unc: fixed
+max_pressure: 368 # GPa (see Table 1, Run #4, t-DAC)
+PTM: None
+gasket: W for runs 7a, 7b and 7c; Re for rest 
+synchrotron: SPring-8 BL10XU and BL37XU
+peaks_to_fit_sample:
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: No heating or laser annealing was applied; measurements performed at ambient temperature. See Methods and Table 1.
+data_quality_notes: At low pressure, data below 200 GPa from Dewaele et al. (2018) were excluded due to increased scatter; above 200 GPa, unit cell volume measurements are consistent with other standards (see main text, Supplementary Fig. S6).
+doi: [https://doi.org/10.1038/s43246-025-00792-5]
+notes: |
+  Gold equation of state was calibrated using t-DAC up to 368 GPa (culet 16 um, Run #4).
+  Calibration path: Cu → W → Au (see Figure 1).
+  All EoS parameters (except K0_prime, which was refined) were fixed to literature values as listed in Table 2.
+  Rydberg–Stacey EoS parameters for Au: V0 = 67.716 Å³/unit cell; K0 = 167 GPa; K0' = 5.780; K_infinity' = 5/3.
+  For further details on experimental runs, data sources, and calibration sequence, see Table 1, Table 2, and Figure 1 of Sakai et al., 2025.

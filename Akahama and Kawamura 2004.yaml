@@ -1,0 +1,35 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Akahama and Kawamura 2004
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: 
+culet: 50-400 #um
+cal_to_name: Mao et al., 1986; Holmes et al., 1989; Vohra et al., 1987
+cal_to_composition: Al2O3; Pt; Re
+eos: Akahama04_Equation
+V0: 1332.5
+V0_unc: 1 
+A: 66.9
+A_unc: 0.7
+B: -0.5281
+B_unc: 0.0004
+C: 0.0003585
+C_unc: 0.0000003
+D: 736
+D_unc: 1 
+E: 52.81
+E_unc: 0.07
+F: 127.5
+F_unc: 0.8
+PTM: None
+max_pressure: 250 #GPa
+synchrotron: BL10XU at SPring-8
+doi: 10.1063/1.1778482
+data_quality_notes: |
+    The standard deviation of the pressure calibration is ~0.66 GPa, increasing to ~1.27 GPa in the multimegabar (>100 GPa) regime.
+notes: |
+    This study used ruby to ~100 GPa and Pt above 100 GPa. They repot two equations. 
+#P(GPa)=A-B*v+C*v^2   and
+#v(cm-1)=D+E*(P+F)^(1/2)

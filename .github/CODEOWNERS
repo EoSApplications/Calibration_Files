@@ -1,0 +1,4 @@
+# Calibration content needs review against the source paper before merging.
+# Distribution/ is machine-generated (regenerated automatically inside every PR)
+*.yaml      @peaseall @KraussHouse
+README.md   @peaseall @KraussHouse

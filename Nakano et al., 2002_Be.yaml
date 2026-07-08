@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Nakano et al., 2002
+category: 1
+composition: Be
+method: XRD
+technique: DAC
+DAC_type: 
+culet: 600, 300, 100  #um
+cal_to_name: Not Specified; Not Specified #citation error used
+cal_to_composition: Al2O3; Re  #Re used above 80 GPa, separate by a ; if multiple compositions are used  
+eos: Birch-Murnaghan
+order: 3
+# Derived only from the paper:
+# Ambient α-Be lattice parameters are implicitly used for V/V0 normalization.
+# a0 = 2.2858 Å, c0 = 3.5833 Å → Vcell = 16.20 Å^3, V0 = 8.10 Å^3/atom (hcp, Z=2)
+V0: 16.20            # Å^3 per hcp unit cell (2 atoms)
+V0_unc:
+K0: 97.2  #GPa
+is_K0_fixed: no
+K0_unc: 2.5
+K0_prime: 3.61 
+K0_prime_unc: 0.07
+
+max_pressure: 171
+PTM: None
+gasket: Re
+synchrotron: BL10XU Spring-8
+peaks_used_to_fit_sample: (100), (101), (110), (200), (112) and (201)
+reference_temperature: 300 #K
+sample_heating: 
+data_quality_notes: |
+  Pressure is determined using mixed calibrations (ruby ≤80 GPa, Re gasket >80 GPa), introducing inconsistency at high pressure. At higher P, only a few diffraction peaks are observable and interference from gasket signals and Kossel lines further reduces data quality.
+
+doi: 10.1088/0953-8984/14/41/304
+notes: |
+  Nakano et al. (2002) present synchrotron powder X-ray diffraction measurements of beryllium up to 171 GPa at room temperature to investigate its structure and equation of state. The results show that Be remains in the hcp structure across the entire pressure range, with no evidence for previously proposed hcp–hexagonal or theoretically predicted hcp–bcc (or fcc) phase transitions. The lattice parameters decrease smoothly with pressure, and the c/a ratio increases slightly toward the ideal value. An equation of state fitted using the Birch–Murnaghan model gives K₀ ≈ 97 GPa and K′₀ ≈ 3.6, consistent with earlier static compression studies but lower than shock-wave results. Overall, the study provides high-pressure structural and compressibility data for Be, though interpretation is limited by non-hydrostatic conditions and mixed pressure calibration methods.
+

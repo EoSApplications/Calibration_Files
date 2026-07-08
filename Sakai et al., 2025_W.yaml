@@ -1,0 +1,33 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: W
+method: XRD
+technique: DAC
+DAC_type: tDAC
+culet: 16 #um
+cal_to_name: Sakai et al., 2025 #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+cal_to_eos: Rydberg-Stacey
+eos: Rydberg-Stacey
+V0: 31.724 # A^3/unit cell, Dewaele et al., 2004
+K0: 296.0 # GPa, Steinberg, 1982; Simmons & Wang, 1971 (as cited by Dewaele et al., 2004)
+is_K0_fixed: yes
+K0_prime: 4.415 # Dewaele et al., 2004
+K0_prime_unc: 0.016 # Dewaele et al., 2004
+K_infinity_prime: 1.66667 # Fixed, see Table 2 and text; value is 1.666...
+K_infinity_prime_unc: fixed
+max_pressure: 356 # GPa (see Table 1, Run #3, t-DAC)
+PTM: None
+gasket: W for runs 7a, 7b and 7c; Re for rest 
+synchrotron: SPring-8 BL10XU and BL37XU
+peaks_to_fit_sample:
+reference_temperature: 300 # K (ambient, no intentional heating)
+sample_heating: No heating or laser annealing was applied; measurements performed at ambient temperature. See Methods and Table 1.
+data_quality_notes: No significant data scatter reported; unit cell volume measurements for W are consistent across the pressure range investigated.
+doi: https://doi.org/10.1038/s43246-025-00792-5
+notes: |
+  Tungsten equation of state was calibrated using t-DAC up to 356 GPa (culet 16 um, Run #3).
+  Calibration path: Cu → W. All EoS parameters (except K0_prime, which was refined) were fixed to values from Steinberg, 1982; Simmons & Wang, 1971 (as cited by Dewaele et al., 2004), as cited by Sakai et al., 2025.
+  The Rydberg–Stacey EoS parameters for W are listed in Table 2.
+  For further details on data sources and calibration sequence, see Figure 1 and Table 1 of Sakai et al., 2025.

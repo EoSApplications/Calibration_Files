@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Ye et al., 2017
+category: 1
+composition: MgO
+method: XRD
+technique: DAC
+DAC_type: symmetric
+culet:  #um
+cal_to_name: Dorogokupets and Dewaele 2007
+cal_to_composition: Pt
+
+eos: Rydberg-Vinet
+order: 3
+V0_cc_mole: 11.248 #taken from Dorogokupets and Dewaele 2007
+V0_unc:
+K0: 160.3 #GPa
+is_K0_fixed: yes
+K0_unc:
+K0_prime: 4.109
+K0_prime_unc: 0.022
+
+max_pressure: 134
+PTM: Ne; Ar
+gasket: Re
+synchrotron: APS GSECARS 13-ID-D; APS HPCAT 16-ID-B
+peaks_used_to_fit_sample: 111, 200, 220, 311, 222 (MgO)
+reference_temperature: 300 K
+sample_heating: laser annealed >1900 K
+
+data_quality_notes: |
+  MgO constituted ~95% of the volumetric fraction of the sample foils.
+  Deviatoric stresses reduced through laser annealing.
+  EOS refined by fixing K0 and V0 to Dorogokupets & Dewaele (2007).
+  MgO scale shows ±1 GPa consistency with Pt and Au up to 135 GPa.
+
+doi: 10.1002/2016JB013811
+notes: |
+  MgO is a widely used pressure standard with high melting temperature,
+  making it suitable for high-temperature lower-mantle P–T conditions.

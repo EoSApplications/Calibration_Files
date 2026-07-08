@@ -1,0 +1,30 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2004
+category: 1
+composition: Pt
+method: XRD
+technique: DAC
+DAC_type: membrane-type with boron-diamond supports
+culet: not specified
+cal_to_name: Mao et al., 1986; Holmes et al., 1989
+cal_to_composition: Al2O3; Pt
+eos: Rydberg-Vinet
+order: 3
+V0_per_atom: 15.095  # A^3/atom
+V0_unc:
+K0: 275.3  # GPa
+is_K0_fixed: no
+K0_unc: 2.0
+K0_prime: 4.78
+K0_prime_unc: 0.08
+
+max_pressure: 90  # GPa
+PTM: He
+synchrotron: ESRF ID30
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 298  # K
+sample_heating: # not specified
+data_quality_notes: PR-scale fit with K0 free (Table II, first PR column).
+doi: [https://doi.org/10.1103/PhysRevB.70.094112]
+notes: |
+  First three columns only; PR-scale Rydberg-Vinet fit with K0 free.

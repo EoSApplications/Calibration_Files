@@ -1,0 +1,31 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Yokoo et al., 2009
+category: 1
+composition: Au
+method: XRD
+technique: Shock
+DAC_type: 
+culet:  #um
+cal_to_name: Absolute  #separate by a ; if multiple references are used 
+cal_to_composition: Au  #separate by a ; if multiple compositions are used  
+
+eos: Rydberg-Vinet  
+order: 3
+V0_per_atom: 16.929
+V0_unc:
+K0: 167.5 #GPa
+is_K0_fixed: no
+K0_unc:
+K0_prime: 5.94 
+K0_prime_unc:
+max_pressure: 550
+PTM: Not Applicable
+synchrotron:
+peaks_used_to_fit_sample:
+reference_temperature: 
+sample_heating: 
+ata_quality_notes: |
+    The data remeasured shock compression data up to ~550–580 GPa, obtained with modern experimental techniques (e.g., two-stage light-gas gun and improved velocity measurements), which significantly reduce uncertainties compared to older datasets . Reported uncertainties in shock velocity are ≤2%, leading to pressure uncertainties of ~2% up to ~400 GPa. A key strength is that the EOS is constructed entirely from pressure-scale-independent (primary) data, avoiding bias from secondary calibrants. However, shock experiments inherently probe high-temperature Hugoniot states rather than isothermal conditions, requiring model-dependent corrections (e.g., Mie–Grüneisen framework and thermal contributions), which introduce systematic uncertainty. Additional limitations include reliance on fitting procedures (least-squares optimization) and sensitivity to the Hugoniot data, which is identified as the dominant source of uncertainty, particularly at extreme pressures and temperatures.
+doi: 10.1103/PhysRevB.80.104114 
+notes: | 
+    Yokoo et al. (2009) present a revised primary equation of state for gold using shock compression data up to ~550 GPa, incorporating thermal and electronic contributions within a Mie–Grüneisen framework . The EOS is constrained using both high-pressure shock data and independent ambient-pressure thermodynamic properties (e.g., thermal expansion, bulk modulus, and heat capacity), resulting in a self-consistent model. Compared to earlier studies, the revised EOS yields higher pressures, correcting systematic underestimations from older shock datasets. The model demonstrates excellent agreement with experimental Hugoniot data and thermodynamic measurements, with uncertainties typically within ~2%. Gold is reaffirmed as a reliable primary pressure standard over a broad P–T range, and consistency with a similarly derived platinum EOS further supports the approach.

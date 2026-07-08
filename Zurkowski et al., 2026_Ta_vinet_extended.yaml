@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated July 2026, any changes to the manuscript after this date have not been added.
+study: Zurkowski et al., 2026
+category: 1
+composition: Ta
+method: XRD 
+technique: tDAC
+
+cal_to_name: Fratanduono et al., 2020; Campbell et al., 2023
+cal_to_composition: Cu; Bi 
+
+eos: Vinet-Extended
+order:
+
+V0_per_atom: 18.037   # Å^3/atom
+V0_unc: 0.002
+
+K0: 192       
+is_K0_fixed: no
+K0_unc: 5
+
+eta: 6.4
+eta_unc: 0.6
+
+beta: -35
+beta_unc: 5
+
+psi: 141
+psi_unc: 13
+
+max_pressure: 433 
+PTM: none, Cu, Bi, Ne
+
+synchrotron: 16-ID-B (APS, HPCAT) and PETRA-III (P02.2, DESY)
+
+reference_temperature: 298   # K
+
+sample_heating: >
+  No heating
+
+data_quality_notes: >
+  For the Cu and Bi pressure-medium experiments, Ta volumes from individual lattice planes agree within about 1%, which they interpret as evidence for a more uniform compression environment. In contrast, the no-PTM tDAC data show larger nonsystematic mismatch between lattice-plane-derived volumes, especially above ~200 GPa. They interpret this as a stress-state effect, where different Ta lattice planes respond differently to deviatoric stress.
+  Despite that lattice-plane mismatch, the least-squares-fitted Ta volumes from different runs define a common P–V trend. In Fig. 4a, the residuals relative to the fourth-order Vinet fit remain within ~9 GPa across the full pressure range. They also note that the residuals do not show a clear systematic dependence on pressure medium, which supports their claim that Cu, Bi, Ne, and no-PTM experiments produce broadly consistent bulk compression behavior.
+doi: https://doi.org/10.1063/5.0334963
+
+notes: |
+  The abstract "The volume compression of body-centered cubic tantalum has been measured to 433 in the standard bevel and toroidal diamond anvil cell (DAC) using synchrotron-based angle-dispersive powder x-ray diffraction. Six experiments were carried out achieving a maximum pressure of 433(6) GPa. Pressures were estimated using an equation of state (EoS) of Cu or Bi for all experiments. We additionally calculated the elastic constants of Ta and Bi and used our previously calculated values for Cu to inform the stress state of the sample and an EoS of Ta for comparison to our experimental data. Our experimental pressure–volume data for Ta was fit with a fourth-order Vinet EoS, resulting in parameters K0 = 192(5) GPa, η  = 6.4(6), β = −35(5), and Ψ  = 141(13). This Ta EoS is consistent within uncertainty with the ultrasonically derived ambient isothermal bulk modulus, with existing DAC data up to 100 GPa, and with Ta ramp EoS measurements that exceed the pressures of the current study."

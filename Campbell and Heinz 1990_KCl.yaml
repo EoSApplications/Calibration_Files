@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Campbell and Heinz, 1991
+category: 1
+composition: KCl-B2  # B2 (CsCl-type) structure
+method: XRD
+technique: DAC
+DAC_type: Mao–Bell type DAC
+culet: 350  #um
+cal_to_name: Mao et al., 1978
+cal_to_composition: Al2O3 #(ruby)
+cal_to_eos: # not specified
+cal_to_order: # not specified
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 31.84 # cm^3/mol, normalized reference volume for B1 (37.521) → converted basis
+V0_unc: # not specified
+K0: 28.7  # GPa
+is_k0_fixed: false
+K0_unc: 0.6
+K0_prime: 4.0
+K0_prime_unc: fixed
+max_pressure: 56  # GPa
+PTM: None
+gasket: Re
+synchrotron: #Not listed
+peaks_used_to_fit_sample: (110), (200), (211)
+reference_temperature: 298  # K
+sample_heating: none
+data_quality_notes: |
+  B2 phase measured 2–56 GPa at room T; Birch–Murnaghan fit used Jeanloz finite-strain extrapolation since B2 phase is not stable at 0 GPa. V0 derived by normalization to 
+  B1 phase molar volume; uncertainty dominated by pressure determination (5–15%).
+doi: [https://doi.org/10.1016/0022-3697(91)90181-X]
+notes: |
+  Room-temperature compression of KCl B2 (CsCl-type) measured to 56 GPa. Birch–Murnaghan finite strain fit yields K0=28.7(6) GPa, K0′=4 (fixed). V0 extrapolated from finite strain analysis with V0^B2 / V0^B1 = 0.8483(57). No PTM was used, ruby fluorescence used for pressure calibration, and nonhydrostatic conditions possible.

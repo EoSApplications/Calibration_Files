@@ -1,0 +1,48 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Burrage et al., 2019
+category: 1
+composition: Ta
+method: XRD
+technique: DAC
+DAC_type: Symmetric DAC
+culet: 200  # µm flat culet
+
+cal_to_name: Dorogokupets and Dewaele 2007
+cal_to_composition: Au
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 18.001  # Å^3/atom
+
+K0: 201.0  # GPa
+is_K0_fixed: no
+K0_unc: 2.4
+
+K0_prime: 3.21
+K0_prime_unc: 0.11
+
+max_pressure: 80  # GPa
+PTM: Ne
+synchrotron: HPCAT 16-BM-D, APS
+peaks_used_to_fit_sample: bcc Ta
+reference_temperature: 300  # K
+sample_heating: none
+
+data_quality_notes: >
+  Quasi-hydrostatic Ta EOS measured using neon pressure-transmitting
+  medium and Au as the internal pressure marker. The authors note that
+  some uniaxial stress likely develops after Ne solidification above ~5 GPa,
+  therefore the experiment is described as quasi-hydrostatic.
+
+doi: 10.1080/08957959.2019.1641203
+
+notes: |
+  EOS parameters are from Table 1, labeled:
+  "Quasi-hydrostatic (neon-medium)".
+
+  Au pressure standard from Dorogokupets and Dewaele (2007).
+
+  Comparison with the non-hydrostatic experiment showed only a ~2.5 GPa
+  pressure difference at 80 GPa, which the authors state is within the
+  differential stress/yield strength of Ta at these conditions.

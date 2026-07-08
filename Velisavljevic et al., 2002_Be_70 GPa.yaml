@@ -1,0 +1,38 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Velisavljevic et al., 2002
+category: 1
+composition: Be
+method: XRD
+technique: 
+DAC_type:  
+culet:  
+cal_to_name: Velisavljevic et al., 2002
+cal_to_composition: Cu
+eos: AP2
+V0_per_atom: 8.04      # Å^3 per atom (hcp; from a = 2.286 Å, c = 3.580 Å, V_cell = 16.09 Å³, Z = 2)
+V0_unc:
+K0: 125.7      # GPa (static AP2 fit)
+K0_unc:
+is_K0_fixed: no
+K0_prime: 2.921
+K0_prime_unc:
+C0: 0.6465     # AP2 constant from static fit
+C0_unc:
+atomic_number: 4
+
+max_pressure: 70   # GPa (upper range of constrained shock Hugoniot)
+
+PTM: None
+synchrotron: none
+peaks_used_to_fit_sample: Reduced shock Hugoniot data for Be
+reference_temperature: 300 K (after isothermal reduction)
+sample_heating:
+data_quality_notes: |
+  The AP2 EOS parameters B0 = 125.7 GPa, B0' = 2.921, and C0 = 0.6465 were obtained by
+  reducing Be shock Hugoniot data (McQueen et al., 1970; Nellis et al., 1988) to a
+  300 K isotherm and fitting with an AP2 form. The resulting shock-reduced EOS is
+  significantly stiffer than the static DAC EOS and begins to deviate from it above
+  ~20 GPa. The authors attribute the discrepancy to uncertainties in the Grüneisen
+  parameter and other assumptions in the shock reduction and emphasize that the
+  shock-based EOS should not be used interchangeably with the static one for
+  quasi-static compression studies.

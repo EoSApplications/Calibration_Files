@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Fei et al., 2007
+category: 1
+composition: Ne
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC
+culet: 200 um for pressures over 100 GPa
+cal_to_name: Fei et al., 2007; Fei et al., 2007; Finger et al., 1981
+cal_to_composition: Pt; Au; Ne
+cal_to_eos: Rydberg-Vinet; Rydberg-Vinet; Murnaghan
+eos: Rydberg-Vinet
+order: 3
+V0: 88.967  # A^3
+V0_unc:
+K0: 1.16  # GPa
+is_K0_fixed: no
+K0_unc: 0.14
+K0_prime: 8.23
+K0_prime_unc: 0.31
+
+max_pressure: 115 # GPa
+PTM: Ne
+gasket: Re
+synchrotron: GSECARS 13-ID-D at APS
+peaks_used_to_fit_sample: # not specified
+reference_temperature: 300 K
+sample_heating: laser-annealed to 1600 K; external heating to 1000 K for P–V–T
+data_quality_notes: |
+  Vinet EOS fit to combined room-temperature Ne compression data from this study
+  and previous experiments, with pressures based on internally consistent Au and Pt scales
+  and the updated W and ruby scales. Good agreement among all calibrations.
+doi: 10.1073/pnas.0609013104
+notes: |
+  Vinet parameters for solid Ne (v0, K0, K0') are from Table 1.
+  Thermal parameters (theta0, gamma0, q0) define the Ne thermal EOS to 2000 K.
+

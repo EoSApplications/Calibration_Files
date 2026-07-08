@@ -1,0 +1,39 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dewaele et al., 2000
+category: 1
+composition: MgO  # Periclase (B1)
+method: XRD
+technique: DAC (laser-heated diamond anvil cell)
+DAC_type:
+culet: ~300 µm  # (diameter not explicitly stated; typical for Chervin-type; left approximate)
+cal_to_name: Not Specified #analysis same as Jamieson et al., 1982
+cal_to_composition: Pt
+eos: Birch-Murnaghan
+order: 3
+V0: 74.71   # Å^3 per formula unit (MgO), fixed (page 2873)
+V0_unc: 0.03
+K0: 161    # GPa (fixed) (page 2873)
+is_K0_fixed: yes
+K0_unc: 1  # GPa (acoustic constraint cited in study)
+K0_prime: 3.94
+K0_prime_unc: 0.2
+max_pressure: 53   # GPa (measured up to 53 GPa and 2474 K)
+PTM: Ar #+ minor N2 (cryogenic loading; quasi-hydrostatic)  # page 2871–2872
+synchrotron: ESRF ID30 (European Synchrotron Radiation Facility, Grenoble)
+peaks_used_to_fit_sample: MgO (Fm-3m); Pt; fcc-Ar; hcp-Ar; δ-N2  # identified in Fig. 1 (page 2871)
+reference_temperature: 300 K (ambient-T EOS)
+sample_heating: CO₂ laser heating to 1800–2474 K with spectroradiometric T measurement
+data_quality_notes: |
+  Argon PTM produced quasi-hydrostatic conditions. Small nitrogen contamination produced fcc/hcp Ar + δ-N₂ phases.
+  Pressure uncertainties from Pt EOS: ΔP ≈ 0.03·P + 4×10⁻⁴·(T–T0).
+  Deviatoric stresses estimated ≤ 1 GPa from lattice strain analysis (Singh, 1993 method).
+doi: 10.1029/1999JB900364
+notes: |
+  The ambient-temperature EOS is a third-order Birch–Murnaghan relation with fixed K0 and V0
+  and fitted K0′ = 3.94 ± 0.06. This value incorporates data from this study as well as
+  Fei (1999), Fiquet et al. (1996), and Utsumi et al. (1998), excluding Mao & Bell (1979).
+  High-temperature modeling includes both:
+    • T-dependent Birch–Murnaghan EOS
+    • Mie–Grüneisen–Debye model with Θ0 ≈ 800 K, γ0 ≈ 1.45, q ≈ 0.8 ± 0.5
+  Study provides 61 P–V–T points up to 53 GPa and 2500 K, enabling full thermodynamic parameterization.
+  Demonstrates MgO behaves as a Debye-like solid up to ~2500 K and >50 GPa.

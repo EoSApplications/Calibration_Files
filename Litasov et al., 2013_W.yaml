@@ -1,0 +1,47 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Litasov et al., 2013
+category: 1
+composition: W
+method: XRD
+technique: Multi-anvil press (in situ synchrotron XRD)
+cal_to_name: Litasov et al., 2013; Litasov et al., 2013   #Very simular to Dorogokupets and Dewaele, 2007 <30 GPa.
+cal_to_composition: MgO; Au
+#Calibration EoS is the KE-EoS of Au and MgO
+
+
+eos: Rydberg-Vinet
+order: 3
+V0: 31.71   # Å^3/unit cell
+V0_unc: 0.02
+
+K0: 308   # GPa
+is_K0_fixed: no
+K0_unc: 1
+
+K0_prime: 4.20
+K0_prime_unc: 0.05
+
+max_pressure: 33.5   # GPa
+PTM: Graphite capsule; MgO medium
+synchrotron: SPring-8 BL04B1
+peaks_used_to_fit_sample: bcc W (110), (211), (220), (310), (222)
+reference_temperature: 298   # K
+
+sample_heating: >
+  Resistive heating in Kawai-type multi-anvil apparatus using LaCrO3
+  or graphite heaters. Temperatures reached 1673 K. Differential stress
+  was minimized through high-temperature annealing.
+
+data_quality_notes: >
+  Comprehensive P-V-T dataset collected from ambient pressure to
+  33.5 GPa and 1673 K using Au and MgO pressure markers.
+  Room-temperature compression fit used the Vinet/Rydberg EOS.
+  Authors report that differential stress was largely relaxed during
+  heating based on stable diffraction peak widths.
+  The 298 K compression curve was constrained together with
+  thermodynamic optimization and comparison to previous static and
+  shock datasets.
+
+doi: 10.1063/1.4799018
+
+notes: |

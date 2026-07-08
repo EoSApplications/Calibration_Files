@@ -1,0 +1,53 @@
+name: Regenerate calibration manifest and bundle
+# Keeps Distribution/index.json (the hash manifest desktop apps check for updates)
+# and Distribution/Calibration_Files_Bundle.json (what the website fetches as one
+# request) in sync with the actual .yaml files - as part of the PR itself, so by
+# the time a calibration change merges to main, the regenerated files are already
+# included in that same merge. No separate follow-up commit ever lands on main,
+# and main is never touched directly, so no branch-protection bypass is needed.
+#
+# Requires "Require a pull request before merging" enabled on main (see
+# Calibration_Files_Repo_Protections.md) - without it, a direct push to main would
+# skip this regeneration entirely. Also requires this repo's Settings -> Actions ->
+# General -> Workflow permissions set to "Read and write permissions", so the
+# default GITHUB_TOKEN can push the regenerated files back onto the PR's branch.
+#
+# Only runs for PRs from branches within this repo, not forks - the default
+# GITHUB_TOKEN only gets write access to the PR's own branch in that case.
+
+on:
+  pull_request:
+    branches: [main]
+    paths:
+      - '*.yaml'
+
+permissions:
+  contents: write
+
+jobs:
+  regenerate:
+    runs-on: ubuntu-latest
+    if: github.event.pull_request.head.repo.full_name == github.repository
+    steps:
+      - name: Check out the PR's branch
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+
+      - name: Regenerate index.json and Calibration_Files_Bundle.json
+        run: |
+          python3 Distribution/Generate_Calibration_Manifest.py
+          python3 Distribution/Generate_Calibration_Bundle.py
+
+      - name: Commit and push back onto the PR branch, if anything changed
+        run: |
+          set -euo pipefail
+          git config user.name "Heidi Krauss"
+          git config user.email "Heidi.N.Krauss@gmail.com"
+          git add Distribution/index.json Distribution/Calibration_Files_Bundle.json
+          if git diff --cached --quiet; then
+            echo "No changes to the manifest or bundle"
+            exit 0
+          fi
+          git commit -m "Regenerate index.json and Calibration_Files_Bundle.json"
+          git push origin HEAD:${{ github.event.pull_request.head.ref }}

@@ -1,0 +1,47 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Knittle et al., 1989
+category: 1
+composition: cBN
+method: XRD
+technique: DAC (angle-dispersive XRD)
+DAC_type: Mao–Bell type DAC
+culet: 200  # um
+cal_to_name: Mao et al., 1978; Barnett et al., 1973
+cal_to_composition: Al2O3; Al2O3
+
+eos: Birch-Murnaghan
+order: 3
+# Reference volume measured at ambient conditions
+V0_cc_mole: 7.113
+K0: 369              # GPa
+is_K0_fixed: no
+K0_unc: 14
+K0_prime: 4.0
+K0_prime_unc: 0.2
+
+max_pressure: 115    # GPa
+PTM: ME # 4:1 methanol–ethanol (pseudohydrostatic)
+synchrotron: none (laboratory Mo Kα source)
+peaks_used_to_fit_sample: c-BN (111) diffraction line
+reference_temperature: 300   # K
+sample_heating: none
+
+data_quality_notes: |
+  First direct experimental determination of the 300 K EOS of cubic BN
+  to ultrahigh pressures. Pressures determined using ruby fluorescence;
+  volumes from single diffraction peak (111) due to weak higher-order
+  reflections at high pressure. Despite nonhydrostatic effects above
+  ~15–20 GPa, the large compression range (to 115 GPa) allows K0 and K0'
+  to be constrained with reasonable precision.
+
+doi: 10.1038/337349a0
+notes: |
+  EOS obtained by fitting static compression data with a third-order
+  Birch–Murnaghan equation of state (Eulerian finite strain).
+  Reported parameters: K0 = 369 ± 14 GPa, K0' = 4.0 ± 0.2.
+  Reference volume V0 corresponds to the ambient-pressure lattice
+  parameter a0 = 3.615 ± 0.002 Å.
+
+  Authors demonstrate consistency between this static EOS, first-principles
+  calculations, and independent shock Hugoniot data, supporting the
+  reliability of the ruby pressure calibration at ultrahigh pressures.

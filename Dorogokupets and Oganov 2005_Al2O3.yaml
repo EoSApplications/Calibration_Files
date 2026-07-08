@@ -1,0 +1,37 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Dorogokupets and Oganov 2005
+category: 2
+composition: Al2O3  # ruby (Cr-doped α-Al2O3)
+method: Luminescence
+technique: 
+DAC_type: #not specified
+culet: #not specified
+cal_to_name: Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dewaele et al., 2004; Dorogokupets and Oganov 2005; Dorogokupets and Oganov 2005; Dorogokupets and Oganov 2005; Dorogokupets and Oganov 2005; Dorogokupets and Oganov 2005; Dorogokupets and Oganov 2005
+cal_to_composition: Al; Au; Cu; Pt; Ta; W; Al; Au; Cu; Pt; Ta; W;
+eos: Polynomial
+order: 2    # not specified
+A: 1884   # GPa
+A_unc: not specified
+B: 5.5        # called m
+B_unc: 
+lambda_0: 694.24  # nm infered from equation 1a
+max_pressure: 160  # GPa, infer extrapolation to 300 GPa possibl
+PTM: He #(in calibration datasets)
+synchrotron: not specified
+peaks_used_to_fit_sample: R1 line of ruby fluorescence
+reference_temperature: room temperature
+sample_heating: none
+data_quality_notes: |
+  They observe that the Mao et al., 1986 formuation (Power in EoSAlign) does not capture the data.
+  To fit their data with that scale they comment that the scale only works to 100 GPa while the scale proposed by Aleksandrov ((polynomial)) works to higher pressures.
+doi: Equations of State of Al, Au, Cu, Pt, Ta, and W and Revised Ruby Pressure Scale
+notes: |
+  "We have constructed semiempirical equations of
+  state of Al, Au, Cu, Pt, Ta, and W for temperatures from
+  10–15 K up to melting temperature and compression up
+  to x = V/V0 = 0.5–0.6 using published experimental
+  measurements of the heat capacity, thermal expansion
+  coefficient, adiabatic bulk modulus at zero pressure,
+  and shock-wave data from Khishchenko et al., 2001"...."Comparing the calculated
+  room-temperature isotherms of these metals
+  with the data of Dewaele et al. [8]"

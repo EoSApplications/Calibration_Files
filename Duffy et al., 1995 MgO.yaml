@@ -1,0 +1,52 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Duffy et al., 1995
+category: 2
+composition: MgO  # B1 (NaCl-type) structure
+method: XRD
+technique: DAC
+DAC_type: Mao-Bell DAC with beveled diamonds
+culet: 19.5; 49.8  # um (central flats)
+cal_to_name: Carter et al., 1971
+cal_to_composition: Mo
+eos: Birch-Murnaghan
+order: 3
+V0_cc_mole: 11.253  # cm^3/mol; inferred from previous sentence referencing an unpublished study from Fei. 
+V0_unc:
+P0: 0
+K0: 177  # GPa
+is_K0_fixed: no
+K0_unc: 4
+K0_prime: 4.0
+K0_prime_unc: 0.1
+max_pressure: 227  # GPa
+PTM: None
+synchrotron: NSLS (superconducting wiggler radiation)
+peaks_used_to_fit_sample: 200; 220; 420
+reference_temperature: 300 K
+sample_heating: none
+data_quality_notes: |
+  Energy-dispersive synchrotron XRD measurements of MgO were
+  conducted to ultrahigh pressures without a pressure-transmitting
+  medium. Strong nonhydrostatic stresses were present and explicitly
+  quantified via lattice-strain analysis using differences between
+  the (200) and (220) reflections.
+
+  Pressure was determined from molybdenum diffraction lines using
+  an isotherm derived from shock compression data. MgO remained
+  in the B1 (NaCl) structure to the maximum pressure investigated.
+doi: 10.1103/PhysRevLett.74.1371
+notes: |
+  A third-order Birch–Murnaghan EOS fit to the present static
+  compression data yields K0 = 177(4) GPa and K0' = 4.0(1),
+  which is significantly stiffer than ultrasonic and quasihydrostatic
+  results due to nonhydrostatic stress.
+
+  The authors demonstrate that when shear strength (≥11 GPa at
+  227 GPa) is taken into account, a single EOS can reconcile
+  static, ultrasonic, and shock data. However, the parameters
+  reported here correspond strictly to the static DAC dataset
+  without stress correction.
+
+  This EOS should therefore NOT be treated as a hydrostatic
+  reference; it is most appropriate for studies explicitly
+  considering strength effects at multimegabar pressures.

@@ -1,0 +1,21 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Sakai et al., 2025
+category: 1
+composition: Diamond
+method: Raman
+technique: DAC
+DAC_type: 
+culet: 16-300 #um
+cal_to_name: Sakai et al., 2025
+cal_to_composition: Au
+eos: Eremets_Equation
+V0: 1332.5
+A: 491.7
+A_unc: 0.7
+B: 814
+B_unc: 2
+max_pressure: 431
+PTM: None
+gasket: Re; W
+doi: doi.org/10.1038/s41467-023-36429-9
+note: They use one expression P=A*(V-Vo)/V0+B((V-v0)/vo))^2

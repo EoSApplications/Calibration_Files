@@ -1,0 +1,34 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated May 2026, any changes to the manuscript after this date have not been added.
+study: Shen and Smith 2026
+category: 1
+composition: NaCl-B2
+method: XRD
+technique: DAC
+DAC_type: symmetric-type DAC 
+culet: 150 um; beveled to 300 um 
+cal_to_name: Fratanduono et al., 2020  #separate by a ; if multiple references are used 
+cal_to_composition: Cu #separate by a ; if multiple compositions are used  
+eos: Rydberg-Vinet
+order: 3
+V0: 41.35
+V0_unc: #fixed
+K0: 24.92   # GPa
+is_K0_fixed: no
+K0_unc: 0.11
+K0_prime: 5.63
+K0_prime_unc: 0.02
+
+max_pressure: 140 # GPa
+PTM: He # quasihydrostatic 
+gasket: Re 
+synchrotron: HPCAT 16-ID-B; APS; ANL 
+peaks_used_to_fit_sample: (110), (211) 
+reference_temperature: 300 # K
+sample_heating: # not specified
+data_quality_notes: |
+   The NaCl-B2 dataset shows good quality within the high-pressure phase field, though with some limitations related to phase transition behavior and structural effects. Diffraction peaks remain identifiable at pressures above ~33 GPa, enabling determination of unit-cell volumes with typical relative uncertainties of ~0.1% . Volumes were calculated using the (110) and (211) reflections, which are appropriate for the B2 structure. Data in the B1–B2 coexistence region (~30–35 GPa) exhibit inconsistent trends and are excluded from fitting to maintain accuracy. Compared to lower-pressure phases and metallic calibrants, NaCl-B2 shows slightly broader diffraction peaks, indicating modest increases in strain and/or grain-size effects at high pressure. Additionally, because NaCl-B2 is not stable at ambient conditions, its zero-pressure volume (V₀) is constrained using literature values during EOS fitting. Despite these factors, the dataset is internally consistent within the single-phase region and benefits from quasihydrostatic conditions provided by the helium medium. Overall, NaCl-B2 data are reliable at high pressures but require careful treatment near the phase transition and in parameter constraints.
+    
+doi: 10.1103/fxgq-96sg  
+notes: | 
+    NaCl-B2 represents the high-pressure phase of sodium chloride and provides useful calibration data in the upper pressure regime. The experimentally derived volume–volume (V–V) relations relative to Cu are well-defined in the B2 phase and allow characterization of its compressional behavior independent of an assumed pressure scale . The fitted equation of state (EOS) parameters (K₀ ≈ 24.9 GPa, K′₀ ≈ 5.63) are broadly consistent with prior experimental results, though some discrepancies exceeding ~1% in volume are observed when compared to other studies, reflecting sensitivity to experimental conditions and calibration pathways. NaCl-B2 exhibits higher stiffness than the B1 phase but remains significantly more compressible than metallic calibrants. Its bulk modulus scaling behavior is comparable to other ionic materials and some bcc metals. For fitting, DAC-2 used. 
+    

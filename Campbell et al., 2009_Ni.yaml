@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Campbell et al., 2009
+category: 1
+composition: Ni  # fcc
+method: XRD
+technique: DAC
+DAC_type: symmetric DAC (LHDAC experiments)
+culet: 250–400 μm 
+
+cal_to_name: Decker 1971; Fei et al., 2007
+cal_to_composition: NaCl-B1; NaCl-B2
+
+eos: Birch-Murnaghan
+order: 3
+
+V0_cc_mole: 6.587        # cm^3/mol 
+V0_unc:
+P0: 0
+
+K0: 179           # GPa (Table 1)
+is_K0_fixed: no
+K0_unc: 3
+
+K0_prime: 4.3
+K0_prime_unc: 0.2
+
+max_pressure: 65      # GPa, Ni data collected in MAP + DAC (Fig. 3)
+PTM: NaCl
+gasket: Re
+synchrotron: APS 13-ID-D
+peaks_used_to_fit_sample: fcc Ni peaks (≥2 reflections)
+reference_temperature: 295 K
+sample_heating: laser heated in DAC; annealed to relax deviatoric stress
+
+data_quality_notes: |
+  Campbell et al. measured Ni and NiO simultaneously under identical P–T
+  conditions to minimize systematic pressure-scale errors. The isothermal
+  295 K BM3 EOS parameters (V0, K0, K0') are directly listed in Table 1.
+  No stress correction was required at high T due to annealing.
+
+doi: 10.1016/j.epsl.2009.07.022
+
+notes: |
+  Only fcc–Ni was observed. No phase transitions occurred over the P–T
+  range of this study. These parameters represent the 295 K isotherm used
+  in Ni–NiO fO2 calculations.

@@ -1,0 +1,46 @@
+# This is a yaml file based on data published in the study listed below. All values listed are based on what can be found within the publication.This document was updated February  2026, any changes to the manuscript after this date have not been added.
+study: Mashimo et al., 2016
+category: 2
+composition: W
+method: XRD
+technique: Symmetric-impact shock compression + VISAR
+
+cal_to_name: Absolute
+cal_to_composition: W
+
+eos: Rydberg-Vinet
+order: 3
+
+V0_per_atom: 15.87   # Å^3/atom from rho0 = 19.23 g/cm^3
+V0_unc:
+
+K0: 318.5   # GPa
+is_K0_fixed: no
+K0_unc:
+
+K0_prime: 3.99
+K0_prime_unc:
+
+
+max_pressure: 345   # GPa
+PTM: none
+synchrotron:
+reference_temperature: 300   # K
+
+sample_heating: >
+  Shock compression. Hydrostatic isothermal compression curve derived
+  from Hugoniot data using Mie-Gruneisen thermal corrections and
+  shear-strength correction.
+
+data_quality_notes: >
+  EOS fit corresponds to the V-2 fit in Table V using strength-corrected
+  hydrostatic isothermal compression data. Authors conclude V-2 provides
+  the best overall fit over the full pressure range to >350 GPa.
+
+doi: 10.1063/1.4939725
+
+notes: |
+  EOS parameters from Table V, V-2 fit with strength correction.
+  Uses second-order Vinet equation.
+  Assumes q = dln(gamma)/dln(V) = 1 and gamma/V = const.
+  Recommended EOS fit by the authors.
