@@ -1,0 +1,34 @@
+name: Reset Changes branch to main branch
+# After a PR from Changes merges into main, reset Changes so the next PR starts
+# from the current main history instead of re-showing commits that were already
+# reviewed and merged.
+
+on:
+  pull_request:
+    types:
+      - closed
+    branches:
+      - main
+
+permissions:
+  contents: write
+
+jobs:
+  reset-changes-branch:
+    if: github.event.pull_request.merged == true && github.event.pull_request.head.ref == 'Changes'
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out main
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          ref: main
+          fetch-depth: 0
+
+      - name: Reset Changes branch to main
+        run: |
+          set -euo pipefail
+          git config user.name "Heidi Krauss"
+          git config user.email "Heidi.N.Krauss@gmail.com"
+          git fetch origin main Changes
+          git push --force-with-lease origin HEAD:Changes
