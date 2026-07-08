@@ -1,15 +1,22 @@
-name: Sync calibration files to Development's staged EoSAlign mirror
-# Mirrors this repo's .yaml files into Development's private working copy at
-# Staged__Public_Repositories/EoSAlign/Code/Calibration_Files/, so that folder
-# never drifts from what's actually live here. Without this, it only updates when
-# someone with the Calibration_Files_Clone_Hooks post-merge hook set up locally
-# happens to `git pull` this repo on their own machine and commits the result
-# themselves - see Refresh_Staged_EoSAlign_Calibration_Mirror.py, which this job
-# duplicates the mirroring logic of (add/update/remove by file name).
+name: Sync calibration data to Development
+# After a calibration change merges to main, mirrors this repo's .yaml files into
+# Development's staged EoSAlign copy, then runs Development's own full local
+# website-build pipeline (Website_Files/Update_Gh_Pages_Staging.py) and pushes
+# everything it touches - so Development/Website_Files and
+# Development/Staged__Public_Repositories/Website stay current automatically,
+# with zero local steps - Development_Tools/Refresh_Staged_EoSAlign_Calibration_Mirror.py
+# and its post-merge hook used to do this locally (only when someone remembered to
+# `git pull` the Calibration_Files sibling clone); both were deleted once this workflow
+# replaced them. See Sync_To_Website.yml's own comments for the fuller history.
+#
+# Checks out this repo a second time at a sibling path to Development, matching
+# Website_Files/Build/Sync_Pyodide_Packages.py's own REPO_ROOT.parent / "Calibration_Files"
+# assumption - that script expects the real Calibration_Files repo to sit next to
+# Development on disk, same as it does on a real dev machine.
 #
 # Pushes directly to Development's main (not a PR) - Development is a private
-# solo working repo, and this is purely a derived-data mirror, not authored
-# content, matching Sync_To_Website.yml's same reasoning.
+# solo working repo, and this is purely a derived-data mirror + rebuild, not
+# authored content, matching Sync_To_Website.yml's same reasoning.
 #
 # Needs a DEVELOPMENT_SYNC_TOKEN secret: a fine-grained PAT scoped to the
 # Development repo only, with Contents: Read & Write. Development is private, so
@@ -25,8 +32,10 @@ on:
 jobs:
   sync-development:
     runs-on: ubuntu-latest
+    env:
+      QT_QPA_PLATFORM: offscreen
     steps:
-      - name: Check out Calibration_Files (this repo)
+      - name: Check out Calibration_Files (this repo, at a path sibling to Development)
         uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           path: Calibration_Files
@@ -51,16 +60,27 @@ jobs:
             fi
           done
 
+      - name: Install the desktop app's Python dependencies (needed by Build_Calibration_Graph.py)
+        run: |
+          python3 -m pip install --no-input \
+            "PySide6>=6.9.3" "numpy>=1.26.4" "pandas>=2.3.3" "matplotlib>=3.9.2" \
+            "pillow>=11.3.0" "scipy>=1.15.2" "networkx>=3.4.2" "plotly>=6.8.0" \
+            "pyyaml>=6.0.3" "darkdetect>=0.8.0"
+
+      - name: Run Development's full local website-build pipeline
+        working-directory: Development
+        run: python3 Website_Files/Update_Gh_Pages_Staging.py
+
       - name: Commit and push, if anything changed
         run: |
           set -euo pipefail
           cd Development
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git add Staged__Public_Repositories/EoSAlign/Code/Calibration_Files
+          git add -A
           if git diff --cached --quiet; then
             echo "No changes to sync"
             exit 0
           fi
-          git commit -m "Sync calibration files from Calibration_Files@${{ github.sha }}"
+          git commit -m "Sync calibration data from Calibration_Files@${{ github.sha }}"
           git push origin main
