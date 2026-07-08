@@ -11,14 +11,15 @@ name: Sync calibrations to EoSAlign
 # that repo's own branch protection has no bypass, including for this bot.
 #
 # TODO before this is ever enabled on the real repo:
-#   - Pin actions/checkout and peter-evans/create-pull-request to an exact
-#     commit SHA, not a version tag (see Public_Release_Repo_Protections_Options.md).
 #   - Create a fine-grained PAT (or small GitHub App) scoped to the
 #     EoSAlign repo only, with just Contents: Read & Write and
 #     Pull requests: Read & Write, and store it as this repo's
 #     EOSALIGN_SYNC_TOKEN secret (Settings -> Secrets and variables ->
 #     Actions -> New repository secret). A plain GITHUB_TOKEN cannot push
 #     to a different repository.
+#   - When bumping either pinned action below, re-pin to the new tag's exact
+#     commit SHA (see Public_Release_Repo_Protections_Options.md) - don't
+#     switch back to a mutable version tag.
 
 on:
   push:
@@ -31,12 +32,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out Calibration_Files (this repo)
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           path: Calibration_Files
 
       - name: Check out EoSAlign
-        uses: actions/checkout@v4
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
         with:
           repository: EoSApplications/EoSAlign
           token: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
@@ -61,7 +62,7 @@ jobs:
           done
 
       - name: Open a PR against EoSAlign with the change
-        uses: peter-evans/create-pull-request@v6
+        uses: peter-evans/create-pull-request@c5a7806660adbe173f04e3e038b0ccdcd758773c # v6.1.0
         with:
           token: ${{ secrets.EOSALIGN_SYNC_TOKEN }}
           path: EoSAlign
