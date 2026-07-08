@@ -9,15 +9,20 @@ from pathlib import Path
 
 
 
+# Normalize text line endings before hashing so the manifest is identical on every platform
+def Normalize_Calibration_File_Bytes(File_Bytes):
+    return File_Bytes.replace(b'\r\n', b'\n').replace(b'\r', b'\n')
+
+
+
 # Walk every calibration YAML file in the parent folder and hash its contents
 def Build_The_File_Hash_Map(Calibration_Files_Folder):
     # Store one SHA-256 hash per calibration file, keyed by file name
     File_Hash_Map = {}
     # Sort the file list so the manifest is always written in the same order
     for Yaml_File_Path in sorted(Calibration_Files_Folder.glob('*.yaml')):
-        # Read the raw bytes of the file so the hash matches the file exactly
-        File_Bytes = Yaml_File_Path.read_bytes()
-        # Calculate the SHA-256 hash of the file contents
+        # Hash canonical LF bytes so Windows and Unix checkouts produce the same manifest
+        File_Bytes = Normalize_Calibration_File_Bytes(Yaml_File_Path.read_bytes())
         File_Hash = hashlib.sha256(File_Bytes).hexdigest()
         # Store the hash under the file's name
         File_Hash_Map[Yaml_File_Path.name] = f'sha256:{File_Hash}'
