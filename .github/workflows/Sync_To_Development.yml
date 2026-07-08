@@ -1,0 +1,66 @@
+name: Sync calibration files to Development's staged EoSAlign mirror
+# Mirrors this repo's .yaml files into Development's private working copy at
+# Staged__Public_Repositories/EoSAlign/Code/Calibration_Files/, so that folder
+# never drifts from what's actually live here. Without this, it only updates when
+# someone with the Calibration_Files_Clone_Hooks post-merge hook set up locally
+# happens to `git pull` this repo on their own machine and commits the result
+# themselves - see Refresh_Staged_EoSAlign_Calibration_Mirror.py, which this job
+# duplicates the mirroring logic of (add/update/remove by file name).
+#
+# Pushes directly to Development's main (not a PR) - Development is a private
+# solo working repo, and this is purely a derived-data mirror, not authored
+# content, matching Sync_To_Website.yml's same reasoning.
+#
+# Needs a DEVELOPMENT_SYNC_TOKEN secret: a fine-grained PAT scoped to the
+# Development repo only, with Contents: Read & Write. Development is private, so
+# unlike EoSAlign/Website this token is also required just to check it out, not
+# only to push - same setup pattern as EOSALIGN_SYNC_TOKEN otherwise.
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - '*.yaml'
+
+jobs:
+  sync-development:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out Calibration_Files (this repo)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          path: Calibration_Files
+
+      - name: Check out Development (private repo)
+        uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          repository: EoSApplications/Development
+          token: ${{ secrets.DEVELOPMENT_SYNC_TOKEN }}
+          path: Development
+
+      - name: Mirror changed calibration files into Development's staged EoSAlign copy
+        run: |
+          set -euo pipefail
+          DEST="Development/Staged__Public_Repositories/EoSAlign/Code/Calibration_Files"
+          mkdir -p "$DEST"
+          cp Calibration_Files/*.yaml "$DEST"/
+          for existing in "$DEST"/*.yaml; do
+            name="$(basename "$existing")"
+            if [ ! -f "Calibration_Files/$name" ]; then
+              rm "$existing"
+            fi
+          done
+
+      - name: Commit and push, if anything changed
+        run: |
+          set -euo pipefail
+          cd Development
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add Staged__Public_Repositories/EoSAlign/Code/Calibration_Files
+          if git diff --cached --quiet; then
+            echo "No changes to sync"
+            exit 0
+          fi
+          git commit -m "Sync calibration files from Calibration_Files@${{ github.sha }}"
+          git push origin main
